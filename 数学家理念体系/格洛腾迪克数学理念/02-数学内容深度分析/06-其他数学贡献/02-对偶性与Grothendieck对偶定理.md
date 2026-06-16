@@ -11,11 +11,32 @@ references:
     author: R. Hartshorne
     edition: Lecture Notes in Mathematics 20
     year: 1966
+    publisher: Springer
+    isbn: '9783540036207'
+    mr_number: MR0222093
   - title: Algebraic Geometry
     author: R. Hartshorne
     edition: Graduate Texts in Mathematics 52
     chapters: Ch. III, §7
     pages: 239–252
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Dualité et cohomologie dans les topos
     author: J-L. Verdier
@@ -37,7 +58,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
-  wikidata_id: Q77141
 ---
 ## 1. 引言：对偶性的代数几何化
 
@@ -232,3 +252,13 @@ Grothendieck对偶定理是结构主义数学的典范：它将一个具体的�
 3. Verdier, J-L. "Dualité et cohomologie dans les topos." PhD thesis, Paris, 1965.
 4. Beilinson, A., Bernstein, J., Deligne, P., Gabber, O. *Faisceaux pervers*. Astérisque 100, 1982.
 5. Conrad, B. "Grothendieck Duality and Base Change." *LNM* 1750, 2000.
+
+---
+
+## 参考文献
+
+- R. Hartshorne, *Residues and Duality*, Lecture Notes in Mathematics 20 ed., Springer, 1966, ISBN: 9783540036207 / MR0222093
+- R. Hartshorne, *Algebraic Geometry*, Graduate Texts in Mathematics 52 ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- J-L. Verdier, *Dualité et cohomologie dans les topos*, 1965

@@ -21,7 +21,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Galois%E7%90%86%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
-  wikidata_id: Q92552
 references:
   databases:
   - id: wikidata
@@ -29,6 +28,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q92552
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -183,3 +199,10 @@ Fermat素数：$F_k = 2^{2^k} + 1$，已知的有 3, 5, 17, 257, 65537。
 **变式2：** 研究化圆为方问题：证明$\sqrt{\pi}$不可构作（需要$\pi$超越）。
 
 **变式3：** 用Galois理论证明正17边形可构作（Gauss-Wantzel定理）。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

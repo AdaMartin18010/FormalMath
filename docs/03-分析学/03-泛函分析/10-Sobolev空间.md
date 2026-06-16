@@ -1,10 +1,24 @@
 ---
 msc_primary: 46E35
 msc_secondary:
-  - 35Jxx
-  - 46Fxx
+- 35Jxx
+- 46Fxx
 processed_at: '2026-04-20'
 title: Sobolev空间
+references:
+  textbooks:
+  - title: A Course in Functional Analysis
+    author: John B. Conway
+    edition: 2nd
+    publisher: Springer
+    year: 1990
+    isbn: '9780387972459'
+  - title: Functional Analysis
+    author: Walter Rudin
+    edition: 2nd
+    publisher: McGraw-Hill
+    year: 1991
+    isbn: '9780070542365'
 ---
 # Sobolev空间
 
@@ -110,3 +124,10 @@ Sobolev空间是偏微分方程弱解理论的自然框架。椭圆方程 $Lu = 
 3. H. Brezis, *Functional Analysis, Sobolev Spaces and PDEs*, Springer, 2011.
 4. L.C. Evans, *Partial Differential Equations*, 2nd ed., AMS, 2010.
 5. 王术，《Sobolev空间与偏微分方程引论》，科学出版社，2009。
+
+---
+
+## 参考文献
+
+- John B. Conway, *A Course in Functional Analysis*, 2nd ed., Springer, 1990, ISBN: 9780387972459
+- Walter Rudin, *Functional Analysis*, 2nd ed., McGraw-Hill, 1991, ISBN: 9780070542365

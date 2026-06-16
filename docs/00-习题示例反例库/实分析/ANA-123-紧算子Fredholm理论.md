@@ -6,6 +6,28 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐⭐
 预计时间: 50分钟
 title: 紧算子Fredholm理论
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Operator_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E5%AD%90
+  nlab_url: https://ncatlab.org/nlab/show/operator
 ---
 # 紧算子与Fredholm理论
 
@@ -105,3 +127,10 @@ $E_k = \text{span}\{e_1, \ldots, e_k\}$，取 $x_k \in E_k \setminus E_{k-1}$，
 **变式1：** 证明Hilbert-Schmidt算子是紧算子。
 
 **变式2：** 计算 $L^2([0,1])$ 上积分算子 $Tf(x) = \int_0^x f(t)dt$ 的谱。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

@@ -12,7 +12,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/matrix
   wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
-  wikidata_id: Q44337
 references:
   databases:
   - id: wikidata
@@ -20,6 +19,36 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q44337
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'Probability: Theory and Examples'
+    author: Rick Durrett
+    edition: 5th
+    publisher: Cambridge University Press
+    year: 2019
+    isbn: '9781108473682'
+    mr_number: MR3930614
+    doi: 10.1017/9781108592629
+  - title: An Introduction to Probability Theory and Its Applications, Vol. 1
+    author: William Feller
+    edition: 3rd
+    publisher: Wiley
+    year: 1968
+    isbn: '9780471257080'
+    mr_number: MR0228020
+  - title: Probability with Martingales
+    author: David Williams
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1991
+    isbn: '9780521406055'
+    mr_number: MR1155402
+    doi: 10.1017/CBO9780511813658
+  papers:
+  - title: Characteristic vectors of bordered matrices with infinite dimensions
+    author: Eugene P. Wigner
+    journal: Annals of Mathematics
+    year: 1955
+    doi: 10.2307/1970079
 ---
 # 随机矩阵理论深度版 / Random Matrix Theory - In Depth
 
@@ -840,7 +869,7 @@ Jackiw-Teitelboim引力：
 1. **Random Matrix Theory Website** - Various universities
     - 多个大学的随机矩阵课程主页
 
-2. **Brunel University: Random Matrix Theory** - http://www.brunel.ac.uk/randommatrix/[需更新[需更新]]
+2. **Brunel University: Random Matrix Theory** - https://www.brunel.ac.uk/[需更新[需更新]]
     - Brunel大学的随机矩阵研究中心
 
 3. **IAS School of Math: Random Matrix Theory** - https://www.math.ias.edu/[需更新[需更新]]
@@ -852,7 +881,7 @@ Jackiw-Teitelboim引力：
 5. **ArXiv Tag: Mathematical Physics** - https://arxiv.org/list/math-ph/recent
     - 数学物理最新论文
 
-6. **AIM Problem Lists: Random Matrix Theory** - https://aimpl.org/randommatrix/[需更新[需更新]]
+6. **AIM Problem Lists: Random Matrix Theory** - https://aimpl.org/[需更新[需更新]]
     - 美国数学研究所的开放问题列表
 
 7. **Brunel Moodle: Random Matrix Theory Course**
@@ -877,3 +906,18 @@ Jackiw-Teitelboim引力：
 - [25-机器学习数学](./25-机器学习数学.md) - 机器学习数学基础
 - [28-量子数学-深化版](./28-量子数学-深化版.md) - 量子数学深入
 - [04-数学物理高级主题](./04-数学物理高级主题.md) - 数学物理基础
+
+---
+
+## 经典论文与原始文献
+
+- Eugene P. Wigner, *Characteristic vectors of bordered matrices with infinite dimensions*, Annals of Mathematics, 1955 (DOI: 10.2307/1970079)
+
+---
+
+## 参考文献
+
+- Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, ISBN: 9781108473682 / MR3930614
+- William Feller, *An Introduction to Probability Theory and Its Applications, Vol. 1*, 3rd ed., Wiley, 1968, ISBN: 9780471257080 / MR0228020
+- David Williams, *Probability with Martingales*, 1st ed., Cambridge University Press, 1991, ISBN: 9780521406055 / MR1155402
+- Eugene P. Wigner, *Characteristic vectors of bordered matrices with infinite dimensions*, Annals of Mathematics, 1955, DOI: 10.2307/1970079

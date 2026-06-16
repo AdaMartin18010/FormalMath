@@ -8,6 +8,10 @@ external_ids:
   stacks_tag:
     tag: 02RF
     url: https://stacks.math.columbia.edu/tag/02RF
+  wikipedia_url: https://en.wikipedia.org/wiki/Intersection_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9B%B8%E4%BA%A4%E7%90%86%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/intersection+theory
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Chern/
 references:
   databases:
   - id: stacks_project
@@ -17,6 +21,28 @@ references:
     tags:
     - 02RF
     consulted_at: '2026-04-17'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 ﻿---
 title: "相交理论与 Chern 类：SGA 6 与 Fulton 的公理化"
@@ -447,3 +473,11 @@ Mathlib4 中目前缺乏系统性的相交理论基础，但 Chow 环和陈类�
 ---
 
 > **审校状态**：草稿（draft）。相交理论的完整形式化需要 Chow 环、法锥和 Gysin 映射的系统开发。
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

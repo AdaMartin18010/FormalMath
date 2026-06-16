@@ -11,9 +11,32 @@ references:
     author: A. Weil
     edition: AMS Colloquium Publications 29
     year: 1946
+    publisher: Stanford University
+    isbn: ''
   - title: Weil Conjectures, Perverse Sheaves and l'adic Fourier Transform
     author: R. Kiehl & R. Weissauer
     year: 2001
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Numbers of solutions of equations in finite fields
     author: A. Weil
@@ -42,7 +65,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
-  wikidata_id: Q180969
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
 ---
 # Weil猜想与代数几何革命
 
@@ -185,3 +208,15 @@ Weil的原始洞察——有限域与复几何之间的深刻类比——至今�
 ## 经典论文与原始文献
 
 - Pierre Deligne, *La conjecture de Weil. I*, Publications Mathématiques de l'IHÉS, 1974 (DOI: 10.1007/BF02684673)
+
+---
+
+## 参考文献
+
+- A. Weil, *Foundations of Algebraic Geometry*, AMS Colloquium Publications 29 ed., Stanford University, 1946
+- R. Kiehl & R. Weissauer, *Weil Conjectures, Perverse Sheaves and l'adic Fourier Transform*, 2001
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- A. Weil, *Numbers of solutions of equations in finite fields*, 1949
+- Pierre Deligne, *La conjecture de Weil. I*, Publications Mathématiques de l'IHÉS, 1974, DOI: 10.1007/BF02684673

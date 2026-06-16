@@ -12,7 +12,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Lagrange%27s+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5
-  wikidata_id: Q505798
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/
 references:
   databases:
   - id: wikidata
@@ -20,6 +20,27 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q505798
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
 ---
 ## 定理陈述
 
@@ -120,4 +141,3 @@ theorem leftCoset_card_eq_subgroup_card {G : Type u} [Group G] [Fintype G]
 - [Nlab Url](https://ncatlab.org/nlab/show/Lagrange%27s+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5)
-- [Wikidata Id](Q505798)

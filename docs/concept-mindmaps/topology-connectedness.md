@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/connected+space
   wikipedia_url: https://en.wikipedia.org/wiki/Connected_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%BF%9E%E9%80%9A
-  wikidata_id: Q1491995
 references:
   databases:
   - id: wikidata

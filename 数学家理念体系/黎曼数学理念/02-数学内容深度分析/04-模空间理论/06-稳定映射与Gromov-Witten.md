@@ -11,7 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
   zbmath_url: https://zbmath.org/?q=au:Function
-  wikidata_id: Q11348
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Witten/
 references:
   databases:
   - id: zbmath
@@ -25,6 +25,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  papers:
+  - title: Pseudo holomorphic curves in symplectic manifolds
+    author: Mikhail Gromov
+    journal: Inventiones Mathematicae
+    year: 1985
+    doi: 10.1007/BF01388788
 ---
 # 稳定映射与Gromov-Witten：模空间的现代应用
 
@@ -195,3 +201,9 @@ Riemann的模空间思想通过Gromov-Witten理论在现代数学中焕发新生
 ---
 
 *本文档为教学级深化文档，更新时间: 2026-04-20*
+
+---
+
+## 经典论文与原始文献
+
+- Mikhail Gromov, *Pseudo holomorphic curves in symplectic manifolds*, Inventiones Mathematicae, 1985 (DOI: 10.1007/BF01388788)

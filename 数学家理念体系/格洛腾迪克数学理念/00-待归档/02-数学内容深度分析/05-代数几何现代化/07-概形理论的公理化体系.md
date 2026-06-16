@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
   zbmath_url: https://zbmath.org/?q=au:Scheme
-  wikidata_id: Q1155772
 references:
   databases:
   - id: zbmath

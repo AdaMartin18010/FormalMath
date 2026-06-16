@@ -8,6 +8,22 @@ keywords:
 - 群上同调
 version: 1.0
 title: INDEX
+references:
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # 15-同调代数 内容索引
 
@@ -189,3 +205,10 @@ title: INDEX
 **创建日期**: 2026年4月8日
 **最后更新**: 2026年4月8日
 **版本**: v1.0-final
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

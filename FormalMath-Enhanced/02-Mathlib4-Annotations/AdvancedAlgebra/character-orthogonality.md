@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 特征标正交性定理
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Character_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%89%B9%E5%BE%81%E6%A0%87
+  nlab_url: https://ncatlab.org/nlab/show/character
 ---
 # 特征标正交性定理
 

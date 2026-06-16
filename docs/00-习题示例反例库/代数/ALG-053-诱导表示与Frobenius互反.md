@@ -1,13 +1,38 @@
 ---
-number: "ALG-053"
+number: ALG-053
 category: 代数
 topic: 表示论入门
 difficulty: ⭐⭐⭐
 title: 诱导表示与Frobenius互反
 msc_primary: 00A99
-keywords: [诱导表示, 限制表示, Frobenius互反, 特征标诱导, 子群表示]
-prerequisites: [ALG-052, ALG-051]
+keywords:
+- 诱导表示
+- 限制表示
+- Frobenius互反
+- 特征标诱导
+- 子群表示
+prerequisites:
+- ALG-052
+- ALG-051
 source: 经典表示论习题
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -129,3 +154,10 @@ $$= \frac{1}{|H|} \sum_{h \in H} \chi(h) \overline{\text{Res}_H^G \psi(h)} = \la
 **变式2：** 计算$A_4$到$S_4$的诱导表示。
 
 **变式3：** 研究Clifford定理：正规子群上的表示分解。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

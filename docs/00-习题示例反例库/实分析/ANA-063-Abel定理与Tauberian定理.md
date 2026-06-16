@@ -1,13 +1,41 @@
 ---
-number: "ANA-063"
+number: ANA-063
 category: 实分析
 topic: 幂级数
 difficulty: ⭐⭐⭐
 title: Abel定理与Tauberian定理
 msc_primary: 00A99
-keywords: [Abel定理, Tauberian定理, 幂级数, 边界行为, 收敛性]
-prerequisites: [ANA-062, ANA-057]
+keywords:
+- Abel定理
+- Tauberian定理
+- 幂级数
+- 边界行为
+- 收敛性
+prerequisites:
+- ANA-062
+- ANA-057
 source: 经典分析习题
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Niels_Henrik_Abel
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
 ---
 ## 题目
 
@@ -139,3 +167,10 @@ $\lim_{x \to 1^-} f(x) = -\ln 2$。
 **变式2：** 证明：若 $a_n \geq 0$ 且 $f(x) = \sum a_n x^n$ 在 $x \to 1^-$ 时有极限，则 $\sum a_n$ 收敛。
 
 **变式3：** 研究 $\sum_{n=1}^{\infty} x^{n^2}$ 当 $x \to 1^-$ 时的渐近行为。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

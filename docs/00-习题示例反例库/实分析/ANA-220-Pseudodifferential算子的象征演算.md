@@ -1,7 +1,7 @@
 ---
-msc_primary: 35
+msc_primary: '35
 
-  - 35S05
+  - 35S05'
 exercise_id: ANA-220
 title: Pseudodifferential算子的象征演算
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 实分析
 subtopic: 微局部分析
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Operator_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E5%AD%90
+  nlab_url: https://ncatlab.org/nlab/show/operator
 ---
-
 # ANA-220: Pseudodifferential算子的象征演算
 
 **题号**: ANA-220

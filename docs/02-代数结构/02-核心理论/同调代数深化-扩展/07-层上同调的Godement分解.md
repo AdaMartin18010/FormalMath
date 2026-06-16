@@ -18,6 +18,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -30,6 +32,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -43,6 +46,23 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
   databases:
   - id: nlab
     type: database
@@ -67,16 +87,10 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
-  stacks_tag: &id001
+  stacks_tag:
     tag: 01D9
     url: https://stacks.math.columbia.edu/tag/01D9
-  stacks_tags:
-  - *id001
-  - tag: 01DF
-    url: https://stacks.math.columbia.edu/tag/01DF
-  - tag: 01E1
-    url: https://stacks.math.columbia.edu/tag/01E1
-  wikidata_id: Q595298
+  stacks_tags: []
 ---
 # 15.7 层上同调的Godement分解 / Godement Resolution in Sheaf Cohomology
 
@@ -454,3 +468,13 @@ $$
 
 **例子 15.7.5** (投影的 Leray 谱序列)
 设 $f: X \times Y \to Y$ 是投影。对 $X \times Y$ 上的层 $\mathcal{F}$，Godement 分解给出计算 $R^q f_* \mathcal{F}$ 的具体复形。当 $X$ 是紧的，$\mathcal{F}$ 是局部常值层时，$R^q f_* \mathcal{F}$ 是 $Y$ 上的局部系，其茎为 $H^q(X, \mathcal{F}|_{X \times \{y\}})$。这在族的上同调研究中至关重要。
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

@@ -1,13 +1,37 @@
 ---
-number: "ANA-052"
+number: ANA-052
 category: 实分析
 topic: 函数序列与级数
 difficulty: ⭐⭐⭐
 title: Dini定理的条件缺一不可
 msc_primary: 00A99
-keywords: [Dini定理, 单调收敛, 紧致性, 连续性]
-prerequisites: [ANA-051, ANA-015]
+keywords:
+- Dini定理
+- 单调收敛
+- 紧致性
+- 连续性
+prerequisites:
+- ANA-051
+- ANA-015
 source: 经典分析习题
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -86,3 +110,10 @@ $$f_n(x) = \begin{cases} 1, & x = \frac{1}{n} \\ 0, & \text{其他} \end{cases}$
 **变式1：** 证明Dini定理中"度量空间"可减弱为"紧致Hausdorff空间"。
 
 **变式2：** 若 $f_n$ 在紧致集上连续且一致有界，是否必有一致收敛子列？（Arzelà-Ascoli定理的条件）
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

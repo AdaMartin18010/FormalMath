@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_form
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F
   zbmath_url: https://zbmath.org/?q=au:Differential%20form
-  wikidata_id: Q1047080
 references:
   databases:
   - id: zbmath

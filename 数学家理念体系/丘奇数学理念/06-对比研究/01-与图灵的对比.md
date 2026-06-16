@@ -10,7 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alan_Turing
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Turing/
   zbmath_url: https://zbmath.org/?q=au:Alan%20Turing
-  wikidata_id: Q7251
+  wikidata_id: https://www.wikidata.org/entity/Q7251
 references:
   databases:
   - id: zbmath

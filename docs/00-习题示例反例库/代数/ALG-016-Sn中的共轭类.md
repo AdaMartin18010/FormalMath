@@ -1,7 +1,7 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20B30
+  - 20B30'
 exercise_id: ALG-016
 title: $S_n$ 中的共轭类
 difficulty: 3
@@ -10,9 +10,26 @@ topic: 代数
 subtopic: 置换群
 source:
   course: MIT 18.701 Algebra I
-  chapter: "4.1-4.2"
+  chapter: 4.1-4.2
   original: true
 processed_at: '2026-04-09'
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # ALG-016: $S_n$ 中的共轭类
 

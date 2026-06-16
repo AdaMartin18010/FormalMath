@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   zbmath_url: https://zbmath.org/?q=au:Manifold
-  wikidata_id: Q203920
 references:
   databases:
   - id: zbmath

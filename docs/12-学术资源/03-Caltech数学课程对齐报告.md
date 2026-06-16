@@ -588,7 +588,7 @@ Caltech课程 ↔ FormalMath映射
 3. Dummit, D.S., & Foote, R.M. (2004). *Abstract Algebra* (3rd ed.). Wiley.
 4. do Carmo, M.P. (1976). *Differential Geometry of Curves and Surfaces*. Prentice-Hall.
 5. Munkres, J.R. (2000). *Topology* (2nd ed.). Prentice-Hall.
-6. Caltech Math Department. [Course Catalog](https://www.math.caltech.edu/courses).
+6. Caltech Math Department. [Course Catalog](http://math.caltech.edu/).
 7. Lang, S. (2002). *Algebra* (Revised 3rd ed.). Springer.
 
 ---

@@ -1,9 +1,12 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Noether 正规化定理 (Noether Normalization Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
 ---
 # Noether 正规化定理 (Noether Normalization Theorem)
 

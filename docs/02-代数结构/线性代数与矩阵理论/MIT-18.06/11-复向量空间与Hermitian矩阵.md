@@ -16,6 +16,21 @@ references:
     publisher: Wellesley-Cambridge Press
     year: 2016
     isbn: '9780980232776'
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
   databases:
   - id: wikidata
     type: database
@@ -29,12 +44,11 @@ reviewer: AI Mathematical Reviewer
 course: MIT 18.06 线性代数
 chapter: '11'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/vector+space
   wikipedia_url: https://en.wikipedia.org/wiki/Vector_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4
-  wikidata_id: Q125977
 ---
 # 复向量空间与 Hermitian 矩阵
 
@@ -428,9 +442,8 @@ $\square$
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
 - [Nlab Url](https://ncatlab.org/nlab/show/vector+space)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Vector_space)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4)
-- [Wikidata Id](Q125977)

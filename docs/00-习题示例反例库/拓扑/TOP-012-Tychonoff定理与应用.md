@@ -1,13 +1,37 @@
 ---
-number: "TOP-012"
+number: TOP-012
 category: 拓扑
 topic: 紧致性
 difficulty: ⭐⭐⭐⭐
 title: Tychonoff定理及其应用
 msc_primary: 00A99
-keywords: [Tychonoff定理, 乘积拓扑, 紧致, 选择公理, 超滤子]
-prerequisites: [TOP-011]
+keywords:
+- Tychonoff定理
+- 乘积拓扑
+- 紧致
+- 选择公理
+- 超滤子
+prerequisites:
+- TOP-011
 source: 经典拓扑习题
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -136,3 +160,10 @@ $[0, 1]^I = \prod_{i \in I} [0, 1]$ 是紧致空间的乘积。
 **变式2：** 证明Stone-Čech紧化：完全正则空间到紧致的极大紧化。
 
 **变式3：** 证明：紧致Hausdorff空间是Baire空间。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

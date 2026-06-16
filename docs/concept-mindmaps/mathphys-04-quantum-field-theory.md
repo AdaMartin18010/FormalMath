@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 量子场论数学 - 思维导图
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Quantum_field_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%87%8F%E5%AD%90%E5%9C%BA%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/quantum+field+theory
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

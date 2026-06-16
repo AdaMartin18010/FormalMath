@@ -16,7 +16,6 @@ processed_at: '2026-04-09'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 references:
   databases:
   - id: wikidata
@@ -24,6 +23,37 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q42299
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: Real Mathematical Analysis
+    author: Charles C. Pugh
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780387952970'
+    mr_number: MR1639930
+    doi: 10.1007/978-0-387-21676-7
+  - title: Analysis I
+    author: Terence Tao
+    edition: 3rd
+    publisher: Springer
+    year: 2016
+    isbn: '9789811017896'
+    mr_number: MR3728289
+    doi: 10.1007/978-981-10-1789-6
 ---
 # ANA-041: Riemann和计算
 
@@ -186,3 +216,12 @@ $$L = \frac{4}{e} \quad \square$$
 | 反常积分 | 无穷区间或无界函数的积分 |
 
 **标签**: #Riemann和 #定积分 #极限计算 #实分析 #MIT-18.100A
+
+---
+
+## 参考文献
+
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, ISBN: 9780070542358 / MR0385023
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015, ISBN: 9781493927111
+- Charles C. Pugh, *Real Mathematical Analysis*, 1st ed., Springer, 2002, ISBN: 9780387952970 / MR1639930
+- Terence Tao, *Analysis I*, 3rd ed., Springer, 2016, ISBN: 9789811017896 / MR3728289

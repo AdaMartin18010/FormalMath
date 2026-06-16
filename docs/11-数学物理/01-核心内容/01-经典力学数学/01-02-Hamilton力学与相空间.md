@@ -1,12 +1,25 @@
 ---
-msc_primary: 70
+msc_primary: '70
 
-  - 70H05
-  - 70H15
-  - 37J05
-  - 53D05
+  - 70H05 - 70H15 - 37J05 - 53D05'
 title: Hamilton力学与相空间
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Mathematical Methods of Classical Mechanics
+    author: Vladimir I. Arnold
+    edition: 2nd
+    publisher: Springer
+    year: 1989
+    isbn: '9780387968903'
+    mr_number: MR1345386
+    doi: 10.1007/978-1-4757-2063-1
+  - title: Classical Mechanics
+    author: Herbert Goldstein, Charles Poole, and John Safko
+    edition: 3rd
+    publisher: Pearson
+    year: 2002
+    isbn: '9780201657029'
 ---
 # Hamilton力学与相空间
 
@@ -204,3 +217,10 @@ $$Q = p, \quad P = -q$$
 ---
 
 **最后更新**: 2026年4月4日
+
+---
+
+## 参考文献
+
+- Vladimir I. Arnold, *Mathematical Methods of Classical Mechanics*, 2nd ed., Springer, 1989, ISBN: 9780387968903 / MR1345386
+- Herbert Goldstein, Charles Poole, and John Safko, *Classical Mechanics*, 3rd ed., Pearson, 2002, ISBN: 9780201657029

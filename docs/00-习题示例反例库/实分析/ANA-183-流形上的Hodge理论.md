@@ -11,7 +11,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/manifold
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
-  wikidata_id: Q203920
 references:
   databases:
   - id: wikidata
@@ -19,6 +18,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q203920
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
+  - title: Morse Theory
+    author: John W. Milnor
+    edition: 1st
+    publisher: Princeton University Press
+    year: 1963
+    isbn: '9780691080086'
+    mr_number: MR0163331
+    doi: 10.1515/9781400881802
 ---
 # 流形上的 Hodge 理论
 
@@ -162,3 +178,10 @@ $$H^*(T^n) = H^*(S^1)^{\otimes n} = \Lambda^*(\mathbb{R}^n)^*.$$
 - [Riemann 几何基础](../几何与拓扑/Riemann几何-基础.md)
 - [Kähler 流形](../几何与拓扑/Kähler流形-基础.md)
 - [Poincaré 对偶](../几何与拓扑/Poincaré-对偶.md)
+
+---
+
+## 参考文献
+
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362
+- John W. Milnor, *Morse Theory*, 1st ed., Princeton University Press, 1963, ISBN: 9780691080086 / MR0163331

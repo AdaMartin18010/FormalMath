@@ -11,23 +11,10 @@ textbook: Robin Hartshorne, Algebraic Geometry (GTM 52)
 alignment_level: L5 (习题级)
 version: v1.0
 external_ids:
-  stacks_tag: &id001
+  stacks_tag:
     tag: 01DZ
     url: https://stacks.math.columbia.edu/tag/01DZ
-  stacks_tags:
-  - *id001
-  - tag: 01LC
-    url: https://stacks.math.columbia.edu/tag/01LC
-  - tag: 0B5R
-    url: https://stacks.math.columbia.edu/tag/0B5R
-  - tag: 0B9C
-    url: https://stacks.math.columbia.edu/tag/0B9C
-  - tag: 0BX2
-    url: https://stacks.math.columbia.edu/tag/0BX2
-  - tag: 0F11
-    url: https://stacks.math.columbia.edu/tag/0F11
-  - tag: 0FEG
-    url: https://stacks.math.columbia.edu/tag/0FEG
+  stacks_tags: []
 references:
   databases:
   - id: stacks_project

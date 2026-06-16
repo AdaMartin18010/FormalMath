@@ -1,7 +1,7 @@
 ---
-msc_primary: 35
+msc_primary: '35
 
-  - 35J50
+  - 35J50'
 exercise_id: ANA-227
 title: 变分法中的Euler-Lagrange方程正则性
 difficulty: 4
@@ -10,11 +10,15 @@ topic: 实分析
 subtopic: 椭圆型方程正则性
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Calculus_of_variations
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%8F%98%E5%88%86%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/calculus+of+variations
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
 ---
-
 # ANA-227: 变分法中的Euler-Lagrange方程正则性
 
 **题号**: ANA-227

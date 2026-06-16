@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C55
+  - 53C55'
 exercise_id: GEO-084
 title: Yau-Tian-Donaldson猜想与K-稳定性
 difficulty: 5
@@ -10,11 +10,20 @@ topic: 几何
 subtopic: Kähler几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Simon_Donaldson
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Donaldson/
+references:
+  papers:
+  - title: An application of gauge theory to four-dimensional topology
+    author: Simon K. Donaldson
+    journal: Journal of Differential Geometry
+    year: 1983
+    doi: 10.4310/jdg/1214437665
 ---
-
 # GEO-084: Yau-Tian-Donaldson猜想与K-稳定性
 
 **题号**: GEO-084
@@ -48,3 +57,9 @@ processed_at: '2026-04-10'
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Simon K. Donaldson, *An application of gauge theory to four-dimensional topology*, Journal of Differential Geometry, 1983 (DOI: 10.4310/jdg/1214437665)

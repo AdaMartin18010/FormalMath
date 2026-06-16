@@ -14,7 +14,7 @@ instructor: Z. Lin (2025-2026)
 **课程代码**: MIT 18.100A
 **课程名称**: Real Analysis
 **授课教师**: Z. Lin (2025-2026学年)
-**OCW链接**: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+**OCW链接**: https://ocw.mit.edu/
 **对齐等级**: L3-L6（定义级至思想方法级）
 **版本**: v1.0
 

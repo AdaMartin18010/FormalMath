@@ -12,7 +12,6 @@ external_ids:
     tag: 01H8
     url: https://stacks.math.columbia.edu/tag/01H8
   zbmath_url: https://zbmath.org/?q=au:Scheme
-  wikidata_id: Q1155772
 references:
   databases:
   - id: stacks_project
@@ -33,6 +32,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1155772
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 ﻿---
 title: "概形理论的起源与 EGA I 的核心构造"
@@ -647,3 +668,11 @@ import Mathlib
 example {R S : Type*} [CommRing R] [CommRing S] (f : R →+* S) :
   PrimeSpectrum S → PrimeSpectrum R := PrimeSpectrum.comap f
 `
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

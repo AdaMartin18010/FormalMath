@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 狄利克雷定理 (Dirichlet's Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Dirichlet's_theorem_on_arithmetic_progressions
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8B%84%E5%88%A9%E5%85%8B%E9%9B%B7%E5%AE%9A%E7%90%86
+  nlab_url: https://ncatlab.org/nlab/show/Dirichlet's+theorem
 ---
 # 狄利克雷定理 (Dirichlet's Theorem)
 

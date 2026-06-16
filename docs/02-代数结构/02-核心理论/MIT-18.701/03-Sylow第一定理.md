@@ -22,6 +22,7 @@ references:
     url: null
     pages: 205-210
     author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -52,6 +53,7 @@ references:
     pages: 139-146
     mr_number: MR2286236
     author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
   databases:
   - id: nlab
     type: database
@@ -72,12 +74,11 @@ tags:
 course: MIT 18.701 抽象代数
 chapter: '03'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
-  wikidata_id: Q1057919
 ---
 ## 1. 引言
 
@@ -257,9 +258,8 @@ $|S_4| = 24 = 2^3 \cdot 3$。Sylow $3$-子群的阶为 $3$。设个数为 $n_3$�
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
 - [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)
-- [Wikidata Id](Q1057919)

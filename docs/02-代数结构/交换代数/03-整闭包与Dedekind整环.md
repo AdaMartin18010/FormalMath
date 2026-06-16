@@ -12,7 +12,7 @@ external_ids:
   stacks_tag:
     tag: 00GH
     url: https://stacks.math.columbia.edu/tag/00GH
-  wikidata_id: Q161172
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Dedekind/
 references:
   databases:
   - id: stacks_project
@@ -25,6 +25,30 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q161172
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Introduction to Commutative Algebra
+    author: M. F. Atiyah and I. G. Macdonald
+    edition: 1st
+    publisher: Addison-Wesley
+    year: 1969
+    isbn: '9780201407518'
+    mr_number: MR0242802
+  - title: 'Commutative Algebra: with a View Toward Algebraic Geometry'
+    author: David Eisenbud
+    edition: 1st
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942681'
+    mr_number: MR1322960
+    doi: 10.1007/978-1-4612-5350-1
+  - title: Commutative Ring Theory
+    author: Hideyuki Matsumura
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1989
+    isbn: '9780521367646'
+    mr_number: MR0876123
+    doi: 10.1017/CBO9781139171762
 ---
 # 整闭包与Dedekind整环
 
@@ -45,6 +69,7 @@ references:
 ### 2.2 整性的等价刻画
 
 **定理 2.4**。以下条件等价：
+
 1. $s \in S$ 在 $R$ 上整；
 2. $R[s]$ 为有限生成 $R$-模；
 3. 存在含 $R[s]$ 的子环 $T \subseteq S$ 使 $T$ 为有限生成 $R$-模。
@@ -58,6 +83,7 @@ references:
 ### 2.3 整扩张的基本性质
 
 **定理 2.5**。设 $R \subseteq S$ 为整扩张。则：
+
 1. （维数不变）$\dim R = \dim S$；
 2. （Lying Over）对 $R$ 的每个素理想 $\mathfrak{p}$，存在 $S$ 的素理想 $\mathfrak{q}$ 使 $\mathfrak{q} \cap R = \mathfrak{p}$；
 3. （Incomparability）若 $\mathfrak{q}_1 \subsetneq \mathfrak{q}_2$ 为 $S$ 的素理想，则 $\mathfrak{q}_1 \cap R \subsetneq \mathfrak{q}_2 \cap R$。
@@ -73,11 +99,13 @@ references:
 ### 3.1 定义与刻画
 
 **定义 3.1**。整环 $R$ 称为**Dedekind整环**，若满足：
+
 1. Noetherian；
 2. 维数为1（非零素理想皆极大）；
 3. 整闭。
 
 **定理 3.2**（等价刻画）。整环 $R$ 为Dedekind当且仅当：
+
 - 每个非零理想可唯一分解为素理想的乘积；
 - 每个非零理想可逆（在分式理想群中）；
 - 每个非零理想为极大理想的有限乘积；
@@ -118,3 +146,11 @@ $$\operatorname{Cl}(R) = \text{分式理想群} / \text{主分式理想群}$$
 3. M. Atiyah & I.G. Macdonald, *Introduction to Commutative Algebra*, Addison-Wesley, 1969.
 4. H. Matsumura, *Commutative Ring Theory*, Cambridge University Press, 1986.
 5. 潘承洞、潘承彪，《代数数论》，山东大学出版社，2001。
+
+---
+
+## 参考文献
+
+- M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra*, 1st ed., Addison-Wesley, 1969, ISBN: 9780201407518 / MR0242802
+- David Eisenbud, *Commutative Algebra: with a View Toward Algebraic Geometry*, 1st ed., Springer, 1995, ISBN: 9780387942681 / MR1322960
+- Hideyuki Matsumura, *Commutative Ring Theory*, 1st ed., Cambridge University Press, 1989, ISBN: 9780521367646 / MR0876123

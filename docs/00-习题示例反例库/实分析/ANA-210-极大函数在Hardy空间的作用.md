@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
-  wikidata_id: Q11348
 references:
   databases:
   - id: wikidata
@@ -25,6 +24,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'Fourier Analysis: An Introduction'
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113845'
+    doi: 10.1515/9781400831142
+  - title: An Introduction to Harmonic Analysis
+    author: Yitzhak Katznelson
+    edition: 3rd
+    publisher: Cambridge University Press
+    year: 2004
+    isbn: '9780521543590'
+    mr_number: MR2039503
+    doi: 10.1017/CBO9781139162371
 ---
 # ANA-210: 极大函数在Hardy空间的作用
 
@@ -93,3 +108,10 @@ $\square$
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 参考文献
+
+- Elias M. Stein and Rami Shakarchi, *Fourier Analysis: An Introduction*, 1st ed., Princeton University Press, 2003, ISBN: 9780691113845
+- Yitzhak Katznelson, *An Introduction to Harmonic Analysis*, 3rd ed., Cambridge University Press, 2004, ISBN: 9780521543590 / MR2039503

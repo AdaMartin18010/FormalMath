@@ -1,13 +1,38 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16T05
-  - 16T10
+  - 16T05 - 16T10'
 title: 10 Hopf代数
-description: 'Hopf代数的理论与应用，包括双代数结构、量子群、表示论等核心内容'
-author: 'FormalMath Team'
+description: Hopf代数的理论与应用，包括双代数结构、量子群、表示论等核心内容
+author: FormalMath Team
 processed_at: '2026-04-05'
-tags: ['Hopf代数', '量子群', '双代数', '表示论']
+tags:
+- Hopf代数
+- 量子群
+- 双代数
+- 表示论
+references:
+  textbooks:
+  - title: A First Course in Noncommutative Rings
+    author: T. Y. Lam
+    edition: 2nd
+    publisher: Springer
+    year: 2001
+    isbn: '9780387951836'
+    mr_number: MR1838439
+    doi: 10.1007/978-1-4419-8616-0
+  - title: Algebra
+    author: Serge Lang
+    edition: Revised 3rd
+    publisher: Springer
+    year: 2002
+    isbn: '9780387953854'
+    mr_number: MR1878556
+    doi: 10.1007/978-1-4613-0041-0
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # 10 Hopf代数
 
@@ -118,3 +143,10 @@ Hopf代数
 - **创建日期**: 2026年4月3日
 - **更新日期**: 2026年4月5日
 - **状态**: 已扩充
+
+---
+
+## 参考文献
+
+- T. Y. Lam, *A First Course in Noncommutative Rings*, 2nd ed., Springer, 2001, ISBN: 9780387951836 / MR1838439
+- Serge Lang, *Algebra*, Revised 3rd ed., Springer, 2002, ISBN: 9780387953854 / MR1878556

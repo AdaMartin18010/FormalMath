@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ideal
   wikipedia_url: https://en.wikipedia.org/wiki/Ideal_(ring_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%90%86%E6%83%B3
-  wikidata_id: Q44649
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q44649
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: A First Course in Noncommutative Rings
+    author: T. Y. Lam
+    edition: 2nd
+    publisher: Springer
+    year: 2001
+    isbn: '9780387951836'
+    mr_number: MR1838439
+    doi: 10.1007/978-1-4419-8616-0
+  - title: Algebra
+    author: Serge Lang
+    edition: Revised 3rd
+    publisher: Springer
+    year: 2002
+    isbn: '9780387953854'
+    mr_number: MR1878556
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Krull主理想定理 - 五种表征
 
@@ -398,3 +414,10 @@ Krull主理想定理是：
 **数学公式数**: 8个
 **例子数**: 6个
 **最后更新**: 2026年01月02日
+
+---
+
+## 参考文献
+
+- T. Y. Lam, *A First Course in Noncommutative Rings*, 2nd ed., Springer, 2001, ISBN: 9780387951836 / MR1838439
+- Serge Lang, *Algebra*, Revised 3rd ed., Springer, 2002, ISBN: 9780387953854 / MR1878556

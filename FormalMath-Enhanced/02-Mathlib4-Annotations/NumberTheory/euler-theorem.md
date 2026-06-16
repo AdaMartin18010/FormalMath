@@ -7,7 +7,6 @@ title: 欧拉定理 (Euler's Theorem)
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Leonhard_Euler
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
-  wikidata_id: Q7604
 references:
   databases:
   - id: wikidata

@@ -5,6 +5,32 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Mathematics and Its History
+    author: John Stillwell
+    edition: 3rd
+    publisher: Springer
+    year: 2010
+    isbn: '9781441960528'
+    mr_number: MR2675606
+    doi: 10.1007/978-1-4419-6053-5
+  - title: 'A History of Mathematics: An Introduction'
+    author: Victor J. Katz
+    edition: 3rd
+    publisher: Pearson
+    year: 2009
+    isbn: '9780321387004'
+  papers:
+  - title: Proof of the ergodic theorem
+    author: George D. Birkhoff
+    journal: Proceedings of the National Academy of Sciences
+    year: 1931
+    doi: 10.1073/pnas.17.12.656
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Ergodic_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%81%8D%E5%8E%86%E7%90%86%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/ergodic+theory
 ---
 # Ergodic理论：遍历理论的深化
 
@@ -520,3 +546,17 @@ graph TD
 **文档状态**: ✅ 完成
 **字数**: 约1,200词
 **最后更新**: 2026年01月02日
+
+---
+
+## 经典论文与原始文献
+
+- George D. Birkhoff, *Proof of the ergodic theorem*, Proceedings of the National Academy of Sciences, 1931 (DOI: 10.1073/pnas.17.12.656)
+
+---
+
+## 参考文献
+
+- John Stillwell, *Mathematics and Its History*, 3rd ed., Springer, 2010, ISBN: 9781441960528 / MR2675606
+- Victor J. Katz, *A History of Mathematics: An Introduction*, 3rd ed., Pearson, 2009, ISBN: 9780321387004
+- George D. Birkhoff, *Proof of the ergodic theorem*, Proceedings of the National Academy of Sciences, 1931, DOI: 10.1073/pnas.17.12.656

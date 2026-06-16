@@ -23,6 +23,9 @@ references:
     msc: 14-01
     chapters: null
     url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -31,10 +34,24 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: nlab
     type: database
@@ -50,7 +67,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
-  wikidata_id: Q864475
 ---
 # AG-VK-005: 可表函子
 
@@ -307,3 +323,12 @@ $$F(T) = \{\text{闭子概形 } Z \subset X \times T, \text{平坦于 } T\}$$
 **文档位置**: `docs/13-代数几何/习题/AG-VK-005-可表函子.md`  
 **创建日期**: 2026-04-10  
 **最后更新**: 2026-04-10
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 978-0387902449 / MR0463157
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

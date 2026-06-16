@@ -1,10 +1,13 @@
 ---
 title: Zermelo公理系统
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A70
+- 01A60
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Ernst_Zermelo
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Zermelo/
 ---
 # Zermelo公理系统
 

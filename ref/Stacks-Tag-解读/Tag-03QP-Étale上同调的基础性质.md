@@ -10,7 +10,6 @@ external_ids:
   stacks_tag:
     tag: 03QP
     url: https://stacks.math.columbia.edu/tag/03QP
-  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -25,6 +24,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1198376
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Stacks Project Tag 03QP - Étale上同调的基础性质
 
@@ -268,3 +284,10 @@ $$\text{Br}(k) \cong H^2_{\text{ét}}(\text{Spec}(k), \mathbb{G}_m)$$
 ---
 
 *本文档由FormalMath项目生成，最后更新：2026-04-10*
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

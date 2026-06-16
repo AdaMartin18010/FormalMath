@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
-  wikidata_id: Q180969
 references:
   databases:
   - id: zbmath

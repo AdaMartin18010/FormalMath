@@ -10,7 +10,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
-  wikidata_id: Q161172
 references:
   databases:
   - id: wikidata
@@ -18,6 +17,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q161172
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Cohen-Macaulay环
 
@@ -184,3 +200,10 @@ $$\text{Ext}^i_R(M, \omega_R) = 0 \quad (i \neq d - \dim(M))$$
 - **代数几何**：局部完全交是CM；模空间的许多构造要求CM条件
 - **组合数学**：Stanley-Reisner环的CM性质与组合拓扑的Cohen-Macaulay复形对应
 - **表示论**：不变量环的CM性质是经典问题（Hilbert第14问题的变体）
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

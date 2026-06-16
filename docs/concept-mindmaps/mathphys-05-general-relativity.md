@@ -1,9 +1,42 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 广义相对论数学 - 思维导图
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Zur Elektrodynamik bewegter Körper
+    author: Albert Einstein
+    journal: Annalen der Physik
+    year: 1905
+    doi: 10.1002/andp.19053221004
+  - title: Die Grundlage der allgemeinen Relativitätstheorie
+    author: Albert Einstein
+    journal: Annalen der Physik
+    year: 1916
+    doi: 10.1002/andp.19163540702
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/General_relativity
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B9%BF%E4%B9%89%E7%9B%B8%E5%AF%B9%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/general+relativity
 ---
 # 广义相对论数学 - 思维导图
 
@@ -299,3 +332,12 @@ flowchart LR
 *文档版本：1.1（质量提升版）*
 *最后更新：2026年4月*
 *分类：数学物理 / 广义相对论 / 思维导图*
+
+---
+
+## 经典论文与原始文献
+
+- Albert Einstein, *Zur Elektrodynamik bewegter Körper*, Annalen der Physik, 1905 (DOI: 10.1002/andp.19053221004)
+- Albert Einstein, *Die Grundlage der allgemeinen Relativitätstheorie*, Annalen der Physik, 1916 (DOI: 10.1002/andp.19163540702)
+- Albert Einstein, *Zur Elektrodynamik bewegter Körper*, Annalen der Physik, 1905 (DOI: 10.1002/andp.19053221004)
+- Albert Einstein, *Die Grundlage der allgemeinen Relativitätstheorie*, Annalen der Physik, 1916 (DOI: 10.1002/andp.19163540702)

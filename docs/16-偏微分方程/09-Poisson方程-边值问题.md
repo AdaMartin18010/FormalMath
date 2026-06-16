@@ -2,31 +2,36 @@
 title: Poisson方程-边值问题
 description: 系统介绍Poisson方程的Dirichlet问题、Neumann问题、Robin问题、Poincaré不等式、Lax-Milgram定理应用，以及弱解的存在性、唯一性与正则性理论。
 msc_primary:
-  - 35J05
+- 35J05
 msc_secondary:
-  - 35J25
-  - 35A01
-  - 35D30
+- 35J25
+- 35A01
+- 35D30
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: gilbarg_trudinger
-      type: textbook
-      title: Elliptic Partial Differential Equations of Second Order
-      authors:
-        - David Gilbarg
-        - Neil S. Trudinger
-      publisher: Springer
-      year: 2001
-      msc: 35-02
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
+  - id: gilbarg_trudinger
+    type: textbook
+    title: Elliptic Partial Differential Equations of Second Order
+    authors:
+    - David Gilbarg
+    - Neil S. Trudinger
+    publisher: Springer
+    year: 2001
+    msc: 35-02
 ---
 # Poisson方程-边值问题
 

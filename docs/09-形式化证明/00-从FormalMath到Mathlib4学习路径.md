@@ -512,7 +512,7 @@ example (n : ℕ) : n + 0 = n := by
 2. **克隆你的Fork**:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/mathlib4.git
+   git clone https://github.com/leanprover-community/mathlib4
    cd mathlib4
    ```
 
@@ -759,7 +759,7 @@ lean 00-Mathlib4示例集/01-群论示例.lean
 
 1. [Theorem Proving in Lean 4](https://leanprover.github.io/theorem_proving_in_lean4/)
 2. [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/)[需更新][需更新]
-3. [Math in Lean - 中文版](https://www.leanprover.cn/math-in-lean/)[需更新][需更新]
+3. [Math in Lean - 中文版](https://leanprover-community.github.io/mathematics_in_lean/)[需更新][需更新]
 4. 本项目的 [Mathlib4概念映射索引](00-Mathlib4概念映射索引.md)
 5. 本项目的 [Lean4示例集](Lean4/00-Mathlib4示例集/)
 
@@ -768,7 +768,7 @@ lean 00-Mathlib4示例集/01-群论示例.lean
 - [Lean Zulip](https://leanprover.zulipchat.com/)[需更新][需更新] - 实时讨论
 - [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新] - API参考
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4) - 源代码
-- [Lean4教程](https://lean-lang.org/doc/) - 官方文档
+- [Lean4教程](https://lean-lang.org/documentation/) - 官方文档
 
 ---
 

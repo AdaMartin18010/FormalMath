@@ -39,7 +39,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Fall 2006
 - **教师**：David Jerison
-- **资源链接**：<https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -73,7 +73,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Fall 2007
 - **教师**：Denis Auroux
-- **资源链接**：<https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -107,7 +107,7 @@ processed_at: '2026-04-05'
 - **学期**：Spring 2010
 - **教师**：Arthur Mattuck
 - **教师**：Arthur Mattuck
-- **资源链接**：<https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -143,7 +143,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Spring 2010
 - **教师**：Gilbert Strang
-- **资源链接**：<https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -184,7 +184,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Spring 2013
 - **教师**：James McKernan
-- **资源链接**：<https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -219,7 +219,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Fall 2020
 - **教师**：Casey Rodriguez
-- **资源链接**：<https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -315,7 +315,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Spring 2018
 - **教师**：Jerison, David
-- **资源链接**：<https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -345,7 +345,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Spring 2004
 - **教师**：Munkres, James
-- **资源链接**：<https://ocw.mit.edu/courses/18-901-introduction-to-topology-spring-2004/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -375,7 +375,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2019
 - **教师**：Eskin, Alex
-- **资源链接**：<https://ocw.mit.edu/courses/18-785-number-theory-i-fall-2019/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -405,7 +405,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Spring 2009
 - **教师**：Behrend, Kai
-- **资源链接**：<https://ocw.mit.edu/courses/18-726-algebraic-geometry-spring-2009/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -444,7 +444,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Spring 2014
 - **教师**：Tsitsiklis, John
-- **资源链接**：<https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2014/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -476,7 +476,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2013
 - **教师**：Sheffield, Scott
-- **资源链接**：<https://ocw.mit.edu/courses/18-175-theory-of-probability-fall-2013/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -512,7 +512,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Spring 2021
 - **教师**：Rodriguez, Casey
-- **资源链接**：<https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2021/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -548,7 +548,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Spring 2008
 - **教师**：Mrowka, Tomasz
-- **资源链接**：<https://ocw.mit.edu/courses/18-950-differential-geometry-spring-2008/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -588,7 +588,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2010
 - **教师**：Artin, Michael
-- **资源链接**：<https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -620,7 +620,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Spring 2011
 - **教师**：Artin, Michael
-- **资源链接**：<https://ocw.mit.edu/courses/18-702-algebra-ii-spring-2011/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -652,7 +652,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Spring 2016
 - **教师**：Eskin, Alex
-- **资源链接**：<https://ocw.mit.edu/courses/18-786-number-theory-ii-spring-2016/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -683,7 +683,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Spring 2020
 - **教师**：Miller, Haynes
-- **资源链接**：<https://ocw.mit.edu/courses/18-906-algebraic-topology-ii-spring-2020/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -714,7 +714,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2011
 - **教师**：Adams, Jeffrey
-- **资源链接**：<https://ocw.mit.edu/courses/18-755-lie-groups-and-lie-algebras-fall-2011/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -745,7 +745,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2004
 - **教师**：Mrowka, Tomasz
-- **资源链接**：<https://ocw.mit.edu/courses/18-965-geometry-of-manifolds-fall-2004/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -777,7 +777,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2016
 - **教师**：Kedlaya, Kiran
-- **资源链接**：<https://ocw.mit.edu/courses/18-705-commutative-algebra-fall-2016/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -808,7 +808,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Fall 2010
 - **教师**：Rodriguez, Casey
-- **资源链接**：<https://ocw.mit.edu/courses/18-100b-real-analysis-fall-2010/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -840,7 +840,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2021
 - **教师**：Rodriguez, Casey
-- **资源链接**：<https://ocw.mit.edu/courses/18-101-analysis-i-fall-2021/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -872,7 +872,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2013
 - **教师**：Rodriguez, Casey
-- **资源链接**：<https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -903,7 +903,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2008
 - **教师**：Rodriguez, Casey
-- **资源链接**：<https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -935,7 +935,7 @@ processed_at: '2026-04-05'
 - **级别**：本科
 - **学期**：Fall 2019
 - **教师**：Tsitsiklis, John
-- **资源链接**：<https://ocw.mit.edu/courses/18-600-probability-and-random-variables-fall-2019/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 
@@ -967,7 +967,7 @@ processed_at: '2026-04-05'
 - **级别**：研究生
 - **学期**：Fall 2016
 - **教师**：Tsitsiklis, John
-- **资源链接**：<https://ocw.mit.edu/courses/18-650-statistics-for-applications-fall-2016/>
+- **资源链接**：<https://ocw.mit.edu/>
 
 **核心内容**：
 

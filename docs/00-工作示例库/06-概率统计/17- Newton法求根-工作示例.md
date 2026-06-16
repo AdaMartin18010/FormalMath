@@ -1,11 +1,12 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 00A99
-  - 03B40
+  - 00A99 - 00A99 - 03B40'
 title: Newton 法求根 - 工作示例
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Isaac_Newton
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Newton/
 ---
 # Newton 法求根 - 工作示例
 

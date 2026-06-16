@@ -1,10 +1,31 @@
 ---
-title: "forcing方法简介 - 深度版"
-msc_primary: 03
+title: forcing方法简介 - 深度版
+msc_primary: '03
 
-  - 03E40
-msc_secondary: ["03E35", "03E50", "03E55"]
-processed_at: "2026-04-05"
+  - 03E40'
+msc_secondary:
+- 03E35
+- 03E50
+- 03E55
+processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # forcing方法简介 - 深度版
 
@@ -348,3 +369,10 @@ Scott、Solovay将力迫解释为布尔值模型。
 **文档版本**: 深度版
 **最后更新**: 2026年4月5日
 **作者**: FormalMath项目
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

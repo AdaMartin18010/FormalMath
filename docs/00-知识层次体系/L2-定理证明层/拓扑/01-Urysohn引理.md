@@ -1,12 +1,25 @@
 ---
-msc_primary: 54
+msc_primary: '54
 
-  - 54D15
-  - 54C30
-  - 54E35
-  - 97I55
+  - 54D15 - 54C30 - 54E35 - 97I55'
 title: Urysohn 引理
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: General Topology
+    author: Stephen Willard
+    edition: 1st
+    publisher: Dover
+    year: 2004
+    isbn: '9780486434797'
+    mr_number: MR2048350
 ---
 # Urysohn 引理
 
@@ -132,3 +145,10 @@ flowchart TB
 **文档信息**
 - **创建日期**: 2026年4月3日
 - **版本**: 1.0
+
+---
+
+## 参考文献
+
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- Stephen Willard, *General Topology*, 1st ed., Dover, 2004, ISBN: 9780486434797 / MR2048350

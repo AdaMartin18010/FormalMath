@@ -22,6 +22,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -34,6 +36,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -47,7 +50,35 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
 review_status: draft
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Gerd_Faltings
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Faltings/
 ---
 # 11 Faltings定理与Mordell猜想 / Faltings' Theorem and the Mordell Conjecture
 
@@ -246,3 +277,14 @@ Fermat曲线 $F_n: x^n + y^n = z^n$（$n \ge 4$）的亏格 $g = \frac{(n-1)(n-2
 **数学公式数**: 25+  
 **例子数**: 3  
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236
+- G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press, 2008, ISBN: 9780199219865 / MR2445243
+- Jean-Pierre Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- Tom M. Apostol, *Introduction to Analytic Number Theory*, 1st ed., Springer, 1976, ISBN: 9780387901633 / MR0434929

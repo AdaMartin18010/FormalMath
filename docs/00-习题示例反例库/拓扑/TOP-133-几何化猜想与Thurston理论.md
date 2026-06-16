@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57M50
+  - 57M50'
 exercise_id: TOP-133
 title: 几何化猜想与Thurston理论
 difficulty: 5
@@ -10,11 +10,17 @@ topic: 拓扑
 subtopic: 三维流形
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+references:
+  papers:
+  - title: Three-dimensional manifolds, Kleinian groups and hyperbolic geometry
+    author: William P. Thurston
+    journal: Bulletin of the American Mathematical Society
+    year: 1982
+    doi: 10.1090/S0273-0979-1982-14503-4
 ---
-
 # TOP-133: 几何化猜想与Thurston理论
 
 **题号**: TOP-133
@@ -48,3 +54,10 @@ processed_at: '2026-04-10'
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- William P. Thurston, *Three-dimensional manifolds, Kleinian groups and hyperbolic geometry*, Bulletin of the American Mathematical Society, 1982 (DOI: 10.1090/S0273-0979-1982-14503-4)
+- William P. Thurston, *Three-dimensional manifolds, Kleinian groups and hyperbolic geometry*, Bulletin of the American Mathematical Society, 1982 (DOI: 10.1090/S0273-0979-1982-14503-4)

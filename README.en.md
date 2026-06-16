@@ -9,10 +9,10 @@ processed_at: '2026-04-08'
 
 **Comprehensive Educational Knowledge Base for Mathematical Formalization and Mathematician Ideology Systems**
 
-[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)](https://github.com/formalmath/formalmath/actions/workflows/build.yml)
-[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)](https://github.com/formalmath/formalmath/actions/workflows/test.yml)
-[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml)
-[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)](https://github.com/formalmath/formalmath/actions/workflows/security.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=build)](https://github.com/FormalMath/actions/workflows/build.yml)
+[![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=test)](https://github.com/FormalMath/actions/workflows/test.yml)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=deploy)](https://github.com/FormalMath/actions/workflows/deploy.yml)
+[![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=security)](https://github.com/FormalMath/actions/workflows/security.yml)
 [![Completion](https://img.shields.io/badge/Completion-100%25-brightgreen)](./00-FormalMath项目100%完成最终报告-2026年4月.md)
 [![Documents](https://img.shields.io/badge/Documents-6573%2B-blue)](./docs/00-项目统计总览.md)
 [![Mathematicians](https://img.shields.io/badge/Mathematicians-62-orange)](./数学家理念体系/)
@@ -213,7 +213,7 @@ open docs/README.md
 
 ```bash
 # Clone repository
-git clone https://github.com/formalmath/formalmath.git
+git clone https://github.com/FormalMath
 cd formalmath
 
 # Use any Markdown reader to view documents
@@ -293,10 +293,10 @@ Detailed statistics: [Project Statistics Overview](docs/00-项目统计总览.md
 
 | Workflow | Status | Description |
 |----------|--------|-------------|
-| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/build.yml) | Frontend, Python tools, Lean4 build |
-| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)](https://github.com/formalmath/formalmath/actions/workflows/test.yml) | Unit tests, integration tests, E2E tests |
-| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/deploy.yml) | Automatic deployment to test/production environments |
-| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)](https://github.com/formalmath/formalmath/actions/workflows/security.yml) | Vulnerability scanning, key detection |
+| [Build](.github/workflows/build.yml) | [![Build](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/build.yml?branch=main&label=)](https://github.com/FormalMath/actions/workflows/build.yml) | Frontend, Python tools, Lean4 build |
+| [Test](.github/workflows/test.yml) | [![Test](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/test.yml?branch=main&label=)](https://github.com/FormalMath/actions/workflows/test.yml) | Unit tests, integration tests, E2E tests |
+| [Deploy](.github/workflows/deploy.yml) | [![Deploy](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/deploy.yml?label=)](https://github.com/FormalMath/actions/workflows/deploy.yml) | Automatic deployment to test/production environments |
+| [Security](.github/workflows/security.yml) | [![Security](https://img.shields.io/github/actions/workflow/status/formalmath/formalmath/security.yml?label=)](https://github.com/FormalMath/actions/workflows/security.yml) | Vulnerability scanning, key detection |
 
 📖 [CI/CD Complete Guide](.github/CI_CD_GUIDE.md) | 📊 [Workflow Status](.github/WORKFLOW_STATUS.md)
 

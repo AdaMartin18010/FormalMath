@@ -1,11 +1,35 @@
 ---
-msc_primary: "94A60"
+msc_primary: 94A60
 msc_secondary:
-  - 11T71
-  - 11Y16
+- 11T71
+- 11Y16
 concept_type: 应用可视化
 title: Diffie-Hellman密钥交换可视化
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Elements of Information Theory
+    author: Thomas M. Cover and Joy A. Thomas
+    edition: 2nd
+    publisher: Wiley
+    year: 2006
+    isbn: '9780471241959'
+    mr_number: MR2239987
+    doi: 10.1002/0471200611
+  - title: A First Course in Information Theory
+    author: Raymond W. Yeung
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780306467911'
+    mr_number: MR1876845
+    doi: 10.1007/978-1-4419-8608-5
+  papers:
+  - title: New directions in cryptography
+    author: Whitfield Diffie and Martin E. Hellman
+    journal: IEEE Transactions on Information Theory
+    year: 1976
+    doi: 10.1109/TIT.1976.1055638
 ---
 # Diffie-Hellman密钥交换可视化
 
@@ -93,3 +117,9 @@ Diffie-Hellman 协议的优雅之处在于：**双方通过交换公开信息，
 - Stinson, D. R. (2005). *Cryptography: Theory and Practice* (3rd ed.). CRC Press.
 - Katz, J., & Lindell, Y. (2014). *Introduction to Modern Cryptography* (2nd ed.). CRC Press.
 - Bernstein, D. J., & Lange, T. (2017). Post-quantum cryptography. *Nature*, 549(7671), 188–194.
+
+---
+
+## 经典论文与原始文献
+
+- Whitfield Diffie and Martin E. Hellman, *New directions in cryptography*, IEEE Transactions on Information Theory, 1976 (DOI: 10.1109/TIT.1976.1055638)

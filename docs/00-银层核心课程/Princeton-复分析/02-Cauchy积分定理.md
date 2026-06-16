@@ -24,6 +24,7 @@ references:
     year: 1995
     isbn: '9780387944609'
     mr_number: MR1344449
+    doi: 10.1007/978-1-4612-7154-9
   - title: Complex Analysis
     author: Elias M. Stein, Rami Shakarchi
     edition: 1st
@@ -55,7 +56,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
-  wikidata_id: Q1139041
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 ---
 # Cauchy积分定理（Cauchy's Integral Theorem）
 
@@ -442,4 +443,3 @@ example (c : ℂ) (R : ℝ) (f g : ℂ → ℂ) :
 - [Nlab Url](https://ncatlab.org/nlab/show/Cauchy+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Cauchy)
-- [Wikidata Id](Q1139041)

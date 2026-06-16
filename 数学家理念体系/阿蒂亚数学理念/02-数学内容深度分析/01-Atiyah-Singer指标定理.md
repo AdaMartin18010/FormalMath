@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Michael_Atiyah
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
   zbmath_url: https://zbmath.org/?q=au:Michael%20Atiyah
-  wikidata_id: Q208356
 references:
   papers:
   - title: The Index of Elliptic Operators on Compact Manifolds
@@ -19,6 +18,11 @@ references:
     journal: Annals of Mathematics
     year: 1963
     doi: 10.2307/1970715
+  - title: 'The index of elliptic operators: III'
+    author: Michael F. Atiyah and Isadore M. Singer
+    journal: Annals of Mathematics
+    year: 1968
+    doi: 10.2307/1970717
   databases:
   - id: zbmath
     type: database
@@ -31,6 +35,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q208356
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
+  - title: Morse Theory
+    author: John W. Milnor
+    edition: 1st
+    publisher: Princeton University Press
+    year: 1963
+    isbn: '9780691080086'
+    mr_number: MR0163331
+    doi: 10.1515/9781400881802
 ---
 # Atiyah-Singer指标定理：几何、拓扑与分析的统一
 
@@ -468,3 +489,11 @@ Atiyah在获得菲尔兹奖时强调："数学之美在于不同领域之间的�
 ## 经典论文与原始文献
 
 - Michael F. Atiyah, Isadore M. Singer, *The Index of Elliptic Operators on Compact Manifolds*, Annals of Mathematics, 1963 (DOI: 10.2307/1970715)
+
+---
+
+## 参考文献
+
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362
+- John W. Milnor, *Morse Theory*, 1st ed., Princeton University Press, 1963, ISBN: 9780691080086 / MR0163331
+- Michael F. Atiyah, Isadore M. Singer, *The Index of Elliptic Operators on Compact Manifolds*, Annals of Mathematics, 1963, DOI: 10.2307/1970715

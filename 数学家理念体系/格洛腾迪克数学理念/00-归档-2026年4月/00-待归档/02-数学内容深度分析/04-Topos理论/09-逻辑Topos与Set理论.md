@@ -10,7 +10,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Set_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
   zbmath_url: https://zbmath.org/?q=au:Set
-  wikidata_id: Q36161
 references:
   databases:
   - id: zbmath
@@ -24,6 +23,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q36161
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Mathematics and Its History
+    author: John Stillwell
+    edition: 3rd
+    publisher: Springer
+    year: 2010
+    isbn: '9781441960528'
+    mr_number: MR2675606
+    doi: 10.1007/978-1-4419-6053-5
+  - title: 'A History of Mathematics: An Introduction'
+    author: Victor J. Katz
+    edition: 3rd
+    publisher: Pearson
+    year: 2009
+    isbn: '9780321387004'
 ---
 # 逻辑Topos与Set理论：集合论基础
 
@@ -458,3 +472,10 @@ $$\text{逻辑Topos } \Rightarrow \Omega = 2, \quad \text{排中律成立}, \qua
 **数学公式数**: 15个
 **例子数**: 10个
 **最后更新**: 2026年01月15日
+
+---
+
+## 参考文献
+
+- John Stillwell, *Mathematics and Its History*, 3rd ed., Springer, 2010, ISBN: 9781441960528 / MR2675606
+- Victor J. Katz, *A History of Mathematics: An Introduction*, 3rd ed., Pearson, 2009, ISBN: 9780321387004

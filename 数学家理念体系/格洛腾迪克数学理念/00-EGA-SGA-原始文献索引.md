@@ -66,6 +66,20 @@ references:
     author: P. Berthelot, A. Grothendieck, L. Illusie
     edition: Lect. Notes in Math. 225
     year: 1971
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
   databases:
   - id: stacks_project
     type: database

@@ -12,7 +12,6 @@ external_ids:
     tag: 001P
     url: https://stacks.math.columbia.edu/tag/001P
   zbmath_url: https://zbmath.org/?q=au:Functor
-  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project
@@ -33,6 +32,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q864475
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 ﻿---
 title: "Yoneda 引理与可表函子：范畴论的基石"

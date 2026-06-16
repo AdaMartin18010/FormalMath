@@ -1,12 +1,29 @@
 ---
 title: 调和分析 - Lean4形式化实现
-msc_primary: 28
+msc_primary: '28
 
-  - 28A25
-  - 26A42
-  - 00A99
-  - 42A99
+  - 28A25 - 26A42 - 00A99 - 42A99'
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: 'Real Analysis: Modern Techniques and Their Applications'
+    author: Gerald B. Folland
+    edition: 2nd
+    publisher: Wiley
+    year: 1999
+    isbn: '9780471317166'
+    mr_number: MR1681462
+    doi: 10.1002/9781118165883
+  - title: 'Measure and Integral: An Introduction to Real Analysis'
+    author: Richard L. Wheeden and Antoni Zygmund
+    edition: 2nd
+    publisher: CRC Press
+    year: 2015
+    isbn: '9781498702898'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Harmonic_analysis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%83%E5%92%8C%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/harmonic+analysis
 ---
 msc_primary: "28A25"
 msc_secondary: ['26A42', '42-00']
@@ -429,3 +446,10 @@ def image_denoising (image : ℝ² → ℝ) (threshold : ℝ) : ℝ² → ℝ :=
 3. Folland, G. B. (1995). *A Course in Abstract Harmonic Analysis*. CRC Press.
 4. Grafakos, L. (2008). *Classical Fourier Analysis*. Springer.
 5. Mallat, S. (2009). *A Wavelet Tour of Signal Processing*. Academic Press.
+
+---
+
+## 参考文献
+
+- Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, 2nd ed., Wiley, 1999, ISBN: 9780471317166 / MR1681462
+- Richard L. Wheeden and Antoni Zygmund, *Measure and Integral: An Introduction to Real Analysis*, 2nd ed., CRC Press, 2015, ISBN: 9781498702898

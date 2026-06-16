@@ -16,6 +16,28 @@ references:
     author: J. McCleary
     edition: 2nd ed., Cambridge Studies in Advanced Mathematics 58
     year: 2001
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
   papers:
   - title: Cohomologie modulo 2 des complexes d'Eilenberg-MacLane
     author: J-P. Serre
@@ -40,7 +62,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
-  wikidata_id: Q3503315
 ---
 # 同伦论与Serre谱序列
 
@@ -231,3 +252,14 @@ Serre的谱序列理论是20世纪数学最具影响力的成就之一。它不�
 3. McCleary, J. *A User's Guide to Spectral Sequences*. 2nd ed., Cambridge, 2001.
 4. Hatcher, A. *Spectral Sequences in Algebraic Topology*. Preprint.
 5. Dieudonné, J. *A History of Algebraic and Differential Topology, 1900–1960*. Birkhäuser, 1989.
+
+---
+
+## 参考文献
+
+- J-P. Serre, *Homologie singulière des espaces fibrés*, Ann. of Math. 54 ed., 1951
+- J. McCleary, *A User's Guide to Spectral Sequences*, 2nd ed., Cambridge Studies in Advanced Mathematics 58 ed., 2001
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278
+- J-P. Serre, *Cohomologie modulo 2 des complexes d'Eilenberg-MacLane*, 1953

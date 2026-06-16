@@ -10,6 +10,25 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/convergence
   wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Fourier级数的L²收敛
 
@@ -94,3 +113,10 @@ $$\|f - S_N f\|_2^2 = \|f\|_2^2 - \|S_N f\|_2^2 = 2\pi \sum_{|n| > N} |\hat{f}(n
 **变式1：** 设 $f(x) = x$ 于 $[-\pi, \pi]$，求Fourier级数并验证Parseval等式。
 
 **变式2：** 证明 $\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$ 用Fourier级数。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

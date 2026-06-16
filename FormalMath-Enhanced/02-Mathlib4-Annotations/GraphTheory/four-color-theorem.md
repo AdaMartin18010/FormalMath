@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: 四色定理 (Four Color Theorem)
+references:
+  papers:
+  - title: Every planar map is four colorable
+    author: Kenneth Appel and Wolfgang Haken
+    journal: Illinois Journal of Mathematics
+    year: 1977
+    doi: 10.1215/ijm/1256049011
 ---
 # 四色定理 (Four Color Theorem)
 
@@ -96,3 +103,9 @@ $$\chi(G) \leq 4$$
 ---
 
 *最后更新：2026-04-15 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Kenneth Appel and Wolfgang Haken, *Every planar map is four colorable*, Illinois Journal of Mathematics, 1977 (DOI: 10.1215/ijm/1256049011)

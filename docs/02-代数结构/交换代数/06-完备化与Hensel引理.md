@@ -1,10 +1,35 @@
 ---
 msc_primary: 13J10
 msc_secondary:
-  - 13B35
-  - 13H99
+- 13B35
+- 13H99
 processed_at: '2026-04-20'
 title: 完备化与Hensel引理
+references:
+  textbooks:
+  - title: Introduction to Commutative Algebra
+    author: M. F. Atiyah and I. G. Macdonald
+    edition: 1st
+    publisher: Addison-Wesley
+    year: 1969
+    isbn: '9780201407518'
+    mr_number: MR0242802
+  - title: 'Commutative Algebra: with a View Toward Algebraic Geometry'
+    author: David Eisenbud
+    edition: 1st
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942681'
+    mr_number: MR1322960
+    doi: 10.1007/978-1-4612-5350-1
+  - title: Commutative Ring Theory
+    author: Hideyuki Matsumura
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1989
+    isbn: '9780521367646'
+    mr_number: MR0876123
+    doi: 10.1017/CBO9781139171762
 ---
 # 完备化与Hensel引理
 
@@ -104,3 +129,11 @@ Hensel引理是隐函数定理的代数版本：在完备局部环中，"横截�
 3. H. Matsumura, *Commutative Ring Theory*, Cambridge University Press, 1986.
 4. J.-P. Serre, *Local Fields*, Springer, 1979.
 5. 冯克勤，《交换代数基础》，高等教育出版社，1985。
+
+---
+
+## 参考文献
+
+- M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra*, 1st ed., Addison-Wesley, 1969, ISBN: 9780201407518 / MR0242802
+- David Eisenbud, *Commutative Algebra: with a View Toward Algebraic Geometry*, 1st ed., Springer, 1995, ISBN: 9780387942681 / MR1322960
+- Hideyuki Matsumura, *Commutative Ring Theory*, 1st ed., Cambridge University Press, 1989, ISBN: 9780521367646 / MR0876123

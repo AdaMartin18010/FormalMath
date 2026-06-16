@@ -1,9 +1,37 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: 深度学习 - 思维导图
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Deep learning
+    author: Yann LeCun, Yoshua Bengio, and Geoffrey Hinton
+    journal: Nature
+    year: 2015
+    doi: 10.1038/nature14539
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Deep_learning
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0
+  nlab_url: https://ncatlab.org/nlab/show/deep+learning
 ---
 # 深度学习 - 思维导图
 
@@ -251,3 +279,17 @@ flowchart LR
 *文档版本：1.0*
 *创建时间：2026年4月*
 *分类：应用数学 / 数据科学 / 思维导图*
+
+---
+
+## 经典论文与原始文献
+
+- Yann LeCun, Yoshua Bengio, and Geoffrey Hinton, *Deep learning*, Nature, 2015 (DOI: 10.1038/nature14539)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- Yann LeCun, Yoshua Bengio, and Geoffrey Hinton, *Deep learning*, Nature, 2015, DOI: 10.1038/nature14539

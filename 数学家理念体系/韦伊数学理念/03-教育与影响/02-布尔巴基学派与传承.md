@@ -10,6 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Andre_Weil
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
   zbmath_url: https://zbmath.org/?q=au:Andre%20Weil
+  wikidata_id: https://www.wikidata.org/entity/Q209098
 references:
   databases:
   - id: zbmath

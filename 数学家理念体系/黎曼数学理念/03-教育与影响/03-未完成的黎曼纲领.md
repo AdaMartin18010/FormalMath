@@ -10,7 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
-  wikidata_id: Q42299
+  wikidata_id: https://www.wikidata.org/entity/Q422
 references:
   databases:
   - id: zbmath

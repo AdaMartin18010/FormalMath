@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/homology
   wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
-  wikidata_id: Q1144780
 references:
   databases:
   - id: wikidata
@@ -25,6 +24,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1144780
     consulted_at: '2026-06-16'
+  papers:
+  - title: An instanton-invariant for 3-manifolds
+    author: Andreas Floer
+    journal: Communications in Mathematical Physics
+    year: 1988
+    doi: 10.1007/BF01223490
 ---
 # TOP-123: Knot Floer同调与Alexander多项式
 
@@ -59,3 +64,9 @@ references:
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Andreas Floer, *An instanton-invariant for 3-manifolds*, Communications in Mathematical Physics, 1988 (DOI: 10.1007/BF01223490)

@@ -10,7 +10,9 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
   zbmath_url: https://zbmath.org/?q=au:David%20Hilbert
-  wikidata_id: Q41585
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/algorithm
+  wikidata_id: https://www.wikidata.org/entity/Q82597
 references:
   databases:
   - id: zbmath

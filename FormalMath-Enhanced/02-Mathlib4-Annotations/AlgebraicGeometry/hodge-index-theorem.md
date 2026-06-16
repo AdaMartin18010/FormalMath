@@ -11,6 +11,11 @@ references:
     journal: Annals of Mathematics
     year: 1963
     doi: 10.2307/1970715
+  - title: 'The index of elliptic operators: III'
+    author: Michael F. Atiyah and Isadore M. Singer
+    journal: Annals of Mathematics
+    year: 1968
+    doi: 10.2307/1970717
   databases:
   - id: stacks_project
     type: database

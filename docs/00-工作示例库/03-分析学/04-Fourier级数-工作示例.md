@@ -8,7 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/series
   wikipedia_url: https://en.wikipedia.org/wiki/Series_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0
-  wikidata_id: Q170198
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
 references:
   databases:
   - id: wikidata
@@ -16,6 +16,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q170198
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'Fourier Analysis: An Introduction'
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113845'
+    doi: 10.1515/9781400831142
+  - title: An Introduction to Harmonic Analysis
+    author: Yitzhak Katznelson
+    edition: 3rd
+    publisher: Cambridge University Press
+    year: 2004
+    isbn: '9780521543590'
+    mr_number: MR2039503
+    doi: 10.1017/CBO9781139162371
 ---
 # Fourier级数展开 - 工作示例
 
@@ -141,3 +157,10 @@ $$S = \sum_{n=1}^{\infty} \frac{1}{n^2} = \sum_{k=0}^{\infty} \frac{1}{(2k+1)^2}
 
 - [级数](../../../concept/核心概念/级数.md)
 - [分析学](../../../docs/03-分析学/01-实分析/01-实分析.md)
+
+---
+
+## 参考文献
+
+- Elias M. Stein and Rami Shakarchi, *Fourier Analysis: An Introduction*, 1st ed., Princeton University Press, 2003, ISBN: 9780691113845
+- Yitzhak Katznelson, *An Introduction to Harmonic Analysis*, 3rd ed., Cambridge University Press, 2004, ISBN: 9780521543590 / MR2039503

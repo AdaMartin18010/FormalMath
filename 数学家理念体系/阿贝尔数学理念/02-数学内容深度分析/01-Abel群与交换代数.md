@@ -12,7 +12,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
   zbmath_url: https://zbmath.org/?q=au:Group
-  wikidata_id: Q83478
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
 references:
   databases:
   - id: zbmath
@@ -26,6 +26,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q83478
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # Abel与Abel群：交换代数的起源
 
@@ -157,3 +173,10 @@ Noether和van der Waerden将Abel群纳入现代抽象代数框架。
 **MSC分类**: 20K01 (Primary), 01A55, 20-03, 13C99 (Secondary)
 **难度级别**: 本科生/研究生入门
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 9780471433347 / MR2286236
+- Joseph J. Rotman, *An Introduction to the Theory of Groups*, 4th ed., Springer, 1995, ISBN: 9780387942858 / MR1307623

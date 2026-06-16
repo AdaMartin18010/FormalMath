@@ -10,7 +10,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/partial+differential+equation
   wikipedia_url: https://en.wikipedia.org/wiki/Partial_differential_equation
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%81%8F%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B
-  wikidata_id: Q271977
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/
 references:
   databases:
   - id: wikidata
@@ -18,6 +18,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q271977
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Partial Differential Equations
+    author: Lawrence C. Evans
+    edition: 2nd
+    publisher: American Mathematical Society
+    year: 2010
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    doi: 10.1090/gsm/019
+  - title: 'Partial Differential Equations: An Introduction'
+    author: Walter A. Strauss
+    edition: 2nd
+    publisher: Wiley
+    year: 2008
+    isbn: '9780470054567'
 ---
 # 偏微分方程·波动、热与Laplace方程习题集
 
@@ -211,3 +226,10 @@ $$u(t,x)=\partial_t\left(\frac{1}{4\pi c^2t}\int_{|y-x|=ct}f(y)\,dS\right)+\frac
 ---
 
 **Lean4 对应**：分析学形式化目前对 PDE 支持有限，主要参考 `Mathlib4` 的 Sobolev 空间与分布论进展。
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Walter A. Strauss, *Partial Differential Equations: An Introduction*, 2nd ed., Wiley, 2008, ISBN: 9780470054567

@@ -1,11 +1,27 @@
 ---
 title: 交截理论深度版 / Intersection Theory - Deep Dive
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 00A99
-  - 00A99
+  - 00A99 - 00A99 - 00A99'
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # 交截理论深度版 / Intersection Theory - Deep Dive
 
@@ -351,11 +367,18 @@ Levine-Morel的代数cobordism理论$\Omega^*$：
 ### 在线资源
 
 - [Stacks Project][https://stacks.math.columbia.edu/][需更新](需更新) - 第41-43章交截理论
-- [Virtual Fundamental Classes](https://math.mit.edu/~abrahmc/) - Abramovich的课程讲义
-- [Tropical Geometry and Mirror Symmetry](https://math.berkeley.edu/~bernd/) - Bernd Sturmfels的资源
+- [Virtual Fundamental Classes](https://math.mit.edu/) - Abramovich的课程讲义
+- [Tropical Geometry and Mirror Symmetry](https://math.berkeley.edu/) - Bernd Sturmfels的资源
 
 ---
 
 **文档版本**: 1.0
 **维护者**: FormalMath项目
 **许可证**: CC BY-SA 4.0
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

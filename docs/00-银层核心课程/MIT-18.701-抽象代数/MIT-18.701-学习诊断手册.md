@@ -14,8 +14,11 @@ tags:
 - mathematical_reviewed
 chapter: '0'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 references:
   textbooks:
   - title: Algebra
@@ -24,6 +27,22 @@ references:
     publisher: Pearson
     year: 2010
     isbn: '9780132413770'
+    doi: 10.1007/978-1-4613-0041-0
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # MIT 18.701 抽象代数 - 学习诊断手册
 

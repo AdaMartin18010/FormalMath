@@ -8,7 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
-  wikidata_id: Q1139041
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 references:
   databases:
   - id: wikidata
@@ -16,6 +16,37 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1139041
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: Real Mathematical Analysis
+    author: Charles C. Pugh
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780387952970'
+    mr_number: MR1639930
+    doi: 10.1007/978-0-387-21676-7
+  - title: Analysis I
+    author: Terence Tao
+    edition: 3rd
+    publisher: Springer
+    year: 2016
+    isbn: '9789811017896'
+    mr_number: MR3728289
+    doi: 10.1007/978-981-10-1789-6
 ---
 # 概念卡片：Cauchy-Schwarz不等式
 

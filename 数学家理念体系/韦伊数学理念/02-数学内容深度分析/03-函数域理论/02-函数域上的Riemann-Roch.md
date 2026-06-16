@@ -12,7 +12,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Function
-  wikidata_id: Q11348
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -402,3 +401,9 @@ $$\chi(X, \mathcal{O}(D)) = \deg(D) + \chi(X, \mathcal{O}_X)$$
 ## 经典论文与原始文献
 
 - Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)
+
+---
+
+## 参考文献
+
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958, DOI: 10.24033/bsmf.1500

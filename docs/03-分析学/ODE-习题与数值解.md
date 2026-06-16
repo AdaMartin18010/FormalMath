@@ -1,6 +1,27 @@
 ---
 title: 常微分方程习题与数值解
 msc_primary: 34
+references:
+  textbooks:
+  - title: Theory of Ordinary Differential Equations
+    author: Earl A. Coddington and Norman Levinson
+    edition: 1st
+    publisher: McGraw-Hill
+    year: 1955
+    isbn: '9780070122550'
+    mr_number: MR0069338
+  - title: Differential Equations, Dynamical Systems, and an Introduction to Chaos
+    author: Morris W. Hirsch, Stephen Smale, and Robert L. Devaney
+    edition: 3rd
+    publisher: Academic Press
+    year: 2013
+    isbn: '9780123820105'
+    mr_number: MR3293130
+    doi: 10.1016/C2010-0-61170-9
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_equation
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B
+  nlab_url: https://ncatlab.org/nlab/show/differential+equation
 ---
 # 常微分方程习题与数值解
 
@@ -117,3 +138,10 @@ $$x'' - \mu(1-x^2)x' + x = 0, \quad \mu > 0.$$
 ---
 
 **适用**：docs/03-分析学/
+
+---
+
+## 参考文献
+
+- Earl A. Coddington and Norman Levinson, *Theory of Ordinary Differential Equations*, 1st ed., McGraw-Hill, 1955, ISBN: 9780070122550 / MR0069338
+- Morris W. Hirsch, Stephen Smale, and Robert L. Devaney, *Differential Equations, Dynamical Systems, and an Introduction to Chaos*, 3rd ed., Academic Press, 2013, ISBN: 9780123820105 / MR3293130

@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
-  wikidata_id: Q719395
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q719395
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # 无穷范畴深度版 / Infinity-Categories - In Depth
 
@@ -803,3 +817,10 @@ Gaitsgory发展的量子版本：
 - [06-无穷范畴理论](./06-无穷范畴理论.md) - 基础版本
 - [05-导出代数几何](./05-导出代数几何.md) - 导出几何深入
 - [homotopy-type-theory.md](./homotopy-type-theory.md) - 同伦类型论深度版
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

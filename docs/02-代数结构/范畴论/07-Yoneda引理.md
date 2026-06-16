@@ -1,10 +1,26 @@
 ---
 msc_primary: 18A05
 msc_secondary:
-  - 18A20
-  - 18A25
+- 18A20
+- 18A25
 processed_at: '2026-04-20'
 title: Yoneda引理
+references:
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # Yoneda引理
 
@@ -84,3 +100,10 @@ Yoneda引理是范畴论的基石。在伴随函子理论（见[04-伴随函子]
 3. S. Awodey, *Category Theory*, 2nd ed., Oxford University Press, 2010.
 4. E. Riehl, *Category Theory in Context*, Dover, 2016.
 5. 贺伟，《范畴论》，科学出版社，2006。
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

@@ -1,10 +1,30 @@
 ---
-title: "ZFC公理体系完整形式化 - 自然数构造详细版"
-msc_primary: 03
+title: ZFC公理体系完整形式化 - 自然数构造详细版
+msc_primary: '03
 
-  - 03E99
-msc_secondary: ['03E30', '03B30']
+  - 03E99'
+msc_secondary:
+- 03E30
+- 03B30
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # ZFC公理体系完整形式化 - 自然数构造详细版
 

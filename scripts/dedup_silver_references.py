@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-为银层文档去重合并 references.textbooks，并补全已知经典教材的 ISBN/出版信息。
+为所有含 references.textbooks 的文档去重合并教材引用，并补全已知经典教材的 ISBN/出版信息。
 
 用法：
     python scripts/dedup_silver_references.py
@@ -12,6 +12,7 @@ from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
+# 经典教材元数据（手工维护的高置信条目）
 KNOWN_BOOKS = {
     ("Understanding Analysis", "Stephen Abbott"): {
         "edition": "2nd",
@@ -193,7 +194,109 @@ KNOWN_BOOKS = {
         "isbn": "9780521498422",
         "mr_number": "MR1406314",
     },
+    ("Introduction to Commutative Algebra", "M. F. Atiyah and I. G. Macdonald"): {
+        "edition": "1st",
+        "publisher": "Addison-Wesley",
+        "year": 1969,
+        "isbn": "9780201407518",
+        "mr_number": "MR0242802",
+    },
+    ("Commutative Algebra: with a View Toward Algebraic Geometry", "David Eisenbud"): {
+        "edition": "1st",
+        "publisher": "Springer",
+        "year": 1995,
+        "isbn": "9780387942681",
+        "mr_number": "MR1322960",
+    },
+    ("Algebraic Topology", "Allen Hatcher"): {
+        "edition": "1st",
+        "publisher": "Cambridge University Press",
+        "year": 2002,
+        "isbn": "9780521795401",
+        "mr_number": "MR1867354",
+    },
+    ("Complex Analysis", "Lars V. Ahlfors"): {
+        "edition": "3rd",
+        "publisher": "McGraw-Hill",
+        "year": 1979,
+        "isbn": "9780070006577",
+        "mr_number": "MR0510197",
+    },
+    ("Set Theory", "Thomas Jech"): {
+        "edition": "3rd Millennium",
+        "publisher": "Springer",
+        "year": 2003,
+        "isbn": "9783540440857",
+        "mr_number": "MR1940513",
+    },
+    ("Enumerative Combinatorics, Vol. 1", "Richard P. Stanley"): {
+        "edition": "2nd",
+        "publisher": "Cambridge University Press",
+        "year": 2012,
+        "isbn": "9781107602625",
+        "mr_number": "MR2868112",
+    },
+    ("Linear Algebra Done Right", "Sheldon Axler"): {
+        "edition": "3rd",
+        "publisher": "Springer",
+        "year": 2015,
+        "isbn": "9783319110790",
+    },
+    ("Real Mathematical Analysis", "Charles C. Pugh"): {
+        "edition": "1st",
+        "publisher": "Springer",
+        "year": 2002,
+        "isbn": "9780387952970",
+    },
+    ("A Course in Functional Analysis", "John B. Conway"): {
+        "edition": "2nd",
+        "publisher": "Springer",
+        "year": 1990,
+        "isbn": "9780387972459",
+    },
+    ("Geometry: Euclid and Beyond", "Robin Hartshorne"): {
+        "edition": "1st",
+        "publisher": "Springer",
+        "year": 2000,
+        "isbn": "9780387986500",
+        "mr_number": "MR1736856",
+    },
+    ("Numerical Linear Algebra", "Lloyd N. Trefethen and David Bau III"): {
+        "edition": "1st",
+        "publisher": "SIAM",
+        "year": 1997,
+        "isbn": "9780898713619",
+        "mr_number": "MR1444820",
+    },
+    ("The Princeton Companion to Mathematics", "Timothy Gowers (ed.)"): {
+        "edition": "1st",
+        "publisher": "Princeton University Press",
+        "year": 2008,
+        "isbn": "9780691118802",
+        "mr_number": "MR2467561",
+    },
 }
+
+# 自动同步 inject_standard_textbooks_by_msc.py 中的教材元数据，避免重复维护
+try:
+    from inject_standard_textbooks_by_msc import STANDARD_BOOKS
+
+    for books in STANDARD_BOOKS.values():
+        for book in books:
+            title = book.get("title", "").strip()
+            author = book.get("author", "").strip()
+            if not title:
+                continue
+            key = (title, author)
+            if key not in KNOWN_BOOKS:
+                KNOWN_BOOKS[key] = {}
+            for k, v in book.items():
+                if k in ("title", "author"):
+                    continue
+                if v and not KNOWN_BOOKS[key].get(k):
+                    KNOWN_BOOKS[key][k] = v
+except Exception as e:
+    print(f"Warning: could not load STANDARD_BOOKS for sync: {e}")
 
 
 def normalize_isbn(isbn: str):
@@ -259,7 +362,7 @@ def parse_frontmatter(text: str):
 def process_file(path: Path):
     text = path.read_text(encoding="utf-8", errors="ignore")
     fm, body = parse_frontmatter(text)
-    if fm is None or fm.get("level") != "silver":
+    if fm is None:
         return False
     refs = fm.get("references") or {}
     textbooks = refs.get("textbooks") or []
@@ -290,7 +393,7 @@ def main():
             continue
         if process_file(p):
             changed += 1
-    print(f"Deduplicated references in {changed} silver docs.")
+    print(f"Deduplicated references in {changed} docs.")
 
 
 if __name__ == "__main__":

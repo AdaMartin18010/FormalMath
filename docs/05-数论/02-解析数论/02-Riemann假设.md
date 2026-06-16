@@ -7,7 +7,6 @@ processed_at: '2026-04-08'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 references:
   databases:
   - id: wikidata
@@ -15,6 +14,29 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q42299
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
 ---
 # Riemann假设 / Riemann Hypothesis
 
@@ -171,3 +193,11 @@ example (n : ℕ) (hn : 0 < n) : riemannZeta (-2 * n) = 0 := by
 *文档版本: 1.0*  
 *MSC2020: 11M26, 11M06, 11N05*  
 *创建日期: 2026年4月*
+
+---
+
+## 参考文献
+
+- G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press, 2008, ISBN: 9780199219865 / MR2445243
+- Jean-Pierre Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- Tom M. Apostol, *Introduction to Analytic Number Theory*, 1st ed., Springer, 1976, ISBN: 9780387901633 / MR0434929

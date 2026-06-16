@@ -1,9 +1,13 @@
 ---
 title: 国际化UI/UX优化文档
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Mathematical_optimization
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BC%98%E5%8C%96
+  nlab_url: https://ncatlab.org/nlab/show/optimization
 ---
 # 国际化UI/UX优化文档
 

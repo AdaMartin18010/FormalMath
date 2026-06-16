@@ -1,12 +1,27 @@
 ---
-msc_primary: 58
+msc_primary: '58
 
-  - 58C35
-  - 26B20
-  - 53A45
-  - 97I55
+  - 58C35 - 26B20 - 53A45 - 97I55'
 title: Stokes 定理
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
+  - title: Morse Theory
+    author: John W. Milnor
+    edition: 1st
+    publisher: Princeton University Press
+    year: 1963
+    isbn: '9780691080086'
+    mr_number: MR0163331
+    doi: 10.1515/9781400881802
 ---
 # Stokes 定理
 
@@ -193,3 +208,10 @@ flowchart TB
 **文档信息**
 - **创建日期**: 2026年4月3日
 - **版本**: 1.0
+
+---
+
+## 参考文献
+
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362
+- John W. Milnor, *Morse Theory*, 1st ed., Princeton University Press, 1963, ISBN: 9780691080086 / MR0163331

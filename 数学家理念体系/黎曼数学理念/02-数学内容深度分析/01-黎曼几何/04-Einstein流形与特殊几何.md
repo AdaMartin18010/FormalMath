@@ -12,7 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Manifold
-  wikidata_id: Q203920
+  wikidata_id: https://www.wikidata.org/entity/Q422
 references:
   databases:
   - id: zbmath
@@ -26,6 +26,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q203920
     consulted_at: '2026-06-16'
+  papers:
+  - title: Zur Elektrodynamik bewegter Körper
+    author: Albert Einstein
+    journal: Annalen der Physik
+    year: 1905
+    doi: 10.1002/andp.19053221004
 ---
 # Einstein流形与特殊几何：黎曼几何的分类
 
@@ -559,3 +565,15 @@ Einstein流形与特殊几何将黎曼的"内蕴几何"思想与特殊几何结�
 **数学公式数**: 12个
 **例子数**: 10个
 **最后更新**: 2026年01月02日
+
+---
+
+## 经典论文与原始文献
+
+- Albert Einstein, *Zur Elektrodynamik bewegter Körper*, Annalen der Physik, 1905 (DOI: 10.1002/andp.19053221004)
+
+---
+
+## 参考文献
+
+- Albert Einstein, *Zur Elektrodynamik bewegter Körper*, Annalen der Physik, 1905, DOI: 10.1002/andp.19053221004

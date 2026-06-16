@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14C15
+  - 14C15'
 exercise_id: ALG-261
 title: Chow motive的分解定理
 difficulty: 5
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 动机理论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Motive_(algebraic_geometry)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%20motive
+  nlab_url: https://ncatlab.org/nlab/show/motive
 ---
-
 # ALG-261: Chow motive的分解定理
 
 **题号**: ALG-261

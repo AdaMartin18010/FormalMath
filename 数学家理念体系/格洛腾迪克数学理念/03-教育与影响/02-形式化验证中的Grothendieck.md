@@ -16,6 +16,26 @@ references:
     author: A. J. de Jong et al.
     edition: online
     url: https://stacks.math.columbia.edu
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
   papers:
   - title: A formalization of the affine line in Lean
     author: K. Buzzard, J. Commelin, P. Massot, et al.
@@ -48,7 +68,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
-  wikidata_id: Q180969
 ---
 # 形式化验证中的 Grothendieck：Lean4/Mathlib4、Stacks Project 与代数几何的未来
 
@@ -414,3 +433,16 @@ Lean4/Mathlib4 正在为 Grothendieck 的代数几何理论建立前所未有的
 **原始文献引用**: Stacks Project; Buzzard 2022, 2023; de Jong et al.
 **Lean4 代码**: 3 个代码块，含路线图
 **最后更新**: 2026-04-18
+
+---
+
+## 参考文献
+
+- J. Avigad, G. Ebner, S. Ullrich, et al., *Theorem Proving in Lean 4*, official documentation ed., 2024
+- A. J. de Jong et al., *The Stacks Project*, online ed.
+- Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, *Introduction to Algorithms*, 3rd ed., MIT Press, 2009, ISBN: 9780262033848 / MR2572804
+- Michael Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage, 2012, ISBN: 9781133187790
+- Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed., Addison-Wesley, 1994, ISBN: 9780131558362
+- K. Buzzard, J. Commelin, P. Massot, et al., *A formalization of the affine line in Lean*, unpublished, 2023
+- K. Buzzard, *Formalising algebraic geometry in Lean*, talk slides, ICM 2022, 2022
+- K. Buzzard, C. Hughes, K. Lau, et al., *Schemes in Lean*, unpublished, 2019

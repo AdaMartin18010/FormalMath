@@ -1,21 +1,44 @@
 ---
-title: "IMO真题-组合：图论与极值"
+title: IMO真题-组合：图论与极值
 msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4
 topic: 组合
-source: "IMO 2002 Problem 3"
+source: IMO 2002 Problem 3
 target_courses:
-  - MIT 18.701
+- MIT 18.701
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Solutio problematis ad geometriam situs pertinentis
+    author: Leonhard Euler
+    journal: Commentarii Academiae Scientiarum Imperialis Petropolitanae
+    year: 1736
 ---
 # IMO 2002 Problem 3：组合数学
 
@@ -101,3 +124,9 @@ example (m n : ℕ) (hm : m > 0) (hn : n > 0)
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 经典论文与原始文献
+
+- Leonhard Euler, *Solutio problematis ad geometriam situs pertinentis*, Commentarii Academiae Scientiarum Imperialis Petropolitanae, 1736

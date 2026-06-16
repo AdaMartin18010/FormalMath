@@ -30,6 +30,7 @@ references:
     pages: 96-105
     mr_number: MR0463157
     author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -46,6 +47,19 @@ references:
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 335-345
     author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: nlab
     type: database
@@ -67,7 +81,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/morphism
   wikipedia_url: https://en.wikipedia.org/wiki/Morphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
-  wikidata_id: Q1948412
 ---
 # AG-VK-019: 分离与本征态射的 Valuative Criterion
 

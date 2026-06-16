@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/limit
   wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
-  wikidata_id: Q1322614
 references:
   databases:
   - id: wikidata

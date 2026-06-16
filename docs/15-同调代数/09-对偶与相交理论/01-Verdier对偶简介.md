@@ -2,31 +2,35 @@
 title: Verdier对偶简介
 description: 系统介绍导出范畴中的Verdier对偶、反常层上同调、对偶复形与局部对偶性，建立Grothendieck对偶理论的同调代数框架。
 msc_primary:
-  - 18G80
+- 18G80
 msc_secondary:
-  - 14F05
-  - 32C38
-  - 55U30
+- 14F05
+- 32C38
+- 55U30
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: kashiwara_schapira
-      type: textbook
-      title: Sheaves on Manifolds
-      authors:
-        - Masaki Kashiwara
-        - Pierre Schapira
-      publisher: Springer
-      year: 1990
-      msc: 58A99
-    - id: hartshorne_rd
-      type: textbook
-      title: Residues and Duality
-      authors:
-        - Robin Hartshorne
-      publisher: Springer
-      year: 1966
-      msc: 14-02
+  - id: kashiwara_schapira
+    type: textbook
+    title: Sheaves on Manifolds
+    authors:
+    - Masaki Kashiwara
+    - Pierre Schapira
+    publisher: Springer
+    year: 1990
+    msc: 58A99
+  - id: hartshorne_rd
+    type: textbook
+    title: Residues and Duality
+    authors:
+    - Robin Hartshorne
+    publisher: Springer
+    year: 1966
+    msc: 14-02
+    edition: 1st
+    isbn: '9783540036207'
+    mr_number: MR0222093
+    author: Robin Hartshorne
 ---
 # Verdier对偶简介
 
@@ -175,3 +179,10 @@ $$IH^k(X; \mathbb{Q}) = \mathbb{H}^k(X, IC_X^\bullet)$$
 ## 7. 小结
 
 Verdier对偶将Poincaré、Serre、Alexander等经典对偶统一于导出范畴的函子框架中。对偶复形 $a_X^! \mathbb{Z}$ 编码了空间的定向与奇异性信息，反常层与相交上同调则将这一理论推广到奇异代数簇，为Hodge理论、表示论与Langlands纲领提供了关键工具。Verdier对偶不仅是同调代数的杰作，更是现代代数几何与拓扑交汇的枢纽。
+
+---
+
+## 参考文献
+
+- Masaki Kashiwara, Pierre Schapira, *Sheaves on Manifolds*, Springer, 1990
+- Robin Hartshorne, *Residues and Duality*, 1st ed., Springer, 1966, ISBN: 9783540036207 / MR0222093

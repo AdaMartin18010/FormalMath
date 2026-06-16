@@ -1,11 +1,16 @@
 ---
 title: 复分析与Gauss平面：复数的几何化
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A50
-  - 01A55
-  - 01A70
+- 01A50
+- 01A55
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Complex_analysis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%A4%8D%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/complex+analysis
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 ---
 # 复分析与Gauss平面：复数的几何化
 

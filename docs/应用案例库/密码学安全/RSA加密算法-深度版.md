@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/number+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
-  wikidata_id: Q12479
 references:
   papers:
   - title: A method for obtaining digital signatures and public-key cryptosystems
@@ -22,6 +21,29 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q12479
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
 ---
 # RSA加密算法：从数论基础到现代密码学实践（深度教学版）
 
@@ -625,3 +647,12 @@ $$\text{Shor算法时间复杂度: } O((\log N)^3)$$
 ## 经典论文与原始文献
 
 - Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978 (DOI: 10.1145/359340.359342)
+
+---
+
+## 参考文献
+
+- G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press, 2008, ISBN: 9780199219865 / MR2445243
+- Jean-Pierre Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- Tom M. Apostol, *Introduction to Analytic Number Theory*, 1st ed., Springer, 1976, ISBN: 9780387901633 / MR0434929
+- Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978, DOI: 10.1145/359340.359342

@@ -9,7 +9,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
-  wikidata_id: Q161172
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
 references:
   databases:
   - id: wikidata
@@ -17,6 +17,30 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q161172
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Introduction to Commutative Algebra
+    author: M. F. Atiyah and I. G. Macdonald
+    edition: 1st
+    publisher: Addison-Wesley
+    year: 1969
+    isbn: '9780201407518'
+    mr_number: MR0242802
+  - title: 'Commutative Algebra: with a View Toward Algebraic Geometry'
+    author: David Eisenbud
+    edition: 1st
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942681'
+    mr_number: MR1322960
+    doi: 10.1007/978-1-4612-5350-1
+  - title: Commutative Ring Theory
+    author: Hideyuki Matsumura
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1989
+    isbn: '9780521367646'
+    mr_number: MR0876123
+    doi: 10.1017/CBO9781139171762
 ---
 # Noetherian环与Artinian环
 
@@ -104,3 +128,11 @@ Noetherian环是代数几何的基础——Hilbert基定理保证了域上有限
 3. M. Atiyah & I.G. Macdonald, *Introduction to Commutative Algebra*, Addison-Wesley, 1969.
 4. H. Matsumura, *Commutative Ring Theory*, Cambridge University Press, 1986.
 5. 冯克勤，《交换代数基础》，高等教育出版社，1985。
+
+---
+
+## 参考文献
+
+- M. F. Atiyah and I. G. Macdonald, *Introduction to Commutative Algebra*, 1st ed., Addison-Wesley, 1969, ISBN: 9780201407518 / MR0242802
+- David Eisenbud, *Commutative Algebra: with a View Toward Algebraic Geometry*, 1st ed., Springer, 1995, ISBN: 9780387942681 / MR1322960
+- Hideyuki Matsumura, *Commutative Ring Theory*, 1st ed., Cambridge University Press, 1989, ISBN: 9780521367646 / MR0876123

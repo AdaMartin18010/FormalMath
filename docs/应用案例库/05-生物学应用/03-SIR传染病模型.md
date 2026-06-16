@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
-  wikidata_id: Q18848
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # SIR传染病模型的传播动力学
 

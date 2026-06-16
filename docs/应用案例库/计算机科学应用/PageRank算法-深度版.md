@@ -1,12 +1,42 @@
 ---
-msc_primary: 15
+msc_primary: '15
 
-  - 15A18
-  - 68P10
-  - 60J10
-  - 05C50
+  - 15A18 - 68P10 - 60J10 - 05C50'
 title: PageRank算法：马尔可夫链视角下的网络重要性度量（深度教学版）
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
+  papers:
+  - title: Rasprostranenie zakona bol'shih chisel na velichiny, zavisyaschie drug
+      ot druga
+    author: Andrey A. Markov
+    journal: Izvestiya Fiziko-matematicheskogo obschestva pri Kazanskom universitete
+    year: 1906
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Markov_chain
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%A9%AC%E5%B0%94%E5%8F%AF%E5%A4%AB%E9%93%BE
+  nlab_url: https://ncatlab.org/nlab/show/Markov+chain
 ---
 # PageRank算法：马尔可夫链视角下的网络重要性度量（深度教学版）
 
@@ -627,3 +657,17 @@ PageRank可推广到：
 **最后更新**: 2026年4月3日
 **作者**: FormalMath项目组
 **数学学科分类**: 15A18 (Eigenvalues, singular values, and eigenvectors), 68P10 (Searching and sorting), 60J10 (Markov chains), 05C50 (Graphs and linear algebra)
+
+---
+
+## 参考文献
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 9780980232776
+- Sheldon Axler, *Linear Algebra Done Right*, 3rd ed., Springer, 2015, ISBN: 9783319110790
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2012, ISBN: 9780521839402 / MR2978210
+
+---
+
+## 经典论文与原始文献
+
+- Andrey A. Markov, *Rasprostranenie zakona bol'shih chisel na velichiny, zavisyaschie drug ot druga*, Izvestiya Fiziko-matematicheskogo obschestva pri Kazanskom universitete, 1906

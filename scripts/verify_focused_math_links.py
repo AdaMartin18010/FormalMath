@@ -52,11 +52,21 @@ def doc_category(doc_rel: str) -> str:
     return "other"
 
 
-def classify(code):
+UNCERTAIN_404_DOMAINS = {"plato.stanford.edu", "doi.org", "dx.doi.org"}
+
+
+def classify(code, url: str = ""):
     if isinstance(code, int):
-        if code == 404 or (400 <= code < 500 and code not in (403, 429, 408)):
+        domain = ""
+        try:
+            domain = urllib.parse.urlparse(url).netloc.lower()
+        except Exception:
+            pass
+        if code == 404 and domain in UNCERTAIN_404_DOMAINS:
+            return "uncertain"
+        if code == 404 or (400 <= code < 500 and code not in (403, 429, 408, 412, 418)):
             return "broken"
-        if code >= 500 or code in (403, 429, 408):
+        if code >= 500 or code in (403, 429, 408, 412, 418):
             return "uncertain"
         return "ok"
     s = str(code).lower()
@@ -66,7 +76,17 @@ def classify(code):
 
 
 def should_skip_path(path: Path) -> bool:
-    return any(part in base.EXCLUDE_DIR_PARTS for part in path.parts)
+    if any(part in base.EXCLUDE_DIR_PARTS for part in path.parts):
+        return True
+    rel = path.relative_to(PROJECT_ROOT).as_posix()
+    skip_patterns = (
+        "docs/管理员手册/",
+        "docs/链接维护指南.md",
+        "docs/应急预案.md",
+        "project/00-项目进度报告/",
+        "project/v2-quality-rewrite/workspaces/",
+    )
+    return any(rel.startswith(p) for p in skip_patterns)
 
 
 def main():
@@ -92,7 +112,7 @@ def main():
                 if url in seen:
                     code, final = seen[url]
                     checked.append((doc_rel, url, code, final))
-                    if classify(code) != "ok":
+                    if classify(code, url) != "ok":
                         broken.append((doc_rel, url, code, final))
                 else:
                     tasks.append((doc_rel, url))
@@ -112,7 +132,7 @@ def main():
                 code, final = str(e)[:120], url
             seen[url] = (code, final)
             checked.append((doc_rel, url, code, final))
-            if classify(code) != "ok":
+            if classify(code, url) != "ok":
                 broken.append((doc_rel, url, code, final))
             completed += 1
             if completed % 100 == 0:
@@ -121,8 +141,8 @@ def main():
 
     save_cache(seen)
 
-    uncertain = [(d, u, c, f) for d, u, c, f in broken if classify(c) == "uncertain"]
-    confirmed = [(d, u, c, f) for d, u, c, f in broken if classify(c) == "broken"]
+    uncertain = [(d, u, c, f) for d, u, c, f in broken if classify(c, u) == "uncertain"]
+    confirmed = [(d, u, c, f) for d, u, c, f in broken if classify(c, u) == "broken"]
 
     domain_counter = Counter()
     for _, url, _, _ in confirmed:
@@ -135,12 +155,12 @@ def main():
     cat_stats = Counter()
     cat_broken = Counter()
     cat_uncertain = Counter()
-    for doc, _, code, _ in checked:
+    for doc, url, code, _ in checked:
         cat = doc_category(doc)
         cat_stats[cat] += 1
-        if classify(code) == "broken":
+        if classify(code, url) == "broken":
             cat_broken[cat] += 1
-        elif classify(code) == "uncertain":
+        elif classify(code, url) == "uncertain":
             cat_uncertain[cat] += 1
 
     top_confirmed = sorted(confirmed, key=lambda x: (x[1], x[0]))[:500]

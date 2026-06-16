@@ -21,6 +21,24 @@ references:
     - 'Chapter 2: Basic Topology'
     - 'Chapter 11: The Lebesgue Theory'
     url: null
+    mr_number: MR0385023
+    author: Walter Rudin
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
   databases:
   - id: nlab
     type: database
@@ -36,7 +54,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/integral
   wikipedia_url: https://en.wikipedia.org/wiki/Integral
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
-  wikidata_id: Q80091
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Lebesgue/
 ---
 # Lebesgue积分 - 深度扩展版
 
@@ -736,3 +754,11 @@ E[X] = ∫_Ω X dP
 
 **最后更新**: 2025年12月1日
 **状态**: ✅ 已完成深化（含证明树与知识图谱）
+
+---
+
+## 参考文献
+
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, ISBN: 978-0070542358 / MR0385023
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

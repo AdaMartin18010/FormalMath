@@ -11,9 +11,19 @@ references:
       Groups
     author: J. Taylor
     year: 2002
+    edition: 1st
+    publisher: American Mathematical Society
+    isbn: '9780821831786'
+    mr_number: MR1885077
   - title: From Holomorphic Functions to Complex Manifolds
     author: K. Fritzsche & H. Grauert
     year: 2002
+  - title: Complex Analysis
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113852'
   papers:
   - title: Quelques problèmes de cohomologie en géométrie algébrique complexe
     author: J-P. Serre
@@ -38,7 +48,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Manifold
-  wikidata_id: Q203920
 ---
 # 复几何与Stein流形：Serre从代数到分析的桥梁
 
@@ -176,3 +185,12 @@ Serre在复几何中的贡献虽然不如他在其他领域那么引人注目，
 3. Grauert, H. & Remmert, R. *Theory of Stein Spaces*. Springer, 1979.
 4. Voisin, C. *Hodge Theory and Complex Algebraic Geometry I, II*. Cambridge, 2002–2003.
 5. Wells, R. O. *Differential Analysis on Complex Manifolds*. Springer, 1980.
+
+---
+
+## 参考文献
+
+- J. Taylor, *Several Complex Variables with Connections to Algebraic Geometry and Lie Groups*, 1st ed., American Mathematical Society, 2002, ISBN: 9780821831786 / MR1885077
+- K. Fritzsche & H. Grauert, *From Holomorphic Functions to Complex Manifolds*, 2002
+- Elias M. Stein and Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003, ISBN: 9780691113852
+- J-P. Serre, *Quelques problèmes de cohomologie en géométrie algébrique complexe*, 1954

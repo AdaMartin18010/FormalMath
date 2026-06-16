@@ -39,7 +39,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
-  wikidata_id: Q864475
 ---
 # Tor函子
 

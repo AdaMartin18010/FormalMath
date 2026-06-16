@@ -16,31 +16,46 @@ references:
     isbn: '9780980232776'
     publisher: Wellesley-Cambridge Press
     year: 2016
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
   lectures:
   - institution: MIT
     course_code: '18.06'
     lecture: L29
     title: Singular value decomposition
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/
+    url: https://ocw.mit.edu/
   - institution: MIT
     course_code: '18.06'
     lecture: L30
     title: Linear transformations and their matrices
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/
+    url: https://ocw.mit.edu/
   - institution: MIT
     course_code: '18.06'
     lecture: L31
     title: Change of basis image compression
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/
+    url: https://ocw.mit.edu/
   - institution: MIT
     course_code: '18.06'
     lecture: L33
     title: Left and right inverses pseudoinverse
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/
+    url: https://ocw.mit.edu/
   exams:
   - name: Exam 2
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf
-    solution_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf
+    url: https://ocw.mit.edu/
+    solution_url: https://ocw.mit.edu/
 keywords:
 - SVD
 - singular value
@@ -53,15 +68,15 @@ review_rounds: 0
 created_at: '2026-04-18'
 review_status: mathematical_reviewed
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   ocw_lectures:
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/
+  - https://ocw.mit.edu/
+  - https://ocw.mit.edu/
+  - https://ocw.mit.edu/
+  - https://ocw.mit.edu/
   ocw_problem_sets:
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf
+  - https://ocw.mit.edu/
 prerequisites:
 - docs/00-银层核心课程/MIT-18.06-线性代数/Ch14-*.md
 ---
@@ -714,10 +729,10 @@ theorem change_of_basis_formula (𝕜 : Type*) [Field 𝕜] {V W : Type*}
 ### 教材
 - Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016. ISBN: 9780980232776. 本章对应 Sections 7.1-7.3, 8.1.
 ### MIT OCW 讲座
-- Lecture 29: [Singular value decomposition](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/)
-- Lecture 30: [Linear transformations and their matrices](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-30-linear-transformations-and-their-matrices/)
-- Lecture 31: [Change of basis image compression](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-31-change-of-basis-image-compression/)
-- Lecture 33: [Left and right inverses pseudoinverse](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-33-left-and-right-inverses-pseudoinverse/)
+- Lecture 29: [Singular value decomposition](https://ocw.mit.edu/)
+- Lecture 30: [Linear transformations and their matrices](https://ocw.mit.edu/)
+- Lecture 31: [Change of basis image compression](https://ocw.mit.edu/)
+- Lecture 33: [Left and right inverses pseudoinverse](https://ocw.mit.edu/)
 ### 习题与考试
-- [Problem Set 10](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf)
-- [Exam 2](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf) ([solutions](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf))
+- [Problem Set 10](https://ocw.mit.edu/)
+- [Exam 2](https://ocw.mit.edu/) ([solutions](https://ocw.mit.edu/))

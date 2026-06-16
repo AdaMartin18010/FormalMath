@@ -23,6 +23,9 @@ references:
     msc: 14-01
     chapters: null
     url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -31,10 +34,28 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Intersection_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9B%B8%E4%BA%A4%E7%90%86%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/intersection+theory
 ---
 # AG-VK-013: 相交理论的计算
 
@@ -296,3 +317,12 @@ $$c(F) = c(E) \cdot c(G)$$
 **文档位置**: `docs/13-代数几何/习题/AG-VK-013-相交理论的计算.md`  
 **创建日期**: 2026-04-10  
 **最后更新**: 2026-04-10
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 978-0387902449 / MR0463157
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

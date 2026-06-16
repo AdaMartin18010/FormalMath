@@ -2,10 +2,35 @@
 title: Pascal定理与射影几何：从Essay pour les coniques到现代射影几何
 msc_primary: 60
 msc_secondary:
-  - 60A99
-  - 05A10
-  - 51A05
+- 60A99
+- 05A10
+- 51A05
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: 'Probability: Theory and Examples'
+    author: Rick Durrett
+    edition: 5th
+    publisher: Cambridge University Press
+    year: 2019
+    isbn: '9781108473682'
+    mr_number: MR3930614
+    doi: 10.1017/9781108592629
+  - title: An Introduction to Probability Theory and Its Applications, Vol. 1
+    author: William Feller
+    edition: 3rd
+    publisher: Wiley
+    year: 1968
+    isbn: '9780471257080'
+    mr_number: MR0228020
+  - title: Probability with Martingales
+    author: David Williams
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1991
+    isbn: '9780521406055'
+    mr_number: MR1155402
+    doi: 10.1017/CBO9780511813658
 ---
 # Pascal定理与射影几何：从Essay pour les coniques到现代射影几何
 
@@ -374,3 +399,11 @@ Pascal定理可以通过适当选择三次曲线从此定理导出。
 **字数**: 约2,600字
 **MSC**: 51A05, 51N15
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, ISBN: 9781108473682 / MR3930614
+- William Feller, *An Introduction to Probability Theory and Its Applications, Vol. 1*, 3rd ed., Wiley, 1968, ISBN: 9780471257080 / MR0228020
+- David Williams, *Probability with Martingales*, 1st ed., Cambridge University Press, 1991, ISBN: 9780521406055 / MR1155402

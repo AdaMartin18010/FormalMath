@@ -9,8 +9,8 @@ date: 2026-04-17
 status: in-progress
 course: MIT 18.100A 实分析
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
 references:
   textbooks:
   - title: Understanding Analysis
@@ -19,6 +19,15 @@ references:
     publisher: Springer
     year: 2015
     isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
 ---
 # MIT 18.100A 定理证明覆盖攻坚计划
 
@@ -146,5 +155,5 @@ docs/03-分析学/01-实分析/定理证明/
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)

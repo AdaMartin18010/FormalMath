@@ -17,6 +17,21 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/convergence
   wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
+references:
+  textbooks:
+  - title: Calculus of Variations
+    author: I. M. Gelfand and S. V. Fomin
+    edition: 1st
+    publisher: Dover
+    year: 2000
+    isbn: '9780486138044'
+    mr_number: MR0160139
+  - title: Introduction to the Calculus of Variations
+    author: Bernard Dacorogna
+    edition: 3rd
+    publisher: Imperial College Press
+    year: 2015
+    isbn: '9781783265527'
 ---
 # ANA-216: Gamma收敛与变分逼近
 
@@ -66,3 +81,10 @@ $\square$
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 参考文献
+
+- I. M. Gelfand and S. V. Fomin, *Calculus of Variations*, 1st ed., Dover, 2000, ISBN: 9780486138044 / MR0160139
+- Bernard Dacorogna, *Introduction to the Calculus of Variations*, 3rd ed., Imperial College Press, 2015, ISBN: 9781783265527

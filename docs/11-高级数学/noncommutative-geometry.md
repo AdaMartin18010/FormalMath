@@ -1,10 +1,31 @@
 ---
-title: "非交换几何深度版 / Noncommutative Geometry - In Depth"
-msc_primary: 58
+title: 非交换几何深度版 / Noncommutative Geometry - In Depth
+msc_primary: '58
 
-  - 58B34
-msc_secondary: ["46L85", "14A22", "19D55"]
+  - 58B34'
+msc_secondary:
+- 46L85
+- 14A22
+- 19D55
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
+  - title: Morse Theory
+    author: John W. Milnor
+    edition: 1st
+    publisher: Princeton University Press
+    year: 1963
+    isbn: '9780691080086'
+    mr_number: MR0163331
+    doi: 10.1515/9781400881802
 ---
 # 非交换几何深度版 / Noncommutative Geometry - In Depth
 
@@ -893,3 +914,10 @@ Connes和Chamseddine的观察：
 - [symplectic-mirror.md](./symplectic-mirror.md) - 辛几何与镜像对称深度版
 - [infinity-categories.md](./infinity-categories.md) - 无穷范畴深度版
 - [04-数学物理高级主题](./04-数学物理高级主题.md) - 数学物理基础
+
+---
+
+## 参考文献
+
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362
+- John W. Milnor, *Morse Theory*, 1st ed., Princeton University Press, 1963, ISBN: 9780691080086 / MR0163331

@@ -15,6 +15,7 @@ references:
     publisher: Pearson
     year: 2010
     isbn: '9780132413770'
+    doi: 10.1007/978-1-4613-0041-0
   - title: Abstract Algebra
     author: David S. Dummit and Richard M. Foote
     edition: 3rd
@@ -24,14 +25,22 @@ references:
     year: 2003
     isbn: '9780471433347'
     mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
   lectures:
   - institution: MIT
     course_code: '18.701'
     lecture: Lecture 13
-    url: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+    url: https://ocw.mit.edu/
   assignments:
   - name: Problem Set 3
-    url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset3.pdf
+    url: https://ocw.mit.edu/
   databases:
   - id: wikidata
     type: database
@@ -50,15 +59,15 @@ created_at: '2026-04-18'
 review_status: mathematical_reviewed
 chapter: '2'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
-  ocw_lecture_notes_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/lecture-notes/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
+  ocw_lecture_notes_url: https://ocw.mit.edu/
   ocw_problem_sets:
-  - https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset3.pdf
+  - https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
-  wikidata_id: Q83478
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 ---
 # Cauchy 定理（群论版 / Cauchy's Theorem for Groups）
 
@@ -458,11 +467,10 @@ $\langle gag^{-1} \rangle = g\langle a \rangle g^{-1}$，两者同构（共轭�
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
-- [Ocw Lecture Notes Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/lecture-notes/)
-- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset3.pdf'])
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
+- [Ocw Lecture Notes Url](https://ocw.mit.edu/)
+- [Ocw Problem Sets](['https://ocw.mit.edu/'])
 - [Nlab Url](https://ncatlab.org/nlab/show/group)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)
-- [Wikidata Id](Q83478)

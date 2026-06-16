@@ -14,6 +14,9 @@ references:
     msc: 14-01
     chapters: null
     url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -22,10 +25,11 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
 title: README
 ---
 # 13-代数几何

@@ -405,7 +405,7 @@ processed_at: '2026-04-05'
 
 - [3Blue1Brown](https://www.youtube.com/c/3blue1brown)[需更新] - 数学可视化
 - [Numberphile](https://www.youtube.com/user/numberphile)[需更新] - 数学科普
-- [MIT OpenCourseWare](https://ocw.mit.edu/courses/mathematics/) - MIT开放课程
+- [MIT OpenCourseWare](https://ocw.mit.edu/) - MIT开放课程
 
 详见：[00-ONLINE-RESOURCES-ALIGNMENT.md](./00-ONLINE-RESOURCES-ALIGNMENT.md)
 

@@ -122,7 +122,7 @@ project/
 """arXiv追踪器配置文件"""
 
 # arXiv API设置
-ARXIV_API_BASE = "http://export.arxiv.org/api/query[需更新]"
+ARXIV_API_BASE = "https://export.arxiv.org/api/query?search_query=all[需更新]"
 ARXIV_RSS_BASE = "http://export.arxiv.org/rss/[需更新]"
 
 # 追踪的数学分类

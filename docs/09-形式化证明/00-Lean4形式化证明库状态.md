@@ -293,7 +293,7 @@ end FormalMath
 
 ### 外部链接
 
-- [Lean4 官方文档](https://leanprover.github.io/lean4/doc/)
+- [Lean4 官方文档](https://lean-lang.org/lean4/doc/)
 - [Mathlib4 文档](https://leanprover-community.github.io/mathlib4_docs/)
 - [定理证明器 Zulip](https://leanprover.zulipchat.com/)
 

@@ -9,7 +9,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
   wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
-  wikidata_id: Q268493
 references:
   databases:
   - id: wikidata
@@ -17,6 +16,35 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q268493
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
+  papers:
+  - title: Notes on elliptic curves. II
+    author: Bryan Birch and Peter Swinnerton-Dyer
+    journal: Journal für die reine und angewandte Mathematik
+    year: 1965
+    doi: 10.1515/crll.1965.218.79
 ---
 # 椭圆曲线与BSD猜想 - 深度扩展版 / Elliptic Curves and BSD Conjecture - Deep Extension
 
@@ -258,3 +286,9 @@ $$L'(E/K, 1) = C \cdot \hat{h}(P_K)$$
 *MSC2020: 11G05, 11G40*
 *创建日期: 2026年4月*
 *最后更新: 2026年4月*
+
+---
+
+## 经典论文与原始文献
+
+- Bryan Birch and Peter Swinnerton-Dyer, *Notes on elliptic curves. II*, Journal für die reine und angewandte Mathematik, 1965 (DOI: 10.1515/crll.1965.218.79)

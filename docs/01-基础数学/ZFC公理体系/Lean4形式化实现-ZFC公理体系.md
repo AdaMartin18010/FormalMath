@@ -1,10 +1,30 @@
 ---
-title: "ZFC公理体系 - Lean4形式化实现"
-msc_primary: 03
+title: ZFC公理体系 - Lean4形式化实现
+msc_primary: '03
 
-  - 03B35
-msc_secondary: ['68T15', '03B70']
+  - 03B35'
+msc_secondary:
+- 68T15
+- 03B70
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # ZFC公理体系 - Lean4形式化实现
 
@@ -959,3 +979,10 @@ end
 **执行阶段**: 第二阶段 - 前沿扩展
 **质量等级**: 优秀，持续改进中
 **完成度**: 100%（任务2.2：完善ZFC公理体系）
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

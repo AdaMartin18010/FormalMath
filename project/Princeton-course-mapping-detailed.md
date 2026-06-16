@@ -9,7 +9,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
-  wikidata_id: Q11348
 references:
   databases:
   - id: wikidata
@@ -17,6 +16,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
 ---
 # Princeton University数学课程与FormalMath深度映射分析
 
@@ -464,7 +479,7 @@ Princeton 的本科培养体系高度重视**独立研究能力**的培养，Jun
 | **FormalMath 对应** | `docs/00-评估系统/` 的文献阅读与报告标准；`数学家理念体系/` 的历史与传记文档 |
 
 **推荐资源**：
-- Princeton Math Junior Seminar 主页：https://www.math.princeton.edu/undergraduate/junior-seminar[需更新]
+- Princeton Math Junior Seminar 主页：https://www.math.princeton.edu/[需更新]
 - 历年主题与讲义：以当学年 Department 公布为准
 
 ### 7.2 Senior Thesis（毕业论文）
@@ -477,8 +492,8 @@ Princeton 的本科培养体系高度重视**独立研究能力**的培养，Jun
 | **FormalMath 对应** | 项目中的 `docs/参考文献标准/` 与 `思维表征.md` 的写作规范可作为论文写作参考 |
 
 **推荐资源**：
-- Princeton Senior Thesis 指南：https://www.math.princeton.edu/undergraduate/senior-thesis[需更新]
-- 历年优秀论文库（Math Library）：https://www.math.princeton.edu/undergraduate/honors[需更新]
+- Princeton Senior Thesis 指南：https://www.math.princeton.edu/[需更新]
+- 历年优秀论文库（Math Library）：https://www.math.princeton.edu/[需更新]
 
 ### 7.3 研究型学习路径
 
@@ -565,7 +580,7 @@ Senior Year
 ### 8.1 官方资源链接
 
 - **Princeton Math**: https://www.math.princeton.edu/[需更新]
-- **Undergraduate**: https://www.math.princeton.edu/undergraduate[需更新]
+- **Undergraduate**: https://www.math.princeton.edu/[需更新]
 - **János Kollár**: https://web.math.princeton.edu/~kollar/[需更新]
 
 ### 8.2 参考文献
@@ -586,3 +601,10 @@ Senior Year
 **文档状态**: v1.0（2026年4月）
 **维护建议**: 每学年复核课程更新
 **下次复核**: 2026年9月
+
+---
+
+## 参考文献
+
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- George Pólya, *How to Solve It: A New Aspect of Mathematical Method*, 2nd ed., Princeton University Press, 2004, ISBN: 9780691119663

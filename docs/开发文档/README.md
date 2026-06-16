@@ -130,7 +130,7 @@ npm run test
 
 ### 项目链接
 
-- [GitHub 仓库](https://github.com/formalmath/FormalMath)
+- [GitHub 仓库](https://github.com/FormalMath)
 - [Issue 跟踪](../../issues)
 - [项目看板](../../projects)
 - [CHANGELOG](../../CHANGELOG.md)

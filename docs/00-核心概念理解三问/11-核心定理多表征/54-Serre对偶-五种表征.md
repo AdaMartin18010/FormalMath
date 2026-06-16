@@ -7,7 +7,8 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
-  wikidata_id: Q212063
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
+  nlab_url: https://ncatlab.org/nlab/show/Serre+duality
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -21,6 +22,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q212063
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Serre对偶定理 - 五种表征
 
@@ -423,3 +441,11 @@ Serre对偶定理是：
 ## 经典论文与原始文献
 
 - Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955, DOI: 10.2307/1970375

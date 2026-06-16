@@ -58,7 +58,7 @@ references:
 
 ### 课程信息
 
-- **网址**: https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/
+- **网址**: https://ocw.mit.edu/
 - **讲师**: Prof. Albert R. Meyer, Prof. Adam Chlipala
 - **课时**: 约25讲
 - **先修要求**: 无
@@ -142,7 +142,7 @@ references:
 
 ### 课程信息
 
-- **网址**: https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/
+- **网址**: https://ocw.mit.edu/
 - **讲师**: Prof. Michael Sipser
 - **教材**: Sipser, M. *Introduction to the Theory of Computation*
 - **课时**: 约26讲

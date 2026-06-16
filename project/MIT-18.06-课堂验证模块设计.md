@@ -4,12 +4,11 @@ msc_primary: 00A99
 level: silver
 course: MIT 18.06 线性代数
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=module
-  wikidata_id: Q18848
 references:
   textbooks:
   - title: Introduction to Linear Algebra
@@ -18,6 +17,22 @@ references:
     publisher: Wellesley-Cambridge Press
     year: 2016
     isbn: '9780980232776'
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
   databases:
   - id: wikidata
     type: database
@@ -93,9 +108,8 @@ $$A = \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \end{pmatrix}, \quad b = \begin{pm
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
 - [Nlab Url](https://ncatlab.org/nlab/show/module)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Module_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=module)
-- [Wikidata Id](Q18848)

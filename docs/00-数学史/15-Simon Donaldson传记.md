@@ -1,6 +1,31 @@
 ---
-title: "Simon Donaldson传记"
-msc_primary: "01"
+title: Simon Donaldson传记
+msc_primary: '01'
+references:
+  textbooks:
+  - title: Mathematics and Its History
+    author: John Stillwell
+    edition: 3rd
+    publisher: Springer
+    year: 2010
+    isbn: '9781441960528'
+    mr_number: MR2675606
+    doi: 10.1007/978-1-4419-6053-5
+  - title: 'A History of Mathematics: An Introduction'
+    author: Victor J. Katz
+    edition: 3rd
+    publisher: Pearson
+    year: 2009
+    isbn: '9780321387004'
+  papers:
+  - title: An application of gauge theory to four-dimensional topology
+    author: Simon K. Donaldson
+    journal: Journal of Differential Geometry
+    year: 1983
+    doi: 10.4310/jdg/1214437665
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Simon_Donaldson
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Donaldson/
 ---
 # Simon Donaldson 传记
 
@@ -414,3 +439,16 @@ Donaldson相信：
 **创建日期：** 2026年4月
 **最后更新：** 2026年4月
 **文档类别：** 数学史 - 20世纪数学大师
+
+---
+
+## 参考文献
+
+- John Stillwell, *Mathematics and Its History*, 3rd ed., Springer, 2010, ISBN: 9781441960528 / MR2675606
+- Victor J. Katz, *A History of Mathematics: An Introduction*, 3rd ed., Pearson, 2009, ISBN: 9780321387004
+
+---
+
+## 经典论文与原始文献
+
+- Simon K. Donaldson, *An application of gauge theory to four-dimensional topology*, Journal of Differential Geometry, 1983 (DOI: 10.4310/jdg/1214437665)

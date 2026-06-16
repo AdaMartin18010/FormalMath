@@ -1,10 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A15
-  - 01A99
+- 00A15
+- 01A99
 title: 澄清-概率理性主义、基于数学的物理学科和数学本体的三方关系
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Relation_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%85%B3%E7%B3%BB
+  nlab_url: https://ncatlab.org/nlab/show/relation
 ---
 # 澄清-概率理性主义、基于数学的物理学科和数学本体的三方关系
 

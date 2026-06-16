@@ -2,30 +2,30 @@
 title: Hodge理论简介
 description: 系统介绍Riemann流形上的Hodge星算子、Laplace-de Rham算子、Hodge分解定理与Hodge同构，以及Kähler流形上的Hodge分解，建立调和形式与上同调的联系。
 msc_primary:
-  - 53C05
+- 53C05
 msc_secondary:
-  - 58A14
-  - 32Q15
-  - 55N20
+- 58A14
+- 32Q15
+- 55N20
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: warner_foundation
-      type: textbook
-      title: Foundations of Differentiable Manifolds and Lie Groups
-      authors:
-        - Frank W. Warner
-      publisher: Springer
-      year: 1983
-      msc: 58-01
-    - id: wells_dca
-      type: textbook
-      title: Differential Analysis on Complex Manifolds
-      authors:
-        - Raymond O. Wells Jr.
-      publisher: Springer
-      year: 1980
-      msc: 32-02
+  - id: warner_foundation
+    type: textbook
+    title: Foundations of Differentiable Manifolds and Lie Groups
+    authors:
+    - Frank W. Warner
+    publisher: Springer
+    year: 1983
+    msc: 58-01
+  - id: wells_dca
+    type: textbook
+    title: Differential Analysis on Complex Manifolds
+    authors:
+    - Raymond O. Wells Jr.
+    publisher: Springer
+    year: 1980
+    msc: 32-02
 ---
 # Hodge理论简介
 
@@ -185,3 +185,10 @@ $$0 = \|\nabla\eta\|^2 + \int_M \text{Ric}(\eta^\sharp, \eta^\sharp) \, \text{vo
 ## 7. 小结
 
 Hodge理论通过椭圆分析在微分形式与de Rham上同调之间架起桥梁。调和形式作为几何上"最优"的上同调代表，使Poincaré对偶获得显式实现。在Kähler几何中，Hodge分解将拓扑、复结构与度量和谐统一，是复代数几何与算术几何的基石。Bochner技巧则展示了曲率如何约束调和形式的存在性，是几何分析的经典范例。
+
+---
+
+## 参考文献
+
+- Frank W. Warner, *Foundations of Differentiable Manifolds and Lie Groups*, Springer, 1983
+- Raymond O. Wells Jr., *Differential Analysis on Complex Manifolds*, Springer, 1980

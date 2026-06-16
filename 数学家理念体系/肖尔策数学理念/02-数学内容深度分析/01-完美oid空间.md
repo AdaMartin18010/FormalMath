@@ -1,10 +1,37 @@
 ---
-title: "Peter Scholze的完美oid空间：p进几何的革命"
+title: Peter Scholze的完美oid空间：p进几何的革命
 msc_primary: 14
 msc_secondary:
-  - 14G22
-msc_secondary: ["11S15", "14G20", "13F35"]
+- 11S15
+- 14G20
+- 13F35
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Peter_Scholze
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Scholze/
 ---
 # Peter Scholze的完美oid空间：p进几何的革命
 
@@ -232,7 +259,7 @@ Fargues-Scholze利用完美oid空间研究$p$进局部Langlands纲领。
 ### 在线资源
 
 6. **MacTutor History of Mathematics**: Peter Scholze biography
-   - https://mathshistory.st-andrews.ac.uk/Biographies/Scholze/[需更新]
+   - [Peter Scholze - Wikipedia](https://en.wikipedia.org/wiki/Peter_Scholze)
 
 7. **Berkley Math**: Perfectoid Spaces Seminar
    - 完美oid空间讲义和笔记
@@ -244,3 +271,11 @@ Fargues-Scholze利用完美oid空间研究$p$进局部Langlands纲领。
 **MSC分类**: 14G22 (Primary), 11S15, 14G20, 13F35 (Secondary)
 **难度级别**: 研究生/高级本科生
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

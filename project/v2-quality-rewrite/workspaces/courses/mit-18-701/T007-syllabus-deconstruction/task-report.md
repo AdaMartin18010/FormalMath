@@ -19,10 +19,10 @@ processed_at: '2026-04-05'
 
 ### Primary Sources
 1. **MIT OpenCourseWare 18.701 (Fall 2010)**
-   - Syllabus page: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/syllabus/
-   - Calendar (38 sessions): https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/calendar/
-   - Assignments page with due dates: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/assignments/
-   - Problem Set 1 PDF (exact exercises transcribed): https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/318daf0446ed3151c72a9c12c29830c6_MIT18_701F10_pset1.pdf
+   - Syllabus page: https://ocw.mit.edu/
+   - Calendar (38 sessions): https://ocw.mit.edu/
+   - Assignments page with due dates: https://ocw.mit.edu/
+   - Problem Set 1 PDF (exact exercises transcribed): https://ocw.mit.edu/
 
 2. **Textbook Reference**
    - Michael Artin, *Algebra*, 2nd Edition, Addison Wesley, 2010.

@@ -6,6 +6,24 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
 title: Hardy空间与BMO
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Hardy空间与BMO
 
@@ -118,3 +136,10 @@ $|L(\varphi_Q)| \leq \|L\| \|\varphi_Q\|_{H^1}$ 给出BMO范数界。$\square$
 **变式1：** 证明$H^1$的极大函数刻画。
 
 **变式2：** 讨论VMO（消失平均振动）空间。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

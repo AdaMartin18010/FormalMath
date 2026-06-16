@@ -15,6 +15,7 @@ references:
     publisher: Springer
     year: 2015
     isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
   - title: Principles of Mathematical Analysis
     author: Walter Rudin
     edition: 3rd
@@ -28,10 +29,10 @@ references:
   - institution: MIT
     course_code: 18.100A
     lecture: Lecture 20
-    url: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+    url: https://ocw.mit.edu/
   assignments:
   - name: Problem Set 5
-    url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf
+    url: https://ocw.mit.edu/
 keywords:
 - 一致收敛
 - 函数项级数
@@ -42,12 +43,14 @@ review_rounds: 0
 created_at: '2026-04-18'
 chapter: '5'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
-  ocw_readings_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/
-  ocw_lectures_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
+  ocw_readings_url: https://ocw.mit.edu/
+  ocw_lectures_url: https://ocw.mit.edu/
   ocw_problem_sets:
-  - https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf
+  - https://ocw.mit.edu/
+  wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
 ---
 # Weierstrass M-判别法（Weierstrass M-Test）
 
@@ -464,8 +467,8 @@ rac{1}{n}$ 发散。$\square$
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
-- [Ocw Readings Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/calendar-and-readings/)
-- [Ocw Lectures Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/video_galleries/lecture-videos/)
-- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset5.pdf'])
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
+- [Ocw Readings Url](https://ocw.mit.edu/)
+- [Ocw Lectures Url](https://ocw.mit.edu/)
+- [Ocw Problem Sets](['https://ocw.mit.edu/'])

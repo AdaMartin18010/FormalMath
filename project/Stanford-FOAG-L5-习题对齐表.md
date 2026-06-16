@@ -12,29 +12,10 @@ alignment_level: L5 (习题级)
 version: v1.0
 date_created: '2026-04-10'
 external_ids:
-  stacks_tag: &id001
+  stacks_tag:
     tag: 0028
     url: https://stacks.math.columbia.edu/tag/0028
-  stacks_tags:
-  - *id001
-  - tag: 006K
-    url: https://stacks.math.columbia.edu/tag/006K
-  - tag: 00MB
-    url: https://stacks.math.columbia.edu/tag/00MB
-  - tag: '0136'
-    url: https://stacks.math.columbia.edu/tag/0136
-  - tag: 01J8
-    url: https://stacks.math.columbia.edu/tag/01J8
-  - tag: 01KU
-    url: https://stacks.math.columbia.edu/tag/01KU
-  - tag: 01OA
-    url: https://stacks.math.columbia.edu/tag/01OA
-  - tag: 01XB
-    url: https://stacks.math.columbia.edu/tag/01XB
-  - tag: 0B1Q
-    url: https://stacks.math.columbia.edu/tag/0B1Q
-  - tag: 0B5S
-    url: https://stacks.math.columbia.edu/tag/0B5S
+  stacks_tags: []
 references:
   databases:
   - id: stacks_project

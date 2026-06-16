@@ -6,13 +6,13 @@ title: 00 FormalMath三层内容标准 v2.0
 external_ids:
   stacks_tag:
     tag: XXXX
-    url: https://stacks.math.columbia.edu/tag/XXXX
+    url: https://stacks.math.columbia.edu/
 references:
   databases:
   - id: stacks_project
     type: database
     name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/XXXX
+    entry_url: https://stacks.math.columbia.edu/
     tags:
     - XXXX
     consulted_at: '2026-04-17'
@@ -109,7 +109,7 @@ references:
       mr_number: "MRxxxxxxx"
   databases:
     - type: "Stacks Project"
-      url: "https://stacks.math.columbia.edu/tag/XXXX"
+      url: "https://stacks.math.columbia.edu/"
       tag: "XXXX"
 review_status: "draft" | "mathematical_reviewed" | "pedagogical_reviewed" | "published"
 ---

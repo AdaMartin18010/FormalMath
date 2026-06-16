@@ -8,6 +8,8 @@ external_ids:
   stacks_tag:
     tag: 00OW
     url: https://stacks.math.columbia.edu/tag/00OW
+  wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
 references:
   databases:
   - id: stacks_project

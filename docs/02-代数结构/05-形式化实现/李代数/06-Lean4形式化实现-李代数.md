@@ -22,6 +22,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -34,6 +36,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -47,6 +50,9 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
   databases:
   - id: nlab
     type: database
@@ -62,7 +68,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Lie+algebra
   wikipedia_url: https://en.wikipedia.org/wiki/Lie_algebra
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9D%8E%E4%BB%A3%E6%95%B0
-  wikidata_id: Q664495
 ---
 # Lean4形式化实现-李代数
 

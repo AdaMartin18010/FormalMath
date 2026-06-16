@@ -30,6 +30,7 @@ references:
     pages: 129-138
     mr_number: MR0463157
     author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -45,12 +46,28 @@ references:
     url: https://math.stanford.edu/~vakil/216blog/
     pages: 385-392
     author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
 reviewer: AI Mathematical Reviewer
 tags:
 - mathematical_reviewed
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/André_Weil
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
 ---
 # AG-VK-024: Weil 除子与 Cartier 除子的等价理论
 
@@ -242,17 +259,20 @@ example {A : Type*} [CommRing A] [IsDomain A] [IsPrincipalIdealRing A] (n : ℕ)
 - [AG-VK-026-Serre对偶定理的完整陈述与应用](AG-VK-026-Serre对偶定理的完整陈述与应用.md)
 - [AG-VK-027-爆破的几何与代数](AG-VK-027-爆破的几何与代数.md)
 - [AG-VK-028-椭圆曲线的群结构](AG-VK-028-椭圆曲线的群结构.md)
+
 ## 参考文献
 
 1. Vakil, R. (2024). *The Rising Sea: Foundations of Algebraic Geometry* (draft). Available at: http://math.stanford.edu/~vakil/216blog/
 2. Hartshorne, R. (1977). *Algebraic Geometry* (GTM 52). Springer. ISBN: 978-0387902449.
 3. Eisenbud, D., & Harris, J. (2016). *Intersection Theory* (GTM 199). Springer. ISBN: 978-0387977164.
+
 ## 审阅记录
 
 **审阅日期**: 2026-04-20
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰

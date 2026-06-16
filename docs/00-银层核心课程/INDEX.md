@@ -1,7 +1,25 @@
 ---
-title: "INDEX"
-msc_primary: "00"
+title: INDEX
+msc_primary: '00'
 review_status: draft
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # FormalMath 银层 + 金层 核心内容总索引
 
@@ -158,3 +176,10 @@ review_status: draft
 
 - [01-纯Motives.md](数学家理念体系\格洛腾迪克数学理念\02-数学内容深度分析\05-Motives与标准猜想\01-纯Motives.md) (19KB)
 - [02-标准猜想.md](数学家理念体系\格洛腾迪克数学理念\02-数学内容深度分析\05-Motives与标准猜想\02-标准猜想.md) (21KB)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

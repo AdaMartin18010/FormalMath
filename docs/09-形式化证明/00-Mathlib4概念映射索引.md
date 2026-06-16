@@ -636,7 +636,7 @@ example (M : Type*) [TopologicalSpace M] [ChartedSpace (EuclideanSpace ℝ (Fin 
 ### 官方文档
 
 - [Mathlib4官方文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
-- [Lean4官方文档](https://lean-lang.org/doc/)
+- [Lean4官方文档](https://lean-lang.org/documentation/)
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4)
 
 ### 社区资源

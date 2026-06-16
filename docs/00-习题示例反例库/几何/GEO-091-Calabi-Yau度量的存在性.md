@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C55
+  - 53C55'
 exercise_id: GEO-091
 title: Calabi-Yau度量的存在性
 difficulty: 4
@@ -10,11 +10,21 @@ topic: 几何
 subtopic: 复几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+references:
+  papers:
+  - title: On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère
+      equation. I
+    author: Shing-Tung Yau
+    journal: Communications on Pure and Applied Mathematics
+    year: 1978
+    doi: 10.1002/cpa.3160310304
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Shing-Tung_Yau
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Yau/
 ---
-
 # GEO-091: Calabi-Yau度量的存在性
 
 **题号**: GEO-091
@@ -48,3 +58,15 @@ processed_at: '2026-04-10'
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Shing-Tung Yau, *On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère equation. I*, Communications on Pure and Applied Mathematics, 1978 (DOI: 10.1002/cpa.3160310304)
+
+---
+
+## 参考文献
+
+- Shing-Tung Yau, *On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère equation. I*, Communications on Pure and Applied Mathematics, 1978, DOI: 10.1002/cpa.3160310304

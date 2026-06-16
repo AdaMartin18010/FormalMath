@@ -18,6 +18,27 @@ references:
     edition: Dix exposés sur la cohomologie des schémas
     chapters: Exposé
     pages: 359–386
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Standard conjectures on algebraic cycles
     author: A. Grothendieck
@@ -59,7 +80,6 @@ external_ids:
     tag: 0FG6
     url: https://stacks.math.columbia.edu/tag/0FG6
   zbmath_url: https://zbmath.org/?q=au:Category
-  wikidata_id: Q719395
 ---
 # 纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景
 
@@ -425,3 +445,15 @@ variable (C : Type*) [Category C]
 -- 导出范畴的入口
 #check DerivedCategory (ModuleCat R)
 `
+
+---
+
+## 参考文献
+
+- Y. André, *Une introduction aux motifs*, Panoramas et Synthèses 17, SMF ed.
+- S. L. Kleiman, *Algebraic Cycles and the Weil Conjectures*, Dix exposés sur la cohomologie des schémas ed.
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- A. Grothendieck, *Standard conjectures on algebraic cycles*, Algebraic Geometry (Bombay Colloq. 1968), 1969
+- U. Jannsen, *Motives, numerical equivalence, and semi-simplicity*, Invent. Math., 1992

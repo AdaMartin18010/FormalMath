@@ -13,7 +13,7 @@ processed_at: '2026-04-17'
 > **课程代码**：MIT 18.701
 > **课程名称**：Algebra I（抽象代数 I，本科核心）
 > **教材**：Michael Artin, *Algebra*, 2nd Edition (Addison Wesley, 2010)
-> **OCW 主页**：https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+> **OCW 主页**：https://ocw.mit.edu/
 
 ---
 
@@ -108,8 +108,8 @@ processed_at: '2026-04-17'
 
 | 来源名称 | URL |
 |----------|-----|
-| MIT OCW 18.701 Syllabus (Fall 2010) | https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/syllabus/ |
-| MIT OCW 18.701 Calendar | https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/pages/calendar/ |
-| RES.18-011 Algebra I Student Notes (Fall 2021) | https://ocw.mit.edu/courses/res-18-011-algebra-i-student-notes-fall-2021/ |
+| MIT OCW 18.701 Syllabus (Fall 2010) | https://ocw.mit.edu/ |
+| MIT OCW 18.701 Calendar | https://ocw.mit.edu/ |
+| RES.18-011 Algebra I Student Notes (Fall 2021) | https://ocw.mit.edu/ |
 | Artin, *Algebra* (2nd Ed) Chapter List | https://ccommans.github.io/artin |
 | FormalMath L4 定理对齐表（内部） | `project/MIT-18.701-L4-定理对齐表.md` |

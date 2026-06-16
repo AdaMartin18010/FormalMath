@@ -1,13 +1,41 @@
 ---
-number: "ANA-059"
+number: ANA-059
 category: 实分析
 topic: 一致收敛应用
 difficulty: ⭐⭐⭐
 title: Stone-Weierstrass逼近定理
 msc_primary: 00A99
-keywords: [Stone-Weierstrass, 多项式逼近, 代数, 分离点, 一致稠密]
-prerequisites: [ANA-058, ANA-034]
+keywords:
+- Stone-Weierstrass
+- 多项式逼近
+- 代数
+- 分离点
+- 一致稠密
+prerequisites:
+- ANA-058
+- ANA-034
 source: 经典分析习题
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
 ---
 ## 题目
 
@@ -128,3 +156,10 @@ $\mathcal{A}$ 的闭包就是 $\mathcal{A}$ 本身（已闭），不等于 $C([0
 **变式2：** 设 $K \subset \mathbb{R}^n$ 紧致，证明坐标多项式在 $C(K)$ 中稠密。
 
 **变式3：** 证明复Stone-Weierstrass定理：若 $\mathcal{A}$ 还满足 $f \in \mathcal{A} \Rightarrow \bar{f} \in \mathcal{A}$，则复版本成立。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

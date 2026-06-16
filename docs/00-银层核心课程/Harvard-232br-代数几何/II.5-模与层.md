@@ -31,6 +31,7 @@ references:
     author: Robin Hartshorne
     pages: 110-117
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -44,6 +45,22 @@ references:
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
     author: Ravi Vakil
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
   databases:
   - id: nlab
     type: database
@@ -74,7 +91,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=sheaf
-  wikidata_id: Q595298
 ---
 # Harvard 232br - Hartshorne Chapter II §5 习题解答
 

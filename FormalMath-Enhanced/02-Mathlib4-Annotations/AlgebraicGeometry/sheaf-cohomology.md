@@ -11,7 +11,6 @@ external_ids:
   stacks_tag:
     tag: 01E2
     url: https://stacks.math.columbia.edu/tag/01E2
-  wikidata_id: Q595298
 references:
   databases:
   - id: stacks_project

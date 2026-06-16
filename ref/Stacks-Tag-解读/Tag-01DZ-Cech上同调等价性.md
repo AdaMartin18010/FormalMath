@@ -13,7 +13,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
-  wikidata_id: Q864475
 references:
   databases:
   - id: wikidata
@@ -21,6 +20,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q864475
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 # Stacks Tag 01DZ - Čech上同调与导出函子上同调的等价性
 
@@ -239,3 +260,11 @@ theorem chechIsoSheafCohomology {X : Top} (𝓤 : OpenCover X) (ℱ : Sheaf Ab X
 **审核状态**: 待专家审核
 **最后更新**: 2026年4月9日
 **下次更新**: 随Stacks Project更新
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

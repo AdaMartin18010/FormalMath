@@ -12,7 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Matrix
-  wikidata_id: Q44337
+  wikidata_id: https://www.wikidata.org/entity/Q422
 references:
   databases:
   - id: zbmath

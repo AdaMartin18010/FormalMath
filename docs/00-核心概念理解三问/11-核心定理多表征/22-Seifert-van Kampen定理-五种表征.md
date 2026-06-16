@@ -1,10 +1,33 @@
 ---
-msc_primary: 55
+msc_primary: '55
 
-  - 55Q52
-  - 55P99
+  - 55Q52 - 55P99'
 title: Seifert-van Kampen定理 - 五种表征
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
 ---
 # Seifert-van Kampen定理 - 五种表征
 
@@ -172,3 +195,11 @@ Seifert-van Kampen = 余极限（colimit）
 ---
 
 **状态**: ✅ 完成
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

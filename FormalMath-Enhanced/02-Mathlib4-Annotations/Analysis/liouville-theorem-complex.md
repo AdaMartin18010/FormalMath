@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Liouville 定理（复分析）(Liouville's Theorem in Complex Analysis)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Complex_analysis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%A4%8D%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/complex+analysis
 ---
 # Liouville 定理（复分析）(Liouville's Theorem in Complex Analysis)
 

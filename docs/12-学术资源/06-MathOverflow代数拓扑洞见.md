@@ -7,7 +7,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/algebraic+topology
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_topology
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E6%8B%93%E6%89%91
-  wikidata_id: Q212803
 references:
   databases:
   - id: wikidata

@@ -1,10 +1,27 @@
 ---
-title: "02 Sobolev空间系统阐述"
-msc_primary: 46
+title: 02 Sobolev空间系统阐述
+msc_primary: '46
 
-  - 46E35
-msc_secondary: ['35D30', '35A15', '46B50']
+  - 46E35'
+msc_secondary:
+- 35D30
+- 35A15
+- 46B50
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: A Course in Functional Analysis
+    author: John B. Conway
+    edition: 2nd
+    publisher: Springer
+    year: 1990
+    isbn: '9780387972459'
+  - title: Functional Analysis
+    author: Walter Rudin
+    edition: 2nd
+    publisher: McGraw-Hill
+    year: 1991
+    isbn: '9780070542365'
 ---
 # 02 Sobolev空间系统阐述 / Systematic Exposition of Sobolev Spaces
 
@@ -294,3 +311,10 @@ $$
 **数学公式数**: 40+  
 **例子数**: 3  
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- John B. Conway, *A Course in Functional Analysis*, 2nd ed., Springer, 1990, ISBN: 9780387972459
+- Walter Rudin, *Functional Analysis*, 2nd ed., McGraw-Hill, 1991, ISBN: 9780070542365

@@ -13,7 +13,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
-  wikidata_id: Q11348
 references:
   databases:
   - id: wikidata
@@ -21,6 +20,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -121,3 +137,10 @@ $$\prod_{i=1}^n a_i^{p_i} \leq \sum_{i=1}^n p_i a_i$$
 **变式2（难度⭐⭐⭐）**：设 $\varphi$ 严格凸，证明Jensen等号成立当且仅当 $f$ a.e.常数。
 
 **变式3（难度⭐⭐⭐⭐）**：定义Legendre变换 $\varphi^*(y) = \sup_x(xy - \varphi(x))$，证明其对偶性。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

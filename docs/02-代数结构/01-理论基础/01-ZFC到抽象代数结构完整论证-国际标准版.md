@@ -22,6 +22,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -34,6 +36,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -47,6 +50,29 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # ZFC到抽象代数结构完整论证 - 国际标准版
 
@@ -948,3 +974,13 @@ end
 | 交换/结合/分配律 | Commutativity/Associativity/Distributivity |
 | 理想/素理想/极大理想 | Ideal/Prime/Maximal ideal |
 | 张量积/导函子 | Tensor product/Derived functor |
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

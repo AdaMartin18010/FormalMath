@@ -7,7 +7,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
   wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
-  wikidata_id: Q268493
 references:
   papers:
   - title: A method for obtaining digital signatures and public-key cryptosystems
@@ -21,6 +20,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q268493
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Elements of Information Theory
+    author: Thomas M. Cover and Joy A. Thomas
+    edition: 2nd
+    publisher: Wiley
+    year: 2006
+    isbn: '9780471241959'
+    mr_number: MR2239987
+    doi: 10.1002/0471200611
+  - title: A First Course in Information Theory
+    author: Raymond W. Yeung
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780306467911'
+    mr_number: MR1876845
+    doi: 10.1007/978-1-4419-8608-5
 ---
 # RSA与椭圆曲线密码学完整实现
 
@@ -337,3 +353,11 @@ def ecdsa_verify(message, signature, public_key, curve, G, n):
 ## 经典论文与原始文献
 
 - Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978 (DOI: 10.1145/359340.359342)
+
+---
+
+## 参考文献
+
+- Thomas M. Cover and Joy A. Thomas, *Elements of Information Theory*, 2nd ed., Wiley, 2006, ISBN: 9780471241959 / MR2239987
+- Raymond W. Yeung, *A First Course in Information Theory*, 1st ed., Springer, 2002, ISBN: 9780306467911 / MR1876845
+- Ronald L. Rivest, Adi Shamir, Leonard M. Adleman, *A method for obtaining digital signatures and public-key cryptosystems*, Communications of the ACM, 1978, DOI: 10.1145/359340.359342

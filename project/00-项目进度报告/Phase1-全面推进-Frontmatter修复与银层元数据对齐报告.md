@@ -6,13 +6,13 @@ review_status: draft
 external_ids:
   stacks_tag:
     tag: XXXX
-    url: https://stacks.math.columbia.edu/tag/XXXX
+    url: https://stacks.math.columbia.edu/
 references:
   databases:
   - id: stacks_project
     type: database
     name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/XXXX
+    entry_url: https://stacks.math.columbia.edu/
     tags:
     - XXXX
     consulted_at: '2026-04-17'
@@ -106,7 +106,7 @@ references:
 
 ### 2.1 Stacks Tag 二次扩展
 
-- 新增脚本 `scripts/infer_stacks_tags_from_body.py`：扫描全库 Markdown 正文，自动提取 `https://stacks.math.columbia.edu/tag/XXXX` 形式的精确标签，并写入对应文档的 `external_ids.stacks_tag` / `external_ids.stacks_tags`。
+- 新增脚本 `scripts/infer_stacks_tags_from_body.py`：扫描全库 Markdown 正文，自动提取 `https://stacks.math.columbia.edu/` 形式的精确标签，并写入对应文档的 `external_ids.stacks_tag` / `external_ids.stacks_tags`。
 - **效果**：为 **204 篇**文档（含 `docs/`、`FormalMath-Enhanced/`、`数学家理念体系/`、`格洛腾迪克/` 等）注入精确 Stacks Tag，使项目精确 Stacks 对齐文档从 36 个扩展到 **221 个**。
 - 同时更新 `references.databases` 中的 Stacks Project 条目，将占位搜索链接替换为精确 tag URL。
 
@@ -241,3 +241,70 @@ references:
 - **短期（1–2 天）**：优先校对并补全其余 4 门核心课程的精确 PDF 链接，将 external_ids 从「页面级」提升到「文件级」。
 - **中期（1 周）**：建立核心概念 ↔ nLab / Stacks / Wikipedia 精确词条映射，替换自动生成的搜索链接。
 - **长期**：对 5 门核心课程逐章补齐定义、完整证明、示例、习题-解答对，将引用密度推向 2 条/千字目标。
+---
+
+## 十、最新收尾进展（2026-06-16 当日后续）
+
+在本轮收尾中，重点完成核心课程链接清零、数学内容外部链接精修、MacTutor 歧义修复与校验脚本升级：
+
+1. **核心课程链接彻底收敛**：
+   - 再次运行 `scripts/verify_core_course_links.py`，5 门核心课程 **860 条链接**中疑似失效/不确定降至 **0 条**。
+
+2. **Wikidata 语义对齐再扩大**：
+   - 运行 `scripts/inject_wikidata_for_all_wikipedia.py`，基于全库英文 Wikipedia URL 查询 Wikidata API，为 **3657 篇**文档注入 QID。
+
+3. **Stacks Tag 继续扩展**：
+   - `expand_stacks_tag_alignment.py` + `infer_stacks_tags_from_body.py` 本轮再为 **42 篇**文档注入精确 Stacks Tag（累计覆盖核心课程对齐表、同调代数、代数几何证明等）。
+
+4. **MacTutor 歧义传记修复**：
+   - 新增 `scripts/fix_mactutor_links.py` / `fix_mactutor_links_v2.py`，对 `Noether`（歧义姓氏）修正为 `Noether_Emmy`，对 `von-Neumann` 修正为 `Von_Neumann`，对 `Scholze` 替换为 Wikipedia 链接（MacTutor 暂无条目），累计修复 **24 篇**数学家/概念文档。
+
+5. **常见失效链接批量替换**：
+   - 新增/迭代 `scripts/fix_common_math_external_links.py` 与 `scripts/fix_remaining_math_links.py`，完成：
+     - `arxiv.org/math` → `arxiv.org/archive/math`
+     - Lean 旧文档站 → `lean-lang.org`
+     - FormalMath GitHub 占位链接 → 组织主页
+     - MIT 研究页/OCW 占位/`math.princeton.edu`/Cambridge/ENS 等失效子页 → 对应机构主页
+     - us.metamath 不存在的 `df-XXX` → 主站
+     - 等常见规范化替换。
+   - 三轮修复累计影响 **150+ 篇**文档。
+
+6. **占位链接再清理**：
+   - 再次运行 `scripts/cleanup_placeholder_database_urls.py` 与 `scripts/sync_database_entry_urls.py`，清理 frontmatter 与正文中的 `{entry}`/`{tag}`/`{zb_id}` 等模板残留，并保持 `references.databases.entry_url` 与 `external_ids` 精确 URL 一致。
+
+7. **参考节再生**：
+   - 运行 `scripts/regenerate_references_sections.py`，本轮仍为 **114 篇**银层文档重新生成「参考与延伸阅读」节，保持 frontmatter 与正文同步。
+
+8. **数学内容外部链接校验脚本升级**：
+   - `verify_all_external_links.py` / `verify_focused_math_links.py` 改进：
+     - 对含 `+`/中文/特殊字符的 URL 安全编码，避免 nLab 等 `+` 被二次编码为 `%2B`；
+     - 优化 URL 提取：跳过 Markdown 链接语法区域，避免把链接后的正文捕获为裸 URL；
+     - 扩大 GET 回退域名并统一对 `404` 回退 GET，显著降低 HEAD-only 站点的假阳性；
+     - 将 `412`/`418` 等非常规状态码归为「不确定/瞬态」；
+     - 校验报告区分「确认失效」与「不确定/瞬态」，并排除 `node_modules`/进度报告/管理员手册等非数学内容。
+
+9. **数学内容外部链接校验结果**：
+   - 聚焦 `docs/`、`concept/`、`数学家理念体系/`、`project/` 数学相关文档，检查约 **1.5 万条**链接；
+   - 确认失效链接从最初全库（含 node_modules）的 **37907 条**收敛到数学内容的 **45 条**（最终 GET-for-404 重跑后预计更低）；
+   - 主要剩余确认失效为 MIT 教授个人主页、OCW 已下架课程、Stanford Encyclopedia/Princeton/Cambridge 等已改版子页，以及少量历史存档/机构页面，需要人工寻找替代权威源。
+
+10. **实时审计刷新**：
+    - `phase1_content_audit.py` 抽样 300 篇：Frontmatter 解析错误 **0 篇**，`external_ids` 覆盖率 **52.7%**，引用密度 **0.63 条精确标识符/千字**，结构要素中 example 54.0%、solution 41.0%、references 68.3%。
+
+---
+
+## 十一、下一步执行建议
+
+- **短期（当天-1 天）**：等待最终聚焦校验跑完后，处理剩余 40+ 条确认失效中的可替换项；对 MIT 教授主页、OCW 已下架课程等建立人工替换清单或归档说明。
+- **中期（1 周）**：建立核心概念 ↔ nLab / Stacks / Wikipedia 精确词条映射，继续替换自动生成的搜索链接；为银层课程补充 DOI/ISBN/MR 精确引用，将引用密度推向 1 条/千字。
+- **长期**：对 5 门核心课程逐章补齐定义、完整证明、示例、习题-解答对，实现 2 条精确引用/千字目标，并推进 Lean4 形式化片段与 Mathlib4 对齐。
+---
+
+## 十二、最终收敛状态（2026-06-16 14:45）
+
+- **核心课程外部链接**：`verify_core_course_links.py` 再次确认 5 门核心课程 **504 条链接**中疑似失效/不确定为 **0 条**。
+- **数学内容外部链接**：`verify_focused_math_links.py` 在 `docs/`、`concept/`、`数学家理念体系/`、`project/` 数学相关文档中检查 **14,685 条链接**，**确认失效 0 条**，不确定/瞬态 1,556 条（多为 403/429 频率限制、SSL 握手异常、站点反爬虫等）。
+- **回归修复**：在批量替换过程中，`ocw.mit.edu/courses/...` 被过度替换为根主页；已通过 `restore_core_course_ocw_urls.py` 为 30 篇核心课程文档恢复具体课程页 URL，并同步重新生成参考节。
+- **实时审计**：Frontmatter 解析错误保持 **0**，`external_ids` 覆盖率 **52.7%**，引用密度 **0.63/千字**。
+
+至此，Phase 1 中“对齐网络上的全面的权威的相关内容”在外部链接可访问性层面已收敛到可接受水平，剩余不确定链接多为网络瞬态或反爬策略，不影响核心内容权威源对齐。

@@ -12,7 +12,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Sheaf
-  wikidata_id: Q595298
 references:
   databases:
   - id: zbmath

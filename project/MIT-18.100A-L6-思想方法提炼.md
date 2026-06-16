@@ -1,7 +1,7 @@
 ---
 msc_primary: 26
 msc_secondary:
-  - 26-01
+- 26-01
 title: MIT 18.100A Real Analysis L6思想方法提炼
 processed_at: '2026-04-10'
 course_code: MIT 18.100A
@@ -9,6 +9,38 @@ course_name: Real Analysis
 instructor: Casey Rodriguez
 alignment_level: L6
 document_type: 思想方法级对齐
+references:
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: Real Mathematical Analysis
+    author: Charles C. Pugh
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780387952970'
+    mr_number: MR1639930
+    doi: 10.1007/978-0-387-21676-7
+  - title: Analysis I
+    author: Terence Tao
+    edition: 3rd
+    publisher: Springer
+    year: 2016
+    isbn: '9789811017896'
+    mr_number: MR3728289
+    doi: 10.1007/978-981-10-1789-6
 ---
 # MIT 18.100A Real Analysis L6思想方法提炼
 
@@ -1244,7 +1276,7 @@ L6: 会思考
 
 ### MIT课程资源
 
-1. MIT OpenCourseWare. (2020). 18.100A Real Analysis. https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+1. MIT OpenCourseWare. (2020). 18.100A Real Analysis. https://ocw.mit.edu/
 2. Lebl, J. (2023). Basic Analysis I: Introduction to Real Analysis. https://www.jirka.org/ra/
 
 ---
@@ -1296,3 +1328,12 @@ L6: 会思考
 ---
 
 *本文档是MIT 18.100A Real Analysis课程L6级对齐的核心文档，聚焦思想方法层面的深度教学。建议与L3-L5文档配合使用，形成完整的六级对齐体系。*
+
+---
+
+## 参考文献
+
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, ISBN: 9780070542358 / MR0385023
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015, ISBN: 9781493927111
+- Charles C. Pugh, *Real Mathematical Analysis*, 1st ed., Springer, 2002, ISBN: 9780387952970 / MR1639930
+- Terence Tao, *Analysis I*, 3rd ed., Springer, 2016, ISBN: 9789811017896 / MR3728289

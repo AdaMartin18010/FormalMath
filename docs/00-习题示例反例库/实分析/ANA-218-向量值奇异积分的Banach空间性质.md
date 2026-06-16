@@ -17,7 +17,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Banach+space
   wikipedia_url: https://en.wikipedia.org/wiki/Banach_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Banach%E7%A9%BA%E9%97%B4
-  wikidata_id: Q194397
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Banach/
 references:
   databases:
   - id: wikidata

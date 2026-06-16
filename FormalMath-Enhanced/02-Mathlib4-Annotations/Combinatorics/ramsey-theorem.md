@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Ramsey定理 (Ramsey's Theorem)
+references:
+  papers:
+  - title: On a problem of formal logic
+    author: F. P. Ramsey
+    journal: Proceedings of the London Mathematical Society
+    year: 1930
+    doi: 10.1112/plms/s2-30.1.264
 ---
 # Ramsey定理 (Ramsey's Theorem)
 
@@ -124,3 +131,9 @@ $K_5$ 可以避免：五边形的边染红，五角星的边染蓝。
 ---
 
 *最后更新：2026-04-03 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- F. P. Ramsey, *On a problem of formal logic*, Proceedings of the London Mathematical Society, 1930 (DOI: 10.1112/plms/s2-30.1.264)

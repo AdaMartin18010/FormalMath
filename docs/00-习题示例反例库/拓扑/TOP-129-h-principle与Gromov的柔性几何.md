@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57R99
+  - 57R99'
 exercise_id: TOP-129
 title: h-principle与Gromov的柔性几何
 difficulty: 4
@@ -10,11 +10,17 @@ topic: 拓扑
 subtopic: h-principle
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+references:
+  papers:
+  - title: Pseudo holomorphic curves in symplectic manifolds
+    author: Mikhail Gromov
+    journal: Inventiones Mathematicae
+    year: 1985
+    doi: 10.1007/BF01388788
 ---
-
 # TOP-129: h-principle与Gromov的柔性几何
 
 **题号**: TOP-129
@@ -48,3 +54,9 @@ processed_at: '2026-04-10'
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Mikhail Gromov, *Pseudo holomorphic curves in symplectic manifolds*, Inventiones Mathematicae, 1985 (DOI: 10.1007/BF01388788)

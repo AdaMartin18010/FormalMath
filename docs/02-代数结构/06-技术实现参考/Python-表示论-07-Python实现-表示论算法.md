@@ -22,6 +22,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -34,6 +36,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -47,6 +50,16 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
   databases:
   - id: nlab
     type: database
@@ -62,7 +75,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/representation+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Representation_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA
-  wikidata_id: Q13220368
 ---
 # 表示论算法Python实现 - 国际标准版
 
@@ -2052,3 +2064,12 @@ def verify_representation_example():
 10. Goodman, R., & Wallach, N. R. (2009). Symmetry, representations, and invariants. Springer.
 11. Kirillov, A. (2008). An introduction to Lie groups and Lie algebras. Cambridge University Press.
 12. Chari, V., & Pressley, A. (1994). A guide to quantum groups. Cambridge University Press.
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236
+- Joseph J. Rotman, *An Introduction to the Theory of Groups*, 4th ed., Springer, 1995, ISBN: 9780387942858 / MR1307623

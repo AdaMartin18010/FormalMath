@@ -6,6 +6,29 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐
 预计时间: 30分钟
 title: 变分法与Euler Lagrange方程
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Calculus_of_variations
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%8F%98%E5%88%86%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/calculus+of+variations
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
 ---
 # 变分法与Euler-Lagrange方程
 
@@ -104,3 +127,10 @@ $u$ 确实是极小元。$\square$
 **变式1：** 推导测地线方程：极小化 $\int \sqrt{g_{ij}\dot{x}^i\dot{x}^j} dt$。
 
 **变式2：** 推导极小曲面方程：$L = \sqrt{1 + |\nabla u|^2}$。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

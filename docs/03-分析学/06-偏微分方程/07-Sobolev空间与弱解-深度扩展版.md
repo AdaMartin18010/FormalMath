@@ -1,13 +1,25 @@
 ---
 title: Sobolev空间与弱解 - 深度扩展版
-msc_primary: 35
+msc_primary: '35
 
-  - 35D30
-  - 46E35
-  - 35J20
-  - 35A15
-  - 00A99
+  - 35D30 - 46E35 - 35J20 - 35A15 - 00A99'
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Partial Differential Equations
+    author: Lawrence C. Evans
+    edition: 2nd
+    publisher: American Mathematical Society
+    year: 2010
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    doi: 10.1090/gsm/019
+  - title: 'Partial Differential Equations: An Introduction'
+    author: Walter A. Strauss
+    edition: 2nd
+    publisher: Wiley
+    year: 2008
+    isbn: '9780470054567'
 ---
 # Sobolev空间与弱解 - 深度扩展版
 

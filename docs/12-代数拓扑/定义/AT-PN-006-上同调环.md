@@ -32,7 +32,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
-  wikidata_id: Q161172
 references:
   databases:
   - id: wikidata
@@ -40,6 +39,29 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q161172
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
 ---
 # AT-PN-006: 上同调环 (Cohomology Ring)
 
@@ -223,3 +245,11 @@ structure GradedRing (R : Type) where
 2. 分次交换性：$\alpha \smile \beta = (-1)^{ij} \beta \smile \alpha$
 3. 上同调环是比同调群更强的不变量
 4. 可以区分具有相同同调群的空间
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

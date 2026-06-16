@@ -13,7 +13,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
-  wikidata_id: Q864475
 references:
   databases:
   - id: wikidata
@@ -21,6 +20,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q864475
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -133,3 +149,10 @@ $$0 = \operatorname{Tor}_1(M, C) \to M \otimes A \to M \otimes B \to M \otimes C
 **变式2（难度⭐⭐⭐⭐）**：证明 $\operatorname{Ext}^1_R(M,N)$ 分类 $M$ 被 $N$ 的扩张。
 
 **变式3（难度⭐⭐⭐⭐）**：用Ext刻划投射模和内射模。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

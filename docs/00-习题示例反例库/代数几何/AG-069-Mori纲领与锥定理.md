@@ -1,7 +1,7 @@
 ---
-msc_primary: 14
+msc_primary: '14
 
-  - 14E30
+  - 14E30'
 exercise_id: AG-069
 title: Mori纲领与锥定理
 difficulty: 3
@@ -10,11 +10,13 @@ topic: 代数几何
 subtopic: 双有理几何
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Shigefumi_Mori
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Mori/
 ---
-
 # AG-069: Mori纲领与锥定理
 
 **题号**: AG-069

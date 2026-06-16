@@ -7,7 +7,6 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 references:
   databases:
   - id: wikidata
@@ -22,10 +21,10 @@ references:
 
 ---
 
-**文档编号**: FM.L3.TOP.{0:D2}  
-**理论名称**: 22-子Riemann几何  
-**MSC分类**: 待定  
-**创建日期**: 2026年4月3日  
+**文档编号**: FM.L3.TOP.{0:D2}
+**理论名称**: 22-子Riemann几何
+**MSC分类**: 待定
+**创建日期**: 2026年4月3日
 **版本**: 1.0
 
 ---
@@ -67,5 +66,6 @@ references:
 ---
 
 **文档信息**
+
 - **创建日期**: 2026年4月3日
 - **状态**: 框架文档，待完善

@@ -24,6 +24,7 @@ references:
     year: 1995
     isbn: '9780387944609'
     mr_number: MR1344449
+    doi: 10.1007/978-1-4612-7154-9
   - title: Complex Analysis
     author: Elias M. Stein, Rami Shakarchi
     edition: 1st
@@ -56,7 +57,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/series
   wikipedia_url: https://en.wikipedia.org/wiki/Series_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0
-  wikidata_id: Q170198
 ---
 # Laurent级数（Laurent Series）
 
@@ -438,4 +438,3 @@ example {f : ℂ → ℂ} {z₀ : ℂ} (hf : ∀ᶠ z in nhdsWithin z₀ {z₀}�
 - [Nlab Url](https://ncatlab.org/nlab/show/series)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Series_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0)
-- [Wikidata Id](Q170198)

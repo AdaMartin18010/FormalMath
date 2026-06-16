@@ -124,7 +124,7 @@ FormalMath-Enhanced/
 
 - 🐛 发现问题？请提交 Issue
 - 💡 有建议？欢迎贡献内容
-- 🔗 外部资源：[MSC2020 官网](https://msc2020.org/)[需更新] | [Mathlib4](https://leanprover-community.github.io/mathlib4/)[需更新] | [IMO 官方](https://www.imo-official.org/)[需更新]
+- 🔗 外部资源：[MSC2020 官网](https://msc2020.org/)[需更新] | [Mathlib4](https://leanprover-community.github.io/mathlib4_docs/)[需更新] | [IMO 官方](https://www.imo-official.org/)[需更新]
 
 ---
 

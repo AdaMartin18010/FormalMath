@@ -22,6 +22,14 @@ references:
     publisher: Stanford University
     year: 2024
     isbn: ''
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
 ---
 # Stanford FOAG 对齐深化执行计划
 

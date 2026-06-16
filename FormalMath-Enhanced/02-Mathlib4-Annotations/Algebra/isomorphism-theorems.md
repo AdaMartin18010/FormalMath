@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/isomorphism
   wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
-  wikidata_id: Q189112
 references:
   databases:
   - id: wikidata

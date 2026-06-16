@@ -18,6 +18,24 @@ source: 经典代数习题
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -175,3 +193,10 @@ $$|G| = |H| \cdot [K^H : F]$$
 **变式2：** 证明中间域 $E/F$ 正规当且仅当对应子群 $H$ 是 $G$ 的正规子群。
 
 **变式3：** 设 $K/F$ 是$p$次循环扩张（$p$素数），证明中间域只有$K$和$F$。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

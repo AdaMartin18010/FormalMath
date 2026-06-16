@@ -1,6 +1,27 @@
 ---
-title: "数值分析基础 数值线性代数与ODE数值解"
-msc_primary: "65"
+title: 数值分析基础 数值线性代数与ODE数值解
+msc_primary: '65'
+references:
+  textbooks:
+  - title: Numerical Linear Algebra
+    author: Lloyd N. Trefethen and David Bau III
+    edition: 1st
+    publisher: SIAM
+    year: 1997
+    isbn: '9780898713619'
+    mr_number: MR1444820
+    doi: 10.1137/1.9780898719574
+  - title: 'Numerical Recipes: The Art of Scientific Computing'
+    author: William H. Press, Saul A. Teukolsky, William T. Vetterling, and Brian
+      P. Flannery
+    edition: 3rd
+    publisher: Cambridge University Press
+    year: 2007
+    isbn: '9780521880688'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # 数值分析基础 - 数值线性代数与ODE数值解法
 

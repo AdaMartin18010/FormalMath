@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/limit
   wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
-  wikidata_id: Q1322614
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1322614
     consulted_at: '2026-06-16'
+  papers:
+  - title: Eine neue Herleitung des Exponentialgesetzes in der Wahrscheinlichkeitsrechnung
+    author: Jarl Waldemar Lindeberg
+    journal: Mathematische Zeitschrift
+    year: 1922
+    doi: 10.1007/BF01494348
 ---
 # 中心极限定理 (Central Limit Theorem)
 
@@ -120,3 +125,9 @@ $$\lim_{{n \to \infty}} P(Z_n \leq z) = \Phi(z) = \frac{{1}}{{\sqrt{{2\pi}}}} \i
 ---
 
 *最后更新：2026-04-15 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Jarl Waldemar Lindeberg, *Eine neue Herleitung des Exponentialgesetzes in der Wahrscheinlichkeitsrechnung*, Mathematische Zeitschrift, 1922 (DOI: 10.1007/BF01494348)

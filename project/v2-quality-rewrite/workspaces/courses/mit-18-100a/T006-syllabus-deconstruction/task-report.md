@@ -16,10 +16,10 @@ processed_at: '2026-04-05'
 ## 1. Information Sources
 
 ### 1.1 Primary Sources (Official MIT OCW)
-- **Syllabus:** https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/syllabus/
-- **Calendar / Schedule:** https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/calendar/
-- **Lecture Notes and Readings:** https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/lecture-notes-and-readings/
-- **Assignments and Exams Index:** https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/assignments-and-exams/
+- **Syllabus:** https://ocw.mit.edu/
+- **Calendar / Schedule:** https://ocw.mit.edu/
+- **Lecture Notes and Readings:** https://ocw.mit.edu/
+- **Assignments and Exams Index:** https://ocw.mit.edu/
 - **Textbook:** Lebl, Jiří. *Basic Analysis I: Introduction to Real Analysis, Volume 1* (free PDF via author’s website).
 
 ### 1.2 Secondary Sources (Problem-Set Transcriptions)

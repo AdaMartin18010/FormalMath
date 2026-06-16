@@ -86,10 +86,28 @@ references:
     edition: Springer GTM 52, 1977
     chapters: Chapter III, §1-4
     pages: 201-240
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - title: Sheaf Theory
     author: G. E. Bredon
     edition: Springer GTM 170, 1997
     chapters: Chapter III
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Faisceaux algébriques cohérents
     author: J-P. Serre
@@ -124,14 +142,10 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
-  stacks_tag: &id001
+  stacks_tag:
     tag: 01DX
     url: https://stacks.math.columbia.edu/tag/01DX
-  stacks_tags:
-  - *id001
-  - tag: 09ZQ
-    url: https://stacks.math.columbia.edu/tag/09ZQ
-  wikidata_id: Q595298
+  stacks_tags: []
 ---
 # 层的上同调与 Čech 上同调
 
@@ -504,3 +518,15 @@ Stacks Project 的第 20 章篇幅宏大，将 Čech 上同调、层上同调、
 ---
 
 *文档字数：约 11,000 字 | 最后更新：2026-04-17 | 版本：v1.0-gold*
+
+---
+
+## 参考文献
+
+- R. Godement, *Topologie Algébrique et Théorie des Faisceaux*, Hermann, 1958 ed.
+- R. Hartshorne, *Algebraic Geometry*, Springer GTM 52, 1977 ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- G. E. Bredon, *Sheaf Theory*, Springer GTM 170, 1997 ed.
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- J-P. Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955
+- A. Grothendieck, *Sur quelques points d'algèbre homologique*, Tôhoku Mathematical Journal, 1957

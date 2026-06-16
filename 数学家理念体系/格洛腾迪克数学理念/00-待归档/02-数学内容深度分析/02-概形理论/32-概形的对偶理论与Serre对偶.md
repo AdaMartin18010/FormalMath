@@ -11,15 +11,11 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
-  stacks_tag: &id001
+  stacks_tag:
     tag: 0A7E
     url: https://stacks.math.columbia.edu/tag/0A7E
-  stacks_tags:
-  - *id001
-  - tag: 0B54
-    url: https://stacks.math.columbia.edu/tag/0B54
+  stacks_tags: []
   zbmath_url: https://zbmath.org/?q=au:Scheme
-  wikidata_id: Q1155772
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -346,3 +342,9 @@ Grothendieck的贡献：
 ## 经典论文与原始文献
 
 - Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)
+
+---
+
+## 参考文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955, DOI: 10.2307/1970375

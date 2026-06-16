@@ -2,31 +2,36 @@
 title: Morse理论入门
 description: 系统介绍Morse函数、Morse引理、胞腔分解定理与Morse不等式，以及Morse同调的基本构造，建立用临界点附近度量流形拓扑的方法。
 msc_primary:
-  - 53C05
+- 53C05
 msc_secondary:
-  - 57R19
-  - 58E05
-  - 55U15
+- 57R19
+- 58E05
+- 55U15
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: milnor_morse
-      type: textbook
-      title: Morse Theory
-      authors:
-        - John Milnor
-      publisher: Princeton University Press
-      year: 1963
-      msc: 57R19
-    - id: audin_damian
-      type: textbook
-      title: Morse Theory and Floer Homology
-      authors:
-        - Michèle Audin
-        - Mihai Damian
-      publisher: Springer
-      year: 2014
-      msc: 57R58
+  - id: milnor_morse
+    type: textbook
+    title: Morse Theory
+    authors:
+    - John Milnor
+    publisher: Princeton University Press
+    year: 1963
+    msc: 57R19
+    edition: 1st
+    isbn: '9780691080086'
+    mr_number: MR0163331
+    author: John W. Milnor
+    doi: 10.1515/9781400881802
+  - id: audin_damian
+    type: textbook
+    title: Morse Theory and Floer Homology
+    authors:
+    - Michèle Audin
+    - Mihai Damian
+    publisher: Springer
+    year: 2014
+    msc: 57R58
 ---
 # Morse理论入门
 
@@ -151,3 +156,10 @@ $$\partial p = \sum_{q \in \text{Crit}_{\lambda-1}(f)} n(p,q) \, q$$
 ## 6. 小结
 
 Morse理论揭示了光滑函数的临界点与流形拓扑之间的深刻联系。Morse不等式给出了Betti数的下界估计，胞腔分解提供了计算同调的具体几何手段，Morse同调则将这一切纳入同调代数的框架，并为Floyd同调等现代理论奠定基础。从球面的高度函数到环面上的复杂梯度流，Morse理论始终是联系分析与拓扑的桥梁。
+
+---
+
+## 参考文献
+
+- John W. Milnor, *Morse Theory*, 1st ed., Princeton University Press, 1963, ISBN: 9780691080086 / MR0163331
+- Michèle Audin, Mihai Damian, *Morse Theory and Floer Homology*, Springer, 2014

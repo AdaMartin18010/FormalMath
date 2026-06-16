@@ -11,6 +11,27 @@ references:
     journal: Communications of the ACM
     year: 1978
     doi: 10.1145/359340.359342
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algorithm
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/algorithm
 ---
 # RSA加密算法
 
@@ -221,7 +242,7 @@ def mod_inverse(e, phi):
 
 ### 在线资源
 - [RFC 8017](https://tools.ietf.org/html/rfc8017)[需更新][需更新]: RSA Cryptography Specifications Version 2.2
-- [NIST SP 800-56B](https://csrc.nist.gov/publications/detail/sp/800-56b/rev-2/final)[需更新][需更新]: Recommendation for Pair-Wise Key Establishment Schemes
+- [NIST SP 800-56B](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-56Br2.pdf)[需更新][需更新]: Recommendation for Pair-Wise Key Establishment Schemes
 
 ### 工具
 - OpenSSL: `openssl genrsa`, `openssl rsa`

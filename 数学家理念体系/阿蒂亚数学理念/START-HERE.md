@@ -254,7 +254,7 @@ processed_at: '2026-04-05'
 **传记资源**：
 
 - [MacTutor History: Atiyah Biography](https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/)[需更新] - 详细的数学传记
-- [Abel Prize: Atiyah](https://www.abelprize.no/laureates/2004)[需更新] - Abel奖官方页面
+- [Abel Prize: Atiyah](https://abelprize.no/)[需更新] - Abel奖官方页面
 
 **视频资源**：
 

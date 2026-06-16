@@ -155,7 +155,7 @@ title: FormalMath 国际课程深度对齐模块
 
 ## 相关资源
 
-- [MIT OCW Mathematics](https://ocw.mit.edu/courses/mathematics/)
+- [MIT OCW Mathematics](https://ocw.mit.edu/)
 - [Harvard Math Department](https://math.harvard.edu/)
 - [Stanford Math Department][https://mathematics.stanford.edu/](需更新)
 - [Vakil FOAG](http://math.stanford.edu/~vakil/216blog/)

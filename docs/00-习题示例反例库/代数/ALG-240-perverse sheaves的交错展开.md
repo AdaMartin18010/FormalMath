@@ -1,7 +1,7 @@
 ---
-msc_primary: 32
+msc_primary: '32
 
-  - 32S60
+  - 32S60'
 exercise_id: ALG-240
 title: perverse sheaves的交错展开
 difficulty: 4
@@ -10,9 +10,25 @@ topic: 代数
 subtopic: 几何表示论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+references:
+  textbooks:
+  - title: Complex Analysis
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113852'
+  - title: Several Complex Variables with Connections to Algebraic Geometry and Lie
+      Groups
+    author: Joseph L. Taylor
+    edition: 1st
+    publisher: American Mathematical Society
+    year: 2002
+    isbn: '9780821831786'
+    mr_number: MR1885077
 ---
 # ALG-240: Perverse Sheaves 的交错展开
 
@@ -125,3 +141,10 @@ $$[\mathbb{C}_{\mathcal{O}_\lambda}] = \sum_\mu (-1)^{\dim \mathcal{O}_\lambda -
 - D. Kazhdan, G. Lusztig, "Schubert varieties and Poincaré duality", *Proc. Symp. Pure Math.* 1980
 - T. A. Springer, "Trigonometric sums, Green functions of finite groups and representations of Weyl groups", *Invent. Math.* 1976
 - N. Chriss, V. Ginzburg, *Representation Theory and Complex Geometry*, Birkhäuser, 1997
+
+---
+
+## 参考文献
+
+- Elias M. Stein and Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003, ISBN: 9780691113852
+- Joseph L. Taylor, *Several Complex Variables with Connections to Algebraic Geometry and Lie Groups*, 1st ed., American Mathematical Society, 2002, ISBN: 9780821831786 / MR1885077

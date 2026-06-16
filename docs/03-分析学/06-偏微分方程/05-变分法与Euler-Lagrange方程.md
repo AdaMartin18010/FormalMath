@@ -1,10 +1,33 @@
 ---
-title: "05 变分法与Euler–Lagrange方程"
-msc_primary: 49
+title: 05 变分法与Euler–Lagrange方程
+msc_primary: '49
 
-  - 49J10
-msc_secondary: ['35A15', '49K20', '58E05']
+  - 49J10'
+msc_secondary:
+- 35A15
+- 49K20
+- 58E05
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Calculus of Variations
+    author: I. M. Gelfand and S. V. Fomin
+    edition: 1st
+    publisher: Dover
+    year: 2000
+    isbn: '9780486138044'
+    mr_number: MR0160139
+  - title: Introduction to the Calculus of Variations
+    author: Bernard Dacorogna
+    edition: 3rd
+    publisher: Imperial College Press
+    year: 2015
+    isbn: '9781783265527'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Calculus_of_variations
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%8F%98%E5%88%86%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/calculus+of+variations
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
 ---
 # 05 变分法与Euler–Lagrange方程 / Calculus of Variations and Euler–Lagrange Equations
 
@@ -318,3 +341,10 @@ $$
 **数学公式数**: 35+  
 **例子数**: 3  
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- I. M. Gelfand and S. V. Fomin, *Calculus of Variations*, 1st ed., Dover, 2000, ISBN: 9780486138044 / MR0160139
+- Bernard Dacorogna, *Introduction to the Calculus of Variations*, 3rd ed., Imperial College Press, 2015, ISBN: 9781783265527

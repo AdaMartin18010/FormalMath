@@ -25,6 +25,11 @@ references:
     publisher: Birkhäuser
     year: 1992
     msc: 53-01
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Calculus_of_variations
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%8F%98%E5%88%86%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/calculus+of+variations
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Jacobi/
 ---
 # 变分法与Jacobi场
 

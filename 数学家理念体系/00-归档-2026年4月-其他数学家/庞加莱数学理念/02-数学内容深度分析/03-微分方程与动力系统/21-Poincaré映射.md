@@ -9,7 +9,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
-  wikidata_id: Q11348
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/
 references:
   databases:
   - id: wikidata
@@ -17,6 +17,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Mathematics and Its History
+    author: John Stillwell
+    edition: 3rd
+    publisher: Springer
+    year: 2010
+    isbn: '9781441960528'
+    mr_number: MR2675606
+    doi: 10.1007/978-1-4419-6053-5
+  - title: 'A History of Mathematics: An Introduction'
+    author: Victor J. Katz
+    edition: 3rd
+    publisher: Pearson
+    year: 2009
+    isbn: '9780321387004'
 ---
 # Poincaré映射：周期轨道的横截截面
 
@@ -557,3 +572,10 @@ Poincaré映射是庞加莱的重要贡献，它将连续时间问题转化为�
 **文档状态**: ✅ 完成
 **字数**: 约1,200词
 **最后更新**: 2026年01月02日
+
+---
+
+## 参考文献
+
+- John Stillwell, *Mathematics and Its History*, 3rd ed., Springer, 2010, ISBN: 9781441960528 / MR2675606
+- Victor J. Katz, *A History of Mathematics: An Introduction*, 3rd ed., Pearson, 2009, ISBN: 9780321387004

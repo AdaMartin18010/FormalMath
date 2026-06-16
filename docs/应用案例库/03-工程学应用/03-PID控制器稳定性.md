@@ -1,12 +1,27 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16A99
-  - 00A99
-  - 22E47
-  - 00A99
+  - 16A99 - 00A99 - 22E47 - 00A99'
 title: PID控制器的稳定性分析
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: A First Course in Noncommutative Rings
+    author: T. Y. Lam
+    edition: 2nd
+    publisher: Springer
+    year: 2001
+    isbn: '9780387951836'
+    mr_number: MR1838439
+    doi: 10.1007/978-1-4419-8616-0
+  - title: Algebra
+    author: Serge Lang
+    edition: Revised 3rd
+    publisher: Springer
+    year: 2002
+    isbn: '9780387953854'
+    mr_number: MR1878556
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # PID控制器的稳定性分析
 

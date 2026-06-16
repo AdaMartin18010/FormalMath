@@ -12,7 +12,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
   zbmath_url: https://zbmath.org/?q=au:Scheme
-  wikidata_id: Q1155772
 references:
   databases:
   - id: zbmath

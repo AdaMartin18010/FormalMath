@@ -10,7 +10,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
-  wikidata_id: Q77141
 references:
   databases:
   - id: zbmath
@@ -24,6 +23,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q77141
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 # Deligne与Motives：Grothendieck梦想的现实化
 
@@ -371,3 +392,11 @@ Motives与自守表示的联系是Langlands纲领的核心，Deligne的l-adic实
 **MSC分类**: 14C15 (Primary), 14F42, 19E15, 11G09 (Secondary)
 **难度级别**: 研究生/高级本科生
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B30
+  - 42B30'
 exercise_id: ANA-207
 title: 齐次化Hardy空间插值定理
 difficulty: 3
@@ -10,9 +10,26 @@ topic: 实分析
 subtopic: 调和分析
 source:
   course: 现代调和分析
-  chapter: "8.3"
+  chapter: '8.3'
   original: true
 processed_at: '2026-04-10'
+references:
+  textbooks:
+  - title: 'Fourier Analysis: An Introduction'
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113845'
+    doi: 10.1515/9781400831142
+  - title: An Introduction to Harmonic Analysis
+    author: Yitzhak Katznelson
+    edition: 3rd
+    publisher: Cambridge University Press
+    year: 2004
+    isbn: '9780521543590'
+    mr_number: MR2039503
+    doi: 10.1017/CBO9781139162371
 ---
 # ANA-207: 齐次化Hardy空间插值定理
 

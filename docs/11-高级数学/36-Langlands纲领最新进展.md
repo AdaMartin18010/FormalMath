@@ -1,10 +1,38 @@
 ---
-title: "36. Langlands纲领最新进展 (2024-2025)"
-msc_primary: 11
+title: 36. Langlands纲领最新进展 (2024-2025)
+msc_primary: '11
 
-  - 11F70
-msc_secondary: ["11R39", "14D24", "22E50", "11S37"]
+  - 11F70'
+msc_secondary:
+- 11R39
+- 14D24
+- 22E50
+- 11S37
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
 ---
 # 36. Langlands纲领最新进展 (2024-2025)
 
@@ -389,3 +417,11 @@ $$\mathcal{L}: \text{Aut}(G) \to \text{Aut}(H)$$
 ---
 
 *本文档综述了2024-2025年Langlands纲领的最新突破，特别关注Fargues-Scholze几何化理论、Gaitsgory的几何Langlands证明以及p-adic Langlands的范畴化进展。*
+
+---
+
+## 参考文献
+
+- G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press, 2008, ISBN: 9780199219865 / MR2445243
+- Jean-Pierre Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- Tom M. Apostol, *Introduction to Analytic Number Theory*, 1st ed., Springer, 1976, ISBN: 9780387901633 / MR0434929

@@ -1,7 +1,7 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20C33
+  - 20C33'
 exercise_id: ALG-250
 title: Deligne-Lusztig特征标的计算
 difficulty: 5
@@ -10,11 +10,15 @@ topic: 代数
 subtopic: 有限群表示
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Character_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%89%B9%E5%BE%81%E6%A0%87
+  nlab_url: https://ncatlab.org/nlab/show/character
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/
 ---
-
 # ALG-250: Deligne-Lusztig特征标的计算
 
 **题号**: ALG-250

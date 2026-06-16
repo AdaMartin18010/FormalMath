@@ -2,31 +2,36 @@
 title: Sobolev空间-嵌入定理
 description: 系统介绍Sobolev嵌入定理、Rellich-Kondrachov紧嵌入、Morrey不等式与Hölder连续性、Sobolev不等式与最佳常数，建立Sobolev分析的核心结果。
 msc_primary:
-  - 46E35
+- 46E35
 msc_secondary:
-  - 46E30
-  - 35B45
-  - 35A23
+- 46E30
+- 35B45
+- 35A23
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: adams_sobolev
-      type: textbook
-      title: Sobolev Spaces
-      authors:
-        - Robert A. Adams
-        - John J. F. Fournier
-      publisher: Academic Press
-      year: 2003
-      msc: 46E35
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
+  - id: adams_sobolev
+    type: textbook
+    title: Sobolev Spaces
+    authors:
+    - Robert A. Adams
+    - John J. F. Fournier
+    publisher: Academic Press
+    year: 2003
+    msc: 46E35
 ---
 # Sobolev空间-嵌入定理
 
@@ -148,3 +153,10 @@ $$\|D^j u\|_{L^p} \leq C\|D^k u\|_{L^r}^\alpha \|u\|_{L^q}^{1-\alpha}$$
 ## 7. 小结
 
 Sobolev嵌入定理是分析中最深刻也最有用的结果之一。它以精确的方式量化了"积分多少阶导数可换取多少可积性或连续性"。Gagliardo-Nirenberg-Sobolev不等式与Morrey不等式分别覆盖了 $p < n$ 与 $p > n$ 的情形，Rellich-Kondrachov紧嵌入则赋予这一理论以谱论与逼近论的力量。临界情形的精细分析（Trudinger不等式、Brezis-Merle估计等）仍在当代几何分析中扮演着中心角色。
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Robert A. Adams, John J. F. Fournier, *Sobolev Spaces*, Academic Press, 2003

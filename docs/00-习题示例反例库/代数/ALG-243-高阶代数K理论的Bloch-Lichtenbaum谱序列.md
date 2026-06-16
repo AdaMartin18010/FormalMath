@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
-  wikidata_id: Q3503315
 references:
   databases:
   - id: wikidata
@@ -25,6 +24,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q3503315
     consulted_at: '2026-06-16'
+  papers:
+  - title: Higher algebraic K-theory. I
+    author: Daniel Quillen
+    journal: Lecture Notes in Mathematics
+    year: 1973
+    doi: 10.1007/BFb0067053
 ---
 # ALG-243: 高阶代数K理论的Bloch-Lichtenbaum谱序列
 
@@ -59,3 +64,15 @@ references:
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Daniel Quillen, *Higher algebraic K-theory. I*, Lecture Notes in Mathematics, 1973 (DOI: 10.1007/BFb0067053)
+
+---
+
+## 参考文献
+
+- Daniel Quillen, *Higher algebraic K-theory. I*, Lecture Notes in Mathematics, 1973, DOI: 10.1007/BFb0067053

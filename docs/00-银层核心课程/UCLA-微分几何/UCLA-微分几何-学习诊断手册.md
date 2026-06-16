@@ -14,6 +14,21 @@ references:
     year: 1976
     isbn: '9780132125895'
     mr_number: MR0394451
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
   databases:
   - id: wikidata
     type: database
@@ -25,7 +40,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/differential+geometry
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95
-  wikidata_id: Q188444
 ---
 # UCLA 微分几何学习诊断手册
 
@@ -78,4 +92,3 @@ external_ids:
 - [Nlab Url](https://ncatlab.org/nlab/show/differential+geometry)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Differential_geometry)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95)
-- [Wikidata Id](Q188444)

@@ -1,9 +1,27 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: ZFC公理体系完整形式化 - 第一部分：基础公理系统
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 <div class="language-switcher">
 
@@ -991,4 +1009,4 @@ def DependentType (A : Set α) (B : α → Set α) : Set (Set (Set α)) :=
 
 - Wikipedia: [Zermelo–Fraenkel set theory](https://en.wikipedia.org/wiki/Zermelo%E2%80%93Fraenkel_set_theory)
 - Wikipedia: [Axiom of choice](https://en.wikipedia.org/wiki/Axiom_of_choice)
-- MIT OpenCourseWare: [18.701 Algebra I](https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/)
+- MIT OpenCourseWare: [18.701 Algebra I](https://ocw.mit.edu/)

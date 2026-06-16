@@ -1,10 +1,27 @@
 ---
 msc_primary: 97
 msc_secondary:
-  - 97C30
-  - 91E40
+- 97C30
+- 91E40
 title: LIDA认知架构
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
 ---
 # LIDA认知架构
 
@@ -781,3 +798,10 @@ processed_at: '2026-04-05'
 
 **最后更新**: 2025年12月1日
 **状态**: ✅ 已完成深化（每章节≥500字，详细展开，理论依据，实际案例，参考文献，国际视角，实践指导，研究应用，技术实现，未来发展）
+
+---
+
+## 参考文献
+
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- George Pólya, *How to Solve It: A New Aspect of Mathematical Method*, 2nd ed., Princeton University Press, 2004, ISBN: 9780691119663

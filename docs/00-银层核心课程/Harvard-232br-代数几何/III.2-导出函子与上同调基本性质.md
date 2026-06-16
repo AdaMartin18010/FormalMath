@@ -38,6 +38,7 @@ references:
     author: Robin Hartshorne
     pages: 200-210
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -51,6 +52,19 @@ references:
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
     author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: nlab
     type: database
@@ -71,7 +85,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
-  wikidata_id: Q864475
 ---
 # Harvard 232br - Hartshorne Chapter III §2 习题解答
 
@@ -695,6 +708,7 @@ theorem H0FunctorIsoΓ {X : Scheme} :
 
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: III.1-III.2; Pages: 200-210; ISBN: 978-0387902449; MR: MR0463157)
 - Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
 
 ### 数据库与网络资源
 
@@ -709,4 +723,3 @@ theorem H0FunctorIsoΓ {X : Scheme} :
 - [Nlab Url](https://ncatlab.org/nlab/show/functor)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Functor)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90)
-- [Wikidata Id](Q864475)

@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
   zbmath_url: https://zbmath.org/?q=au:Functor
-  wikidata_id: Q864475
 references:
   databases:
   - id: zbmath

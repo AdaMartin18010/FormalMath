@@ -1,11 +1,27 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
-  - 97A99
-  - 55A99
+  - 00A99 - 97A99 - 55A99'
 title: FormalMath术语词典框架 - 2025年1月
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 msc_primary: "00A99"
 msc_secondary: ['97-00', '55-00']

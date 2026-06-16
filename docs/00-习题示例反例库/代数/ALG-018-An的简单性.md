@@ -1,7 +1,7 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20D05
+  - 20D05'
 exercise_id: ALG-018
 title: $A_n$ 的简单性
 difficulty: 4
@@ -10,9 +10,26 @@ topic: 代数
 subtopic: 置换群
 source:
   course: MIT 18.701 Algebra I
-  chapter: "7.5"
+  chapter: '7.5'
   original: true
 processed_at: '2026-04-09'
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # ALG-018: $A_n$ 的简单性
 

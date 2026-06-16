@@ -31,7 +31,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/homology
   wikipedia_url: https://en.wikipedia.org/wiki/Homology_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83
-  wikidata_id: Q1144780
 references:
   databases:
   - id: wikidata
@@ -39,6 +38,29 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1144780
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
 ---
 # AT-PN-004: 奇异同调 (Singular Homology)
 
@@ -229,3 +251,11 @@ abbrev ChainComplex (C : Type) [Category C] [Abelian C] :=
 2. 边缘算子满足 $\partial^2 = 0$，保证同调定义良好
 3. 同调是同伦不变量
 4. 与基本群的关系：$H_1(X) \cong \pi_1(X)^{ab}$（Abel化）
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

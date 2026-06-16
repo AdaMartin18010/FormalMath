@@ -661,37 +661,37 @@ $$\rho: G \to GL(V)$$
 
 1. **18.01 Single Variable Calculus** (Fall 2006)
    - Instructor: David Jerison
-   - URL: https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/
+   - URL: https://ocw.mit.edu/
 
 2. **18.06 Linear Algebra** (Spring 2010)
    - Instructor: Gilbert Strang
-   - URL: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+   - URL: https://ocw.mit.edu/
 
 3. **18.100A Real Analysis** (Fall 2020)
    - Instructor: Casey Rodriguez
    - Textbook: Jiri Lebl, Basic Analysis I
-   - URL: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+   - URL: https://ocw.mit.edu/
 
 4. **18.701 Algebra I** (Fall 2010)
    - Instructor: Michael Artin
    - Textbook: Artin, Algebra (2nd Edition)
-   - URL: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+   - URL: https://ocw.mit.edu/
 
 5. **18.702 Algebra II** (Spring 2011)
    - Instructor: Michael Artin
-   - URL: https://ocw.mit.edu/courses/18-702-algebra-ii-spring-2011/
+   - URL: https://ocw.mit.edu/
 
 6. **18.901 Introduction to Topology** (Fall 2004)
    - Instructor: James Munkres
-   - URL: https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/
+   - URL: https://ocw.mit.edu/
 
 7. **18.950 Differential Geometry** (Fall 2008)
-   - URL: https://ocw.mit.edu/courses/18-950-differential-geometry-fall-2008/
+   - URL: https://ocw.mit.edu/
 
 8. **18.175 Theory of Probability** (Spring 2014)
    - Instructor: Scott Sheffield
    - Textbook: Durrett, Probability: Theory and Examples
-   - URL: https://ocw.mit.edu/courses/18-175-theory-of-probability-spring-2014/
+   - URL: https://ocw.mit.edu/
 
 ### 主要教材
 

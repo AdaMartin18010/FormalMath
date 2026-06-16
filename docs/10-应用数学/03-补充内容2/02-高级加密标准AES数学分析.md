@@ -1,12 +1,31 @@
 ---
-msc_primary: 94
+msc_primary: '94
 
-  - 94A60
-  - 12E20
-  - 11T71
-  - 14G50
+  - 94A60 - 12E20 - 11T71 - 14G50'
 title: 高级加密标准AES数学分析
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Elements of Information Theory
+    author: Thomas M. Cover and Joy A. Thomas
+    edition: 2nd
+    publisher: Wiley
+    year: 2006
+    isbn: '9780471241959'
+    mr_number: MR2239987
+    doi: 10.1002/0471200611
+  - title: A First Course in Information Theory
+    author: Raymond W. Yeung
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780306467911'
+    mr_number: MR1876845
+    doi: 10.1007/978-1-4419-8608-5
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Mathematical_analysis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/analysis
 ---
 # 高级加密标准AES数学分析
 

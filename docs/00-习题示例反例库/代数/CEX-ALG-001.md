@@ -18,7 +18,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
-  wikidata_id: Q83478
 references:
   databases:
   - id: wikidata
@@ -26,6 +25,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q83478
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # CEX-ALG-001: 非正规子群的例子（在S₄中找子群）
 
@@ -94,3 +110,10 @@ $$g(12)g^{-1} = (13)(12)(13) = (32) = (23)$$
 | $G$ 是单群且 $H \neq \{e\}$ | 此时正规子群只有平凡子群 |
 
 **教学提示：** 在 $S_3$ 中，$H = \{e, (12)\}$ 同样是非正规子群的典型例子，且 $S_3$ 更小（阶为6），更适合初学者理解。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

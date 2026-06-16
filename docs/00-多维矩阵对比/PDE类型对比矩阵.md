@@ -10,7 +10,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/matrix
   wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
-  wikidata_id: Q44337
 references:
   databases:
   - id: wikidata
@@ -18,6 +17,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q44337
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Partial Differential Equations
+    author: Lawrence C. Evans
+    edition: 2nd
+    publisher: American Mathematical Society
+    year: 2010
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    doi: 10.1090/gsm/019
+  - title: 'Partial Differential Equations: An Introduction'
+    author: Walter A. Strauss
+    edition: 2nd
+    publisher: Wiley
+    year: 2008
+    isbn: '9780470054567'
 ---
 # 偏微分方程类型对比矩阵
 
@@ -139,3 +153,10 @@ $$Au_{xx}+2Bu_{xy}+Cu_{yy}+\text{低阶项}=f$$
 | 平衡态 | 椭圆 |
 | 扩散/耗散 | 抛物 |
 | 传播/波动 | 双曲 |
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Walter A. Strauss, *Partial Differential Equations: An Introduction*, 2nd ed., Wiley, 2008, ISBN: 9780470054567

@@ -1,12 +1,19 @@
 ---
-msc_primary: 08
+msc_primary: '08
 
-  - 08A99
-  - 00A99
-  - 00A99
-  - 00A99
+  - 08A99 - 00A99 - 00A99 - 00A99'
 title: zk-SNARKs原理
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
 ---
 # zk-SNARKs原理
 

@@ -30,6 +30,34 @@ related_concepts:
 - Thom类
 - 指标定理
 title: AT PN 008 示性类
+references:
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Characteristic_class
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A4%BA%E6%80%A7%E7%B1%BB
+  nlab_url: https://ncatlab.org/nlab/show/characteristic+class
 ---
 # AT-PN-008: 示性类 (Characteristic Classes)
 
@@ -209,3 +237,11 @@ $$H^*(BU(n); \mathbb{Z}) = \mathbb{Z}[c_1, \ldots, c_n]$$
 2. Chern类：复丛，系数 $\mathbb{Z}$
 3. 公理化定义保证唯一性
 4. 在分类问题和可定向性问题中有重要应用
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

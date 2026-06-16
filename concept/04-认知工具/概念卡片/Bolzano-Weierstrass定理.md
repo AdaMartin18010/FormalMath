@@ -4,6 +4,25 @@ msc_secondary:
 - 26A03
 - 54E45
 title: Bolzano Weierstrass定理
+references:
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
 ---
 # 概念卡片：Bolzano-Weierstrass定理
 

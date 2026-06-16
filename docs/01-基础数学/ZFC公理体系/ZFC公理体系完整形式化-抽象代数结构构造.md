@@ -1,10 +1,35 @@
 ---
-title: "ZFC公理体系完整形式化 - 抽象代数结构构造"
-msc_primary: 03
+title: ZFC公理体系完整形式化 - 抽象代数结构构造
+msc_primary: '03
 
-  - 03E30
-msc_secondary: ['03E15', '03B30', '00A30']
+  - 03E30'
+msc_secondary:
+- 03E15
+- 03B30
+- 00A30
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # ZFC公理体系完整形式化 - 抽象代数结构构造
 
@@ -418,3 +443,10 @@ Dieses Dokument kombiniert internationale mathematische Standards und berühmte 
 **文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 抽象代数结构构造完成 / Abstract algebraic structure construction completed / Construction des structures algébriques abstraites terminée / Abstrakte algebraische Strukturkonsruktion abgeschlossen
 **形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert
 **语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

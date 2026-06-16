@@ -18,7 +18,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/spectrum
   wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
-  wikidata_id: Q7575269
 references:
   databases:
   - id: wikidata
@@ -26,6 +25,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q7575269
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # p进Hodge理论全景图
 
@@ -264,3 +280,10 @@ Wiles证明中使用的Galois形变理论依赖于p进Hodge理论：
 
 ---
 *创建于: 2026-04-10 | 版本: 1.0 | 分类: p进几何*
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

@@ -13,6 +13,31 @@ references:
     journal: Publications Mathématiques de l'IHÉS
     year: 1974
     doi: 10.1007/BF02684673
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/André_Weil
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
 ---
 # Deligne证明Weil猜想：20世纪数学的里程碑
 
@@ -363,7 +388,7 @@ $H^{n-1}(X_t)$ 分解为不变部分和vanishing cycle生成的子空间。
    - https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/[需更新]
 
 10. **Institut des Hautes Études Scientifiques**: Deligne's publications
-    - https://www.ihes.fr/deligne/[需更新]
+    - https://www.ihes.fr/~deligne/[需更新]
 
 11. **MathOverflow**: Weil conjectures
     - Weil猜想的讨论和应用
@@ -389,3 +414,12 @@ $H^{n-1}(X_t)$ 分解为不变部分和vanishing cycle生成的子空间。
 ## 经典论文与原始文献
 
 - Pierre Deligne, *La conjecture de Weil. I*, Publications Mathématiques de l'IHÉS, 1974 (DOI: 10.1007/BF02684673)
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- Pierre Deligne, *La conjecture de Weil. I*, Publications Mathématiques de l'IHÉS, 1974, DOI: 10.1007/BF02684673

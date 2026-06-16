@@ -1,12 +1,28 @@
 ---
-msc_primary: 81
+msc_primary: '81
 
-  - 81Q05
-  - 47D06
-  - 47N50
-  - 35Q41
+  - 81Q05 - 47D06 - 47N50 - 35Q41'
 title: 量子动力学与Schrödinger方程
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Principles of Quantum Mechanics
+    author: Ramamurti Shankar
+    edition: 2nd
+    publisher: Springer
+    year: 1994
+    isbn: '9780306447907'
+    mr_number: MR1343488
+    doi: 10.1007/978-1-4757-0576-8
+  - title: Introduction to Quantum Mechanics
+    author: David J. Griffiths
+    edition: 2nd
+    publisher: Pearson
+    year: 2004
+    isbn: '9780131118928'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Erwin_Schrödinger
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Schrodinger/
 ---
 # 量子动力学与Schrödinger方程
 
@@ -201,3 +217,10 @@ $$|\alpha(t)\rangle = e^{-i\hat{H}t/\hbar}|\alpha\rangle = e^{-i\omega t/2}|\alp
 ---
 
 **最后更新**: 2026年4月4日
+
+---
+
+## 参考文献
+
+- Ramamurti Shankar, *Principles of Quantum Mechanics*, 2nd ed., Springer, 1994, ISBN: 9780306447907 / MR1343488
+- David J. Griffiths, *Introduction to Quantum Mechanics*, 2nd ed., Pearson, 2004, ISBN: 9780131118928

@@ -1,10 +1,25 @@
 ---
-msc_primary: 28
+msc_primary: '28
 
-  - 28A35
-  - 26A42
+  - 28A35 - 26A42'
 title: Fubini定理 - 五种表征
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: 'Real Analysis: Modern Techniques and Their Applications'
+    author: Gerald B. Folland
+    edition: 2nd
+    publisher: Wiley
+    year: 1999
+    isbn: '9780471317166'
+    mr_number: MR1681462
+    doi: 10.1002/9781118165883
+  - title: 'Measure and Integral: An Introduction to Real Analysis'
+    author: Richard L. Wheeden and Antoni Zygmund
+    edition: 2nd
+    publisher: CRC Press
+    year: 2015
+    isbn: '9781498702898'
 ---
 # Fubini定理 - 五种表征
 
@@ -200,3 +215,10 @@ Fubini：f可积 ⟹ 等式成立（有限值）
 ---
 
 **状态**: ✅ 完成
+
+---
+
+## 参考文献
+
+- Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, 2nd ed., Wiley, 1999, ISBN: 9780471317166 / MR1681462
+- Richard L. Wheeden and Antoni Zygmund, *Measure and Integral: An Introduction to Real Analysis*, 2nd ed., CRC Press, 2015, ISBN: 9781498702898

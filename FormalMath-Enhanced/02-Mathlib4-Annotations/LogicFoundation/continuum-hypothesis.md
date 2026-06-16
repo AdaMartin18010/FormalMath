@@ -11,6 +11,10 @@ references:
     journal: Proceedings of the National Academy of Sciences
     year: 1963
     doi: 10.1073/pnas.50.6.1143
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Continuum_hypothesis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%BF%9E%E7%BB%AD%E7%BB%9F%E5%81%87%E8%AE%BE
+  nlab_url: https://ncatlab.org/nlab/show/continuum+hypothesis
 ---
 # 连续统假设
 

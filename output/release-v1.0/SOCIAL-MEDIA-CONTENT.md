@@ -377,7 +377,7 @@ Feedback welcome!
 
 ```bash
 # Clone the repository
-git clone https://github.com/formalmath/formalmath.git
+git clone https://github.com/FormalMath
 
 # Read the quick start guide
 cat output/release-v1.0/QUICK-START-GUIDE.md

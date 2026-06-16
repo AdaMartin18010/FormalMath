@@ -11,7 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
   zbmath_url: https://zbmath.org/?q=au:Category
-  wikidata_id: Q719395
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
 references:
   papers:
   - title: General Theory of Natural Equivalences
@@ -31,6 +31,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q719395
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # 加法范畴与Abel范畴：范畴论的基础结构
 
@@ -528,3 +543,11 @@ $$\cdots \to H^i(X, \mathcal{F}') \to H^i(X, \mathcal{F}) \to H^i(X, \mathcal{F}
 ## 经典论文与原始文献
 
 - Samuel Eilenberg, Saunders Mac Lane, *General Theory of Natural Equivalences*, Transactions of the American Mathematical Society, 1945 (DOI: 10.2307/2269622)
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165
+- Samuel Eilenberg, Saunders Mac Lane, *General Theory of Natural Equivalences*, Transactions of the American Mathematical Society, 1945, DOI: 10.2307/2269622

@@ -9,7 +9,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
-  wikidata_id: Q719395
 references:
   databases:
   - id: wikidata

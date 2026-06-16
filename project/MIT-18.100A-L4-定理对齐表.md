@@ -17,7 +17,7 @@ version: v1.0
 **课程名称**: Real Analysis
 **授课教师**: Z. Lin (2025-2026学年)
 **主教材**: Jiri Lebl, "Basic Analysis: Introduction to Real Analysis (Volume I)"
-**OCW链接**: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+**OCW链接**: https://ocw.mit.edu/
 **对齐等级**: L4（定理证明级完整性验证）
 **版本**: v1.0
 
@@ -1556,7 +1556,7 @@ Week 10-13: 函数序列
 ## 参考文献
 
 1. **Lebl, J.** (2023). *Basic Analysis I: Introduction to Real Analysis*. https://www.jirka.org/ra/
-2. **MIT OCW** (2024). *18.100A Real Analysis*. https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+2. **MIT OCW** (2024). *18.100A Real Analysis*. https://ocw.mit.edu/
 3. **Rudin, W.** (1976). *Principles of Mathematical Analysis* (3rd ed.). McGraw-Hill.
 4. **Abbott, S.** (2015). *Understanding Analysis* (2nd ed.). Springer.
 5. **Tao, T.** (2006). *Analysis I & II*. Hindustan Book Agency.

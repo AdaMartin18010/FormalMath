@@ -7,7 +7,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/matrix
   wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
-  wikidata_id: Q44337
 references:
   databases:
   - id: wikidata
@@ -19,8 +18,8 @@ references:
 # MIT-18.100A-实分析 L1-L6 语义对齐矩阵
 
 - **英文名称**: MIT 18.100A Real Analysis
-- **OCW/课程主页**: [https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
-- **习题/考试资源**: [https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- **OCW/课程主页**: [https://ocw.mit.edu/](https://ocw.mit.edu/)
+- **习题/考试资源**: [https://ocw.mit.edu/](https://ocw.mit.edu/)
 - **主教材**: Rudin, Principles of Mathematical Analysis, 3rd ed.
 - **ISBN**: 9780070542358
 - **前置课程**: docs/00-银层核心课程/MIT-18.02-多变量微积分/
@@ -58,7 +57,7 @@ references:
 为每篇文档 frontmatter 添加：
 ```yaml
 external_ids:
-  ocw_url: "https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/"
+  ocw_url: "https://ocw.mit.edu/
   ocw_lecture: "Lxx"
   ocw_ps: "PSetxx"
   stacks_tag: ""      # 仅代数几何相关

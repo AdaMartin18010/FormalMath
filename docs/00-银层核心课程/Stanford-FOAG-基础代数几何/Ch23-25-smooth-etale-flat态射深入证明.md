@@ -43,6 +43,7 @@ references:
     isbn: '9780387902449'
     mr_number: MR0463157
     author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - title: 'The Rising Sea: Foundations of Algebraic Geometry'
     author: Ravi Vakil
     edition: draft
@@ -50,6 +51,13 @@ references:
     year: 2024
     isbn: ''
     chapters: Ch 23–25
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: wikidata
     type: database
@@ -69,7 +77,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/morphism
   wikipedia_url: https://en.wikipedia.org/wiki/Morphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
-  wikidata_id: Q1948412
 ---
 # Ch 23–25: Smooth / Étale / Flat 态射深入证明
 
@@ -614,4 +621,3 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 - [Nlab Url](https://ncatlab.org/nlab/show/morphism)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Morphism)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84)
-- [Wikidata Id](Q1948412)

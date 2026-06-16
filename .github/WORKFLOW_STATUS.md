@@ -2,6 +2,24 @@
 title: CI/CD 工作流状态
 msc_primary: 00A99
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # CI/CD 工作流状态
 
@@ -9,17 +27,17 @@ processed_at: '2026-04-05'
 
 | 工作流 | 状态 | 说明 |
 |--------|------|------|
-| Build | ![Build](https://github.com/formalmath/formalmath/workflows/Build/badge.svg) | 构建流程 |
-| Test | ![Test](https://github.com/formalmath/formalmath/workflows/Test/badge.svg) | 测试流程 |
-| Deploy | ![Deploy](https://github.com/formalmath/formalmath/workflows/Deploy/badge.svg) | 部署流程 |
-| Release | ![Release](https://github.com/formalmath/formalmath/workflows/Release/badge.svg) | 发布流程 |
-| Security | ![Security](https://github.com/formalmath/formalmath/workflows/Security/badge.svg) | 安全扫描 |
-| Quality Assurance | ![Quality Assurance](https://github.com/formalmath/formalmath/workflows/Quality%20Assurance/badge.svg) | 质量保障 |
+| Build | ![Build](https://github.com/FormalMath/workflows/Build/badge.svg) | 构建流程 |
+| Test | ![Test](https://github.com/FormalMath/workflows/Test/badge.svg) | 测试流程 |
+| Deploy | ![Deploy](https://github.com/FormalMath/workflows/Deploy/badge.svg) | 部署流程 |
+| Release | ![Release](https://github.com/FormalMath/workflows/Release/badge.svg) | 发布流程 |
+| Security | ![Security](https://github.com/FormalMath/workflows/Security/badge.svg) | 安全扫描 |
+| Quality Assurance | ![Quality Assurance](https://github.com/FormalMath/workflows/Quality%20Assurance/badge.svg) | 质量保障 |
 
 ## 代码质量徽章
 
 ![Codecov](https://codecov.io/gh/formalmath/formalmath/branch/main/graph/badge.svg)
-![CodeQL](https://github.com/formalmath/formalmath/workflows/CodeQL/badge.svg)
+![CodeQL](https://github.com/FormalMath/workflows/CodeQL/badge.svg)
 
 ## 环境状态
 
@@ -41,10 +59,10 @@ processed_at: '2026-04-05'
 
 ## 快速链接
 
-- [Actions Dashboard](https://github.com/formalmath/formalmath/actions)
-- [Deployment History](https://github.com/formalmath/formalmath/deployments)
-- [Releases](https://github.com/formalmath/formalmath/releases)
-- [Security Advisories](https://github.com/formalmath/formalmath/security/advisories)
+- [Actions Dashboard](https://github.com/FormalMath/actions)
+- [Deployment History](https://github.com/FormalMath/deployments)
+- [Releases](https://github.com/FormalMath/releases)
+- [Security Advisories](https://github.com/FormalMath/security/advisories)
 
 ## 手动触发命令
 
@@ -61,3 +79,10 @@ gh workflow run deploy.yml -f environment=production
 # 运行安全扫描
 gh workflow run security.yml
 ```
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

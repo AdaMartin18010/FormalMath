@@ -11,7 +11,6 @@ external_ids:
     tag: 02P8
     url: https://stacks.math.columbia.edu/tag/02P8
   zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
-  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -38,6 +37,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q42299
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 ﻿---
 title: "Riemann-Roch 定理（Grothendieck 推广版）：从 Hirzebruch 到 Weil 猜想"
@@ -509,3 +530,12 @@ GRR 与 Weil 猜想的联系则揭示了这一定理的更大图景：它是 mot
 ## 经典论文与原始文献
 
 - Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958, DOI: 10.24033/bsmf.1500

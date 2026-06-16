@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
   zbmath_url: https://zbmath.org/?q=au:Category
-  wikidata_id: Q719395
 references:
   databases:
   - id: zbmath

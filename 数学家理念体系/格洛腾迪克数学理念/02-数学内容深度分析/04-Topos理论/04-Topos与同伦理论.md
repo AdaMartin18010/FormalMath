@@ -15,6 +15,20 @@ references:
     author: J. Lurie
     edition: Annals of Mathematics Studies 170
     year: 2009
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
   papers:
   - title: Homotopy theory of simplicial sheaves
     author: J. F. Jardine
@@ -37,7 +51,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   zbmath_url: https://zbmath.org/?q=au:Topos
-  wikidata_id: Q2143621
 ---
 ## 1. 引言：几何、逻辑与同伦的三重交汇
 
@@ -230,3 +243,13 @@ Grothendieck在《Pursuing Stacks》中的预言——stacks和higher stacks将�
 3. Voevodsky, V. "A¹-homotopy theory." *Doc. Math. ICM* 1998.
 4. Jardine, J. F. "Simplicial presheaves." *J. Pure Appl. Algebra* 47 (1987), 35–87.
 5. The Univalent Foundations Program. *Homotopy Type Theory: Univalent Foundations of Mathematics*. IAS, 2013.
+
+---
+
+## 参考文献
+
+- M. Artin, A. Grothendieck, J-L. Verdier, *Séminaire de Géométrie Algébrique du Bois-Marie (SGA 4)*, Lecture Notes in Mathematics 269–271 ed., 1972–1973
+- J. Lurie, *Higher Topos Theory*, Annals of Mathematics Studies 170 ed., 2009
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165
+- J. F. Jardine, *Homotopy theory of simplicial sheaves*, 1987

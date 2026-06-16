@@ -12,7 +12,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
-  wikidata_id: Q595298
 references:
   databases:
   - id: wikidata

@@ -1,9 +1,32 @@
 ---
-title: "最优化理论与方法"
+title: 最优化理论与方法
 msc_primary: 90
-
-msc_secondary: ['90C05', '90C25', '90C27', '90C46']
+msc_secondary:
+- 90C05
+- 90C25
+- 90C27
+- 90C46
 processed_at: '2026-04-08'
+references:
+  textbooks:
+  - title: Convex Optimization
+    author: Stephen Boyd and Lieven Vandenberghe
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2004
+    isbn: '9780521833783'
+    mr_number: MR2061575
+    doi: 10.1017/CBO9780511804441
+  - title: Nonlinear Programming
+    author: Dimitri P. Bertsekas
+    edition: 3rd
+    publisher: Athena Scientific
+    year: 2016
+    isbn: '9781886529052'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Mathematical_optimization
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BC%98%E5%8C%96
+  nlab_url: https://ncatlab.org/nlab/show/optimization
 ---
 # 最优化理论与方法 (Optimization Theory and Methods)
 

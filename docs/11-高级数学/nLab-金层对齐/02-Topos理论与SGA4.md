@@ -36,6 +36,20 @@ references:
     year: 2009
     chapters:
     - 'Ch. 6: ∞-Topoi'
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
   papers:
   - title: Catégories fibrées et descente
     author: A. Grothendieck
@@ -64,7 +78,6 @@ external_ids:
   stacks_tag:
     tag: 00VH
     url: https://stacks.math.columbia.edu/tag/00VH
-  wikidata_id: Q2143621
 ---
 # Topos 理论与 SGA 4
 
@@ -258,3 +271,14 @@ $$F(U) \longrightarrow \prod_i F(U_i) \rightrightarrows \prod_{i,j} F(U_i \cap U
 - **étale topos**，展示了这一理论在代数几何和韦伊猜想证明中的核心作用。
 
 这些内容是 SGA 4 的精髓，也是 nLab 上关于 topos 讨论的理论基础。
+
+---
+
+## 参考文献
+
+- M. Artin, A. Grothendieck, J.-L. Verdier, *Théorie des Topos et Cohomologie Étale des Schémas*, SGA 4, Lecture Notes in Mathematics 269-271 ed., Springer, 1972
+- Saunders Mac Lane, Ieke Moerdijk, *Sheaves in Geometry and Logic*, Universitext ed., Springer, 1992
+- Jacob Lurie, *Higher Topos Theory*, Annals of Mathematics Studies 170 ed., Princeton University Press, 2009
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165
+- A. Grothendieck, *Catégories fibrées et descente*, Séminaire Bourbaki, 1959

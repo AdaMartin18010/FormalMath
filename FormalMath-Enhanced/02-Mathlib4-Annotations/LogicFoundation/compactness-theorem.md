@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/compact+space
   wikipedia_url: https://en.wikipedia.org/wiki/Compact_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%B4%A7%E8%87%B4
-  wikidata_id: Q381892
 references:
   databases:
   - id: wikidata

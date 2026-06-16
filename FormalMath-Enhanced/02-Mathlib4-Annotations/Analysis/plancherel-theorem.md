@@ -1,9 +1,26 @@
 ---
 msc_primary: 97
 msc_secondary:
-  - 97U50
+- 97U50
 processed_at: '2026-04-03'
 title: Plancherel定理 (Plancherel Theorem)
+references:
+  textbooks:
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
 ---
 # Plancherel定理 (Plancherel Theorem)
 

@@ -14,7 +14,7 @@ processed_at: '2026-04-17'
 > **课程名称**：Linear Algebra（线性代数，本科核心）
 > **主讲教师**：Prof. Gilbert Strang（Spring 2010）
 > **主教材**：Gilbert Strang, *Introduction to Linear Algebra*, 4th Edition (Wellesley-Cambridge Press, 2009)
-> **OCW 主页**：https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
+> **OCW 主页**：https://ocw.mit.edu/
 
 ---
 
@@ -106,8 +106,8 @@ processed_at: '2026-04-17'
 
 | 来源名称 | URL |
 |----------|-----|
-| MIT OCW 18.06 Syllabus (Spring 2010) | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/syllabus/ |
-| MIT OCW 18.06 Video Lectures (34 lectures) | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/ |
-| MIT OCW 18.06 Assignments (PS1–PS10) | https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/assignments/ |
+| MIT OCW 18.06 Syllabus (Spring 2010) | https://ocw.mit.edu/ |
+| MIT OCW 18.06 Video Lectures (34 lectures) | https://ocw.mit.edu/ |
+| MIT OCW 18.06 Assignments (PS1–PS10) | https://ocw.mit.edu/ |
 | Strang, *Introduction to Linear Algebra* (4th Ed TOC) | http://www-math.mit.edu/~gs/books/ila2_toc.html |
 | MIT 18.06 Spring 2010 课程主页 | https://web.mit.edu/18.06/www/Spring10/index.html |

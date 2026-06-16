@@ -10,7 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
   zbmath_url: https://zbmath.org/?q=au:David%20Hilbert
-  wikidata_id: Q41585
+  wikidata_id: https://www.wikidata.org/entity/Q82597
 references:
   databases:
   - id: zbmath

@@ -2,30 +2,27 @@
 title: PDE分类与特征理论
 description: 系统介绍二阶线性偏微分方程的分类（椭圆、抛物、双曲）、特征方程与特征流形、Cauchy-Kovalevskaya定理的陈述，建立PDE理论的基础框架。
 msc_primary:
-  - 35A01
+- 35A01
 msc_secondary:
-  - 35A09
-  - 35G50
-  - 35M10
+- 35A09
+- 35G50
+- 35M10
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: john_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Fritz John
-      publisher: Springer
-      year: 1982
-      msc: 35-01
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
 ---
 # PDE分类与特征理论
 
@@ -176,3 +173,10 @@ $$\partial_t u + \sum_{j=1}^n A_j(x,t) \partial_{x_j} u + B(x,t)u = f$$
 ## 7. 小结
 
 二阶线性PDE按主符号的定性行为分为椭圆、双曲、抛物三大类，每类有截然不同的解析性质：椭圆型方程描述稳态平衡，信息全域耦合；双曲型方程描述波动传播，信息沿特征线有限速度传播；抛物型方程描述扩散与耗散，时间单向演化。特征理论揭示了初值/边值问题的适定性根源，Cauchy-Kovalevskaya定理提供了解析框架下的局部存在性，而Hadamard适定性原则为定解问题的正确提法提供了准则。理解分类是掌握PDE理论的第一步。
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., Springer, 1982, ISBN: 9780821849743 / MR2597943

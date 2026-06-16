@@ -6,6 +6,24 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
 title: Ricci流
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Ricci 流
 
@@ -102,3 +120,10 @@ $$\mathcal{W}(g, f, \tau) = \int_M [\tau(R + |\nabla f|^2) + f - n](4\pi\tau)^{-
 - G. Perelman, "The entropy formula for the Ricci flow and its geometric applications", 2002
 - G. Perelman, "Ricci flow with surgery on three-manifolds", 2003
 - B. Kleiner, J. Lott, "Notes on Perelman's papers", *Geom. Topol.* 2008
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

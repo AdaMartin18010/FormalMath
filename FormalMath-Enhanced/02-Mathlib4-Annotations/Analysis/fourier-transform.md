@@ -1,9 +1,14 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 傅里叶变换 (Fourier Transform)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Fourier_transform
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2
+  nlab_url: https://ncatlab.org/nlab/show/Fourier+transform
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
 ---
 # 傅里叶变换 (Fourier Transform)
 

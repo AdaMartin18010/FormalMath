@@ -18,6 +18,11 @@ references:
     publisher: American Mathematical Society
     year: 2010
     msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
   - id: gilbarg_trudinger
     type: textbook
     title: Elliptic Partial Differential Equations of Second Order
@@ -37,7 +42,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
-  wikidata_id: Q11348
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/
 ---
 # Laplace方程-Green函数
 

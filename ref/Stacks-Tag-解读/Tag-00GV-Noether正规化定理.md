@@ -7,6 +7,8 @@ external_ids:
   stacks_tag:
     tag: 00GV
     url: https://stacks.math.columbia.edu/tag/00GV
+  wikipedia_url: https://en.wikipedia.org/wiki/Emmy_Noether
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
 references:
   databases:
   - id: stacks_project
@@ -16,6 +18,23 @@ references:
     tags:
     - 00GV
     consulted_at: '2026-04-17'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Stacks Project Tag 00GV 解读：Noether正规化定理
 

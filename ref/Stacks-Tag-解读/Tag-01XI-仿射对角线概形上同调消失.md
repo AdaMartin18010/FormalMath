@@ -7,14 +7,10 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
-  stacks_tag: &id001
+  stacks_tag:
     tag: 01XB
     url: https://stacks.math.columbia.edu/tag/01XB
-  stacks_tags:
-  - *id001
-  - tag: 01XI
-    url: https://stacks.math.columbia.edu/tag/01XI
-  wikidata_id: Q1155772
+  stacks_tags: []
 references:
   databases:
   - id: stacks_project
@@ -30,6 +26,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1155772
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Stacks Project Tag 01XI - 仿射对角线概形上同调消失
 

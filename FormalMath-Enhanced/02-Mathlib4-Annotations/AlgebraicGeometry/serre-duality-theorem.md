@@ -10,7 +10,6 @@ external_ids:
   stacks_tag:
     tag: 0A6A
     url: https://stacks.math.columbia.edu/tag/0A6A
-  wikidata_id: Q212063
 references:
   databases:
   - id: stacks_project

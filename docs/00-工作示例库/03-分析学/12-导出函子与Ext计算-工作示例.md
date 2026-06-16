@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
-  wikidata_id: Q864475
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,15 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q864475
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
 ---
 # 导出函子与 Ext 计算（Z-模） - 工作示例
 
@@ -93,3 +101,9 @@ references:
 - [29-上同调与同调代数](../../../数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/29-上同调与同调代数.md)
 - [19-上同调与Ext函子](../../../数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/19-上同调与Ext函子.md)
 - [06-导出版上同调](../../../数学家理念体系/格洛腾迪克数学理念/02-数学内容深度分析/03-上同调理论/06-导出版上同调.md)
+
+---
+
+## 参考文献
+
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 9780471433347 / MR2286236

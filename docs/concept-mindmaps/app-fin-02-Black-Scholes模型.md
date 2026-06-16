@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
-  wikidata_id: Q18848
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Black-Scholes模型 - 思维导图
 
@@ -289,3 +305,10 @@ flowchart LR
 *文档版本：1.0*
 *创建时间：2026年4月*
 *分类：应用数学 / 金融数学 / 思维导图*
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

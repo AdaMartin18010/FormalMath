@@ -1,10 +1,38 @@
 ---
-title: "数据科学与机器学习数学基础"
+title: 数据科学与机器学习数学基础
 msc_primary: 62
-
-msc_secondary: ['68T05', '62H30', '62F15', '68Q32']
-prerequisites: ['线性代数', '概率统计', '优化理论', '数值计算']
+msc_secondary:
+- 68T05
+- 62H30
+- 62F15
+- 68Q32
+prerequisites:
+- 线性代数
+- 概率统计
+- 优化理论
+- 数值计算
 processed_at: '2026-04-08'
+references:
+  textbooks:
+  - title: Statistical Inference
+    author: George Casella and Roger L. Berger
+    edition: 2nd
+    publisher: Duxbury
+    year: 2002
+    isbn: '9780534243128'
+    mr_number: MR1990666
+  - title: 'All of Statistics: A Concise Course in Statistical Inference'
+    author: Larry Wasserman
+    edition: 1st
+    publisher: Springer
+    year: 2004
+    isbn: '9780387402727'
+    mr_number: MR2055670
+    doi: 10.1007/978-0-387-21736-9
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Machine_learning
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0
+  nlab_url: https://ncatlab.org/nlab/show/machine+learning
 ---
 # 数据科学与机器学习数学基础 (Data Science and Machine Learning)
 

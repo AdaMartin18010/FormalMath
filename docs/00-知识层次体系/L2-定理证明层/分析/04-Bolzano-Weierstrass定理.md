@@ -1,11 +1,28 @@
 ---
-msc_primary: 40
+msc_primary: '40
 
-  - 40A05
-  - 54E45
-  - 97I30
+  - 40A05 - 54E45 - 97I30'
 title: Bolzano-Weierstrass 定理
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
 ---
 # Bolzano-Weierstrass 定理
 
@@ -128,3 +145,10 @@ flowchart TB
 **文档信息**
 - **创建日期**: 2026年4月3日
 - **版本**: 1.0
+
+---
+
+## 参考文献
+
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, ISBN: 9780070542358 / MR0385023
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015, ISBN: 9781493927111

@@ -18,6 +18,11 @@ references:
     publisher: Springer
     year: 1977
     msc: 14-01
+    edition: 1st
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -25,6 +30,9 @@ references:
     - Ravi Vakil
     publisher: self-published
     year: 2024
+    edition: draft
+    isbn: ''
+    author: Ravi Vakil
 ---
 # Castelnuovo有理性判据
 

@@ -2,31 +2,36 @@
 title: Sobolev空间-弱导数
 description: 系统介绍弱导数的定义与基本性质、Sobolev空间Wk,p的构造、逼近定理、延拓定理与迹定理的陈述，建立现代PDE理论的函数空间基础。
 msc_primary:
-  - 46E35
+- 46E35
 msc_secondary:
-  - 35D30
-  - 35A01
-  - 46F05
+- 35D30
+- 35A01
+- 46F05
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: adams_sobolev
-      type: textbook
-      title: Sobolev Spaces
-      authors:
-        - Robert A. Adams
-        - John J. F. Fournier
-      publisher: Academic Press
-      year: 2003
-      msc: 46E35
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
+  - id: adams_sobolev
+    type: textbook
+    title: Sobolev Spaces
+    authors:
+    - Robert A. Adams
+    - John J. F. Fournier
+    publisher: Academic Press
+    year: 2003
+    msc: 46E35
 ---
 # Sobolev空间-弱导数
 
@@ -172,3 +177,10 @@ $$\|u - \bar{u}\|_{L^p} \leq C\|\nabla u\|_{L^p}, \quad \bar{u} = \frac{1}{|\Ome
 ## 8. 小结
 
 弱导数与Sobolev空间是现代PDE理论的基石。通过将微分运算从点态推广到积分意义，Sobolev空间包含了足够广泛的函数类以容纳PDE的解，同时保留了良好的分析性质（完备性、逼近、延拓、迹）。Poincaré不等式与迹定理为边值问题的变分表述提供了关键工具，而Meyers-Serrin逼近定理则架起了经典分析与广义函数之间的桥梁。没有Sobolev空间，Lax-Milgram定理、椭圆正则性与现代非线性PDE理论都将无从立足。
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Robert A. Adams, John J. F. Fournier, *Sobolev Spaces*, Academic Press, 2003

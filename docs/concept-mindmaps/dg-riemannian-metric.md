@@ -7,7 +7,8 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%BB%8E%E6%9B%BC%E5%BA%A6%E9%87%8F
+  nlab_url: https://ncatlab.org/nlab/show/Riemannian+metric
 references:
   databases:
   - id: wikidata
@@ -15,6 +16,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q42299
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']
@@ -189,3 +207,10 @@ Levi-Civita联络 ∇
 - [切空间](./dg-tangent-space.md)
 - [曲率](./dg-curvature.md)
 - [测地线](./dg-geodesic.md)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

@@ -10,7 +10,6 @@ external_ids:
   stacks_tag:
     tag: 0A1C
     url: https://stacks.math.columbia.edu/tag/0A1C
-  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -25,6 +24,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1198376
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Stacks Project Tag 0A1C - 刚性上同调
 
@@ -250,3 +266,10 @@ Tag 0A1C (刚性上同调) 是特征$p$代数几何的核心理论，由Berthelo
 *文档生成时间：2026年4月*
 *Stacks Project版本：最新*
 *完成度：100个Tags冲刺第89个*
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

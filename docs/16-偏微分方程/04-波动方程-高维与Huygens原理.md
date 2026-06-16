@@ -2,29 +2,26 @@
 title: 波动方程-高维与Huygens原理
 description: 系统介绍高维波动方程的Kirchhoff公式、Poisson公式、降维法、Huygens原理与弥散现象、非齐次方程的Duhamel原理，建立高维波动传播的精确图像。
 msc_primary:
-  - 35L05
+- 35L05
 msc_secondary:
-  - 35C15
-  - 35L15
+- 35C15
+- 35L15
 processed_at: '2026-04-20'
 references:
   textbooks:
-    - id: evans_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Lawrence C. Evans
-      publisher: American Mathematical Society
-      year: 2010
-      msc: 35-01
-    - id: john_pde
-      type: textbook
-      title: Partial Differential Equations
-      authors:
-        - Fritz John
-      publisher: Springer
-      year: 1982
-      msc: 35-01
+  - id: evans_pde
+    type: textbook
+    title: Partial Differential Equations
+    authors:
+    - Lawrence C. Evans
+    publisher: American Mathematical Society
+    year: 2010
+    msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
 ---
 # 波动方程-高维与Huygens原理
 
@@ -151,3 +148,10 @@ $$u(x,t) = \int_0^t \frac{1}{4\pi c^2 (t-s)} \int_{|y-x|=c(t-s)} f(y,s) dS_y \, 
 ## 7. 小结
 
 高维波动方程的解揭示了维度对波传播的深刻影响。Kirchhoff公式和Poisson公式分别给出了三维与二维的精确解，Huygens原理阐明了奇数维与偶数维的根本差异：奇数维波前清晰，偶数维波有尾迹。降维法将高维与低维联系起来，而衰减估计则反映了能量在不同维度空间中的扩散方式。Duhamel原理将非齐次问题纳入统一的推迟势框架，是经典场论与电动力学的数学基础。这些现象不仅是数学的精妙之处，也直接对应着物理世界中声波、光波与水波的不同行为。
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., Springer, 1982, ISBN: 9780821849743 / MR2597943

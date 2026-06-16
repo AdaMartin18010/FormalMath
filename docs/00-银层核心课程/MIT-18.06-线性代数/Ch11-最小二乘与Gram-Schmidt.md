@@ -16,21 +16,36 @@ references:
     isbn: '9780980232776'
     publisher: Wellesley-Cambridge Press
     year: 2016
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
   lectures:
   - institution: MIT
     course_code: '18.06'
     lecture: L16
     title: Projection matrices and least squares
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/
+    url: https://ocw.mit.edu/
   - institution: MIT
     course_code: '18.06'
     lecture: L17
     title: Orthogonal matrices and Gram-Schmidt
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/
+    url: https://ocw.mit.edu/
   exams:
   - name: Exam 2
-    url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10.pdf
-    solution_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/exams/MIT18_06S10_exam2_s10_sol.pdf
+    url: https://ocw.mit.edu/
+    solution_url: https://ocw.mit.edu/
 keywords:
 - least squares
 - normal equation
@@ -43,14 +58,14 @@ review_rounds: 0
 created_at: '2026-04-18'
 review_status: mathematical_reviewed
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   ocw_lectures:
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/
+  - https://ocw.mit.edu/
+  - https://ocw.mit.edu/
   ocw_problem_sets:
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset9.pdf
-  - https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf
+  - https://ocw.mit.edu/
+  - https://ocw.mit.edu/
 prerequisites:
 - docs/00-银层核心课程/MIT-18.06-线性代数/Ch10-*.md
 ---
@@ -858,7 +873,7 @@ rac{v_3\cdot u_2}{u_2\cdot u_2}u_2=(0,0,1)$。$\square$
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
-- [Ocw Lectures](['https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-16-projection-matrices-and-least-squares/', 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/resources/lecture-17-orthogonal-matrices-and-gram-schmidt/'])
-- [Ocw Problem Sets](['https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset9.pdf', 'https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/MIT18_06S10_pset10.pdf'])
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
+- [Ocw Lectures](['https://ocw.mit.edu/', 'https://ocw.mit.edu/'])
+- [Ocw Problem Sets](['https://ocw.mit.edu/', 'https://ocw.mit.edu/'])

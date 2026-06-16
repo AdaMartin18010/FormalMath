@@ -14,8 +14,11 @@ tags:
 - mathematical_reviewed
 chapter: '0'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 references:
   textbooks:
   - title: Introduction to Linear Algebra
@@ -24,6 +27,21 @@ references:
     publisher: Wellesley-Cambridge Press
     year: 2016
     isbn: '9780980232776'
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
 ---
 # MIT 18.06 线性代数 - 学习诊断手册
 

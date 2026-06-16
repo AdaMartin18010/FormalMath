@@ -32,6 +32,7 @@ references:
     author: Robin Hartshorne
     pages: 78-86
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -45,6 +46,22 @@ references:
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
     author: Ravi Vakil
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 target_courses:
 - FormalMath银层核心课程
 - 代数几何

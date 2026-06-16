@@ -18,7 +18,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
-  wikidata_id: Q3503315
 references:
   databases:
   - id: wikidata
@@ -26,6 +25,29 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q3503315
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
 ---
 # Leray-Serre谱序列
 
@@ -209,3 +231,11 @@ graph TD
 **维护者**: FormalMath项目组
 **创建日期**: 2026年4月8日
 **难度等级**: ⭐⭐⭐⭐⭐
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

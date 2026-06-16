@@ -1,7 +1,7 @@
 ---
-msc_primary: 57
+msc_primary: '57
 
-  - 57R56
+  - 57R56'
 exercise_id: TOP-126
 title: Chern-Simons理论与TQFT
 difficulty: 4
@@ -10,11 +10,13 @@ topic: 拓扑
 subtopic: 拓扑量子场论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Shiing-Shen_Chern
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Chern/
 ---
-
 # TOP-126: Chern-Simons理论与TQFT
 
 **题号**: TOP-126

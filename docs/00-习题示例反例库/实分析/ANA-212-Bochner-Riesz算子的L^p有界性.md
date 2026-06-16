@@ -1,7 +1,7 @@
 ---
-msc_primary: 42
+msc_primary: '42
 
-  - 42B15
+  - 42B15'
 exercise_id: ANA-212
 title: Bochner-Riesz算子的L^p有界性
 difficulty: 5
@@ -10,9 +10,30 @@ topic: 实分析
 subtopic: 乘子算子
 source:
   course: 现代调和分析
-  chapter: "10.1"
+  chapter: '10.1'
   original: true
 processed_at: '2026-04-10'
+references:
+  textbooks:
+  - title: 'Fourier Analysis: An Introduction'
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113845'
+    doi: 10.1515/9781400831142
+  - title: An Introduction to Harmonic Analysis
+    author: Yitzhak Katznelson
+    edition: 3rd
+    publisher: Cambridge University Press
+    year: 2004
+    isbn: '9780521543590'
+    mr_number: MR2039503
+    doi: 10.1017/CBO9781139162371
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Operator_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E5%AD%90
+  nlab_url: https://ncatlab.org/nlab/show/operator
 ---
 # ANA-212: Bochner-Riesz算子的L^p有界性
 
@@ -61,3 +82,10 @@ $\square$
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 参考文献
+
+- Elias M. Stein and Rami Shakarchi, *Fourier Analysis: An Introduction*, 1st ed., Princeton University Press, 2003, ISBN: 9780691113845
+- Yitzhak Katznelson, *An Introduction to Harmonic Analysis*, 3rd ed., Cambridge University Press, 2004, ISBN: 9780521543590 / MR2039503

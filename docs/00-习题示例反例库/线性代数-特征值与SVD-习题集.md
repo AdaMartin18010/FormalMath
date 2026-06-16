@@ -1,10 +1,37 @@
 ---
 msc_primary: 15-XX
 msc_secondary:
-  - 15A18
-  - 15A23
+- 15A18
+- 15A23
 processed_at: '2026-04-20'
 title: 线性代数·特征值、对角化与SVD习题集
+references:
+  textbooks:
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # 线性代数·特征值、对角化与SVD习题集
 
@@ -197,3 +224,11 @@ $\|A\|_F^2=\operatorname{tr}(A^TA)=\operatorname{tr}(V\Sigma^T\Sigma V^T)=\opera
 ---
 
 **Lean4 对应**：`LinearAlgebra.Eigenspace`、`LinearAlgebra.Spectrum`、`LinearAlgebra.Matrix.Svd`。
+
+---
+
+## 参考文献
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 9780980232776
+- Sheldon Axler, *Linear Algebra Done Right*, 3rd ed., Springer, 2015, ISBN: 9783319110790
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2012, ISBN: 9780521839402 / MR2978210

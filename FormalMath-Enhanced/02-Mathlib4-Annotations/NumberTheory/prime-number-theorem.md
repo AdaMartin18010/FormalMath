@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 素数定理 (Prime Number Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Prime_number_theorem
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%B4%A0%E6%95%B0%E5%AE%9A%E7%90%86
+  nlab_url: https://ncatlab.org/nlab/show/prime+number+theorem
 ---
 # 素数定理 (Prime Number Theorem)
 

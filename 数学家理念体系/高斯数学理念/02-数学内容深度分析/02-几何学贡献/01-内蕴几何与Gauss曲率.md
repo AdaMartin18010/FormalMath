@@ -11,7 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Curvature
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9B%B2%E7%8E%87
   zbmath_url: https://zbmath.org/?q=au:Curvature
-  wikidata_id: Q214881
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 references:
   databases:
   - id: zbmath

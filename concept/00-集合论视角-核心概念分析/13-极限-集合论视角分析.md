@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/set
   wikipedia_url: https://en.wikipedia.org/wiki/Set_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
-  wikidata_id: Q36161
 references:
   databases:
   - id: wikidata

@@ -1,11 +1,40 @@
 ---
-title: "密码学与信息安全"
-msc_primary: 94
+title: 密码学与信息安全
+msc_primary: '94
 
-  - 94A60
-msc_secondary: ['11T71', '14G50', '68P25']
-prerequisites: ['数论', '代数', '概率论', '计算复杂性']
+  - 94A60'
+msc_secondary:
+- 11T71
+- 14G50
+- 68P25
+prerequisites:
+- 数论
+- 代数
+- 概率论
+- 计算复杂性
 processed_at: '2026-04-08'
+references:
+  textbooks:
+  - title: Elements of Information Theory
+    author: Thomas M. Cover and Joy A. Thomas
+    edition: 2nd
+    publisher: Wiley
+    year: 2006
+    isbn: '9780471241959'
+    mr_number: MR2239987
+    doi: 10.1002/0471200611
+  - title: A First Course in Information Theory
+    author: Raymond W. Yeung
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780306467911'
+    mr_number: MR1876845
+    doi: 10.1007/978-1-4419-8608-5
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Cryptography
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%AF%86%E7%A0%81%E5%AD%A6
+  nlab_url: https://ncatlab.org/nlab/show/cryptography
 ---
 # 密码学与信息安全 (Cryptography and Information Security)
 

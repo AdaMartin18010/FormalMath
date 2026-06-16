@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: 贝叶斯定理 (Bayes' Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Bayesian_inference
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B4%9D%E5%8F%B6%E6%96%AF
+  nlab_url: https://ncatlab.org/nlab/show/Bayesian+inference
 ---
 # 贝叶斯定理 (Bayes' Theorem)
 

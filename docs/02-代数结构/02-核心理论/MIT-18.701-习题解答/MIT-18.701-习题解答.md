@@ -20,6 +20,7 @@ references:
     chapters: null
     url: null
     author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -48,14 +49,18 @@ references:
     url: null
     mr_number: MR2286236
     author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
 reviewer: AI Mathematical Reviewer
 course: MIT 18.701 抽象代数
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 本文件为 MIT 18.701 抽象代数 I 的 Problem Sets 补充至少 15 道习题的详细解答，覆盖群论、同构定理、群作用、环论与唯一分解等核心主题。
 
@@ -226,5 +231,5 @@ $S_4$ 通过共轭作用于自身。所有对换构成一个轨道。取 $\sigma
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)

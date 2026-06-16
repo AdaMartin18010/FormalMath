@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
-  wikidata_id: Q719395
 references:
   databases:
   - id: wikidata
@@ -25,6 +24,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q719395
     consulted_at: '2026-06-16'
+  papers:
+  - title: A polynomial invariant for knots via von Neumann algebras
+    author: Vaughan F. R. Jones
+    journal: Bulletin of the American Mathematical Society
+    year: 1985
+    doi: 10.1090/S0273-0979-1985-15304-2
 ---
 # TOP-127: Khovanov同调与Jones多项式范畴化
 
@@ -59,3 +64,15 @@ references:
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Vaughan F. R. Jones, *A polynomial invariant for knots via von Neumann algebras*, Bulletin of the American Mathematical Society, 1985 (DOI: 10.1090/S0273-0979-1985-15304-2)
+
+---
+
+## 参考文献
+
+- Vaughan F. R. Jones, *A polynomial invariant for knots via von Neumann algebras*, Bulletin of the American Mathematical Society, 1985, DOI: 10.1090/S0273-0979-1985-15304-2

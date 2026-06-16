@@ -18,6 +18,8 @@ references:
     msc: 54-01
     chapters: null
     url: null
+    mr_number: MR0464128
+    author: James R. Munkres
   - id: lee_ism
     type: textbook
     title: Introduction to Smooth Manifolds
@@ -30,6 +32,28 @@ references:
     msc: 58-01
     chapters: null
     url: null
+    mr_number: MR2954043
+    author: John M. Lee
+    doi: 10.1007/978-1-4419-9982-5
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Euclid
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euclid/
 ---
 # 欧几里得几何 - Lean4形式化实现 / Euclidean Geometry - Lean4 Formalization
 
@@ -608,3 +632,12 @@ def project_point (point_3d : Point 3) (intrinsic : Matrix ℝ 3 3) (extrinsic :
 2. de Berg, M., et al. (2008). *Computational Geometry: Algorithms and Applications*. Springer.
 3. Boyd, S., & Vandenberghe, L. (2004). *Convex Optimization*. Cambridge University Press.
 4. Hartley, R., & Zisserman, A. (2003). *Multiple View Geometry in Computer Vision*. Cambridge University Press.
+
+---
+
+## 参考文献
+
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 978-0131816299 / MR0464128
+- John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer, 2012, ISBN: 978-1441999818 / MR2954043
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

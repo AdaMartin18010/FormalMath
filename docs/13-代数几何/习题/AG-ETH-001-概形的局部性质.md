@@ -25,6 +25,9 @@ references:
     msc: 14-01
     chapters: null
     url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -33,10 +36,24 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: nlab
     type: database
@@ -62,7 +79,6 @@ external_ids:
   stacks_tag:
     tag: 01LC
     url: https://stacks.math.columbia.edu/tag/01LC
-  wikidata_id: Q1155772
 ---
 # AG-ETH-001: 概形的局部性质 (*Lokale Eigenschaften von Schemata*)
 

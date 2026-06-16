@@ -1,7 +1,7 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C21
+  - 53C21'
 exercise_id: GEO-089
 title: 正质量定理与Schoen-Yau证明
 difficulty: 5
@@ -10,11 +10,13 @@ topic: 几何
 subtopic: 广义相对论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Shing-Tung_Yau
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Yau/
 ---
-
 # GEO-089: 正质量定理与Schoen-Yau证明
 
 **题号**: GEO-089

@@ -18,6 +18,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -30,6 +32,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -43,6 +46,25 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
   papers:
   - title: Le théorème de Riemann-Roch
     author: Armand Borel, Jean-Pierre Serre
@@ -58,7 +80,6 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 ---
 # 13.6 Riemann-Roch定理 - 深度版 / Riemann-Roch Theorem - Deep Version
 
@@ -313,3 +334,14 @@ $$\text{div}(\wp) = -2[0] + [P] + [-P]$$
 ## 经典论文与原始文献
 
 - Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958, DOI: 10.24033/bsmf.1500

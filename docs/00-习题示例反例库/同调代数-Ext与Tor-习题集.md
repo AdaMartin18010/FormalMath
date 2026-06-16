@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/homological+algebra
   wikipedia_url: https://en.wikipedia.org/wiki/Homological_algebra
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0
-  wikidata_id: Q579978
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q579978
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # 同调代数·Ext 与 Tor 习题集
 
@@ -187,3 +201,10 @@ $$E_2^{p,q}=(R^pG)(R^qF(A))\Rightarrow R^{p+q}(G\circ F)(A)。$$
 对 $R\to S$，函子 $\operatorname{Hom}_R(A,-):R\text{-Mod}\to\text{Ab}$ 与限制/余限制 $\operatorname{Hom}_S(S,-):S\text{-Mod}\to R\text{-Mod}$。实际上取 $F=-\otimes_R S$（右正合，左导出为 Tor），$G=\operatorname{Hom}_S(-,B)$（左正合，右导出为 Ext）。则 $G\circ F=\operatorname{Hom}_S(A\otimes_R S,B)\cong\operatorname{Hom}_R(A,B)$（当 $A$ 为 $R$-模）。Grothendieck 谱序列给出
 $$E_2^{p,q}=R^pG(L_qF(A))=\operatorname{Ext}_S^p(\operatorname{Tor}_q^R(S,A),B)\Rightarrow\operatorname{Ext}_R^{p+q}(A,B)。$$
 收敛性由谱序列的有限性保证（若 $R$ 有有限全局维数）。
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

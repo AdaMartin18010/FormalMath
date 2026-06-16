@@ -18,6 +18,8 @@ references:
     msc: 54-01
     chapters: null
     url: null
+    mr_number: MR0464128
+    author: James R. Munkres
   - id: lee_ism
     type: textbook
     title: Introduction to Smooth Manifolds
@@ -30,6 +32,17 @@ references:
     msc: 58-01
     chapters: null
     url: null
+    mr_number: MR2954043
+    author: John M. Lee
+    doi: 10.1007/978-1-4419-9982-5
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
   papers:
   - title: Relations between the critical points of a real function of n independent
       variables
@@ -37,6 +50,10 @@ references:
     journal: Transactions of the American Mathematical Society
     year: 1925
     doi: 10.2307/1989176
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Morse_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8E%AB%E5%B0%94%E6%96%AF%E7%90%86%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/Morse+theory
 ---
 # 莫尔斯理论 / Morse Theory
 
@@ -350,3 +367,12 @@ Morse-Bott 理论将 Morse 理论推广到具有对称性的情况，如环路�
 ## 经典论文与原始文献
 
 - Marston Morse, *Relations between the critical points of a real function of n independent variables*, Transactions of the American Mathematical Society, 1925 (DOI: 10.2307/1989176)
+
+---
+
+## 参考文献
+
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 978-0131816299 / MR0464128
+- John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer, 2012, ISBN: 978-1441999818 / MR2954043
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362
+- Marston Morse, *Relations between the critical points of a real function of n independent variables*, Transactions of the American Mathematical Society, 1925, DOI: 10.2307/1989176

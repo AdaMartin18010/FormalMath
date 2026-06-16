@@ -1,9 +1,7 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20A99
-  - 20A05
-  - 20B30
+  - 20A99 - 20A05 - 20B30'
 lang: en
 original: docs/02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md
 translation_status: completed
@@ -11,6 +9,23 @@ translator: FormalMath i18n System
 date: 2026-04-04
 title: Group (Mathematics)
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # Group (Mathematics)
 
@@ -71,3 +86,10 @@ Groups have applications in:
 ---
 
 **Language Versions**: [Deutsch](./../../de/core/Gruppe.md) | [Français](./../../fr/core/Groupe.md) | [日本語](./../../ja/core/群.md) | [中文](../../../02-代数结构/02-核心理论/群论/01-群论-国际标准深度扩展版.md)
+
+---
+
+## 参考文献
+
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 9780471433347 / MR2286236
+- Joseph J. Rotman, *An Introduction to the Theory of Groups*, 4th ed., Springer, 1995, ISBN: 9780387942858 / MR1307623

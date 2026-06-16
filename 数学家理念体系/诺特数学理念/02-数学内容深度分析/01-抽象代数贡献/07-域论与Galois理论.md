@@ -12,7 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%9F
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
   zbmath_url: https://zbmath.org/?q=au:Field
-  wikidata_id: Q190109
+  wikidata_id: https://www.wikidata.org/entity/Q8028
 references:
   databases:
   - id: zbmath

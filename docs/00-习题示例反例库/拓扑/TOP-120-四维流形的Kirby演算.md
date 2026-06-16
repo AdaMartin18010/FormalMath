@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/manifold
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
-  wikidata_id: Q203920
 references:
   databases:
   - id: wikidata
@@ -25,6 +24,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q203920
     consulted_at: '2026-06-16'
+  papers:
+  - title: An application of gauge theory to four-dimensional topology
+    author: Simon K. Donaldson
+    journal: Journal of Differential Geometry
+    year: 1983
+    doi: 10.4310/jdg/1214437665
 ---
 # TOP-120: 四维流形的Kirby演算
 
@@ -59,3 +64,9 @@ references:
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Simon K. Donaldson, *An application of gauge theory to four-dimensional topology*, Journal of Differential Geometry, 1983 (DOI: 10.4310/jdg/1214437665)

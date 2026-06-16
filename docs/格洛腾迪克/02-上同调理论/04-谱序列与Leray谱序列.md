@@ -12,7 +12,6 @@ external_ids:
   stacks_tag:
     tag: 015J
     url: https://stacks.math.columbia.edu/tag/015J
-  wikidata_id: Q3503315
 references:
   databases:
   - id: stacks_project
@@ -27,6 +26,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q3503315
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # 谱序列与 Leray 谱序列
 
@@ -160,3 +174,10 @@ $$g^* R^q f_* \mathcal{F} \xrightarrow{\sim} R^q f'_* (g'^* \mathcal{F})$$
 **文档状态**：✅ 完成  
 **字数**：约 2,400 字  
 **最后更新**：2026-04-16
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

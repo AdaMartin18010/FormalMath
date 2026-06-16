@@ -7,6 +7,30 @@ msc_secondary: 55Q05, 57N65
 难度: ⭐⭐⭐⭐
 预计时间: 40分钟
 title: Whitehead定理
+references:
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
 ---
 # Whitehead定理
 
@@ -155,3 +179,11 @@ $X$ 具有与 $S^1$ 相同的弱同伦型（$\pi_1(X) \cong \mathbb{Z}$，高阶
 对一般空间，需通过**CW 逼近**（CW approximation）：任意空间 $X$ 存在 CW 复形 $X'$ 和弱同伦等价 $X' \to X$。例如，Warsaw 圆的 CW 逼近为单点（因其弱同伦型为点），但 $X' \to W$ 不是同伦等价。
 
 ---
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

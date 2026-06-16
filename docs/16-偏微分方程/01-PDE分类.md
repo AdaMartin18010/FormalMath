@@ -18,14 +18,11 @@ references:
     publisher: American Mathematical Society
     year: 2010
     msc: 35-01
-  - id: john_pde
-    type: textbook
-    title: Partial Differential Equations
-    authors:
-    - Fritz John
-    publisher: Springer
-    year: 1982
-    msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
 ---
 # PDE分类
 

@@ -21,6 +21,8 @@ references:
     msc: 54-01
     chapters: null
     url: null
+    mr_number: MR0464128
+    author: James R. Munkres
   - id: lee_ism
     type: textbook
     title: Introduction to Smooth Manifolds
@@ -33,6 +35,21 @@ references:
     msc: 58-01
     chapters: null
     url: null
+    mr_number: MR2954043
+    author: John M. Lee
+    doi: 10.1007/978-1-4419-9982-5
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Characteristic_class
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A4%BA%E6%80%A7%E7%B1%BB
+  nlab_url: https://ncatlab.org/nlab/show/characteristic+class
 ---
 # 示性类入门 / Introduction to Characteristic Classes
 
@@ -329,3 +346,11 @@ $$c(E) = \prod_{i=1}^n (1 + f(x_i))$$
 **文档状态**: 示性类入门文档创建完成
 **内容范围**: 基础概念、核心定理、实战问题
 **难度级别**: 研究生中级
+
+---
+
+## 参考文献
+
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 978-0131816299 / MR0464128
+- John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer, 2012, ISBN: 978-1441999818 / MR2954043
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362

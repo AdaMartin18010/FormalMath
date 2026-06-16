@@ -24,6 +24,7 @@ references:
     year: 1995
     isbn: '9780387944609'
     mr_number: MR1344449
+    doi: 10.1007/978-1-4612-7154-9
   - title: Complex Analysis
     author: Elias M. Stein, Rami Shakarchi
     edition: 1st
@@ -55,7 +56,6 @@ chapter: '07'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 ---
 # Riemann面（Riemann Surfaces）
 
@@ -410,4 +410,3 @@ def genus {X : Type*} [TopologicalSpace X] [CompactSpace X]
 
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Bernhard_Riemann)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/)
-- [Wikidata Id](Q42299)

@@ -97,7 +97,7 @@ arxiv-tracker/
 ### arXiv API配置
 ```yaml
 arxiv:
-  api_base_url: "http://export.arxiv.org/api/query"
+  api_base_url: "https://export.arxiv.org/api/query?search_query=all"
   rate_limit: 3              # 每秒请求数
   timeout: 30                # 超时时间
   max_results_per_query: 100 # 每查询最大结果

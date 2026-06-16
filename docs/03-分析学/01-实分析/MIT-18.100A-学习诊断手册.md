@@ -13,8 +13,11 @@ reviewer: AI Mathematical Reviewer
 tags:
 - mathematical_reviewed
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
+  wikipedia_url: https://en.wikipedia.org/wiki/Real_analysis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%AE%9E%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/real+analysis
 references:
   textbooks:
   - title: Understanding Analysis
@@ -23,6 +26,30 @@ references:
     publisher: Springer
     year: 2015
     isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Real Mathematical Analysis
+    author: Charles C. Pugh
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780387952970'
+    mr_number: MR1639930
+    doi: 10.1007/978-0-387-21676-7
+  - title: Analysis I
+    author: Terence Tao
+    edition: 3rd
+    publisher: Springer
+    year: 2016
+    isbn: '9789811017896'
+    mr_number: MR3728289
+    doi: 10.1007/978-981-10-1789-6
 chapter: '0'
 ---
 # MIT 18.100A 实分析 - 学习诊断手册

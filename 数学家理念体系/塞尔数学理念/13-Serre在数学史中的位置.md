@@ -13,6 +13,10 @@ references:
   - title: A Course in Arithmetic
     author: J-P. Serre
     year: 1973
+    edition: 1st
+    publisher: Springer
+    isbn: '9780387900407'
+    mr_number: MR0344216
   papers:
   - title: Interview with Jean-Pierre Serre
     author: M. Raussen & C. Skau
@@ -35,7 +39,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Jean-Pierre%20Serre
-  wikidata_id: Q212063
 ---
 # Jean-Pierre Serre在数学史中的位置：百科全书式的统一者
 
@@ -164,3 +167,11 @@ Jean-Pierre Serre是20世纪后半叶数学史上最重要的人物之一。他�
 3. Katz, N. M. "Jean-Pierre Serre." *Wolf Prize in Mathematics*, 2001.
 4. Colmez, P. & Serre, J-P. *Correspondance Grothendieck-Serre*. SMF, 2001.
 5. Khare, C. & Wintenberger, J-P. "Serre's modularity conjecture." *Invent. Math.* 178 (2009), 485–586.
+
+---
+
+## 参考文献
+
+- J-P. Serre, *Oeuvres - Collected Papers I, II, III, IV*, 1986-2000
+- J-P. Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- M. Raussen & C. Skau, *Interview with Jean-Pierre Serre*, 2004

@@ -7,7 +7,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
-  wikidata_id: Q11348
 references:
   databases:
   - id: wikidata
@@ -15,6 +14,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
 ---
 ---
 
@@ -559,3 +574,10 @@ Part III (大四/硕士)
 **关联文档**: [Cambridge-course-mapping-detailed.md](../../project/Cambridge-course-mapping-detailed.md)
 **维护建议**: 每学期复核Cambridge课程表更新
 **下次复核**: 2026年8月
+
+---
+
+## 参考文献
+
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- George Pólya, *How to Solve It: A New Aspect of Mathematical Method*, 2nd ed., Princeton University Press, 2004, ISBN: 9780691119663

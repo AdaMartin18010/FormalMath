@@ -9,7 +9,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
-  wikidata_id: Q719395
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
 references:
   databases:
   - id: wikidata
@@ -17,6 +17,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q719395
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # Abel范畴
 
@@ -136,3 +151,10 @@ Abel范畴是同调代数的通用语言。在代数拓扑（见`docs/12-代数�
 3. P. Freyd, *Abelian Categories*, Harper & Row, 1964.
 4. C. Weibel, *An Introduction to Homological Algebra*, Cambridge University Press, 1994.
 5. 陈志杰，《同调代数》，高等教育出版社，2009。
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

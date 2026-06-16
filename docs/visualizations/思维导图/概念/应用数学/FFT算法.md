@@ -1,9 +1,38 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: FFT算法 (Fast Fourier Transform)
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: An algorithm for the machine calculation of complex Fourier series
+    author: James W. Cooley and John W. Tukey
+    journal: Mathematics of Computation
+    year: 1965
+    doi: 10.1090/S0025-5718-1965-0178586-1
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algorithm
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%AE%97%E6%B3%95
+  nlab_url: https://ncatlab.org/nlab/show/algorithm
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']
@@ -300,3 +329,9 @@ mindmap
 ---
 
 *本文档是FormalMath项目的一部分，对齐MIT信号处理课程体系。*
+
+---
+
+## 经典论文与原始文献
+
+- James W. Cooley and John W. Tukey, *An algorithm for the machine calculation of complex Fourier series*, Mathematics of Computation, 1965 (DOI: 10.1090/S0025-5718-1965-0178586-1)

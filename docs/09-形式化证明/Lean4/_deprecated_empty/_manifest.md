@@ -1,6 +1,24 @@
 ---
-title: "manifest"
-msc_primary: "03"
+title: manifest
+msc_primary: '03'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # 已归档的 0 字节空文件清单
 
@@ -49,3 +67,10 @@ msc_primary: "03"
 1. 为待补充定理赋予明确的数学名称（如 `ExtremeValueTheorem.lean`）。
 2. 在 `docs/09-形式化证明/双语对照/` 目录下建立对应的 Markdown 教学文档。
 3. 参考 `docs/09-形式化证明/Lean4-待形式化定理清单.md` 中的框架进行实现。
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

@@ -23,6 +23,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -35,6 +37,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -48,6 +51,9 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
   databases:
   - id: nlab
     type: database
@@ -64,7 +70,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Galois%E7%90%86%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
-  wikidata_id: Q92552
 ---
 # Galois理论应用 - 深度版
 
@@ -261,3 +266,11 @@ $Gal(K'/F')$是$G$的子群，可解。
 *文档版本: 1.0*
 *创建日期: 2026年4月*
 *最后更新: 2026年4月*
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236

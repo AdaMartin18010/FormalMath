@@ -1,9 +1,12 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Gauss-Bonnet定理 (Gauss-Bonnet Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 ---
 # Gauss-Bonnet定理 (Gauss-Bonnet Theorem)
 

@@ -47,7 +47,7 @@ FormalMath项目由一支致力于数学教育的团队开发和维护。
 #### MIT (Massachusetts Institute of Technology)
 - **Mathematics Course 18** 系列
 - 重点参考：18.705、18.726、18.721、18.100、18.704、18.745
-- 网站：https://math.mit.edu/research/pure/applied.html
+- 网站：https://math.mit.edu/research/
 
 #### Harvard University
 - **Mathematics** 本科与研究生课程

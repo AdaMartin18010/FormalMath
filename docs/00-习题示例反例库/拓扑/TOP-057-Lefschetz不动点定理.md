@@ -6,6 +6,24 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐
 预计时间: 35分钟
 title: Lefschetz不动点定理
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Lefschetz不动点定理
 
@@ -175,3 +193,10 @@ $r$ 是连续收缩映射（retraction），即 $r|_{S^{n-1}} = \text{id}$。
 **变式2：** 计算Torus上映射的Lefschetz数。
 
 **提示**：$T^n = (S^1)^n$，$H_k(T^n; \mathbb{Q}) = \mathbb{Q}^{\binom{n}{k}}$。设 $f: T^n \to T^n$ 由矩阵 $A \in GL(n, \mathbb{Z})$ 诱导，则 $\Lambda(f) = \det(I - A)$。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

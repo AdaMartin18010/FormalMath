@@ -1,11 +1,16 @@
 ---
 title: 与Zermelo的关系
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
-  - 01A65
-  - 01A70
+- 01A60
+- 01A65
+- 01A70
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Relation_(mathematics)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%85%B3%E7%B3%BB
+  nlab_url: https://ncatlab.org/nlab/show/relation
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Zermelo/
 ---
 # 与Zermelo的关系
 

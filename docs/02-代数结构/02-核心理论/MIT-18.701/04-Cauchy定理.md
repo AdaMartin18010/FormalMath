@@ -22,6 +22,7 @@ references:
     url: null
     pages: 185-190
     author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -52,6 +53,7 @@ references:
     pages: 93-96
     mr_number: MR2286236
     author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
   databases:
   - id: nlab
     type: database
@@ -72,12 +74,12 @@ tags:
 course: MIT 18.701 抽象代数
 chapter: '04'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
-  wikidata_id: Q83478
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 ---
 ## 1. 引言
 
@@ -213,9 +215,8 @@ $$|Z(G)| = |G| - \sum [G : C(g_i)] \equiv 0 \pmod p。$$
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
 - [Nlab Url](https://ncatlab.org/nlab/show/group)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)
-- [Wikidata Id](Q83478)

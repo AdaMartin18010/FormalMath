@@ -1,10 +1,33 @@
 ---
-title: "金融数学与工程"
+title: 金融数学与工程
 msc_primary: 91
-
-msc_secondary: ['60H10', '60J60', '91B25', '91G20']
-prerequisites: ['随机过程', '微分方程', '概率论', '数值方法']
+msc_secondary:
+- 60H10
+- 60J60
+- 91B25
+- 91G20
+prerequisites:
+- 随机过程
+- 微分方程
+- 概率论
+- 数值方法
 processed_at: '2026-04-08'
+references:
+  textbooks:
+  - title: Game Theory
+    author: Drew Fudenberg and Jean Tirole
+    edition: 1st
+    publisher: MIT Press
+    year: 1991
+    isbn: '9780262014414'
+    mr_number: MR1124703
+  - title: A Course in Game Theory
+    author: Martin J. Osborne and Ariel Rubinstein
+    edition: 1st
+    publisher: MIT Press
+    year: 1994
+    isbn: '9780262650403'
+    mr_number: MR1301776
 ---
 # 金融数学与工程 (Mathematical Finance and Engineering)
 

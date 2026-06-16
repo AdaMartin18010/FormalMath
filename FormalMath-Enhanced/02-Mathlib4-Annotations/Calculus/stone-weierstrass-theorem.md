@@ -1,9 +1,12 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Stone-Weierstrass定理 (Stone-Weierstrass Theorem)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Karl_Weierstrass
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weierstrass/
 ---
 # Stone-Weierstrass定理 (Stone-Weierstrass Theorem)
 

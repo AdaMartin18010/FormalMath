@@ -1,10 +1,34 @@
 ---
-title: "Lean 4形式化实现 - 基数序数理论"
-msc_primary: 03
+title: Lean 4形式化实现 - 基数序数理论
+msc_primary: '03
 
-  - 03B35
-msc_secondary: ['68T15', '03B70']
+  - 03B35'
+msc_secondary:
+- 68T15
+- 03B70
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Cardinal_number
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%BA%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/cardinal
 ---
 # Lean 4形式化实现 - 基数序数理论
 
@@ -716,3 +740,10 @@ def optimized_operation (κ λ : Cardinal) : Cardinal :=
 **质量标准**: 国际一流大学标准
 **测试覆盖率**: 100%
 **性能指标**: 优秀
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

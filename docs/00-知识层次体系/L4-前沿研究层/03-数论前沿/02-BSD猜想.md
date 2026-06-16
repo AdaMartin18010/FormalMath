@@ -1,9 +1,37 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: BSD猜想
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Notes on elliptic curves. II
+    author: Bryan Birch and Peter Swinnerton-Dyer
+    journal: Journal für die reine und angewandte Mathematik
+    year: 1965
+    doi: 10.1515/crll.1965.218.79
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Birch_and_Swinnerton-Dyer_conjecture
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=BSD
+  nlab_url: https://ncatlab.org/nlab/show/Birch-Swinnerton-Dyer+conjecture
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']
@@ -271,3 +299,17 @@ BSD猜想是数论中最深刻、最具挑战性的问题之一。从Birch和Swi
 *创建日期：2026年4月*
 *层次级别：L4-Frontier*
 *领域分类：数论前沿*
+
+---
+
+## 经典论文与原始文献
+
+- Bryan Birch and Peter Swinnerton-Dyer, *Notes on elliptic curves. II*, Journal für die reine und angewandte Mathematik, 1965 (DOI: 10.1515/crll.1965.218.79)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- Bryan Birch and Peter Swinnerton-Dyer, *Notes on elliptic curves. II*, Journal für die reine und angewandte Mathematik, 1965, DOI: 10.1515/crll.1965.218.79

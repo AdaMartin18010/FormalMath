@@ -28,6 +28,9 @@ references:
     msc: 14-01
     chapters: null
     url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -36,10 +39,24 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: stacks_project
     type: database
@@ -59,7 +76,6 @@ external_ids:
   stacks_tag:
     tag: 0B5R
     url: https://stacks.math.columbia.edu/tag/0B5R
-  wikidata_id: Q212063
 ---
 # Serre消失定理 (Serre Vanishing Theorem)
 

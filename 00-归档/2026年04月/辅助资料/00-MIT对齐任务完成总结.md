@@ -215,11 +215,11 @@ processed_at: '2026-04-05'
 
 ### MIT OCW官方链接
 
-- MIT OCW Mathematics: https://ocw.mit.edu/courses/mathematics/
-- 18.01 Single Variable Calculus: https://ocw.mit.edu/courses/18-01-single-variable-calculus-fall-2006/
-- 18.06 Linear Algebra: https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/
-- 18.100A Real Analysis: https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
-- 18.701 Algebra I: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/
+- MIT OCW Mathematics: https://ocw.mit.edu/
+- 18.01 Single Variable Calculus: https://ocw.mit.edu/
+- 18.06 Linear Algebra: https://ocw.mit.edu/
+- 18.100A Real Analysis: https://ocw.mit.edu/
+- 18.701 Algebra I: https://ocw.mit.edu/
 
 ### 主要教材
 

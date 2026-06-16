@@ -8,7 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Lagrange%27s+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5
-  wikidata_id: Q505798
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/
 references:
   databases:
   - id: wikidata
@@ -123,7 +123,7 @@ $$|G| = [G:H] \cdot |H|$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - Subgroup][https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Subgroup/Basic.html](需更新)
+- [Mathlib4 文档 - Subgroup][https://leanprover-community.github.io/mathlib4_docs/](需更新)
 - [Groupprops - Lagrange's theorem][https://groupprops.subwiki.org/wiki/Lagrange%27s_theorem](需更新)
 
 ---

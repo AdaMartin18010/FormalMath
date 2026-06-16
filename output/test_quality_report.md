@@ -3,6 +3,24 @@ msc_primary: 00A99
 msc_secondary:
 - 97A99
 title: test quality report
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # FormalMath项目文档质量检查报告
 
@@ -790,3 +808,10 @@ title: test quality report
 | 0 | 🟡 警告 | 文档结构 | 缺少示例部分 | 添加示例部分，包含定义、示例或证明 |
 | 0 | 🟡 警告 | 内容质量 | 文档中未检测到数学公式 | 对于数学概念文档，建议添加LaTeX数学公式（$...$或$$...$$） |
 | 0 | 🔵 信息 | 内容质量 | 内容格式较为单一，建议增加多样化的内容形式 | 考虑添加代码块、表格、列表、图表或Mermaid图 |
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

@@ -10,7 +10,9 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
   zbmath_url: https://zbmath.org/?q=au:David%20Hilbert
-  wikidata_id: Q41585
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%83%E5%92%8C%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/harmonic+analysis
+  wikidata_id: https://www.wikidata.org/entity/Q82597
 references:
   databases:
   - id: zbmath

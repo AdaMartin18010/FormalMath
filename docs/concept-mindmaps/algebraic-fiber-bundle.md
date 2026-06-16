@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/fiber+bundle
   wikipedia_url: https://en.wikipedia.org/wiki/Fiber_bundle
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A4%E7%BB%B4%E4%B8%9B
-  wikidata_id: Q1154996
 references:
   databases:
   - id: wikidata

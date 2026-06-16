@@ -15,6 +15,8 @@ references:
     msc: 54-01
     chapters: null
     url: null
+    mr_number: MR0464128
+    author: James R. Munkres
   - id: lee_ism
     type: textbook
     title: Introduction to Smooth Manifolds
@@ -27,6 +29,22 @@ references:
     msc: 58-01
     chapters: null
     url: null
+    mr_number: MR2954043
+    author: John M. Lee
+    doi: 10.1007/978-1-4419-9982-5
+  - title: 'Geometry: Euclid and Beyond'
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 2000
+    isbn: '9780387986500'
+    mr_number: MR1736856
+  - title: 'Geometry: A Comprehensive Course'
+    author: Dan Pedoe
+    edition: 1st
+    publisher: Dover
+    year: 1988
+    isbn: '9780486656128'
   databases:
   - id: wikidata
     type: database
@@ -36,7 +54,6 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 ---
 # Riemann几何核心概念
 
@@ -415,3 +432,12 @@ $$R_{ij} = R^k_{\,ikj}, \quad R = g^{ij}R_{ij}$$
 ---
 
 *文档编号：21 | MSC2020分类：@, @ Riemann几何 | 创建日期：2026年4月*
+
+---
+
+## 参考文献
+
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 978-0131816299 / MR0464128
+- John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer, 2012, ISBN: 978-1441999818 / MR2954043
+- Robin Hartshorne, *Geometry: Euclid and Beyond*, 1st ed., Springer, 2000, ISBN: 9780387986500 / MR1736856
+- Dan Pedoe, *Geometry: A Comprehensive Course*, 1st ed., Dover, 1988, ISBN: 9780486656128

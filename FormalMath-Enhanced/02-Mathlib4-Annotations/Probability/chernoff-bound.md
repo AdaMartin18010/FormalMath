@@ -1,9 +1,12 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Chernoff 界 (Chernoff Bound)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Shiing-Shen_Chern
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Chern/
 ---
 # Chernoff 界 (Chernoff Bound)
 

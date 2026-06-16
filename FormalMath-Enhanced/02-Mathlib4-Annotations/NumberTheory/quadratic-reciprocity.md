@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 二次互反律 (Quadratic Reciprocity)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Quadratic_reciprocity
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BA%8C%E6%AC%A1%E4%BA%92%E5%8F%8D%E5%BE%8B
+  nlab_url: https://ncatlab.org/nlab/show/quadratic+reciprocity
 ---
 # 二次互反律 (Quadratic Reciprocity)
 

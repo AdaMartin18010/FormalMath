@@ -11,7 +11,8 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Homotopy_type_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E4%BC%A6%E7%B1%BB%E5%9E%8B%E8%AE%BA
   zbmath_url: https://zbmath.org/?q=au:Homotopy%20type%20theory
-  wikidata_id: Q5891840
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Poincare/
+  wikidata_id: https://www.wikidata.org/entity/Q81049
 references:
   databases:
   - id: zbmath
@@ -25,6 +26,13 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q5891840
     consulted_at: '2026-06-16'
+  papers:
+  - title: Homotopy theoretic models of identity types
+    author: Steve Awodey and Michael A. Warren
+    journal: Mathematical Proceedings of the Cambridge Philosophical Society
+    year: 2008
+    doi: 10.1017/S0305004107001823
+    arxiv_id: '0709.3431'
 ---
 # 同伦类型论（HoTT）：庞加莱直觉的现代实现
 
@@ -175,3 +183,9 @@ references:
 - **类型论**：研究生课程，类型论和数学基础
 - **拓扑学**：研究生课程，同伦理论和拓扑学
 - **数学史**：本科生课程，20-21世纪数学基础和同伦类型论的发展
+
+---
+
+## 经典论文与原始文献
+
+- Steve Awodey and Michael A. Warren, *Homotopy theoretic models of identity types*, Mathematical Proceedings of the Cambridge Philosophical Society, 2008 (DOI: 10.1017/S0305004107001823; arXiv: 0709.3431)

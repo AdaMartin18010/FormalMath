@@ -1,9 +1,31 @@
 ---
 msc_primary: 68-XX
 msc_secondary:
-  - 68Vxx
+- 68Vxx
 processed_at: '2026-04-20'
 title: 形式化证明·Lean 4 练习习题集
+references:
+  textbooks:
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
 ---
 # 形式化证明·Lean 4 练习习题集
 
@@ -356,3 +378,11 @@ theorem size_bound (t : BinTree α) : t.size + 1 ≤ 2 ^ (t.height + 1) := by
     linarith
 ```
 **推导说明**：基例：叶子 `size=1`，`height=0`，$1+1\le 2^{1}=2$ 成立。归纳步：`node l r` 的 `size = 1 + l.size + r.size`，`height = 1 + max(height l, height r)`。对归纳假设，利用 $2^{h+1}+2^{h+1}=2^{h+2}$ 及 $\max$ 的单调性，将两边放大到统一高度后相加。
+
+---
+
+## 参考文献
+
+- Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, *Introduction to Algorithms*, 3rd ed., MIT Press, 2009, ISBN: 9780262033848 / MR2572804
+- Michael Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage, 2012, ISBN: 9781133187790
+- Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed., Addison-Wesley, 1994, ISBN: 9780131558362

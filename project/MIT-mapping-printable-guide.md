@@ -9,7 +9,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
-  wikidata_id: Q11348
 references:
   databases:
   - id: wikidata
@@ -113,7 +112,7 @@ references:
 
 ## 🔗 外部资源
 
-- **MIT OCW**: https://ocw.mit.edu/courses/mathematics/
+- **MIT OCW**: https://ocw.mit.edu/
 - **Vakil FOAG**: http://math.stanford.edu/~vakil/216blog/
 - **FormalMath索引**: `docs/00-全局文档索引-2025年12月.md`
 

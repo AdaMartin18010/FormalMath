@@ -98,6 +98,7 @@ def extract_markdown_link_urls(text: str):
     """提取 Markdown 链接中的 URL，支持 URL 内部平衡的括号。"""
     urls = []
     spans = []
+    link_regions = []
     i = 0
     while i < len(text):
         bracket_close = text.find("](", i)
@@ -129,18 +130,25 @@ def extract_markdown_link_urls(text: str):
             if url.startswith("http"):
                 urls.append(url)
                 spans.append((url_start, j))
+                link_regions.append((bracket_close, j + 1))
         i = j + 1
-    return urls, spans
+    return urls, spans, link_regions
 
 
 def normalize_url(raw: str) -> str:
-    """清洗 URL：平衡括号、去除尾随标点、规范 MIT OCW 路径。"""
-    url = raw.rstrip('.,;:!?">')
+    """清洗 URL：去除尾随正文/标点、平衡括号、规范 MIT OCW 路径。"""
+    allowed = set(
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        "%_-+=&?#./:~@!$*(),;'[]{}|\""
+    )
+    url = raw
+    while url and url[-1] not in allowed:
+        url = url[:-1]
+    url = url.rstrip('.,;:!?*\'"）】」』｝］')
     # 平衡括号
     open_p = url.count("(")
     close_p = url.count(")")
     if close_p > open_p:
-        # 去除多余的尾部 ')'
         diff = close_p - open_p
         while diff > 0 and url.endswith(")"):
             url = url[:-1]
@@ -154,7 +162,7 @@ def normalize_url(raw: str) -> str:
 
 
 def extract_urls(text: str):
-    md_urls, md_spans = extract_markdown_link_urls(text)
+    md_urls, md_spans, link_regions = extract_markdown_link_urls(text)
     urls = set(md_urls)
 
     # 裸 URL：跳过已识别的 Markdown 链接区间，并跳过后面紧跟 {placeholder} 的情况
@@ -162,6 +170,9 @@ def extract_urls(text: str):
         start, end = m.span()
         # 跳过 Markdown 链接区间
         if any(start >= s and end <= e for s, e in md_spans):
+            continue
+        # 跳过与 Markdown 链接语法区域重叠的裸 URL 匹配（防止把链接后正文捕获进来）
+        if any(not (end <= s or start >= e) for s, e in link_regions):
             continue
         raw = m.group(0)
         # 跳过模板占位前缀，如 https://ncatlab.org/nlab/show/{entry}

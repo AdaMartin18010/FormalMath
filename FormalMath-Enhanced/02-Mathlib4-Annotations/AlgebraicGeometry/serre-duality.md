@@ -10,7 +10,8 @@ external_ids:
   stacks_tag:
     tag: 0A7B
     url: https://stacks.math.columbia.edu/tag/0A7B
-  wikidata_id: Q212063
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
+  nlab_url: https://ncatlab.org/nlab/show/Serre+duality
 references:
   papers:
   - title: Faisceaux algébriques cohérents

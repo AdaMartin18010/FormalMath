@@ -11,7 +11,6 @@ reviewer: AI Mathematical Reviewer
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
-  wikidata_id: Q8814
 references:
   databases:
   - id: wikidata
@@ -19,6 +18,27 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q8814
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
 ---
 ## 定理陈述
 
@@ -150,4 +170,3 @@ f(t) = \left(\sum a_i^2\right) t^2 + 2\left(\sum a_i b_i\right) t + \sum b_i^2
 
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/)
-- [Wikidata Id](Q8814)

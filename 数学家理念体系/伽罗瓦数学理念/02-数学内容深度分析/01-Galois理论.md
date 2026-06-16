@@ -13,7 +13,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
   zbmath_url: https://zbmath.org/?q=au:Group
-  wikidata_id: Q83478
 references:
   databases:
   - id: zbmath
@@ -27,6 +26,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q83478
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: Algebra
+    author: Michael Artin
+    edition: 2nd
+    publisher: Pearson
+    year: 2010
+    isbn: '9780132413770'
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Galois理论：代数方程的群论解决
 
@@ -186,3 +201,10 @@ Emil Artin在1942年用线性代数的语言重新表述了Galois理论。
 **MSC分类**: 12F10 (Primary), 01A55, 20B35, 12-03 (Secondary)
 **难度级别**: 本科生/研究生入门
 **最后更新**: 2026年4月3日
+
+---
+
+## 参考文献
+
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 9780471433347 / MR2286236
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2010, ISBN: 9780132413770

@@ -1,6 +1,24 @@
 ---
-title: "GRE数学专项习题"
-msc_primary: "00"
+title: GRE数学专项习题
+msc_primary: '00'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # GRE数学专项习题集
 
@@ -810,3 +828,10 @@ mindmap
 - [Abstract Algebra](../02-代数结构/抽象代数.md)
 - [Topology](../04-几何与拓扑/拓扑学.md)
 - [Probability](../06-概率论与统计/概率论基础.md)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

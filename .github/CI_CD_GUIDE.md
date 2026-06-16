@@ -371,7 +371,7 @@ gitleaks detect
 
 ### 联系支持
 
-- GitHub Issues: https://github.com/formalmath/formalmath/issues
+- GitHub Issues: https://github.com/FormalMath
 - 邮件: maintainers@formalmath.io
 
 ## 最佳实践

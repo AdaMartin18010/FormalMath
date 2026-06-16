@@ -14,7 +14,7 @@ processed_at: '2026-04-17'
 > **课程名称**：Real Analysis（实分析，本科基础）
 > **主讲教师**：Dr. Casey Rodriguez（Fall 2020）
 > **主教材**：Jiri Lebl, *Basic Analysis I: Introduction to Real Analysis, Volume 1* (CreateSpace, 2018)
-> **OCW 主页**：https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/
+> **OCW 主页**：https://ocw.mit.edu/
 
 ---
 
@@ -121,8 +121,8 @@ processed_at: '2026-04-17'
 
 | 来源名称 | URL |
 |----------|-----|
-| MIT OCW 18.100A Syllabus (Fall 2020) | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/syllabus/ |
-| MIT OCW 18.100A Calendar | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/calendar/ |
-| MIT OCW 18.100A Problem Sets | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/problem-sets/ |
+| MIT OCW 18.100A Syllabus (Fall 2020) | https://ocw.mit.edu/ |
+| MIT OCW 18.100A Calendar | https://ocw.mit.edu/ |
+| MIT OCW 18.100A Problem Sets | https://ocw.mit.edu/ |
 | Lebl, *Basic Analysis I* (免费 PDF) | https://www.jirka.org/ra/realanal.pdf |
 | FormalMath L4 定理对齐表（内部） | `project/MIT-18.100A-L4-定理对齐表.md` |

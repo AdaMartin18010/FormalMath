@@ -18,6 +18,11 @@ references:
     publisher: Springer
     year: 1977
     msc: 14-01
+    edition: 1st
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -25,6 +30,9 @@ references:
     - Ravi Vakil
     publisher: self-published
     year: 2024
+    edition: draft
+    isbn: ''
+    author: Ravi Vakil
   databases:
   - id: stacks_project
     type: database
@@ -42,7 +50,6 @@ external_ids:
   stacks_tag:
     tag: 01ER
     url: https://stacks.math.columbia.edu/tag/01ER
-  wikidata_id: Q1198376
 ---
 # Čech上同调
 

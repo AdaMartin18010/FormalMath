@@ -4,6 +4,25 @@ msc_secondary:
 - 26A42
 - 46B50
 title: Heine Borel定理
+references:
+  textbooks:
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: General Topology
+    author: Stephen Willard
+    edition: 1st
+    publisher: Dover
+    year: 2004
+    isbn: '9780486434797'
+    mr_number: MR2048350
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Émile_Borel
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Borel/
 ---
 # 概念卡片：Heine-Borel定理
 

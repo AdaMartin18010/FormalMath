@@ -14,6 +14,21 @@ references:
     year: 1991
     isbn: '9780387974958'
     mr_number: MR1153249
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
   databases:
   - id: wikidata
     type: database
@@ -25,7 +40,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/representation+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Representation_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA
-  wikidata_id: Q13220368
 ---
 # Oxford 表示论学习诊断手册
 
@@ -77,4 +91,3 @@ external_ids:
 - [Nlab Url](https://ncatlab.org/nlab/show/representation+theory)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Representation_theory)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA)
-- [Wikidata Id](Q13220368)

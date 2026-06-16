@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
-  wikidata_id: Q180969
 references:
   databases:
   - id: zbmath
@@ -25,6 +24,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q180969
     consulted_at: '2026-06-16'
+  papers:
+  - title: Géométrie algébrique et géométrie analytique
+    author: Jean-Pierre Serre
+    journal: Annales de l'Institut Fourier
+    year: 1956
+    doi: 10.5802/aif.59
 ---
 # GAGA定理：复解析几何与代数几何的等价
 
@@ -1046,3 +1051,15 @@ GAGA定理在现代数学中仍然重要：
 **完成度**: 约85%
 **最后更新**: 2025年12月11日
 **字数**: 约8,000字
+
+---
+
+## 经典论文与原始文献
+
+- Jean-Pierre Serre, *Géométrie algébrique et géométrie analytique*, Annales de l'Institut Fourier, 1956 (DOI: 10.5802/aif.59)
+
+---
+
+## 参考文献
+
+- Jean-Pierre Serre, *Géométrie algébrique et géométrie analytique*, Annales de l'Institut Fourier, 1956, DOI: 10.5802/aif.59

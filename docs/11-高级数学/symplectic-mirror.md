@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/symplectic+geometry
   wikipedia_url: https://en.wikipedia.org/wiki/Symplectic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%BE%9B%E5%87%A0%E4%BD%95
-  wikidata_id: Q2190991
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q2190991
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # 辛几何与镜像对称深度版 / Symplectic Geometry and Mirror Symmetry - In Depth
 
@@ -829,7 +845,7 @@ Abouzaid和Smith等人的工作：
 
 ### 5.4 在线资源 / Online Resources
 
-23. **Auroux's Mirror Symmetry Seminar Notes** - https://math.berkeley.edu/~auroux/
+23. **Auroux's Mirror Symmetry Seminar Notes** - https://math.berkeley.edu/
     - Denis Auroux的讲义和笔记
 
 24. **HMS Seminar Archive** - Various university websites
@@ -867,3 +883,10 @@ Abouzaid和Smith等人的工作：
 - [04-数学物理高级主题](./04-数学物理高级主题.md) - 数学物理基础
 - [21-现代代数几何前沿](./21-现代代数几何前沿.md) - 代数几何前沿
 - [38-几何分析前沿](./38-几何分析前沿.md) - 几何分析深入
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

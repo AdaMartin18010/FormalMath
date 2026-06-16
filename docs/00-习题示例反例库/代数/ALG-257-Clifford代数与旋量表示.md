@@ -1,7 +1,7 @@
 ---
-msc_primary: 15
+msc_primary: '15
 
-  - 15A66
+  - 15A66'
 exercise_id: ALG-257
 title: Clifford代数与旋量表示
 difficulty: 3
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 表示论
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
-
 # ALG-257: Clifford代数与旋量表示
 
 **题号**: ALG-257

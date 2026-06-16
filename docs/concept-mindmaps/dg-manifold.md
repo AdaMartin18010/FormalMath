@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/manifold
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
-  wikidata_id: Q203920
 references:
   databases:
   - id: wikidata

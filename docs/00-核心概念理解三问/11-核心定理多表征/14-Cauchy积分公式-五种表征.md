@@ -8,7 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
-  wikidata_id: Q1139041
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 references:
   databases:
   - id: wikidata
@@ -16,6 +16,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1139041
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Complex Analysis
+    author: Lars V. Ahlfors
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1979
+    isbn: '9780070006577'
+    mr_number: MR0510197
+  - title: Functions of One Complex Variable I
+    author: John B. Conway
+    edition: 2nd
+    publisher: Springer
+    year: 1995
+    isbn: '9780387944609'
+    mr_number: MR1344449
+    doi: 10.1007/978-1-4612-7154-9
 ---
 # Cauchy积分公式 - 五种表征
 
@@ -292,3 +308,10 @@ Cauchy核 K(z, ζ) = 1/(2πi(ζ-z))
 ---
 
 **状态**: ✅ 完成
+
+---
+
+## 参考文献
+
+- Lars V. Ahlfors, *Complex Analysis*, 3rd ed., McGraw-Hill, 1979, ISBN: 9780070006577 / MR0510197
+- John B. Conway, *Functions of One Complex Variable I*, 2nd ed., Springer, 1995, ISBN: 9780387944609 / MR1344449

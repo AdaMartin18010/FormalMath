@@ -8,14 +8,10 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
-  stacks_tag: &id001
+  stacks_tag:
     tag: 013N
     url: https://stacks.math.columbia.edu/tag/013N
-  stacks_tags:
-  - *id001
-  - tag: 013O
-    url: https://stacks.math.columbia.edu/tag/013O
-  wikidata_id: Q3503315
+  stacks_tags: []
 references:
   databases:
   - id: stacks_project
@@ -31,6 +27,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q3503315
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Stacks Project Tag 013O - Grothendieck谱序列
 

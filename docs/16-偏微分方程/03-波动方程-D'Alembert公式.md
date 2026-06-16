@@ -17,6 +17,11 @@ references:
     publisher: American Mathematical Society
     year: 2010
     msc: 35-01
+    edition: 2nd
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    author: Lawrence C. Evans
+    doi: 10.1090/gsm/019
   - id: strauss_pde
     type: textbook
     title: 'Partial Differential Equations: An Introduction'
@@ -25,6 +30,9 @@ references:
     publisher: Wiley
     year: 2008
     msc: 35-01
+    edition: 2nd
+    isbn: '9780470054567'
+    author: Walter A. Strauss
 ---
 # 波动方程-D'Alembert公式
 
@@ -197,3 +205,10 @@ $$\frac{dE}{dt} = \int_{-\infty}^\infty (u_t u_{tt} + c^2 u_x u_{xt}) dx = \int_
 ## 8. 小结
 
 D'Alembert公式以一维波动方程的行波分解为基础，将初值问题约化为初值的平移与积分。其揭示的有限传播速度、特征线与因果结构是双曲型方程的核心特征。反射法处理边界，能量法证明唯一性，分离变量法则将问题与Fourier分析联系，给出驻波的模态分解。非齐次问题的Duhamel原理展示了线性叠加思想的力量。这些工具共同构成波动方程理论的基石，并直接推广到更高维与更复杂的情形。
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Walter A. Strauss, *Partial Differential Equations: An Introduction*, 2nd ed., Wiley, 2008, ISBN: 9780470054567

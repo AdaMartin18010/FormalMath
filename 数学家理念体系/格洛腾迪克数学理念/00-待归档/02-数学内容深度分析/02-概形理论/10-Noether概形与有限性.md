@@ -10,17 +10,12 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
-  stacks_tag: &id001
+  stacks_tag:
     tag: 01OV
     url: https://stacks.math.columbia.edu/tag/01OV
-  stacks_tags:
-  - *id001
-  - tag: 01T6
-    url: https://stacks.math.columbia.edu/tag/01T6
-  - tag: 02O2
-    url: https://stacks.math.columbia.edu/tag/02O2
+  stacks_tags: []
   zbmath_url: https://zbmath.org/?q=au:Scheme
-  wikidata_id: Q1155772
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Noether/
 references:
   databases:
   - id: stacks_project

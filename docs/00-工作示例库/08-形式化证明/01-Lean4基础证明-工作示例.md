@@ -1,10 +1,31 @@
 ---
-msc_primary: 68
+msc_primary: '68
 
-  - 68V20
-  - 03B35
+  - 68V20 - 03B35'
 title: Lean4基础证明示例 - 工作示例
 processed_at: '2026-04-08'
+references:
+  textbooks:
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
 ---
 # Lean4基础证明示例 - 工作示例
 
@@ -141,3 +162,11 @@ theorem square_expand' (n m : ℕ) : (n + m) ^ 2 = n ^ 2 + 2 * n * m + m ^ 2 := 
 
 - [形式化证明](../../../docs/09-形式化证明/01-Lean4/01-Lean4.md)
 - [类型论](../../../docs/01-基础数学/03-类型论/01-类型论.md)
+
+---
+
+## 参考文献
+
+- Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, *Introduction to Algorithms*, 3rd ed., MIT Press, 2009, ISBN: 9780262033848 / MR2572804
+- Michael Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage, 2012, ISBN: 9781133187790
+- Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed., Addison-Wesley, 1994, ISBN: 9780131558362

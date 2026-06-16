@@ -38,6 +38,7 @@ references:
     author: Robin Hartshorne
     pages: 340-368
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: acgh
     type: textbook
     title: Geometry of Algebraic Curves, Vol. I
@@ -57,6 +58,19 @@ references:
     url: null
     mr_number: MR0770932
     author: Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joe Harris
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -870,11 +884,13 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
 ---
 
 ## 参考与延伸阅读
@@ -883,6 +899,7 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['IV.5', 'IV.6']; Pages: 340-368; ISBN: 978-0387902449; MR: MR0463157)
 - Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joe Harris, *Geometry of Algebraic Curves, Vol. I*, 1st ed., Springer, 1985 (Chapters: ['I', 'III']; ISBN: 978-0387909974; MR: MR0770932)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
 
 ### 课程与外部链接
 

@@ -1,10 +1,36 @@
 ---
-title: "p进Hodge理论深度版 / p-adic Hodge Theory (Advanced)"
-msc_primary: 14
+title: p进Hodge理论深度版 / p-adic Hodge Theory (Advanced)
+msc_primary: '14
 
-  - 14F30
-msc_secondary: ["14F20", "14G22", "11G25"]
+  - 14F30'
+msc_secondary:
+- 14F20
+- 14G22
+- 11G25
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 # p进Hodge理论深度版 / p-adic Hodge Theory (Advanced)
 
@@ -308,3 +334,11 @@ $$\mathcal{M}_{(G,b,\mu)} \to \text{Spa}(\breve{E})$$
 - [完美胚空间](./perfectoid-spaces.md)
 - [算术几何深度版](./arithmetic-geometry.md)
 - [Langlands纲领深度版](./langlands-program.md)
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

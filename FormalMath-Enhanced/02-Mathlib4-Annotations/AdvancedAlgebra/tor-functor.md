@@ -11,7 +11,6 @@ external_ids:
   stacks_tag:
     tag: 00DW
     url: https://stacks.math.columbia.edu/tag/00DW
-  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project

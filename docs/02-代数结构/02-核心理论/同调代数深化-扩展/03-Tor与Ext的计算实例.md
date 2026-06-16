@@ -18,6 +18,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -30,6 +32,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -43,6 +46,23 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
   databases:
   - id: stacks_project
     type: database
@@ -53,13 +73,10 @@ references:
     - 00LY
     - 00O0
 external_ids:
-  stacks_tag: &id001
+  stacks_tag:
     tag: 00LY
     url: https://stacks.math.columbia.edu/tag/00LY
-  stacks_tags:
-  - *id001
-  - tag: 00O0
-    url: https://stacks.math.columbia.edu/tag/00O0
+  stacks_tags: []
 ---
 # 15.3 Tor与Ext的计算实例 / Computational Examples of Tor and Ext
 
@@ -532,3 +549,13 @@ $$
 
 **例子 15.3.10**
 设 $R = k[[x, y]]$，$M = R/(x)$。则 $\operatorname{pd}(M) = 1$（由 Koszul 复形 $0 \to R \xrightarrow{x} R \to M \to 0$），$\operatorname{depth}(M) = 1$（因为 $y$ 在 $M$ 上是正则的），而 $\dim(R) = 2$。Auslander-Buchsbaum 公式验证：$1 + 1 = 2$。
+
+---
+
+## 参考文献
+
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2011, ISBN: 978-0132413770
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 978-0980232776
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 978-0471433347 / MR2286236
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

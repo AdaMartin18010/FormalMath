@@ -6,6 +6,33 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐⭐
 预计时间: 55分钟
 title: Gromov Witten理论
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Pseudo holomorphic curves in symplectic manifolds
+    author: Mikhail Gromov
+    journal: Inventiones Mathematicae
+    year: 1985
+    doi: 10.1007/BF01388788
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Edward_Witten
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Witten/
 ---
 # Gromov-Witten 理论
 
@@ -135,3 +162,16 @@ $$\langle \tau_1 \prod_{i=1}^n \tau_{d_i} \rangle_g = (2g-2+n) \langle \prod_{i=
 - B. Dubrovin, "Geometry of 2D topological field theories", *Springer LNM* 1996
 - A. Givental, "Gromov-Witten invariants and quantization of quadratic Hamiltonians", *Mosc. Math. J.* 2001
 - E. Witten, "Two-dimensional gravity and intersection theory on moduli space", *Surv. Diff. Geom.* 1991
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+
+---
+
+## 经典论文与原始文献
+
+- Mikhail Gromov, *Pseudo holomorphic curves in symplectic manifolds*, Inventiones Mathematicae, 1985 (DOI: 10.1007/BF01388788)

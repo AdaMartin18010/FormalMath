@@ -25,6 +25,34 @@ related_concepts:
 - 同伦型
 - 可缩空间
 title: AT PN 001 同伦等价
+references:
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Homotopy
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E4%BC%A6
+  nlab_url: https://ncatlab.org/nlab/show/homotopy
 ---
 # AT-PN-001: 同伦等价 (Homotopy Equivalence)
 
@@ -171,3 +199,11 @@ structure HomotopyEquivalence (X Y : Type) [TopologicalSpace X] [TopologicalSpac
 2. 形变收缩 = 子空间包含的强形式
 3. 同伦等价保持所有代数拓扑不变量
 4. 可缩空间 = 同伦等价于单点的空间
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

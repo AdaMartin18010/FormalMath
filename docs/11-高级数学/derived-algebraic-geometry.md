@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
-  wikidata_id: Q180969
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q180969
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 # 导出代数几何深度版 / Derived Algebraic Geometry - Deep Dive
 
@@ -416,11 +437,19 @@ $$\text{MF}(W) \simeq D_{\text{sing}}^b(W^{-1}(0))$$
 ### 在线资源
 
 - [Kerodon][https://kerodon.net/][需更新](需更新) - Jacob Lurie的高阶代数资源
-- [Geometric Langlands Seminar](https://math.mit.edu/research/pure/applied-sem-future.html) - 几何Langlands讲义
-- [Derived Algebraic Geometry Seminar](https://math.berkeley.edu/~arinkin/) - Arinkin的DAG研讨班
+- [Geometric Langlands Seminar](https://math.mit.edu/research/) - 几何Langlands讲义
+- [Derived Algebraic Geometry Seminar](https://math.berkeley.edu/) - Arinkin的DAG研讨班
 
 ---
 
 **文档版本**: 1.0
 **维护者**: FormalMath项目
 **许可证**: CC BY-SA 4.0
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

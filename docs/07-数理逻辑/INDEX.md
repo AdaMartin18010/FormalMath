@@ -354,10 +354,10 @@ flowchart LR
 
 ### 在线课程
 
-- [MIT 6.042J - Mathematics for Computer Science](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/)
-- [MIT 18.404J - Theory of Computation](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/)
+- [MIT 6.042J - Mathematics for Computer Science](https://ocw.mit.edu/)
+- [MIT 18.404J - Theory of Computation](https://ocw.mit.edu/)
 - [Stanford CS 103 - Mathematical Foundations of Computing](https://cs103.stanford.edu/)
-- [CMU 15-317 - Constructive Logic](https://www.cs.cmu.edu/~fp/courses/15317-f18/)
+- [CMU 15-317 - Constructive Logic](https://www.cs.cmu.edu/)
 
 ### 形式化工具
 

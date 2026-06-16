@@ -16,6 +16,8 @@ processed_at: '2026-04-10'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # ALG-258: Hopf代数的Galois扩张
 

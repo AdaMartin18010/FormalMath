@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: Ramsey 数存在性 (Ramsey Number Existence)
+references:
+  papers:
+  - title: On a problem of formal logic
+    author: F. P. Ramsey
+    journal: Proceedings of the London Mathematical Society
+    year: 1930
+    doi: 10.1112/plms/s2-30.1.264
 ---
 # Ramsey 数存在性 (Ramsey Number Existence)
 
@@ -103,3 +110,9 @@ Ramsey 数满足递推关系：$R(s, t) \leq R(s-1, t) + R(s, t-1)$。
 ---
 
 *最后更新：2026-04-15 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- F. P. Ramsey, *On a problem of formal logic*, Proceedings of the London Mathematical Society, 1930 (DOI: 10.1112/plms/s2-30.1.264)

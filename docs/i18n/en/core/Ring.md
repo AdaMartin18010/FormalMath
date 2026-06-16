@@ -1,9 +1,7 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16A99
-  - 16D10
-  - 16Z05
+  - 16A99 - 16D10 - 16Z05'
 lang: en
 original: docs/02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md
 translation_status: completed
@@ -11,6 +9,24 @@ translator: FormalMath i18n System
 date: 2026-04-04
 title: Ring (Mathematics)
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: A First Course in Noncommutative Rings
+    author: T. Y. Lam
+    edition: 2nd
+    publisher: Springer
+    year: 2001
+    isbn: '9780387951836'
+    mr_number: MR1838439
+    doi: 10.1007/978-1-4419-8616-0
+  - title: Algebra
+    author: Serge Lang
+    edition: Revised 3rd
+    publisher: Springer
+    year: 2002
+    isbn: '9780387953854'
+    mr_number: MR1878556
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Ring (Mathematics)
 
@@ -77,3 +93,10 @@ with operations:
 ---
 
 **Language Versions**: [Deutsch](./Ring.md) | [Français](./../../fr/core/Anneau.md) | [日本語](./../../ja/core/環.md) | [中文](../../../02-代数结构/02-核心理论/环论/01-环论-国际标准深度扩展版.md)
+
+---
+
+## 参考文献
+
+- T. Y. Lam, *A First Course in Noncommutative Rings*, 2nd ed., Springer, 2001, ISBN: 9780387951836 / MR1838439
+- Serge Lang, *Algebra*, Revised 3rd ed., Springer, 2002, ISBN: 9780387953854 / MR1878556

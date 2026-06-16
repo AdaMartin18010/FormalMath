@@ -8,7 +8,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/integral
   wikipedia_url: https://en.wikipedia.org/wiki/Integral
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
-  wikidata_id: Q80091
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
 references:
   databases:
   - id: wikidata

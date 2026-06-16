@@ -12,7 +12,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Topos
-  wikidata_id: Q2143621
 references:
   databases:
   - id: zbmath

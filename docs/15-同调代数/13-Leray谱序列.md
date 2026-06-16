@@ -33,7 +33,7 @@ references:
   - id: stacks_project
     type: database
     name: Stacks Project
-    entry_url: https://stacks.math.columbia.edu/tag/013M
+    entry_url: https://stacks.math.columbia.edu/tag/01DM
     consulted_at: '2026-04-17'
   - id: wikidata
     type: database
@@ -46,8 +46,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   stacks_tag:
     tag: 013M
-    url: https://stacks.math.columbia.edu/tag/013M
-  wikidata_id: Q3503315
+    url: https://stacks.math.columbia.edu/tag/01DM
 ---
 # Leray谱序列
 

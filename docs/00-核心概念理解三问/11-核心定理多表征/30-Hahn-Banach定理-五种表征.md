@@ -1,10 +1,26 @@
 ---
-msc_primary: 46
+msc_primary: '46
 
-  - 46A22
-  - 46B99
+  - 46A22 - 46B99'
 title: Hahn-Banach定理 - 五种表征
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: A Course in Functional Analysis
+    author: John B. Conway
+    edition: 2nd
+    publisher: Springer
+    year: 1990
+    isbn: '9780387972459'
+  - title: Functional Analysis
+    author: Walter Rudin
+    edition: 2nd
+    publisher: McGraw-Hill
+    year: 1991
+    isbn: '9780070542365'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Stefan_Banach
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Banach/
 ---
 # Hahn-Banach定理 - 五种表征
 
@@ -205,3 +221,10 @@ Hahn-Banach定理等价于一个弱形式的选择公理
 ---
 
 **状态**: ✅ 完成
+
+---
+
+## 参考文献
+
+- John B. Conway, *A Course in Functional Analysis*, 2nd ed., Springer, 1990, ISBN: 9780387972459
+- Walter Rudin, *Functional Analysis*, 2nd ed., McGraw-Hill, 1991, ISBN: 9780070542365

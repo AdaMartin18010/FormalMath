@@ -1,9 +1,31 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: ZFC公理体系完整形式化 - 抽象代数结构构造
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 <div class="language-switcher">
 
@@ -432,3 +454,10 @@ Dieses Dokument kombiniert internationale mathematische Standards und berühmte 
 **文档状态** / **Document status** / **Statut du document** / **Dokumentstatus**: 抽象代数结构构造完成 / Abstract algebraic structure construction completed / Construction des structures algébriques abstraites terminée / Abstrakte algebraische Strukturkonsruktion abgeschlossen
 **形式化程度** / **Formalization degree** / **Degré de formalisation** / **Formalisierungsgrad**: 100% 形式化 / 100% formalized / 100% formalisé / 100% formalisiert
 **语言覆盖** / **Language coverage** / **Couverture linguistique** / **Sprachabdeckung**: 中英法德四语言 / Chinese, English, French, German / Chinois, anglais, français, allemand / Chinesisch, Englisch, Französisch, Deutsch
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

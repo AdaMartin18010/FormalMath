@@ -39,6 +39,7 @@ references:
     author: Robin Hartshorne
     pages: 220-230
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -52,6 +53,19 @@ references:
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
     author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   databases:
   - id: nlab
     type: database
@@ -72,7 +86,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
   stacks_search_url: https://stacks.math.columbia.edu/search?query=cohomology
-  wikidata_id: Q1198376
 ---
 # Harvard 232br - Hartshorne Chapter III §3 习题解答
 
@@ -668,6 +681,7 @@ theorem serreVanishing {k : Type*} [Field k]
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
 ---
 
 ## 参考与延伸阅读
@@ -676,6 +690,7 @@ theorem serreVanishing {k : Type*} [Field k]
 
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: III.4; Pages: 220-230; ISBN: 978-0387902449; MR: MR0463157)
 - Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
 
 ### 数据库与网络资源
 
@@ -690,4 +705,3 @@ theorem serreVanishing {k : Type*} [Field k]
 - [Nlab Url](https://ncatlab.org/nlab/show/cohomology)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Cohomology)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=cohomology)
-- [Wikidata Id](Q1198376)

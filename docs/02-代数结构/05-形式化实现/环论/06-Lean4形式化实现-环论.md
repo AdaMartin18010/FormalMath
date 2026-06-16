@@ -22,6 +22,8 @@ references:
     msc: 16-01
     chapters: null
     url: null
+    author: Michael Artin
+    doi: 10.1007/978-1-4613-0041-0
   - id: strang_la
     type: textbook
     title: Introduction to Linear Algebra
@@ -34,6 +36,7 @@ references:
     msc: 15-01
     chapters: null
     url: null
+    author: Gilbert Strang
   - id: dummit_foote_aa
     type: textbook
     title: Abstract Algebra
@@ -47,6 +50,32 @@ references:
     msc: 13-01
     chapters: null
     url: null
+    mr_number: MR2286236
+    author: David S. Dummit and Richard M. Foote
+    doi: 10.1002/9781118214413
+  - title: Introduction to Commutative Algebra
+    author: M. F. Atiyah and I. G. Macdonald
+    edition: 1st
+    publisher: Addison-Wesley
+    year: 1969
+    isbn: '9780201407518'
+    mr_number: MR0242802
+  - title: 'Commutative Algebra: with a View Toward Algebraic Geometry'
+    author: David Eisenbud
+    edition: 1st
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942681'
+    mr_number: MR1322960
+    doi: 10.1007/978-1-4612-5350-1
+  - title: Commutative Ring Theory
+    author: Hideyuki Matsumura
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1989
+    isbn: '9780521367646'
+    mr_number: MR0876123
+    doi: 10.1017/CBO9781139171762
   databases:
   - id: nlab
     type: database
@@ -62,7 +91,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
-  wikidata_id: Q161172
 ---
 # Lean4形式化实现-环论 - 国际标准版
 

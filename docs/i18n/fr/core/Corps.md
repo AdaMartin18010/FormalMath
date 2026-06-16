@@ -1,9 +1,7 @@
 ---
-msc_primary: 12
+msc_primary: '12
 
-  - 12F99
-  - 12F10
-  - 12E05
+  - 12F99 - 12F10 - 12E05'
 lang: fr
 original: docs/02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md
 translation_status: completed
@@ -11,6 +9,23 @@ translator: FormalMath i18n System
 date: 2026-04-04
 title: Corps (mathématiques)
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: Algebra
+    author: Michael Artin
+    edition: 2nd
+    publisher: Pearson
+    year: 2010
+    isbn: '9780132413770'
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Corps (mathématiques)
 
@@ -65,3 +80,10 @@ Pour toute puissance de nombre premier $q = p^n$, il existe à isomorphisme prè
 ---
 
 **Versions linguistiques**: [English](./../../en/core/Field.md) | [Deutsch](./../../de/core/Körper.md) | [日本語](./../../ja/core/体.md) | [中文](../../../02-代数结构/02-核心理论/域论/01-域论-国际标准深度扩展版.md)
+
+---
+
+## 参考文献
+
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 9780471433347 / MR2286236
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2010, ISBN: 9780132413770

@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: 不可达基数
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Cardinal_number
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%9F%BA%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/cardinal
 ---
 # 不可达基数
 

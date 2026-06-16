@@ -1,10 +1,32 @@
 ---
-title: "lambda演算 - 增强版"
-msc_primary: 03
+title: lambda演算 - 增强版
+msc_primary: '03
 
-  - 03B40
-msc_secondary: ["68N18", "68Q55", "03D10", "03B70"]
-processed_at: "2026-04-05"
+  - 03B40'
+msc_secondary:
+- 68N18
+- 68Q55
+- 03D10
+- 03B70
+processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # Lambda演算 - 增强版
 
@@ -429,3 +451,10 @@ if __name__ == "__main__":
 **文档版本**: 增强版
 **最后更新**: 2026年4月5日
 **作者**: FormalMath项目
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

@@ -10,7 +10,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Michael_Atiyah
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
   zbmath_url: https://zbmath.org/?q=au:Michael%20Atiyah
-  wikidata_id: Q208356
 references:
   papers:
   - title: The Index of Elliptic Operators on Compact Manifolds
@@ -18,6 +17,11 @@ references:
     journal: Annals of Mathematics
     year: 1963
     doi: 10.2307/1970715
+  - title: 'The index of elliptic operators: III'
+    author: Michael F. Atiyah and Isadore M. Singer
+    journal: Annals of Mathematics
+    year: 1968
+    doi: 10.2307/1970717
   databases:
   - id: zbmath
     type: database
@@ -225,3 +229,9 @@ ind(D) = ind_top(D)
 ## 经典论文与原始文献
 
 - Michael F. Atiyah, Isadore M. Singer, *The Index of Elliptic Operators on Compact Manifolds*, Annals of Mathematics, 1963 (DOI: 10.2307/1970715)
+
+---
+
+## 参考文献
+
+- Michael F. Atiyah, Isadore M. Singer, *The Index of Elliptic Operators on Compact Manifolds*, Annals of Mathematics, 1963, DOI: 10.2307/1970715

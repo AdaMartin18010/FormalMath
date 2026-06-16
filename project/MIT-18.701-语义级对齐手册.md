@@ -15,7 +15,7 @@ instructor: Davesh Maulik (2025-2026)
 **课程代码**: MIT 18.701
 **课程名称**: Algebra I (Abstract Algebra I)
 **授课教师**: Davesh Maulik (2025-2026学年)
-**OCW链接**: https://ocw.mit.edu/courses/18-701-algebra-i-fall-2021/
+**OCW链接**: https://ocw.mit.edu/
 **教材**: Michael Artin, "Algebra" (2nd Edition)
 **对齐等级**: L3-L6（定义级至思想方法级）
 **版本**: v1.0

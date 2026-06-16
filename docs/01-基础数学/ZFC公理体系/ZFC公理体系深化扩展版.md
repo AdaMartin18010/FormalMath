@@ -1,10 +1,30 @@
 ---
-title: "ZFC公理体系深化扩展版"
-msc_primary: 03
+title: ZFC公理体系深化扩展版
+msc_primary: '03
 
-  - 03E99
-msc_secondary: ['03E30', '03B30']
+  - 03E99'
+msc_secondary:
+- 03E30
+- 03B30
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # ZFC公理体系深化扩展版
 
@@ -286,3 +306,10 @@ assert subset_by_predicate([0,1,2,3], lambda x: x%2==0)==[0,2]
 - 练习：
   - 叙述并比较 ZF 与 ZFC 的差异与 AC 的等价命题；
   - 说明冯·诺伊曼层级构造与正则性的关系。
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

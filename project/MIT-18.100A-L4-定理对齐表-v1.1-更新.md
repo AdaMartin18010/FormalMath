@@ -89,8 +89,8 @@ version: v1.1
 
 | 来源名称 | URL |
 |----------|-----|
-| MIT OCW 18.100A Syllabus (Fall 2020) | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/pages/syllabus/ |
-| MIT OCW 18.100A Problem Sets | https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/resources/problem-sets/ |
+| MIT OCW 18.100A Syllabus (Fall 2020) | https://ocw.mit.edu/ |
+| MIT OCW 18.100A Problem Sets | https://ocw.mit.edu/ |
 | Lebl, *Basic Analysis I* (免费 PDF) | https://www.jirka.org/ra/realanal.pdf |
 | FormalMath 讲义拆解索引（内部） | `project/MIT-18.100A-讲义逐章拆解索引.md` |
 

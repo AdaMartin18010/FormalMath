@@ -1,10 +1,27 @@
 ---
-msc_primary: 58
+msc_primary: '58
 
-  - 58A30
-  - 53C12
+  - 58A30 - 53C12'
 title: Frobenius定理 - 五种表征
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Differential Topology
+    author: Morris W. Hirsch
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901480'
+    mr_number: MR0448362
+    doi: 10.1007/978-1-4684-9449-5
+  - title: Morse Theory
+    author: John W. Milnor
+    edition: 1st
+    publisher: Princeton University Press
+    year: 1963
+    isbn: '9780691080086'
+    mr_number: MR0163331
+    doi: 10.1515/9781400881802
 ---
 # Frobenius定理 - 五种表征
 
@@ -189,3 +206,10 @@ Frobenius定理 = 分布的可积性
 ---
 
 **状态**: ✅ 完成
+
+---
+
+## 参考文献
+
+- Morris W. Hirsch, *Differential Topology*, 1st ed., Springer, 1976, ISBN: 9780387901480 / MR0448362
+- John W. Milnor, *Morse Theory*, 1st ed., Princeton University Press, 1963, ISBN: 9780691080086 / MR0163331

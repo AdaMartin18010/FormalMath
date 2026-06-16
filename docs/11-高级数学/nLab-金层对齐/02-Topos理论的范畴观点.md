@@ -22,6 +22,20 @@ references:
     publisher: Oxford University Press
     year: 2002
     chapters: Vol. 1, Ch. A2–A4; Vol. 2, Ch. C1–C3
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
   papers:
   - title: Théorie des topos et cohomologie étale des schémas (SGA 4)
     author: Michael Artin, Alexander Grothendieck, Jean-Louis Verdier
@@ -46,7 +60,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
-  wikidata_id: Q595298
 ---
 # Topos 理论的范畴观点：从层到几何态射
 
@@ -339,3 +352,14 @@ FormalMath 的 topos 金层文档应当以 nLab 的概念精确性为基准，�
 7. nLab, "[topos](https://ncatlab.org/nlab/show/topos)", accessed 2026-04-17.
 8. nLab, "[sheaf topos](https://ncatlab.org/nlab/show/sheaf+topos)", accessed 2026-04-17.
 9. nLab, "[geometric morphism](https://ncatlab.org/nlab/show/geometric+morphism)", accessed 2026-04-17.
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, Ieke Moerdijk, *Sheaves in Geometry and Logic*, Universitext ed., Springer, 1992
+- Peter T. Johnstone, *Sketches of an Elephant*, Oxford Logic Guides 43, 44 ed., Oxford University Press, 2002
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165
+- Michael Artin, Alexander Grothendieck, Jean-Louis Verdier, *Théorie des topos et cohomologie étale des schémas (SGA 4)*, Lecture Notes in Mathematics, 1972
+- F. William Lawvere, *An elementary theory of the category of sets*, Proceedings of the National Academy of Sciences, 1964

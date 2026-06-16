@@ -9,7 +9,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
   wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
-  wikidata_id: Q268493
 references:
   databases:
   - id: wikidata
@@ -17,6 +16,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q268493
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # 椭圆曲线密码学(ECC)深度应用案例
 
@@ -1069,3 +1085,10 @@ ECDH和ECDSA的安全性可在计算模型和符号模型中形式化验证：
 ---
 
 *本文档为FormalMath项目的一部分，旨在提供现代密码学的深度数学理论与实用实现。*
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

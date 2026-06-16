@@ -12,7 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
   zbmath_url: https://zbmath.org/?q=au:Set
-  wikidata_id: Q36161
+  wikidata_id: https://www.wikidata.org/entity/Q82597
 references:
   databases:
   - id: zbmath

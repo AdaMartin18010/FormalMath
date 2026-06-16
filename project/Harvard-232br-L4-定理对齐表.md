@@ -4,19 +4,10 @@ msc_secondary:
 - 00A99
 title: Harvard 232br L4 定理对齐表
 external_ids:
-  stacks_tag: &id001
+  stacks_tag:
     tag: 0B5R
     url: https://stacks.math.columbia.edu/tag/0B5R
-  stacks_tags:
-  - *id001
-  - tag: 0B9C
-    url: https://stacks.math.columbia.edu/tag/0B9C
-  - tag: 0BX2
-    url: https://stacks.math.columbia.edu/tag/0BX2
-  - tag: 0F11
-    url: https://stacks.math.columbia.edu/tag/0F11
-  - tag: 0FEG
-    url: https://stacks.math.columbia.edu/tag/0FEG
+  stacks_tags: []
 references:
   databases:
   - id: stacks_project
@@ -102,7 +93,7 @@ H^i(X, F(n)) = 0 for all i > 0 and n ≫ 0.
 - 用归纳法证明一般情形
 - 应用到Hilbert多项式
 
-**笔记链接**: http://math.mit.edu/~maulik/726/notes/lec15.pdf
+**笔记链接**: https://math.mit.edu/
 
 ---
 
@@ -157,7 +148,7 @@ Let L be an invertible O_X-module. Then:
 - 应用到嵌入曲线到射影空间
 - 椭圆曲线的具体计算
 
-**笔记链接**: http://math.mit.edu/~maulik/726/notes/lec18.pdf
+**笔记链接**: https://math.mit.edu/
 
 ---
 
@@ -337,7 +328,7 @@ Let E be a finite locally free O_X-module. Then:
 ### 参考资源
 
 - **Harvard 232br Course Page**: https://math.harvard.edu/past-courses/
-- **MIT 18.726 Notes**: http://math.mit.edu/~maulik/726/
+- **MIT 18.726 Notes**: https://math.mit.edu/
 - **Stacks Project**: https://stacks.math.columbia.edu/
 - **Vakil's Notes**: http://math.stanford.edu/~vakil/216blog/
 

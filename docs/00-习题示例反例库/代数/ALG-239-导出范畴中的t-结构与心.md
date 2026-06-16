@@ -17,7 +17,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
-  wikidata_id: Q719395
 references:
   databases:
   - id: wikidata
@@ -25,6 +24,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q719395
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Categories for the Working Mathematician
+    author: Saunders Mac Lane
+    edition: 2nd
+    publisher: Springer
+    year: 1998
+    isbn: '9780387984032'
+    mr_number: MR1712872
+  - title: Basic Category Theory
+    author: Tom Leinster
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2014
+    isbn: '9781107044241'
+    mr_number: MR3307165
 ---
 # ALG-239: 导出范畴中的 t-结构与心
 
@@ -147,3 +161,10 @@ $$\begin{aligned}
 - S. Gelfand, Y. Manin, *Methods of Homological Algebra*, Springer, 2003
 - M. Kashiwara, P. Schapira, *Sheaves on Manifolds*, Springer, 1990
 - R. Bezrukavnikov, I. Loseu, "Etingof's conjecture for rectangular rational Cherednik algebras", 2015
+
+---
+
+## 参考文献
+
+- Saunders Mac Lane, *Categories for the Working Mathematician*, 2nd ed., Springer, 1998, ISBN: 9780387984032 / MR1712872
+- Tom Leinster, *Basic Category Theory*, 1st ed., Cambridge University Press, 2014, ISBN: 9781107044241 / MR3307165

@@ -4,12 +4,11 @@ msc_primary: 00A99
 level: silver
 course: MIT 18.100A 实分析
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=module
-  wikidata_id: Q18848
 references:
   textbooks:
   - title: Understanding Analysis
@@ -18,6 +17,23 @@ references:
     publisher: Springer
     year: 2015
     isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
   databases:
   - id: wikidata
     type: database
@@ -94,9 +110,8 @@ references:
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)
 - [Nlab Url](https://ncatlab.org/nlab/show/module)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Module_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=module)
-- [Wikidata Id](Q18848)

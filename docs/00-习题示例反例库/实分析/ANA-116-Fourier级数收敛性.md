@@ -10,6 +10,25 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/convergence
   wikipedia_url: https://en.wikipedia.org/wiki/Convergence_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%94%B6%E6%95%9B
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Fourier/
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Fourier级数收敛性
 
@@ -103,3 +122,10 @@ $x = 0$ 时，$D_N(0) = 2N+1$，公式也成立。$\square$
 **变式1：** 证明 $f \in C^k$ 则 $\hat{f}(n) = O(1/|n|^k)$。
 
 **变式2：** 计算 $f(x) = x$ 于 $(-\pi, \pi)$ 的Fourier级数。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

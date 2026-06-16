@@ -1,7 +1,7 @@
 ---
-msc_primary: 13
+msc_primary: '13
 
-  - 13F60
+  - 13F60'
 exercise_id: ALG-266
 title: cluster代数与突变
 difficulty: 4
@@ -10,11 +10,14 @@ topic: 代数
 subtopic: 组合代数
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
-
 # ALG-266: cluster代数与突变
 
 **题号**: ALG-266

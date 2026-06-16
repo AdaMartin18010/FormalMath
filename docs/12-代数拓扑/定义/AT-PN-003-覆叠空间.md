@@ -28,6 +28,30 @@ related_concepts:
 - 万有覆叠
 - 单值化定理
 title: AT PN 003 覆叠空间
+references:
+  textbooks:
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: Topology
+    author: James R. Munkres
+    edition: 2nd
+    publisher: Pearson
+    year: 2000
+    isbn: '9780131816299'
+    mr_number: MR0464128
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
 ---
 # AT-PN-003: 覆叠空间 (Covering Space)
 
@@ -192,3 +216,11 @@ structure CoveringMap {X Y : Type} [TopologicalSpace X] [TopologicalSpace Y]
 3. 覆叠分类 $\leftrightarrow$ 基本群的子群分类（Galois对应）
 4. 万有覆叠对应于平凡子群
 5. 基本群通过覆叠空间"几何实现"
+
+---
+
+## 参考文献
+
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 9780131816299 / MR0464128
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278

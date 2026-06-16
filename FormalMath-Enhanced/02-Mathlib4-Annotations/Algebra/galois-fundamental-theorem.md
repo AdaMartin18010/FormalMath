@@ -9,7 +9,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BC%BD%E7%BD%97%E7%93%A6%E7%90%86%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
-  wikidata_id: Q92552
 references:
   databases:
   - id: wikidata

@@ -10,7 +10,8 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Jean-Pierre%20Serre
-  wikidata_id: Q212063
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
+  nlab_url: https://ncatlab.org/nlab/show/Serre+duality
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -1069,3 +1070,9 @@ Serre对偶定理在现代数学中仍然重要：
 ## 经典论文与原始文献
 
 - Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)
+
+---
+
+## 参考文献
+
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955, DOI: 10.2307/1970375

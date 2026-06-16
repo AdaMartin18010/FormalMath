@@ -315,8 +315,8 @@ MIT License - 参见项目根目录的 LICENSE 文件
 
 ## 联系方式
 
-- 项目主页: https://github.com/formalmath/formalmath
-- 问题反馈: https://github.com/formalmath/formalmath/issues
+- 项目主页: https://github.com/FormalMath
+- 问题反馈: https://github.com/FormalMath
 
 ---
 

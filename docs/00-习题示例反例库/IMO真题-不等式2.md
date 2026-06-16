@@ -1,21 +1,39 @@
 ---
-title: "IMO真题-不等式：三元不等式"
+title: IMO真题-不等式：三元不等式
 msc_primary: 00A99
 level: silver
 course: IMO竞赛数学
 difficulty: L4
 topic: 不等式
-source: "IMO 2001 Problem 2"
+source: IMO 2001 Problem 2
 target_courses:
-  - MIT 18.02
+- MIT 18.02
 status: completed
 created_at: 2026-04-18
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
 tags:
-  - "mathematical_reviewed"
+- mathematical_reviewed
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # IMO 2001 Problem 2：三元不等式
 

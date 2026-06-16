@@ -1,12 +1,35 @@
 ---
-msc_primary: 32
+msc_primary: '32
 
-  - 32Q25
-  - 14J32
-  - 32G05
-  - 83E30
+  - 32Q25 - 14J32 - 32G05 - 83E30'
 title: Calabi-Yau紧化
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Complex Analysis
+    author: Elias M. Stein and Rami Shakarchi
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2003
+    isbn: '9780691113852'
+  - title: Several Complex Variables with Connections to Algebraic Geometry and Lie
+      Groups
+    author: Joseph L. Taylor
+    edition: 1st
+    publisher: American Mathematical Society
+    year: 2002
+    isbn: '9780821831786'
+    mr_number: MR1885077
+  papers:
+  - title: On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère
+      equation. I
+    author: Shing-Tung Yau
+    journal: Communications on Pure and Applied Mathematics
+    year: 1978
+    doi: 10.1002/cpa.3160310304
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Shing-Tung_Yau
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Yau/
 ---
 # Calabi-Yau紧化
 
@@ -194,3 +217,17 @@ SYZ猜想（Strominger-Yau-Zaslow）: 镜像对称是T-对偶，纤维是SLag环
 ---
 
 **最后更新**: 2026年4月4日
+
+---
+
+## 经典论文与原始文献
+
+- Shing-Tung Yau, *On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère equation. I*, Communications on Pure and Applied Mathematics, 1978 (DOI: 10.1002/cpa.3160310304)
+
+---
+
+## 参考文献
+
+- Elias M. Stein and Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003, ISBN: 9780691113852
+- Joseph L. Taylor, *Several Complex Variables with Connections to Algebraic Geometry and Lie Groups*, 1st ed., American Mathematical Society, 2002, ISBN: 9780821831786 / MR1885077
+- Shing-Tung Yau, *On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère equation. I*, Communications on Pure and Applied Mathematics, 1978, DOI: 10.1002/cpa.3160310304

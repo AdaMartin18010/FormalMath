@@ -1,11 +1,29 @@
 ---
 title: 微分方程 - Lean4形式化实现
-msc_primary: 35
+msc_primary: '35
 
-  - 00A99
-  - 35A99
-  - 00A99
+  - 00A99 - 35A99 - 00A99'
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Partial Differential Equations
+    author: Lawrence C. Evans
+    edition: 2nd
+    publisher: American Mathematical Society
+    year: 2010
+    isbn: '9780821849743'
+    mr_number: MR2597943
+    doi: 10.1090/gsm/019
+  - title: 'Partial Differential Equations: An Introduction'
+    author: Walter A. Strauss
+    edition: 2nd
+    publisher: Wiley
+    year: 2008
+    isbn: '9780470054567'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Differential_equation
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B
+  nlab_url: https://ncatlab.org/nlab/show/differential+equation
 ---
 msc_primary: "35-00"
 msc_secondary: ['35-00']
@@ -545,3 +563,10 @@ def hodgkin_huxley_model : DynamicalSystem :=
 6. Hairer, E., & Wanner, G. (2010). *Solving Ordinary Differential Equations II*. Springer.
 7. LeVeque, R. J. (2007). *Finite Difference Methods for Ordinary and Partial Differential Equations*. SIAM.
 8. Quarteroni, A., & Valli, A. (2008). *Numerical Approximation of Partial Differential Equations*. Springer.
+
+---
+
+## 参考文献
+
+- Lawrence C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, ISBN: 9780821849743 / MR2597943
+- Walter A. Strauss, *Partial Differential Equations: An Introduction*, 2nd ed., Wiley, 2008, ISBN: 9780470054567

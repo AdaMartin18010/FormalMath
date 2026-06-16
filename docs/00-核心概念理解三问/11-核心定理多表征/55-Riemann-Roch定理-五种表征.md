@@ -7,7 +7,6 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
-  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -21,6 +20,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q42299
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: A First Course in Noncommutative Rings
+    author: T. Y. Lam
+    edition: 2nd
+    publisher: Springer
+    year: 2001
+    isbn: '9780387951836'
+    mr_number: MR1838439
+    doi: 10.1007/978-1-4419-8616-0
+  - title: Algebra
+    author: Serge Lang
+    edition: Revised 3rd
+    publisher: Springer
+    year: 2002
+    isbn: '9780387953854'
+    mr_number: MR1878556
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Riemann-Roch定理 - 五种表征
 
@@ -426,3 +442,11 @@ Riemann-Roch定理是：
 ## 经典论文与原始文献
 
 - Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958 (DOI: 10.24033/bsmf.1500)
+
+---
+
+## 参考文献
+
+- T. Y. Lam, *A First Course in Noncommutative Rings*, 2nd ed., Springer, 2001, ISBN: 9780387951836 / MR1838439
+- Serge Lang, *Algebra*, Revised 3rd ed., Springer, 2002, ISBN: 9780387953854 / MR1878556
+- Armand Borel, Jean-Pierre Serre, *Le théorème de Riemann-Roch*, Bulletin de la Société Mathématique de France, 1958, DOI: 10.24033/bsmf.1500

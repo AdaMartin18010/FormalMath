@@ -9,7 +9,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Hilbert+space
   wikipedia_url: https://en.wikipedia.org/wiki/Hilbert_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Hilbert%E7%A9%BA%E9%97%B4
-  wikidata_id: Q190056
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
 references:
   databases:
   - id: wikidata
@@ -17,6 +17,19 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q190056
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: A Course in Functional Analysis
+    author: John B. Conway
+    edition: 2nd
+    publisher: Springer
+    year: 1990
+    isbn: '9780387972459'
+  - title: Functional Analysis
+    author: Walter Rudin
+    edition: 2nd
+    publisher: McGraw-Hill
+    year: 1991
+    isbn: '9780070542365'
 ---
 # Hilbert空间基础
 
@@ -189,3 +202,10 @@ Hilbert空间的理论是量子力学的数学基础，波函数即Hilbert空间
 3. P. Jordan & J. von Neumann, "On inner products in linear, metric spaces", *Ann. Math.* 36 (1935), 719–723.
 4. W. Rudin, *Real and Complex Analysis*, 3rd ed., McGraw-Hill, 1987.
 5. 郑维行、王声望，《实变函数与泛函分析概要》（第四版），高等教育出版社，2010。
+
+---
+
+## 参考文献
+
+- John B. Conway, *A Course in Functional Analysis*, 2nd ed., Springer, 1990, ISBN: 9780387972459
+- Walter Rudin, *Functional Analysis*, 2nd ed., McGraw-Hill, 1991, ISBN: 9780070542365

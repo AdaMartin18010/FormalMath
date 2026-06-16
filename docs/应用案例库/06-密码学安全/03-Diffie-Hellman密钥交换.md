@@ -1,13 +1,33 @@
 ---
-msc_primary: 20
+msc_primary: '20
 
-  - 20A99
-  - 00A99
-  - 00A99
-  - 00A99
+  - 20A99 - 00A99 - 00A99 - 00A99'
 title: Diffie-Hellman密钥交换
 processed_at: '2026-04-05'
 review_status: draft
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
+  papers:
+  - title: New directions in cryptography
+    author: Whitfield Diffie and Martin E. Hellman
+    journal: IEEE Transactions on Information Theory
+    year: 1976
+    doi: 10.1109/TIT.1976.1055638
 ---
 # Diffie-Hellman密钥交换
 
@@ -271,3 +291,9 @@ Alice      Bob       Carol
 **参考文献**
 
 1. 相关教材与学术论文。
+
+---
+
+## 经典论文与原始文献
+
+- Whitfield Diffie and Martin E. Hellman, *New directions in cryptography*, IEEE Transactions on Information Theory, 1976 (DOI: 10.1109/TIT.1976.1055638)

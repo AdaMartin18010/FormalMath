@@ -40,6 +40,7 @@ references:
     author: Robin Hartshorne
     pages: 360-400
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: beauville_surfaces
     type: textbook
     title: Complex Algebraic Surfaces
@@ -56,6 +57,19 @@ references:
     url: null
     mr_number: MR1406314
     author: Arnaud Beauville
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -1026,11 +1040,13 @@ theorem enriques_criterion_kodaira :
 **审阅人**: AI Mathematical Reviewer
 **审阅结论**: 通过
 **审阅意见**:
+
 - 数学定义严格准确
 - 定理陈述完整无误
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
 ---
 
 ## 参考与延伸阅读
@@ -1039,6 +1055,7 @@ theorem enriques_criterion_kodaira :
 
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['V.1', 'V.2', 'V.3']; Pages: 360-400; ISBN: 978-0387902449; MR: MR0463157)
 - Arnaud Beauville, *Complex Algebraic Surfaces*, 2nd ed., Cambridge University Press, 1996 (Chapters: ['II', 'III']; ISBN: 978-0521498425; MR: MR1406314)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
 
 ### 课程与外部链接
 

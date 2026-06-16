@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Measure_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%8B%E5%BA%A6
   zbmath_url: https://zbmath.org/?q=au:Measure
-  wikidata_id: Q192276
 references:
   databases:
   - id: zbmath

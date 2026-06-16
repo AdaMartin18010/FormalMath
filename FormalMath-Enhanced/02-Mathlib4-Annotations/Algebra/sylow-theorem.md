@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
-  wikidata_id: Q1057919
 references:
   databases:
   - id: wikidata

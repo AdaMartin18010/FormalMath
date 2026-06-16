@@ -17,7 +17,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/manifold
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
-  wikidata_id: Q203920
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Witten/
 references:
   databases:
   - id: wikidata
@@ -25,6 +25,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q203920
     consulted_at: '2026-06-16'
+  papers:
+  - title: Pseudo holomorphic curves in symplectic manifolds
+    author: Mikhail Gromov
+    journal: Inventiones Mathematicae
+    year: 1985
+    doi: 10.1007/BF01388788
 ---
 # GEO-092: 极化流形的Gromov-Witten不变量
 
@@ -59,3 +65,9 @@ references:
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Mikhail Gromov, *Pseudo holomorphic curves in symplectic manifolds*, Inventiones Mathematicae, 1985 (DOI: 10.1007/BF01388788)

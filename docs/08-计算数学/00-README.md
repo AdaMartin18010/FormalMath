@@ -336,7 +336,7 @@ processed_at: '2026'-04-05'
 
 ### 外部资源
 
-- [MIT OpenCourseWare - 18.085](https://ocw.mit.edu/courses/mathematics/18-085-computational-science-and-engineering-i-fall-2008/)
+- [MIT OpenCourseWare - 18.085](https://ocw.mit.edu/)
 - [Stanford CME Courses](https://explorecourses.stanford.edu/)[需更新][需更新]
 - [NEOS Optimization Server](https://neos-server.org/neos/)[需更新][需更新]
 - [Netlib Repository](https://www.netlib.org/)[需更新][需更新]

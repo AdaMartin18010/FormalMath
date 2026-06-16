@@ -4,6 +4,26 @@ msc_secondary:
 - 20F16
 - 20E07
 title: Lagrange定理
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Joseph-Louis_Lagrange
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Lagrange/
 ---
 # 概念卡片：Lagrange定理
 

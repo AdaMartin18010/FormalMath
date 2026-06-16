@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
-  wikidata_id: Q1057919
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,22 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1057919
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: An Introduction to the Theory of Groups
+    author: Joseph J. Rotman
+    edition: 4th
+    publisher: Springer
+    year: 1995
+    isbn: '9780387942858'
+    mr_number: MR1307623
 ---
 # 概念卡片：Sylow第一定理
 

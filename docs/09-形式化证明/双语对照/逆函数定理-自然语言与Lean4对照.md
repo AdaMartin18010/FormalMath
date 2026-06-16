@@ -12,7 +12,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
-  wikidata_id: Q11348
 references:
   databases:
   - id: wikidata
@@ -20,6 +19,27 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q11348
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
 ---
 ## 定理陈述
 
@@ -120,4 +140,3 @@ theorem inverse_function_rn {n : ℕ} {f : (Fin n → ℝ) → (Fin n → ℝ)} 
 - [Nlab Url](https://ncatlab.org/nlab/show/function)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Function_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0)
-- [Wikidata Id](Q11348)

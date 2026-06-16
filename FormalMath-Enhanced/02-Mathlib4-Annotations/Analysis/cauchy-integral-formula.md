@@ -9,7 +9,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
-  wikidata_id: Q1139041
 references:
   databases:
   - id: wikidata

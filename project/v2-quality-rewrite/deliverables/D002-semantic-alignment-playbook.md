@@ -610,7 +610,7 @@ error_pattern:
 | 课程名称 | Real Analysis |
 | 学期 | Fall 2023 |
 | 讲师 | Dr. Casey Rodriguez |
-| 课程主页 | https://math.mit.edu/~rodriguez/18.100A/ |
+| 课程主页 | https://math.mit.edu/18.100A/ |
 | 教材 | Rudin, *Principles of Mathematical Analysis*, 3rd Ed. (Ch. 2-4) |
 | 相关章节 | Lecture 10-11, §2.4-2.5 |
 

@@ -11,7 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
   zbmath_url: https://zbmath.org/?q=au:Module
-  wikidata_id: Q18848
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Deligne/
 references:
   databases:
   - id: zbmath
@@ -25,6 +25,12 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  papers:
+  - title: The irreducibility of the space of curves of given genus
+    author: Pierre Deligne and David Mumford
+    journal: Publications Mathématiques de l'IHÉS
+    year: 1969
+    doi: 10.1007/BF02684599
 ---
 # Deligne-Mumford紧化：模空间的完整理论
 
@@ -220,3 +226,9 @@ Candelas、de la Ossa、Green和Parkes在1991年利用镜像对称计算了Quint
 **文档状态**: ✅ 内容已充实
 **完成度**: 100%
 **最后更新**: 2026年4月20日
+
+---
+
+## 经典论文与原始文献
+
+- Pierre Deligne and David Mumford, *The irreducibility of the space of curves of given genus*, Publications Mathématiques de l'IHÉS, 1969 (DOI: 10.1007/BF02684599)

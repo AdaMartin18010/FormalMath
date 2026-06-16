@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
   zbmath_url: https://zbmath.org/?q=au:Function
-  wikidata_id: Q11348
 references:
   databases:
   - id: zbmath

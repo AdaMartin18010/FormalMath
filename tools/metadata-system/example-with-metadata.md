@@ -78,7 +78,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
-  wikidata_id: Q83478
 references:
   databases:
   - id: wikidata
@@ -163,7 +162,7 @@ theorem SubgroupCriterion {G : Type} [Group G] (H : Set G)
 
 1. Dummit, D. S., & Foote, R. M. (2004). *Abstract Algebra* (3rd ed.). Wiley.
 2. Artin, M. (2011). *Algebra* (2nd ed.). Pearson.
-3. Mathlib4 Documentation. https://leanprover-community.github.io/mathlib4/
+3. Mathlib4 Documentation. https://leanprover-community.github.io/mathlib4_docs/
 
 ---
 

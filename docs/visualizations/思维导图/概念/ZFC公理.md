@@ -1,11 +1,29 @@
 ---
 msc_primary: 03E30
 msc_secondary:
-  - 03E25
-  - 03E35
-  - 03E45
+- 03E25
+- 03E35
+- 03E45
 title: ZFC公理
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # ZFC 公理系统
 
@@ -101,3 +119,10 @@ $$\forall X \left(\forall x, y \in X (x \neq y \to x \cap y = \varnothing) \to \
 1. Kunen, K. (1980). *Set Theory: An Introduction to Independence Proofs*. North-Holland.
 2. Jech, T. (2003). *Set Theory* (3rd ed.). Springer.
 3. Halmos, P. R. (1960). *Naive Set Theory*. Van Nostrand.
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

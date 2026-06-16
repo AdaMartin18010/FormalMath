@@ -48,7 +48,6 @@ external_ids:
   stacks_tag:
     tag: 013O
     url: https://stacks.math.columbia.edu/tag/013O
-  wikidata_id: Q3503315
 ---
 # Grothendieck谱序列
 

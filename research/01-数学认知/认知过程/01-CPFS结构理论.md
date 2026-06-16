@@ -1,10 +1,27 @@
 ---
 msc_primary: 97
 msc_secondary:
-  - 97C30
-  - 91E40
+- 97C30
+- 91E40
 title: CPFS结构理论
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  - title: 'How to Solve It: A New Aspect of Mathematical Method'
+    author: George Pólya
+    edition: 2nd
+    publisher: Princeton University Press
+    year: 2004
+    isbn: '9780691119663'
+    doi: 10.1515/9781400828678
 ---
 # CPFS结构理论
 
@@ -824,11 +841,18 @@ graph LR
 |----------|------|------|
 | **Concept Learning** | [Wikipedia](https://en.wikipedia.org/wiki/Concept_learning) | 概念学习理论、多元表征、规则/原型/样例模型 |
 | **Mathematics Education** | [Wikipedia](https://en.wikipedia.org/wiki/Mathematics_education) | 数学教育目标、方法、概念性理解 |
-| **MIT OCW - Psychology** | [ocw.mit.edu](https://ocw.mit.edu/courses/brain-and-cognitive-sciences/) | 认知心理学、知识表征 |
-| **MIT OCW - Math for CS** | [6.042J](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/) | 数学概念形式化与命题网络 |
+| **MIT OCW - Psychology** | [ocw.mit.edu](https://ocw.mit.edu/) | 认知心理学、知识表征 |
+| **MIT OCW - Math for CS** | [6.042J](https://ocw.mit.edu/) | 数学概念形式化与命题网络 |
 
 ---
 
 **创建日期**: 2025年12月1日
 **最后更新**: 2026年2月2日
 **状态**: ✅ 100%完成（理论框架完整、案例详实、国际对标含URL、思维表征CF/PF修正、关联文档含路径、技术工具与实证数据充实）
+
+---
+
+## 参考文献
+
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- George Pólya, *How to Solve It: A New Aspect of Mathematical Method*, 2nd ed., Princeton University Press, 2004, ISBN: 9780691119663

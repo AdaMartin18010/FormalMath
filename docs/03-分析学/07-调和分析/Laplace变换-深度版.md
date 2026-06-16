@@ -1,10 +1,17 @@
 ---
-title: "Laplace变换 - 深度版"
-msc_primary: 44
+title: Laplace变换 - 深度版
+msc_primary: '44
 
-  - 44A10
-msc_secondary: ['42A38', '65R10', '34A25', '35L05']
+  - 44A10'
+msc_secondary:
+- 42A38
+- 65R10
+- 34A25
+- 35L05
 processed_at: '2026-04-05'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Pierre-Simon_Laplace
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Laplace/
 ---
 # Laplace变换 - 深度版
 

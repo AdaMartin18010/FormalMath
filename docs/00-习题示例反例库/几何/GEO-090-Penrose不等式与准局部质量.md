@@ -1,7 +1,7 @@
 ---
-msc_primary: 83
+msc_primary: '83
 
-  - 83C57
+  - 83C57'
 exercise_id: GEO-090
 title: Penrose不等式与准局部质量
 difficulty: 5
@@ -10,11 +10,13 @@ topic: 几何
 subtopic: 数学物理
 source:
   course: 研究级课程
-  chapter: "1.0"
+  chapter: '1.0'
   original: true
 processed_at: '2026-04-10'
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Roger_Penrose
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Penrose/
 ---
-
 # GEO-090: Penrose不等式与准局部质量
 
 **题号**: GEO-090

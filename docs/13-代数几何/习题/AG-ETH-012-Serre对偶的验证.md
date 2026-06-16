@@ -25,6 +25,9 @@ references:
     msc: 14-01
     chapters: null
     url: null
+    mr_number: MR0463157
+    author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -33,10 +36,24 @@ references:
     publisher: self-published
     edition: draft
     year: 2024
-    isbn: null
+    isbn: ''
     msc: 14-01
     chapters: null
     url: https://math.stanford.edu/~vakil/216blog/
+    author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Faisceaux algébriques cohérents
     author: Jean-Pierre Serre
@@ -52,7 +69,8 @@ references:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
-  wikidata_id: Q212063
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
+  nlab_url: https://ncatlab.org/nlab/show/Serre+duality
 ---
 # AG-ETH-012: Serre对偶的验证 (*Verifikation der Serre-Dualität*)
 
@@ -176,3 +194,13 @@ $$g = \dim H^1(X, \mathcal{O}_X) = \dim H^0(X, \omega_X)$$ ∎
 ## 经典论文与原始文献
 
 - Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 978-0387902449 / MR0463157
+- Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955, DOI: 10.2307/1970375

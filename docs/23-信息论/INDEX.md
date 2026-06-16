@@ -1,10 +1,37 @@
 ---
-title: "信息论与编码"
+title: 信息论与编码
 msc_primary: 94
-
-msc_secondary: ['94A15', '94A17', '94A24']
-prerequisites: ['概率论', '随机过程', '线性代数']
+msc_secondary:
+- 94A15
+- 94A17
+- 94A24
+prerequisites:
+- 概率论
+- 随机过程
+- 线性代数
 processed_at: '2026-04-08'
+references:
+  textbooks:
+  - title: Elements of Information Theory
+    author: Thomas M. Cover and Joy A. Thomas
+    edition: 2nd
+    publisher: Wiley
+    year: 2006
+    isbn: '9780471241959'
+    mr_number: MR2239987
+    doi: 10.1002/0471200611
+  - title: A First Course in Information Theory
+    author: Raymond W. Yeung
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780306467911'
+    mr_number: MR1876845
+    doi: 10.1007/978-1-4419-8608-5
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Information_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BF%A1%E6%81%AF%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/information+theory
 ---
 # 信息论与编码 (Information Theory and Coding)
 

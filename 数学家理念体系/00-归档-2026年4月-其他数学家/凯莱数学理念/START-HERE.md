@@ -5,6 +5,22 @@ msc_secondary:
 - 01A55
 - 01A70
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Mathematics and Its History
+    author: John Stillwell
+    edition: 3rd
+    publisher: Springer
+    year: 2010
+    isbn: '9781441960528'
+    mr_number: MR2675606
+    doi: 10.1007/978-1-4419-6053-5
+  - title: 'A History of Mathematics: An Introduction'
+    author: Victor J. Katz
+    edition: 3rd
+    publisher: Pearson
+    year: 2009
+    isbn: '9780321387004'
 ---
 # 凯莱数学理念 - 从这里开始
 
@@ -72,3 +88,10 @@ processed_at: '2026-04-05'
 **最后更新**: 2025年12月29日
 **项目状态**: ✅ 项目100%完成，所有模块内容充实完善
 **维护者**: FormalMath项目组
+
+---
+
+## 参考文献
+
+- John Stillwell, *Mathematics and Its History*, 3rd ed., Springer, 2010, ISBN: 9781441960528 / MR2675606
+- Victor J. Katz, *A History of Mathematics: An Introduction*, 3rd ed., Pearson, 2009, ISBN: 9780321387004

@@ -10,7 +10,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Leonhard_Euler
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Euler/
   zbmath_url: https://zbmath.org/?q=au:Leonhard%20Euler
-  wikidata_id: Q7604
+  wikidata_id: https://www.wikidata.org/entity/Q5674
 references:
   databases:
   - id: zbmath

@@ -176,3 +176,10 @@ $$\frac{\partial g}{\partial t} = -R g$$
 ## 8. 小结
 
 Ricci流将微分几何与抛物型偏微分方程深度结合，通过度量的连续演化揭示流形的内在结构。从Hamilton的开创性工作到Perelman的惊人突破，Ricci流不仅解决了庞加莱猜想与几何化猜想这两个百年难题，更催生了比较几何、最优传输、泛函不等式等交叉领域的蓬勃发展。几何流的精神——以动态方程驯服静态几何——已成为当代几何分析的核心范式。
+
+---
+
+## 参考文献
+
+- Bennett Chow, Dan Knopf, *The Ricci Flow: An Introduction*, American Mathematical Society, 2004
+- John Morgan, Gang Tian, *Ricci Flow and the Poincaré Conjecture*, American Mathematical Society, 2007

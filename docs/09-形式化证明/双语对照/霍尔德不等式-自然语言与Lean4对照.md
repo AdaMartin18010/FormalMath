@@ -1,15 +1,36 @@
 ---
-title: "Hölder 不等式 自然语言与 Lean4 对照"
+title: Hölder 不等式 自然语言与 Lean4 对照
 msc_primary: 68V20
-level: "silver"
+level: silver
 target_courses:
-  - "MIT 18.100A"
+- MIT 18.100A
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+references:
+  textbooks:
+  - title: Introduction to Algorithms
+    author: Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford
+      Stein
+    edition: 3rd
+    publisher: MIT Press
+    year: 2009
+    isbn: '9780262033848'
+    mr_number: MR2572804
+  - title: Introduction to the Theory of Computation
+    author: Michael Sipser
+    edition: 3rd
+    publisher: Cengage
+    year: 2012
+    isbn: '9781133187790'
+  - title: 'Concrete Mathematics: A Foundation for Computer Science'
+    author: Ronald L. Graham, Donald E. Knuth, and Oren Patashnik
+    edition: 2nd
+    publisher: Addison-Wesley
+    year: 1994
+    isbn: '9780131558362'
 ---
-
 ## 定理陈述
 
 **自然语言**：设 \(p, q > 1\) 且 \(\frac{1}{p} + \frac{1}{q} = 1\)（称为共轭指数）。对于任意实数序列 \(a_i, b_i\)，有
@@ -100,3 +121,11 @@ theorem holder_normalized {n : ℕ} (a b : Fin n → ℝ)
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
+---
+
+## 参考文献
+
+- Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein, *Introduction to Algorithms*, 3rd ed., MIT Press, 2009, ISBN: 9780262033848 / MR2572804
+- Michael Sipser, *Introduction to the Theory of Computation*, 3rd ed., Cengage, 2012, ISBN: 9781133187790
+- Ronald L. Graham, Donald E. Knuth, and Oren Patashnik, *Concrete Mathematics: A Foundation for Computer Science*, 2nd ed., Addison-Wesley, 1994, ISBN: 9780131558362

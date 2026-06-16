@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
   zbmath_url: https://zbmath.org/?q=au:Module
-  wikidata_id: Q18848
 references:
   databases:
   - id: zbmath
@@ -25,6 +24,30 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'Probability: Theory and Examples'
+    author: Rick Durrett
+    edition: 5th
+    publisher: Cambridge University Press
+    year: 2019
+    isbn: '9781108473682'
+    mr_number: MR3930614
+    doi: 10.1017/9781108592629
+  - title: An Introduction to Probability Theory and Its Applications, Vol. 1
+    author: William Feller
+    edition: 3rd
+    publisher: Wiley
+    year: 1968
+    isbn: '9780471257080'
+    mr_number: MR0228020
+  - title: Probability with Martingales
+    author: David Williams
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1991
+    isbn: '9780521406055'
+    mr_number: MR1155402
+    doi: 10.1017/CBO9780511813658
 ---
 # 帕斯卡 Wager 的数学建模
 

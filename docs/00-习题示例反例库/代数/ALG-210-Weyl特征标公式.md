@@ -6,6 +6,29 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐⭐
 预计时间: 60分钟
 title: ALG 210 Weyl特征标公式
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Character_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%89%B9%E5%BE%81%E6%A0%87
+  nlab_url: https://ncatlab.org/nlab/show/character
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weyl/
 ---
 # Weyl 特征标公式
 

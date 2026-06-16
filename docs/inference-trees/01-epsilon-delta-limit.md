@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/limit
   wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
-  wikidata_id: Q1322614
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q1322614
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # ε-δ定义 → 极限性质 → 连续性推理树
 

@@ -11,7 +11,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/number+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
-  wikidata_id: Q12479
 references:
   databases:
   - id: wikidata
@@ -19,6 +18,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q12479
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 # ZFC公理体系完整形式化 - 第六部分：数论基础构造
 
@@ -805,3 +821,10 @@ begin
 end
 
 ```
+
+---
+
+## 参考文献
+
+- Thomas Jech, *Set Theory*, 3rd Millennium ed., Springer, 2003, ISBN: 9783540440857 / MR1940513
+- Yu.I. Manin, *A Course in Mathematical Logic*, 1st ed., Springer, 1977, ISBN: 9780387902432 / MR0453490

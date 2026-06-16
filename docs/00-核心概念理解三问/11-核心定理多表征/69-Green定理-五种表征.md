@@ -1,11 +1,27 @@
 ---
-msc_primary: 16
+msc_primary: '16
 
-  - 16A99
-  - 28A99
-  - 00A99
+  - 16A99 - 28A99 - 00A99'
 title: Green定理 - 五种表征
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: A First Course in Noncommutative Rings
+    author: T. Y. Lam
+    edition: 2nd
+    publisher: Springer
+    year: 2001
+    isbn: '9780387951836'
+    mr_number: MR1838439
+    doi: 10.1007/978-1-4419-8616-0
+  - title: Algebra
+    author: Serge Lang
+    edition: Revised 3rd
+    publisher: Springer
+    year: 2002
+    isbn: '9780387953854'
+    mr_number: MR1878556
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Green定理 - 五种表征
 
@@ -395,3 +411,10 @@ $$\oint_C f(z)\,dz = 0 \quad \text{（如果}f\text{在}D\text{内全纯）}$$
 **数学公式数**: 12个
 **例子数**: 8个
 **最后更新**: 2026年01月02日
+
+---
+
+## 参考文献
+
+- T. Y. Lam, *A First Course in Noncommutative Rings*, 2nd ed., Springer, 2001, ISBN: 9780387951836 / MR1838439
+- Serge Lang, *Algebra*, Revised 3rd ed., Springer, 2002, ISBN: 9780387953854 / MR1878556

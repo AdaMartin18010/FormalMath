@@ -1,10 +1,32 @@
 ---
-msc_primary: 15
+msc_primary: '15
 
-  - 15A21
-  - 15A18
+  - 15A21 - 15A18'
 title: Jordan标准形 - 五种表征
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Introduction to Linear Algebra
+    author: Gilbert Strang
+    edition: 5th
+    publisher: Wellesley-Cambridge Press
+    year: 2016
+    isbn: '9780980232776'
+  - title: Linear Algebra Done Right
+    author: Sheldon Axler
+    edition: 3rd
+    publisher: Springer
+    year: 2015
+    isbn: '9783319110790'
+    doi: 10.1007/978-3-319-11080-6
+  - title: Matrix Analysis
+    author: Roger A. Horn and Charles R. Johnson
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2012
+    isbn: '9780521839402'
+    mr_number: MR2978210
+    doi: 10.1017/CBO9780511810819
 ---
 # Jordan标准形 - 五种表征
 
@@ -203,3 +225,11 @@ Jordan分解 ↔ 模的合成列
 ---
 
 **状态**: ✅ 完成
+
+---
+
+## 参考文献
+
+- Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016, ISBN: 9780980232776
+- Sheldon Axler, *Linear Algebra Done Right*, 3rd ed., Springer, 2015, ISBN: 9783319110790
+- Roger A. Horn and Charles R. Johnson, *Matrix Analysis*, 2nd ed., Cambridge University Press, 2012, ISBN: 9780521839402 / MR2978210

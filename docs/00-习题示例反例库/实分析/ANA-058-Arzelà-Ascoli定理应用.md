@@ -19,7 +19,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/compact+space
   wikipedia_url: https://en.wikipedia.org/wiki/Compact_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%B4%A7%E8%87%B4
-  wikidata_id: Q381892
 references:
   databases:
   - id: wikidata
@@ -27,6 +26,23 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q381892
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 ## 题目
 
@@ -145,3 +161,10 @@ $$|f_n(x) - f_n(y)| < \varepsilon$$
 **变式2：** 证明 $C(K)$ 中的子集是紧致的当且仅当闭、有界、等度连续。
 
 **变式3：** 用Arzelà-Ascoli证明Peano存在定理（ODE解的存在性）。
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

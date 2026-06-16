@@ -30,6 +30,22 @@ references:
     msc: 03-01
     chapters: null
     url: null
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
   databases:
   - id: nlab
     type: database
@@ -45,7 +61,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/isomorphism
   wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
-  wikidata_id: Q189112
 ---
 # Curry-Howard同构 / Curry-Howard Isomorphism
 

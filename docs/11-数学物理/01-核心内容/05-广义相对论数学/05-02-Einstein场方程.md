@@ -1,12 +1,19 @@
 ---
-msc_primary: 83
+msc_primary: '83
 
-  - 83C05
-  - 83C10
-  - 83C15
-  - 35Q75
+  - 83C05 - 83C10 - 83C15 - 35Q75'
 title: Einstein场方程
 processed_at: '2026-04-05'
+references:
+  papers:
+  - title: Zur Elektrodynamik bewegter Körper
+    author: Albert Einstein
+    journal: Annalen der Physik
+    year: 1905
+    doi: 10.1002/andp.19053221004
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Albert_Einstein
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Einstein/
 ---
 # Einstein场方程
 
@@ -209,3 +216,15 @@ $$\Box h_{\mu\nu} = 0$$
 ---
 
 **最后更新**: 2026年4月4日
+
+---
+
+## 经典论文与原始文献
+
+- Albert Einstein, *Zur Elektrodynamik bewegter Körper*, Annalen der Physik, 1905 (DOI: 10.1002/andp.19053221004)
+
+---
+
+## 参考文献
+
+- Albert Einstein, *Zur Elektrodynamik bewegter Körper*, Annalen der Physik, 1905, DOI: 10.1002/andp.19053221004

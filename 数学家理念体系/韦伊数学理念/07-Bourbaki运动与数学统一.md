@@ -1,24 +1,27 @@
 ---
-title: "Bourbaki运动与数学统一：Weil的结构主义遗产"
+title: Bourbaki运动与数学统一：Weil的结构主义遗产
 level: gold
 course: Weil数学理念
-msc_primary: 01
+msc_primary: 1
 msc_secondary:
-  - 01A60
+- 01A60
 references:
   textbooks:
-    - title: "Bourbaki: A Secret Society of Mathematicians"
-      author: "M. Mashaal"
-      year: 2006
-    - title: "The Architecture of Modern Mathematics"
-      author: "J. Ferreirós & J. J. Gray"
-      year: 2006
+  - title: 'Bourbaki: A Secret Society of Mathematicians'
+    author: M. Mashaal
+    year: 2006
+  - title: The Architecture of Modern Mathematics
+    author: J. Ferreirós & J. J. Gray
+    year: 2006
   papers:
-    - title: "The architecture of mathematics"
-      author: "N. Bourbaki"
-      year: 1950
+  - title: The architecture of mathematics
+    author: N. Bourbaki
+    year: 1950
 status: completed
 created_at: 2026-04-18
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/André_Weil
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
 ---
 # Bourbaki运动与数学统一：Weil的结构主义遗产
 
@@ -168,3 +171,11 @@ Bourbaki运动是20世纪数学最重要的文化现象之一。Weil作为其核
 3. Mashaal, M. *Bourbaki: A Secret Society of Mathematicians*. AMS, 2006.
 4. Corry, L. *Modern Algebra and the Rise of Mathematical Structures*. Birkhäuser, 2004.
 5. Krömer, R. *Tool and Object: A History and Philosophy of Category Theory*. Birkhäuser, 2007.
+
+---
+
+## 参考文献
+
+- M. Mashaal, *Bourbaki: A Secret Society of Mathematicians*, 2006
+- J. Ferreirós & J. J. Gray, *The Architecture of Modern Mathematics*, 2006
+- N. Bourbaki, *The architecture of mathematics*, 1950

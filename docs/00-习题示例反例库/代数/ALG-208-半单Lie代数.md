@@ -6,6 +6,10 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐
 预计时间: 50分钟
 title: ALG 208 半单Lie代数
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Algebra_(ring_theory)
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0
+  nlab_url: https://ncatlab.org/nlab/show/algebra
 ---
 # 半单 Lie 代数
 

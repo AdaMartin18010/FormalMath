@@ -10,6 +10,28 @@ references:
   - title: Modular Forms and Fermat's Last Theorem
     author: G. Cornell, J. H. Silverman & G. Stevens
     year: 1997
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
   papers:
   - title: Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)
     author: J-P. Serre
@@ -37,7 +59,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Number%20theory
-  wikidata_id: Q12479
 ---
 # Serre模性猜想：从数论到表示论的桥梁
 
@@ -169,3 +190,14 @@ Serre模性猜想的证明是21世纪数学最伟大的成就之一。它不仅�
 3. Khare, C. & Wintenberger, J-P. "Serre's modularity conjecture (II)." *Invent. Math.* 178 (2009), 505–586.
 4. Ribet, K. A. "On modular representations of Gal($\overline{\mathbb{Q}}/\mathbb{Q}$) arising from modular forms." *Invent. Math.* 100 (1990), 431–476.
 5. Wiles, A. "Modular elliptic curves and Fermat's last theorem." *Ann. of Math.* 141 (1995), 443–551.
+
+---
+
+## 参考文献
+
+- G. Cornell, J. H. Silverman & G. Stevens, *Modular Forms and Fermat's Last Theorem*, 1997
+- G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press, 2008, ISBN: 9780199219865 / MR2445243
+- Jean-Pierre Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- Tom M. Apostol, *Introduction to Analytic Number Theory*, 1st ed., Springer, 1976, ISBN: 9780387901633 / MR0434929
+- J-P. Serre, *Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)*, 1987
+- C. Khare & J-P. Wintenberger, *Serre's modularity conjecture (I)*, 2009

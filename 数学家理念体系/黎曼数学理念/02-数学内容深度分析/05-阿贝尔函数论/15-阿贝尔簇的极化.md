@@ -10,7 +10,9 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Niels_Henrik_Abel
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
   zbmath_url: https://zbmath.org/?q=au:Niels%20Henrik%20Abel
-  wikidata_id: Q124115
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%98%BF%E8%B4%9D%E5%B0%94%E7%B0%87
+  nlab_url: https://ncatlab.org/nlab/show/abelian+variety
+  wikidata_id: https://www.wikidata.org/entity/Q124607
 references:
   databases:
   - id: zbmath

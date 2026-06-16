@@ -1,7 +1,7 @@
 ---
-msc_primary: 26
+msc_primary: '26
 
-  - 26A06
+  - 26A06'
 exercise_id: ANA-034
 title: Darboux介值性质
 difficulty: 3
@@ -10,9 +10,41 @@ topic: 实分析
 subtopic: 微分中值定理
 source:
   course: MIT 18.100A Real Analysis
-  chapter: "5.2"
+  chapter: '5.2'
   original: true
 processed_at: '2026-04-09'
+references:
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: Real Mathematical Analysis
+    author: Charles C. Pugh
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780387952970'
+    mr_number: MR1639930
+    doi: 10.1007/978-0-387-21676-7
+  - title: Analysis I
+    author: Terence Tao
+    edition: 3rd
+    publisher: Springer
+    year: 2016
+    isbn: '9789811017896'
+    mr_number: MR3728289
+    doi: 10.1007/978-981-10-1789-6
 ---
 # ANA-034: Darboux介值性质
 
@@ -179,3 +211,12 @@ $$\sum_{k=1}^n \frac{1}{f'(c_k)} = n$$
 | 原函数存在性 | 有介值性是必要条件 |
 
 **标签**: #Darboux定理 #介值性质 #导数间断 #实分析 #MIT-18.100A
+
+---
+
+## 参考文献
+
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, ISBN: 9780070542358 / MR0385023
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015, ISBN: 9781493927111
+- Charles C. Pugh, *Real Mathematical Analysis*, 1st ed., Springer, 2002, ISBN: 9780387952970 / MR1639930
+- Terence Tao, *Analysis I*, 3rd ed., Springer, 2016, ISBN: 9789811017896 / MR3728289

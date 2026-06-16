@@ -21,11 +21,29 @@ references:
     edition: Graduate Texts in Mathematics 52
     chapters: Ch. III.7
     pages: 239–252
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - title: Éléments de Géométrie Algébrique III
     author: A. Grothendieck & J. Dieudonné
     edition: Publ. Math. IHÉS 11
     chapters: Chap. III, §6
     pages: 102–130
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Un théorème de dualité
     author: J.-P. Serre
@@ -58,7 +76,6 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Cohomology
-  wikidata_id: Q1198376
 ---
 # 上同调与 Serre 对偶：从射影簇到相对对偶
 
@@ -308,3 +325,15 @@ variable (C : Type*) [Category C]
 ## 经典论文与原始文献
 
 - Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955 (DOI: 10.2307/1970375)
+
+---
+
+## 参考文献
+
+- J.-P. Serre, *Faisceaux algébriques cohérents*, 1955, DOI: 10.2307/1969915
+- R. Hartshorne, *Algebraic Geometry*, Graduate Texts in Mathematics 52 ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- A. Grothendieck & J. Dieudonné, *Éléments de Géométrie Algébrique III*, Publ. Math. IHÉS 11 ed.
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- J.-P. Serre, *Un théorème de dualité*, Comment. Math. Helv., 1955, DOI: 10.1007/BF02564268
+- Jean-Pierre Serre, *Faisceaux algébriques cohérents*, Annals of Mathematics, 1955, DOI: 10.2307/1970375

@@ -17,7 +17,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
   wikipedia_url: https://en.wikipedia.org/wiki/Category_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
-  wikidata_id: Q719395
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Yau/
 references:
   databases:
   - id: wikidata
@@ -25,6 +25,13 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q719395
     consulted_at: '2026-06-16'
+  papers:
+  - title: On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère
+      equation. I
+    author: Shing-Tung Yau
+    journal: Communications on Pure and Applied Mathematics
+    year: 1978
+    doi: 10.1002/cpa.3160310304
 ---
 # AG-074: Calabi-Yau范畴与DT不变量
 
@@ -59,3 +66,15 @@ references:
 **出题人**: AI Assistant
 **审核状态**: 待审核
 **最后更新**: 2026年4月10日
+
+---
+
+## 经典论文与原始文献
+
+- Shing-Tung Yau, *On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère equation. I*, Communications on Pure and Applied Mathematics, 1978 (DOI: 10.1002/cpa.3160310304)
+
+---
+
+## 参考文献
+
+- Shing-Tung Yau, *On the Ricci curvature of a compact Kähler manifold and the complex Monge-Ampère equation. I*, Communications on Pure and Applied Mathematics, 1978, DOI: 10.1002/cpa.3160310304

@@ -1,9 +1,7 @@
 ---
-msc_primary: 03
+msc_primary: '03
 
-  - 03F30
-  - 11B83
-  - 97F40
+  - 03F30 - 11B83 - 97F40'
 level: silver
 domain: 数论
 concept: Peano公理
@@ -18,14 +16,32 @@ tags:
 - 公理系统
 - 自然数
 - 形式化定义
-- "mathematical_reviewed"
+- mathematical_reviewed
 title: 'L1: 自然数的Peano公理 (Peano Axioms)'
 processed_at: '2026-04-05'
 course: MIT 18.100A Real Analysis
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
-reviewer: 'AI Mathematical Reviewer'
+reviewer: AI Mathematical Reviewer
+references:
+  textbooks:
+  - title: Set Theory
+    author: Thomas Jech
+    edition: 3rd Millennium
+    publisher: Springer
+    year: 2003
+    isbn: '9783540440857'
+    mr_number: MR1940513
+    doi: 10.1007/3-540-44761-X
+  - title: A Course in Mathematical Logic
+    author: Yu.I. Manin
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902432'
+    mr_number: MR0453490
+    doi: 10.1007/978-1-4757-4385-2
 ---
 msc_primary: "03F30"
 msc_secondary: ["11B83", "97F40"]

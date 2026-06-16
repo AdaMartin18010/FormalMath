@@ -1,12 +1,29 @@
 ---
-msc_primary: 53
+msc_primary: '53
 
-  - 53C20
-  - 53A05
-  - 57R20
-  - 58J20
+  - 53C20 - 53A05 - 57R20 - 58J20'
 title: Gauss-Bonnet定理推理树
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: Introduction to Smooth Manifolds
+    author: John M. Lee
+    edition: 2nd
+    publisher: Springer
+    year: 2012
+    isbn: '9781441999818'
+    mr_number: MR2954043
+    doi: 10.1007/978-1-4419-9982-5
+  - title: Differential Geometry of Curves and Surfaces
+    author: Manfredo P. do Carmo
+    edition: 1st
+    publisher: Prentice-Hall
+    year: 1976
+    isbn: '9780132125895'
+    mr_number: MR0394451
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
 ---
 # Gauss-Bonnet定理推理树
 

@@ -42,6 +42,7 @@ references:
     isbn: '9780387902449'
     mr_number: MR0463157
     author: Robin Hartshorne
+    doi: 10.1007/978-1-4757-3849-0
   - id: hartshorne_rd
     type: textbook
     title: Residues and Duality
@@ -62,6 +63,13 @@ references:
     year: 2024
     isbn: ''
     chapters: Ch 26–27
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Faisceaux algébriques cohérents
     author: Jean-Pierre Serre
@@ -86,7 +94,8 @@ external_ids:
   foag_pdf_url: https://math.stanford.edu/~vakil/216blog/
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
-  wikidata_id: Q77141
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=Serre%E5%AF%B9%E5%81%B6
+  nlab_url: https://ncatlab.org/nlab/show/Serre+duality
 ---
 # Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶
 
@@ -613,4 +622,3 @@ $$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omeg
 - [Foag Pdf Url](https://math.stanford.edu/~vakil/216blog/)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Alexander_Grothendieck)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/)
-- [Wikidata Id](Q77141)

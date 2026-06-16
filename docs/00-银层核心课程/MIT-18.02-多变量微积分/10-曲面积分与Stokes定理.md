@@ -16,12 +16,11 @@ tags:
 - mathematical_reviewed
 chapter: '10'
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/pages/problem-sets-and-exams/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
   nlab_url: https://ncatlab.org/nlab/show/integral
   wikipedia_url: https://en.wikipedia.org/wiki/Integral
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
-  wikidata_id: Q80091
 references:
   textbooks:
   - title: Multivariable Calculus
@@ -30,6 +29,22 @@ references:
     publisher: W. H. Freeman
     year: 2011
     isbn: '9781429215084'
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
   databases:
   - id: wikidata
     type: database

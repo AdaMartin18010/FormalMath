@@ -11,7 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
   zbmath_url: https://zbmath.org/?q=au:Cauchy%27s%20theorem
-  wikidata_id: Q1139041
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
 references:
   databases:
   - id: zbmath

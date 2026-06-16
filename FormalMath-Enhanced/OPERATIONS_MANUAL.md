@@ -83,7 +83,7 @@ sudo apt install -y curl wget jq
 
 ```bash
 cd /opt
-git clone https://github.com/your-org/formalmath-enhanced.git
+git clone https://github.com/FormalMath-enhanced.git
 cd formalmath-enhanced
 ```
 

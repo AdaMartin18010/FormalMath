@@ -33,6 +33,34 @@ references:
     msc: 26-01
     chapters: null
     url: null
+    mr_number: MR0385023
+    author: Walter Rudin
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
+  - title: Real Mathematical Analysis
+    author: Charles C. Pugh
+    edition: 1st
+    publisher: Springer
+    year: 2002
+    isbn: '9780387952970'
+    mr_number: MR1639930
+    doi: 10.1007/978-0-387-21676-7
+  - title: Analysis I
+    author: Terence Tao
+    edition: 3rd
+    publisher: Springer
+    year: 2016
+    isbn: '9789811017896'
+    mr_number: MR3728289
+    doi: 10.1007/978-981-10-1789-6
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Émile_Borel
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Borel/
 ---
 # Heine-Borel 定理
 

@@ -6,6 +6,24 @@ msc_primary: 00A99
 难度: ⭐⭐⭐
 预计时间: 25分钟
 title: Plancherel定理应用
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # Plancherel定理应用
 
@@ -68,3 +86,10 @@ $$\int_{-\infty}^{\infty} \frac{\sin^2 x}{(x/2)^2} \frac{dx}{2\pi} = 2$$
 $$\frac{2}{\pi} \int_{-\infty}^{\infty} \frac{\sin^2 x}{x^2} dx = 2$$
 
 因此 $\int_{-\infty}^{\infty} \frac{\sin^2 x}{x^2} dx = \pi$。$\square$
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

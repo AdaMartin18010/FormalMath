@@ -55,7 +55,7 @@ FormalMath Interactive 是 FormalMath 项目的交互式可视化界面，基于
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/formalmath/FormalMath.git
+git clone https://github.com/FormalMath
 cd FormalMath/FormalMath-Interactive
 ```
 
@@ -296,8 +296,8 @@ sudo tail -f /var/log/nginx/formalmath-error.log
 ## 联系与支持
 
 - 📧 Email: team@formalmath.org
-- 💬 Issues: https://github.com/formalmath/FormalMath/issues
-- 📖 Wiki: https://github.com/formalmath/FormalMath/wiki
+- 💬 Issues: https://github.com/FormalMath
+- 📖 Wiki: https://github.com/FormalMath/wiki
 
 ---
 

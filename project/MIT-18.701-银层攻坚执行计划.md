@@ -7,8 +7,8 @@ target_courses:
 - MIT 18.701
 course: MIT 18.701 抽象代数
 external_ids:
-  ocw_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/
-  ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/
+  ocw_url: https://ocw.mit.edu/
+  ocw_ps_url: https://ocw.mit.edu/
 references:
   textbooks:
   - title: Algebra
@@ -17,6 +17,15 @@ references:
     publisher: Pearson
     year: 2010
     isbn: '9780132413770'
+    doi: 10.1007/978-1-4613-0041-0
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
 ---
 # MIT 18.701 银层攻坚执行计划
 
@@ -128,5 +137,5 @@ MIT 18.701 的核心主题包括：
 
 ### 课程与外部链接
 
-- [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
-- [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/pages/assignments/)
+- [Ocw Url](https://ocw.mit.edu/)
+- [Ocw Ps Url](https://ocw.mit.edu/)

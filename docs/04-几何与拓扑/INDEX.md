@@ -21,6 +21,8 @@ references:
     msc: 54-01
     chapters: null
     url: null
+    mr_number: MR0464128
+    author: James R. Munkres
   - id: lee_ism
     type: textbook
     title: Introduction to Smooth Manifolds
@@ -33,6 +35,9 @@ references:
     msc: 58-01
     chapters: null
     url: null
+    mr_number: MR2954043
+    author: John M. Lee
+    doi: 10.1007/978-1-4419-9982-5
 ---
 # 04-几何与拓扑分支完整索引
 

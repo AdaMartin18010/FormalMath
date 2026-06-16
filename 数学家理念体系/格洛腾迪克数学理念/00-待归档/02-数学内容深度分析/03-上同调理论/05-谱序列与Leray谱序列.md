@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
-  wikidata_id: Q3503315
 references:
   databases:
   - id: zbmath

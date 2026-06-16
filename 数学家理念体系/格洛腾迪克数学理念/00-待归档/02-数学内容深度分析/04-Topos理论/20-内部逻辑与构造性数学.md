@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   zbmath_url: https://zbmath.org/?q=au:Topos
-  wikidata_id: Q2143621
 references:
   databases:
   - id: zbmath

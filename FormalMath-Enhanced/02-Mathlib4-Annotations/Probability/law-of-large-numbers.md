@@ -1,9 +1,13 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-15'
 title: 大数定律 (Law of Large Numbers)
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Law_of_large_numbers
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%A4%A7%E6%95%B0%E5%AE%9A%E5%BE%8B
+  nlab_url: https://ncatlab.org/nlab/show/law+of+large+numbers
 ---
 # 大数定律 (Law of Large Numbers)
 

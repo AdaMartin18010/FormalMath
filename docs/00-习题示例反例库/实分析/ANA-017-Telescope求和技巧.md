@@ -1,7 +1,7 @@
 ---
-msc_primary: 40
+msc_primary: '40
 
-  - 40A05
+  - 40A05'
 exercise_id: ANA-017
 title: Telescope求和技巧
 difficulty: 3
@@ -10,9 +10,25 @@ topic: 实分析
 subtopic: 极限计算
 source:
   course: MIT 18.100A Real Analysis
-  chapter: "2.3"
+  chapter: '2.3'
   original: true
 processed_at: '2026-04-09'
+references:
+  textbooks:
+  - title: Principles of Mathematical Analysis
+    author: Walter Rudin
+    edition: 3rd
+    publisher: McGraw-Hill
+    year: 1976
+    isbn: '9780070542358'
+    mr_number: MR0385023
+  - title: Understanding Analysis
+    author: Stephen Abbott
+    edition: 2nd
+    publisher: Springer
+    year: 2015
+    isbn: '9781493927111'
+    doi: 10.1007/978-1-4939-2712-8
 ---
 # ANA-017: Telescope求和技巧
 
@@ -203,3 +219,10 @@ $$\lim_{n\to\infty} \sum_{k=1}^{n} \frac{k}{(k+1)!} = \lim_{n\to\infty} \left(1 
 | 差分方法 | 离散微积分的核心工具 |
 
 **标签**: #Telescope求和 #裂项相消 #级数求和 #实分析 #MIT-18.100A
+
+---
+
+## 参考文献
+
+- Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976, ISBN: 9780070542358 / MR0385023
+- Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015, ISBN: 9781493927111

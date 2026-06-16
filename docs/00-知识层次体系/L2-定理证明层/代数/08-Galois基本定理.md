@@ -7,6 +7,23 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Evariste_Galois
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
+references:
+  textbooks:
+  - title: Abstract Algebra
+    author: David S. Dummit and Richard M. Foote
+    edition: 3rd
+    publisher: Wiley
+    year: 2003
+    isbn: '9780471433347'
+    mr_number: MR2286236
+    doi: 10.1002/9781118214413
+  - title: Algebra
+    author: Michael Artin
+    edition: 2nd
+    publisher: Pearson
+    year: 2010
+    isbn: '9780132413770'
+    doi: 10.1007/978-1-4613-0041-0
 ---
 # Galois 基本定理
 
@@ -239,3 +256,10 @@ flowchart TB
 - **创建日期**: 2026年4月3日
 - **版本**: 1.0
 - **关联Lean4形式化**: `mathlib4/FieldTheory/Galois.lean`
+
+---
+
+## 参考文献
+
+- David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003, ISBN: 9780471433347 / MR2286236
+- Michael Artin, *Algebra*, 2nd ed., Pearson, 2010, ISBN: 9780132413770

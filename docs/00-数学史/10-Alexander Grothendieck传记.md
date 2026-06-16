@@ -4,7 +4,6 @@ msc_primary: '01'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
-  wikidata_id: Q77141
 references:
   databases:
   - id: wikidata
@@ -12,6 +11,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q77141
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Mathematics and Its History
+    author: John Stillwell
+    edition: 3rd
+    publisher: Springer
+    year: 2010
+    isbn: '9781441960528'
+    mr_number: MR2675606
+    doi: 10.1007/978-1-4419-6053-5
+  - title: 'A History of Mathematics: An Introduction'
+    author: Victor J. Katz
+    edition: 3rd
+    publisher: Pearson
+    year: 2009
+    isbn: '9780321387004'
 ---
 # Alexander Grothendieck 传记
 
@@ -318,3 +332,10 @@ Grothendieck拒绝前往莫斯科参加国际数学家大会接受菲尔兹奖�
 **创建日期：** 2026年4月
 **最后更新：** 2026年4月
 **文档类别：** 数学史 - 20世纪数学大师
+
+---
+
+## 参考文献
+
+- John Stillwell, *Mathematics and Its History*, 3rd ed., Springer, 2010, ISBN: 9781441960528 / MR2675606
+- Victor J. Katz, *A History of Mathematics: An Introduction*, 3rd ed., Pearson, 2009, ISBN: 9780321387004

@@ -6,6 +6,34 @@ msc_primary: 00A99
 难度: ⭐⭐⭐⭐
 预计时间: 45分钟
 title: 遍历理论 Birkhoff定理
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Proof of the ergodic theorem
+    author: George D. Birkhoff
+    journal: Proceedings of the National Academy of Sciences
+    year: 1931
+    doi: 10.1073/pnas.17.12.656
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Ergodic_theory
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%81%8D%E5%8E%86%E7%90%86%E8%AE%BA
+  nlab_url: https://ncatlab.org/nlab/show/ergodic+theory
 ---
 # Birkhoff遍历定理
 
@@ -101,3 +129,17 @@ $\alpha$ 无理 $\Rightarrow$ $e^{2\pi i n \alpha} \neq 1$ 对 $n \neq 0$。
 **变式1：** 证明von Neumann平均遍历定理（$L^2$版本）。
 
 **变式2：** 证明 doubling map $T(x) = 2x \pmod 1$ 是遍历的。
+
+---
+
+## 经典论文与原始文献
+
+- George D. Birkhoff, *Proof of the ergodic theorem*, Proceedings of the National Academy of Sciences, 1931 (DOI: 10.1073/pnas.17.12.656)
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845
+- George D. Birkhoff, *Proof of the ergodic theorem*, Proceedings of the National Academy of Sciences, 1931, DOI: 10.1073/pnas.17.12.656

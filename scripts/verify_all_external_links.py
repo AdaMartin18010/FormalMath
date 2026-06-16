@@ -106,9 +106,8 @@ def check_url(url: str, timeout: int = 5):
         with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as resp:
             return resp.getcode(), resp.geturl()
     except HTTPError as e:
-        if e.code in (405, 501, 400, 429, 403) or (
-            e.code == 404 and any(d in url for d in GET_FALLBACK_DOMAINS)
-        ):
+        # 对 4xx 普遍回退 GET：很多站点拒绝 HEAD 但 GET 正常（如 nLab、Wolfram、NIST 等）
+        if e.code in (405, 501, 400, 429, 403, 404):
             return _get_url(url, timeout)
         return e.code, getattr(e, "url", url)
     except URLError as e:
@@ -144,7 +143,7 @@ def save_cache(seen: dict):
 
 
 def extract_markdown_link_urls(text: str):
-    urls, spans = [], []
+    urls, spans, link_regions = [], [], []
     i = 0
     while i < len(text):
         bracket_close = text.find("](", i)
@@ -175,13 +174,24 @@ def extract_markdown_link_urls(text: str):
             if url.startswith("http"):
                 urls.append(url)
                 spans.append((url_start, j))
+                # 记录整个 Markdown 链接语法区域，避免裸 URL 正则捕获到链接后的正文
+                link_regions.append((bracket_close, j + 1))
         i = j + 1
-    return urls, spans
+    return urls, spans, link_regions
 
 
 def normalize_url(raw: str) -> str:
-    # 去除半角与全角尾随标点
-    url = raw.rstrip('.,;:!?">）】」』｝］、。！？')
+    # 去除尾随的非 URL 字符（包括中文正文、Markdown 格式符号等）
+    allowed = set(
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        "%_-+=&?#./:~@!$*(),;'[]{}|\""
+    )
+    url = raw
+    while url and url[-1] not in allowed:
+        url = url[:-1]
+    # 再去除允许的标点但不应出现在 URL 末尾的字符
+    url = url.rstrip('.,;:!?*\'"）】」』｝］')
+    # 平衡圆括号
     open_p, close_p = url.count("("), url.count(")")
     if close_p > open_p:
         diff = close_p - open_p
@@ -196,11 +206,14 @@ def normalize_url(raw: str) -> str:
 
 
 def extract_urls(text: str):
-    md_urls, md_spans = extract_markdown_link_urls(text)
+    md_urls, md_spans, link_regions = extract_markdown_link_urls(text)
     urls = set(md_urls)
     for m in URL_RE.finditer(text):
         start, end = m.span()
+        # 跳过位于 Markdown 链接语法区域内的裸 URL 匹配
         if any(start >= s and end <= e for s, e in md_spans):
+            continue
+        if any(not (end <= s or start >= e) for s, e in link_regions):
             continue
         raw = m.group(0)
         if end < len(text) and text[end] == "{":
@@ -264,11 +277,20 @@ def main():
 
     save_cache(seen)
 
-    def classify(code):
+    UNCERTAIN_404_DOMAINS = {"plato.stanford.edu", "doi.org", "dx.doi.org"}
+
+    def classify(code, url: str = ""):
         if isinstance(code, int):
-            if code == 404 or (400 <= code < 500 and code not in (403, 429, 408)):
+            domain = ""
+            try:
+                domain = urllib.parse.urlparse(url).netloc.lower()
+            except Exception:
+                pass
+            if code == 404 and domain in UNCERTAIN_404_DOMAINS:
+                return "uncertain"
+            if code == 404 or (400 <= code < 500 and code not in (403, 429, 408, 412, 418)):
                 return "broken"
-            if code >= 500 or code in (403, 429, 408):
+            if code >= 500 or code in (403, 429, 408, 412, 418):
                 return "uncertain"
             return "ok"
         s = str(code).lower()
@@ -282,8 +304,8 @@ def main():
                 return name
         return "other"
 
-    uncertain = [(d, u, c, f) for d, u, c, f in broken if classify(c) == "uncertain"]
-    confirmed = [(d, u, c, f) for d, u, c, f in broken if classify(c) == "broken"]
+    uncertain = [(d, u, c, f) for d, u, c, f in broken if classify(c, u) == "uncertain"]
+    confirmed = [(d, u, c, f) for d, u, c, f in broken if classify(c, u) == "broken"]
 
     # 按域名汇总（确认失效）
     domain_counter = Counter()
@@ -298,12 +320,12 @@ def main():
     cat_stats = Counter()
     cat_broken = Counter()
     cat_uncertain = Counter()
-    for doc, _, code, _ in checked:
+    for doc, url, code, _ in checked:
         cat = doc_category(doc)
         cat_stats[cat] += 1
-        if classify(code) == "broken":
+        if classify(code, url) == "broken":
             cat_broken[cat] += 1
-        elif classify(code) == "uncertain":
+        elif classify(code, url) == "uncertain":
             cat_uncertain[cat] += 1
 
     top_confirmed = sorted(confirmed, key=lambda x: (x[1], x[0]))[:500]

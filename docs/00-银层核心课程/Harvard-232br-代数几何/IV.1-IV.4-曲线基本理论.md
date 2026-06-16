@@ -42,6 +42,7 @@ references:
     author: Robin Hartshorne
     pages: 295-340
     mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
   - id: vakil_foag
     type: textbook
     title: Foundations of Algebraic Geometry
@@ -54,6 +55,19 @@ references:
     url: https://math.stanford.edu/~vakil/216blog/
     isbn: ''
     author: Ravi Vakil
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -965,6 +979,7 @@ theorem uniformization (Λ : Submodule ℤ ℂ) (h : IsLattice Λ) :
 - 证明思路清晰
 - 习题设计合理
 - Lean4代码框架正确
+
 ---
 
 ## 参考与延伸阅读
@@ -973,6 +988,7 @@ theorem uniformization (Λ : Submodule ℤ ℂ) (h : IsLattice Λ) :
 
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['IV.1', 'IV.2', 'IV.3', 'IV.4']; Pages: 295-340; ISBN: 978-0387902449; MR: MR0463157)
 - Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
 
 ### 课程与外部链接
 

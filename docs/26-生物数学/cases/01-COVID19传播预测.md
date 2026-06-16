@@ -1,9 +1,27 @@
 ---
-title: "案例：COVID-19传播动力学预测"
+title: 案例：COVID-19传播动力学预测
 msc_primary: 00A99
-category: "生物数学"
-difficulty: "高级"
-application: "公共卫生政策制定"
+category: 生物数学
+difficulty: 高级
+application: 公共卫生政策制定
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 # COVID-19传播动力学预测案例
 
@@ -128,3 +146,10 @@ for name, beta_val in scenarios.items():
 2. **分层防控**: 根据感染率动态调整措施强度
 3. **医疗准备**: 预计峰值需要床位数 = 峰值感染 × 住院率
 4. **疫苗接种**: 需达到接种率 $1 - 1/R_0 = 60\%$ 实现群体免疫
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

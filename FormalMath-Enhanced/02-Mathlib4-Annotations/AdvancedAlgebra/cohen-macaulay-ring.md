@@ -11,7 +11,6 @@ external_ids:
   stacks_tag:
     tag: 00N7
     url: https://stacks.math.columbia.edu/tag/00N7
-  wikidata_id: Q161172
 references:
   databases:
   - id: stacks_project

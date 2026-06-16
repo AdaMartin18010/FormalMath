@@ -5,7 +5,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
-  wikidata_id: Q18848
 references:
   databases:
   - id: wikidata
@@ -13,6 +12,30 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: 'Probability: Theory and Examples'
+    author: Rick Durrett
+    edition: 5th
+    publisher: Cambridge University Press
+    year: 2019
+    isbn: '9781108473682'
+    mr_number: MR3930614
+    doi: 10.1017/9781108592629
+  - title: An Introduction to Probability Theory and Its Applications, Vol. 1
+    author: William Feller
+    edition: 3rd
+    publisher: Wiley
+    year: 1968
+    isbn: '9780471257080'
+    mr_number: MR0228020
+  - title: Probability with Martingales
+    author: David Williams
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 1991
+    isbn: '9780521406055'
+    mr_number: MR1155402
+    doi: 10.1017/CBO9780511813658
 ---
 # 概率统计模拟实验与Python实现
 
@@ -369,3 +392,11 @@ plt.grid(True)
 ---
 
 **适用**：docs/06-概率论与统计/
+
+---
+
+## 参考文献
+
+- Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, ISBN: 9781108473682 / MR3930614
+- William Feller, *An Introduction to Probability Theory and Its Applications, Vol. 1*, 3rd ed., Wiley, 1968, ISBN: 9780471257080 / MR0228020
+- David Williams, *Probability with Martingales*, 1st ed., Cambridge University Press, 1991, ISBN: 9780521406055 / MR1155402

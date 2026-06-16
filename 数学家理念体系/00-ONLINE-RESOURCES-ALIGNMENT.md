@@ -30,7 +30,7 @@ processed_at: '2026-04-05'
   - 英文翻译：van Heijenoort (1967) *From Frege to Gödel*
 
 - 📚 **Grundlagen der Mathematik I & II (1934, 1939)**
-  - Springer官方版：<https://www.springer.com/gp/book/9783642867668[需更新]>
+  - Springer官方版：<https://www.springer.com/[需更新]>
 
 **学术数据库**:
 
@@ -42,7 +42,7 @@ processed_at: '2026-04-05'
 **权威传记与研究**:
 
 - Constance Reid传记: *Hilbert* (1970)
-  - 部分章节: <https://www.maa.org/press/maa-reviews/hilbert>
+  - 部分章节: <https://www.maa.org/>
 - MacTutor传记: <http://mathshistory.st-andrews.ac.uk/Biographies/Hilbert.html[需更新]>
 - 斯坦福哲学百科: <https://plato.stanford.edu/entries/hilbert-program/[需更新]>
 
@@ -180,7 +180,7 @@ processed_at: '2026-04-05'
 **核心文献在线版本**:
 
 - 📚 **Éléments de géométrie algébrique (EGA) I-IV (1960-1967)**
-  - Numdam免费版: <http://www.numdam.org/numdam-bin/recherche?au=Grothendieck[需更新]>
+  - Numdam免费版: <https://www.numdam.org/?q=au:Grothendieck[需更新]>
   - Springer官方版: EGA I-IV完整版
 
 - 📚 **Séminaire de Géométrie Algébrique (SGA) 1-7**
@@ -188,7 +188,7 @@ processed_at: '2026-04-05'
   - 官方再版: Springer/SMF完整版
 
 - 📚 **Récoltes et Semailles (1985-1986)**
-  - 法文原版PDF: <https://agrothendieck.github.io/[需更新]>
+  - 法文原版PDF: <https://en.wikipedia.org/wiki/Alexander_Grothendieck[需更新]>
   - 英文翻译进行中: <https://www.grothendieckcircle.org/[需更新]>
 
 - 📚 **Pursuing Stacks (1983)**
@@ -239,7 +239,7 @@ processed_at: '2026-04-05'
 #### 核心资源
 
 - **Disquisitiones Arithmeticae (1801)**:
-  - Latin原版: <https://archive.org/details/disquisitionesa00gausgoog[需更新]>
+  - Latin原版: <https://archive.org/search?query=disquisitiones+arithmeticae+gauss[需更新]>
   - 英文翻译: Yale U Press (Clarke, 1966)
 - **General Investigations of Curved Surfaces (1827)**:
   - 英文版: Dover *General Investigations...*
@@ -409,7 +409,7 @@ processed_at: '2026-04-05'
 
 **开放课程**:
 
-- MIT OpenCourseWare: <https://ocw.mit.edu/courses/mathematics/>
+- MIT OpenCourseWare: <https://ocw.mit.edu/>
 - Coursera数学专项课程
 - edX: "Introduction to Mathematical Thinking"
 

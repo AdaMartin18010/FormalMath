@@ -13,6 +13,27 @@ references:
   - title: Advanced Topics in the Arithmetic of Elliptic Curves
     author: J. H. Silverman
     year: 1994
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
   papers:
   - title: Jacobi sums as 'Grössencharaktere'
     author: A. Weil
@@ -36,7 +57,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
   zbmath_url: https://zbmath.org/?q=au:Elliptic%20curve
-  wikidata_id: Q268493
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
 ---
 # Weil与椭圆曲线：从复乘到模性的桥梁
 
@@ -187,3 +208,14 @@ Weil对椭圆曲线理论的贡献是20世纪数学最重要的成就之一。�
 3. Silverman, J. H. *The Arithmetic of Elliptic Curves*. GTM 106, 1986.
 4. Wiles, A. "Modular elliptic curves and Fermat's last theorem." *Ann. of Math.* 141 (1995), 443–551.
 5. Diamond, F. & Shurman, J. *A First Course in Modular Forms*. GTM 228, 2005.
+
+---
+
+## 参考文献
+
+- J. H. Silverman, *Arithmetic of Elliptic Curves*, 1986
+- J. H. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves*, 1994
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232
+- A. Weil, *Jacobi sums as 'Grössencharaktere'*, 1952

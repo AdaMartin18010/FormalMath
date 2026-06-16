@@ -12,7 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Manifold
-  wikidata_id: Q203920
+  wikidata_id: https://www.wikidata.org/entity/Q422
 references:
   databases:
   - id: zbmath

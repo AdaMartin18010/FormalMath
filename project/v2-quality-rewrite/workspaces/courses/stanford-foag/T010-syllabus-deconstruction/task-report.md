@@ -32,7 +32,7 @@ These sources provided the canonical Part / Chapter / Section hierarchy (Chapter
   Used to cross-check the order of topics (e.g., morphisms of schemes, projective schemes, associated points) and to identify classic exercise labels.
 - **Math StackExchange & university problem sets** referencing Vakil exercises (e.g., Exercise 8.3.E on scheme-theoretic image, Chevalley's theorem exercises 7.4.M/N).
   Helped confirm the existence and topic of high-profile exercises.
-- **Berkeley Math 256A-B syllabus (Mark Haiman)** — `https://math.berkeley.edu/~mhaiman/math256-fall18-spring19/`
+- **Berkeley Math 256A-B syllabus (Mark Haiman)** — `https://math.berkeley.edu/math256-fall18-spring19/`
   Provided a second-course perspective on which FOAG theorems are considered "core" for a first schemes course.
 
 ### FormalMath Project Internal Sources

@@ -12,7 +12,6 @@ external_ids:
   stacks_tag:
     tag: 03PP
     url: https://stacks.math.columbia.edu/tag/03PP
-  wikidata_id: Q2143621
 references:
   databases:
   - id: stacks_project
@@ -27,6 +26,28 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q2143621
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Algebraic Geometry
+    author: Robin Hartshorne
+    edition: 1st
+    publisher: Springer
+    year: 1977
+    isbn: '9780387902449'
+    mr_number: MR0463157
+    doi: 10.1007/978-1-4757-3849-0
+  - title: 'The Rising Sea: Foundations of Algebraic Geometry'
+    author: Ravi Vakil
+    edition: draft
+    publisher: Stanford University
+    year: 2024
+    isbn: ''
+  - title: Algebraic Geometry and Arithmetic Curves
+    author: Qing Liu
+    edition: 1st
+    publisher: Oxford University Press
+    year: 2002
+    isbn: '9780199202492'
+    mr_number: MR1917232
 ---
 # Étale Topos 与平展上同调
 
@@ -170,3 +191,11 @@ $$H_{\text{ét}}^i(X, \mathcal{F}) = R^i \Gamma_{\text{ét}}(X, \mathcal{F})$$
 **文档状态**：✅ 完成  
 **字数**：约 2,400 字  
 **最后更新**：2026-04-16
+
+---
+
+## 参考文献
+
+- Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977, ISBN: 9780387902449 / MR0463157
+- Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024
+- Qing Liu, *Algebraic Geometry and Arithmetic Curves*, 1st ed., Oxford University Press, 2002, ISBN: 9780199202492 / MR1917232

@@ -8,6 +8,8 @@ external_ids:
   stacks_tag:
     tag: 00FV
     url: https://stacks.math.columbia.edu/tag/00FV
+  wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
 references:
   databases:
   - id: stacks_project

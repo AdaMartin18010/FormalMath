@@ -1,9 +1,27 @@
 ---
-msc_primary: 00
+msc_primary: '00
 
-  - 00A99
+  - 00A99'
 title: LaTeX数学排版速查
 processed_at: '2026-04-05'
+references:
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
 ---
 msc_primary: "00A99"
 ---
@@ -16,7 +34,7 @@ msc_primary: "00A99"
 
 ```latex
 % 行内公式使用 $...$
-The quadratic formula $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$ 
+The quadratic formula $x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$
 gives the roots.
 
 % 使用 \(...\) 也可以（推荐）
@@ -504,3 +522,10 @@ a\!b  % 减小间距
 
 *最后更新：2026年4月*
 *大部分命令需要amsmath宏包*
+
+---
+
+## 参考文献
+
+- Timothy Gowers (ed.), *The Princeton Companion to Mathematics*, 1st ed., Princeton University Press, 2008, ISBN: 9780691118802 / MR2467561
+- Daniel J. Velleman, *How to Prove It: A Structured Approach*, 2nd ed., Cambridge University Press, 2006, ISBN: 9780521675994 / MR2448845

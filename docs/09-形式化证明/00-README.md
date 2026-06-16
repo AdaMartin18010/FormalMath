@@ -112,7 +112,7 @@ lean 00-Mathlib4示例集/01-群论示例.lean
 
 - [Mathlib4文档](https://leanprover-community.github.io/mathlib4_docs/)[需更新][需更新]
 - [Mathlib4 GitHub](https://github.com/leanprover-community/mathlib4)
-- [Lean4官方文档](https://lean-lang.org/doc/)
+- [Lean4官方文档](https://lean-lang.org/documentation/)
 
 ### 学习资源
 

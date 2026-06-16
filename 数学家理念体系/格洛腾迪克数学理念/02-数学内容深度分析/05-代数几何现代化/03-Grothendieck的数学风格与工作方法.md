@@ -35,7 +35,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
-  wikidata_id: Q77141
 ---
 ## 1. 引言：独特的数学存在
 
@@ -234,3 +233,11 @@ Grothendieck留给后世的不仅是EGA和SGA这些数学巨著，更是一种**
 3. Grothendieck, A. & Serre, J-P. *Grothendieck–Serre Correspondence*. Bilingual ed., AMS, 2004.
 4. Dieudonné, J. "De la géométrie algébrique aux géométries algébriques." *Arch. Hist. Exact Sci.* 40 (1989), 175–184.
 5. Jackson, A. "Comme Appelé du Néant — As If Summoned from the Void." *Notices AMS* 51 (2004), 1038–1056.
+
+---
+
+## 参考文献
+
+- A. Grothendieck, *Récoltes et Semailles*, 1983–1986
+- P. Cartier et al. (eds.), *The Grothendieck Festschrift*, Progress in Mathematics ed., 1990
+- P. Cartier, *A mad day's work: from Grothendieck to Connes and Kontsevich*, 2001

@@ -53,7 +53,7 @@ Smith et al. (1995) proved...
 
 ```
 
-[1] J. P. Serre, A Course in Arithmetic, Graduate Texts in 
+[1] J. P. Serre, A Course in Arithmetic, Graduate Texts in
     Mathematics, vol. 7, Springer-Verlag, New York, 1973.
 
 [2] M. Artin, Algebra, 2nd ed., Pearson, Boston, 2010.
@@ -64,10 +64,10 @@ Smith et al. (1995) proved...
 
 ```
 
-[3] A. Wiles, Modular elliptic curves and Fermat's Last Theorem, 
+[3] A. Wiles, Modular elliptic curves and Fermat's Last Theorem,
     Ann. of Math. (2) 141 (1995), no. 3, 443-551.
 
-[4] J. H. Silverman, The arithmetic of elliptic curves, 
+[4] J. H. Silverman, The arithmetic of elliptic curves,
     Invent. Math. 23 (1974), 179-206.
 
 ```

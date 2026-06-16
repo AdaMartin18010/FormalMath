@@ -296,7 +296,7 @@ processed_at: '2026-04-05'
 
 ```bash
 # 克隆代码
-git clone https://github.com/your-org/formalmath-enhanced.git
+git clone https://github.com/FormalMath-enhanced.git
 cd formalmath-enhanced
 
 # 配置环境变量

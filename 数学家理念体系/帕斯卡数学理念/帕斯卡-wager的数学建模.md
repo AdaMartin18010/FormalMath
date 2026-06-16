@@ -11,7 +11,6 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
   zbmath_url: https://zbmath.org/?q=au:Module
-  wikidata_id: Q18848
 references:
   databases:
   - id: zbmath
@@ -25,6 +24,21 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: Game Theory
+    author: Drew Fudenberg and Jean Tirole
+    edition: 1st
+    publisher: MIT Press
+    year: 1991
+    isbn: '9780262014414'
+    mr_number: MR1124703
+  - title: A Course in Game Theory
+    author: Martin J. Osborne and Ariel Rubinstein
+    edition: 1st
+    publisher: MIT Press
+    year: 1994
+    isbn: '9780262650403'
+    mr_number: MR1301776
 ---
 # 帕斯卡-wager的数学建模
 

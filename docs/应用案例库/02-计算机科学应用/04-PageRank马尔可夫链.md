@@ -8,7 +8,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
-  wikidata_id: Q18848
 references:
   databases:
   - id: wikidata
@@ -16,6 +15,29 @@ references:
     name: Wikidata
     entry_url: https://www.wikidata.org/entity/Q18848
     consulted_at: '2026-06-16'
+  textbooks:
+  - title: The Princeton Companion to Mathematics
+    author: Timothy Gowers (ed.)
+    edition: 1st
+    publisher: Princeton University Press
+    year: 2008
+    isbn: '9780691118802'
+    mr_number: MR2467561
+    doi: 10.1515/9781400830398
+  - title: 'How to Prove It: A Structured Approach'
+    author: Daniel J. Velleman
+    edition: 2nd
+    publisher: Cambridge University Press
+    year: 2006
+    isbn: '9780521675994'
+    mr_number: MR2448845
+    doi: 10.1017/CBO9780511811029
+  papers:
+  - title: Rasprostranenie zakona bol'shih chisel na velichiny, zavisyaschie drug
+      ot druga
+    author: Andrey A. Markov
+    journal: Izvestiya Fiziko-matematicheskogo obschestva pri Kazanskom universitete
+    year: 1906
 ---
 # PageRank算法的马尔可夫链模型
 
@@ -217,3 +239,9 @@ Google早期数据（约2000年）：
 
 **创建日期**: 2026年4月2日  
 **最后更新**: 2026年4月2日
+
+---
+
+## 经典论文与原始文献
+
+- Andrey A. Markov, *Rasprostranenie zakona bol'shih chisel na velichiny, zavisyaschie drug ot druga*, Izvestiya Fiziko-matematicheskogo obschestva pri Kazanskom universitete, 1906

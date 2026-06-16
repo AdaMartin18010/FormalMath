@@ -1,9 +1,16 @@
 ---
-msc_primary: 00
+msc_primary: 0
 msc_secondary:
-  - 00A99
+- 00A99
 processed_at: '2026-04-03'
 title: Bishop-Gromov不等式 (Bishop-Gromov Inequality)
+references:
+  papers:
+  - title: Pseudo holomorphic curves in symplectic manifolds
+    author: Mikhail Gromov
+    journal: Inventiones Mathematicae
+    year: 1985
+    doi: 10.1007/BF01388788
 ---
 # Bishop-Gromov不等式 (Bishop-Gromov Inequality)
 
@@ -195,3 +202,9 @@ $$\lambda_1(M) \leq \lambda_1(S_k^n)$$
 ---
 
 *最后更新：2026-04-03 | 版本：v1.0.0*
+
+---
+
+## 经典论文与原始文献
+
+- Mikhail Gromov, *Pseudo holomorphic curves in symplectic manifolds*, Inventiones Mathematicae, 1985 (DOI: 10.1007/BF01388788)

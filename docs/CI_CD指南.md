@@ -401,8 +401,8 @@ CI失败
 ### 获取帮助
 
 - 📚 [GitHub Actions文档](https://docs.github.com/cn/actions)
-- 🐛 [提交Issue](https://github.com/FormalMath/issues/new)
-- 💬 [Discussions讨论区](https://github.com/FormalMath/discussions)
+- 🐛 [提交Issue](https://github.com/FormalMath)
+- 💬 [Discussions讨论区](https://github.com/FormalMath)
 
 ---
 

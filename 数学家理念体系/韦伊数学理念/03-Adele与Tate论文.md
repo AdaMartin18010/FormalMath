@@ -1,25 +1,52 @@
 ---
-title: "Adele与Tate论文：Weil的调和分析革命"
+title: Adele与Tate论文：Weil的调和分析革命
 level: gold
 course: Weil数学理念
 msc_primary: 11
 msc_secondary:
-  - 11R56
+- 11R56
 references:
   textbooks:
-    - title: "Basic Number Theory"
-      author: "A. Weil"
-      edition: "3rd ed., Springer"
-      year: 1974
-    - title: "Fourier Analysis on Number Fields"
-      author: "D. Ramakrishnan & R. Valenza"
-      year: 1999
+  - title: Basic Number Theory
+    author: A. Weil
+    edition: 3rd ed., Springer
+    year: 1974
+  - title: Fourier Analysis on Number Fields
+    author: D. Ramakrishnan & R. Valenza
+    year: 1999
+  - title: An Introduction to the Theory of Numbers
+    author: G. H. Hardy and E. M. Wright
+    edition: 6th
+    publisher: Oxford University Press
+    year: 2008
+    isbn: '9780199219865'
+    mr_number: MR2445243
+  - title: A Course in Arithmetic
+    author: Jean-Pierre Serre
+    edition: 1st
+    publisher: Springer
+    year: 1973
+    isbn: '9780387900407'
+    mr_number: MR0344216
+  - title: Introduction to Analytic Number Theory
+    author: Tom M. Apostol
+    edition: 1st
+    publisher: Springer
+    year: 1976
+    isbn: '9780387901633'
+    mr_number: MR0434929
+    doi: 10.1007/978-1-4757-5579-4
   papers:
-    - title: "Fourier transforms in number fields and Hecke's zeta-functions"
-      author: "J. Tate"
-      year: 1950
+  - title: Fourier transforms in number fields and Hecke's zeta-functions
+    author: J. Tate
+    year: 1950
 status: completed
 created_at: 2026-04-18
+external_ids:
+  wikipedia_url: https://en.wikipedia.org/wiki/Harmonic_analysis
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%83%E5%92%8C%E5%88%86%E6%9E%90
+  nlab_url: https://ncatlab.org/nlab/show/harmonic+analysis
+  mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Weil/
 ---
 # Adele与Tate论文：Weil的调和分析革命
 
@@ -175,3 +202,14 @@ Weil在《Basic Number Theory》中对这一方法的系统阐述，使其成为
 3. Ramakrishnan, D. & Valenza, R. *Fourier Analysis on Number Fields*. Springer, 1999.
 4. Bump, D. *Automorphic Forms and Representations*. Cambridge, 1997.
 5. Kudla, S. S. "Tate's thesis." *Introduction to the Langlands Program*, Birkhäuser, 2004.
+
+---
+
+## 参考文献
+
+- A. Weil, *Basic Number Theory*, 3rd ed., Springer ed., 1974
+- D. Ramakrishnan & R. Valenza, *Fourier Analysis on Number Fields*, 1999
+- G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press, 2008, ISBN: 9780199219865 / MR2445243
+- Jean-Pierre Serre, *A Course in Arithmetic*, 1st ed., Springer, 1973, ISBN: 9780387900407 / MR0344216
+- Tom M. Apostol, *Introduction to Analytic Number Theory*, 1st ed., Springer, 1976, ISBN: 9780387901633 / MR0434929
+- J. Tate, *Fourier transforms in number fields and Hecke's zeta-functions*, 1950

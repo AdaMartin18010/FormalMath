@@ -18,6 +18,8 @@ references:
     msc: 54-01
     chapters: null
     url: null
+    mr_number: MR0464128
+    author: James R. Munkres
   - id: lee_ism
     type: textbook
     title: Introduction to Smooth Manifolds
@@ -30,6 +32,24 @@ references:
     msc: 58-01
     chapters: null
     url: null
+    mr_number: MR2954043
+    author: John M. Lee
+    doi: 10.1007/978-1-4419-9982-5
+  - title: Algebraic Topology
+    author: Allen Hatcher
+    edition: 1st
+    publisher: Cambridge University Press
+    year: 2002
+    isbn: '9780521795401'
+    mr_number: MR1867354
+    doi: 10.1017/CBO9780511627224
+  - title: A Concise Course in Algebraic Topology
+    author: J. P. May
+    edition: 1st
+    publisher: University of Chicago Press
+    year: 1999
+    isbn: '9780226511832'
+    mr_number: MR1702278
   databases:
   - id: nlab
     type: database
@@ -45,7 +65,6 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/fiber+bundle
   wikipedia_url: https://en.wikipedia.org/wiki/Fiber_bundle
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A4%E7%BB%B4%E4%B8%9B
-  wikidata_id: Q1154996
 ---
 # 纤维丛理论 / Fiber Bundle Theory
 
@@ -350,3 +369,12 @@ $$\{\text{主 } G\text{-丛 over } B\} / \cong \xrightarrow{\cong} [B, BG]$$
 **文档状态**: 纤维丛理论文档创建完成
 **内容范围**: 基础概念、核心定理、实战问题
 **难度级别**: 研究生中级
+
+---
+
+## 参考文献
+
+- James R. Munkres, *Topology*, 2nd ed., Pearson, 2000, ISBN: 978-0131816299 / MR0464128
+- John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer, 2012, ISBN: 978-1441999818 / MR2954043
+- Allen Hatcher, *Algebraic Topology*, 1st ed., Cambridge University Press, 2002, ISBN: 9780521795401 / MR1867354
+- J. P. May, *A Concise Course in Algebraic Topology*, 1st ed., University of Chicago Press, 1999, ISBN: 9780226511832 / MR1702278
