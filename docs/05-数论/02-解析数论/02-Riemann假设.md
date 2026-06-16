@@ -41,8 +41,8 @@ references:
 ---
 # Riemann假设 / Riemann Hypothesis
 
-> **教学深度**：研究生高阶 / 研究前沿  
-> **参考标准**：MIT 18.785, Harvard Math 229, Princeton MAT 451  
+> **教学深度**：研究生高阶 / 研究前沿
+> **参考标准**：MIT 18.785, Harvard Math 229, Princeton MAT 451
 > **MSC2020**: 11M26 (ζ函数与L函数的零点), 11M06 (ζ(s)和L(s,χ)), 11N05 (素数分布)
 
 ---
@@ -56,6 +56,7 @@ references:
 **核心洞察**：素数的精细分布与复平面上特定点的位置密切相关。
 
 **直观图像**：
+
 - 想象复平面，有一条垂直的"临界线" $x = 1/2$
 - RH 声称 ζ 函数的"非平凡零点"（即不在负偶数的零点）都落在这条线上
 - 这些零点的位置决定了素数分布的精确误差项
@@ -72,6 +73,7 @@ $$\zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right) \Gamma(1-s) \zeta(1-
 $$\Lambda(s) = \pi^{-s/2} \Gamma\left(\frac{s}{2}\right) \zeta(s) = \Lambda(1-s)$$
 
 **定义 1.3**（零点）：
+
 - **平凡零点**：$s = -2, -4, -6, \ldots$（来自函数方程中的正弦项）
 - **非平凡零点**：位于临界带 $0 < \text{Re}(s) < 1$ 内的零点
 
@@ -81,6 +83,7 @@ $$\text{若 } \zeta(s) = 0 \text{ 且 } 0 < \text{Re}(s) < 1, \text{ 则 } \text
 ### 等价表述
 
 **命题 1.4**（RH的等价形式）：以下条件等价：
+
 1. RH 成立
 2. $\pi(x) = \text{li}(x) + O(\sqrt{x} \ln x)$
 3. $\psi(x) = x + O(\sqrt{x} \ln^2 x)$
@@ -93,6 +96,7 @@ $$\text{若 } \zeta(s) = 0 \text{ 且 } 0 < \text{Re}(s) < 1, \text{ 则 } \text
 ### 动机与背景
 
 **历史脉络**：
+
 - **Euler (1737)**：发现 Euler 乘积，建立素数与 ζ 函数的联系
 - **Riemann (1859)**：《论小于给定值的素数个数》——数论史上最重要的论文之一
 - **Hadamard & de la Vallée Poussin (1896)**：证明 $\text{Re}(s) \neq 1$（推出 PNT）
@@ -140,6 +144,7 @@ graph TD
 ### 基础示例
 
 **例 3.1**（前几个非平凡零点）：
+
 - $\rho_1 = \frac{1}{2} + i \cdot 14.1347...$
 - $\rho_2 = \frac{1}{2} + i \cdot 21.0220...$
 - $\rho_3 = \frac{1}{2} + i \cdot 25.0109...$
@@ -160,7 +165,7 @@ graph TD
 import Mathlib
 
 -- ζ函数定义
-example (s : ℂ) (hs : 1 < s.re) : 
+example (s : ℂ) (hs : 1 < s.re) :
     riemannZeta s = ∑' n : ℕ+, 1 / (n : ℂ) ^ s := by
   rw [riemannZeta_eq_tsum_one_div_nat_cpow hs]
 
@@ -191,8 +196,8 @@ example (n : ℕ) (hn : 0 < n) : riemannZeta (-2 * n) = 0 := by
 
 ---
 
-*文档版本: 1.0*  
-*MSC2020: 11M26, 11M06, 11N05*  
+*文档版本: 1.0*
+*MSC2020: 11M26, 11M06, 11N05*
 *创建日期: 2026年4月*
 
 ---
