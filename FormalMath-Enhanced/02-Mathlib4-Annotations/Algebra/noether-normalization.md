@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 00OW
     url: https://stacks.math.columbia.edu/tag/00OW
+  wikidata_id: Q7099
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 00OW
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q7099
+    consulted_at: '2026-06-16'
 ---
 # 诺特正规化引理 (Noether Normalization Lemma)
 

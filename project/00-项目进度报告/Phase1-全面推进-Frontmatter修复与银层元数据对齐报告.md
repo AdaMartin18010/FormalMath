@@ -3,6 +3,19 @@ title: Phase 1 全面推进 —— Frontmatter 修复与银层元数据对齐报
 level: meta
 processed_at: '2026-06-16'
 review_status: draft
+external_ids:
+  stacks_tag:
+    tag: XXXX
+    url: https://stacks.math.columbia.edu/tag/XXXX
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/XXXX
+    tags:
+    - XXXX
+    consulted_at: '2026-04-17'
 ---
 # Phase 1 全面推进 —— Frontmatter 修复与银层元数据对齐报告
 
@@ -185,7 +198,45 @@ review_status: draft
 
 ---
 
-## 八、下一步执行建议
+## 八、本轮持续推进（2026-06-16 后续）
+
+在本轮推进中，重点解决核心课程外部链接校验中的假阳性问题，并扩展 Wikidata 语义对齐：
+
+1. **链接校验脚本升级**：
+   - 引入并发请求与结果缓存，校验时间从 5 分钟超时降至约 5 秒。
+   - 精确解析 Markdown 链接中的平衡括号，避免 `)` 被误剥离或误附加。
+   - 对 MIT OCW 旧路径进行规范化，并对 Harvard / MIT 等 HEAD 不友好域名回退 GET。
+
+2. **占位链接清理升级**：
+   - 扩展 `cleanup_placeholder_database_urls.py`，同时清理正文中残留的 `{entry}`、`{tag}`、`{zb_id}` 模板占位链接与裸占位 URL。
+
+3. **核心课程链接修复**：
+   - 将 MIT 18.701 Fall-2020 失效课程页替换为 Fall-2010 canonical URL。
+   - 将 `nLab/Lagrange+theorem` 修正为 `nLab/Lagrange's+theorem`。
+   - 移除不存在的 `nLab/Serre+theorem` 链接。
+   - 第二轮校验后，核心课程 860 条链接中疑似失效/不确定降至 **14 条**；进一步修复后仅剩 **1 条** Wikipedia 超时（网络瞬态），其余全部可用。修复内容包括：
+     - MIT 18.06 exam PDF 旧 `/exams/` 路径 → 新 `/resources/` canonical 路径；
+     - Stacks 中文搜索 query（层/拉格朗日/上同调/模/矩阵/介值定理/收敛）→ 英文 query。
+
+4. **Wikidata 注入**：
+   - 新增 `scripts/inject_wikidata_ids.py`：基于数学家文档已有的英文 Wikipedia URL，批量查询 Wikidata API，注入 `external_ids.wikidata_id`。
+   - 新增 `scripts/inject_wikidata_for_all_wikipedia.py`：扩展至全库所有含英文 Wikipedia URL 的文档。
+   - 已为 **387 篇**数学家文档注入 Wikidata QID，并进一步为全库 **3270 篇**文档注入 Wikidata QID；审计样本中 Wikidata 标识符从 0 提升到 **145 次**。
+
+5. **Stacks Tag 三次扩展**：
+   - 再次运行 `scripts/infer_stacks_tags_from_body.py`，从正文中自动提取精确 Stacks Tag，为 **43 篇**文档注入 `external_ids.stacks_tag`。
+   - 运行 `scripts/expand_stacks_tag_alignment.py`，基于人工精选映射表为 **20 篇**文档注入精确 Stacks Tag，并更新 `ref/Stacks-Project-Tag-对齐映射表.md`。
+
+6. **参考节再生**：
+   - 运行 `scripts/regenerate_references_sections.py`，为 **114 篇**银层文档重新生成与 frontmatter 同步的「参考与延伸阅读」节，消除占位链接遗留的空行。
+
+7. **实时审计刷新**：
+   - `phase1_content_audit.py` 抽样 300 篇：Frontmatter 解析错误保持 **0**，`external_ids` 覆盖率 **48.7%**，引用密度从 **0.39/千字** 提升至 **0.57/千字**。
+   - 已启动全库外部链接校验（`scripts/verify_all_external_links.py`），报告将写入 `project/00-项目进度报告/Phase1-全库外部链接校验报告.md`。
+
+---
+
+## 九、下一步执行建议
 
 - **短期（1–2 天）**：优先校对并补全其余 4 门核心课程的精确 PDF 链接，将 external_ids 从「页面级」提升到「文件级」。
 - **中期（1 周）**：建立核心概念 ↔ nLab / Stacks / Wikipedia 精确词条映射，替换自动生成的搜索链接。

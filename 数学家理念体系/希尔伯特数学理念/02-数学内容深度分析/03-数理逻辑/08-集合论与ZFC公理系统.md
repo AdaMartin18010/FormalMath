@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E9%9B%86%E5%90%88
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
   zbmath_url: https://zbmath.org/?q=au:Set
+  wikidata_id: Q36161
 references:
   databases:
   - id: zbmath
@@ -20,6 +21,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Set
     author: Set
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q36161
+    consulted_at: '2026-06-16'
 ---
 # 集合论与ZFC公理系统：希尔伯特形式主义的集合论基础
 

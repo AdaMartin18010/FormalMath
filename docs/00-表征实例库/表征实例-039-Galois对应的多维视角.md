@@ -9,6 +9,14 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
+  wikidata_id: Q83478
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 ---
 # Galois对应的多维视角
 

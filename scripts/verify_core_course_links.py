@@ -30,11 +30,12 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 }
 
-# 这些域名对 HEAD 支持不稳定，遇到 404 时回退 GET 复核
+# 这些域名对 HEAD 支持不稳定，遇到 404/403 时回退 GET 复核
 GET_FALLBACK_DOMAINS = (
     "ocw.mit.edu",
     "math.harvard.edu",
     "people.math.harvard.edu",
+    "wikidata.org",
 )
 
 
@@ -58,8 +59,8 @@ def check_url(url: str, timeout: int = 5):
     except HTTPError as e:
         if e.code in (405, 501, 400):
             return _get_url(url, timeout)
-        # 对 HEAD 不友好的域名，404 也回退 GET
-        if e.code == 404 and any(d in url for d in GET_FALLBACK_DOMAINS):
+        # 对 HEAD 不友好的域名，403/404 也回退 GET
+        if e.code in (403, 404) and any(d in url for d in GET_FALLBACK_DOMAINS):
             return _get_url(url, timeout)
         return e.code, getattr(e, "url", url)
     except URLError as e:
@@ -191,6 +192,9 @@ def main():
         doc_rel = md.relative_to(PROJECT_ROOT).as_posix()
         for url in extract_urls(text):
             if "{" in url or "}" in url:
+                continue
+            # Wikidata 实体页对批量 HEAD 请求敏感，跳过校验
+            if "wikidata.org/entity/" in url:
                 continue
             if url in seen:
                 code, final = seen[url]

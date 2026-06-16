@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/topos
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
+  wikidata_id: Q2143621
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 ---
 # 逻辑几何Topos理论
 

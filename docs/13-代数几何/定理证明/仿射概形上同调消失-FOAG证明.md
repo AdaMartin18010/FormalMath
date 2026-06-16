@@ -58,14 +58,23 @@ references:
     tags:
     - 01X8
     - 01XB
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
-  stacks_tag:
+  stacks_tag: &id001
     tag: 01X8
     url: https://stacks.math.columbia.edu/tag/01X8
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 01XB
+    url: https://stacks.math.columbia.edu/tag/01XB
+  wikidata_id: Q1155772
 ---
 # 仿射概形上同调消失定理
 

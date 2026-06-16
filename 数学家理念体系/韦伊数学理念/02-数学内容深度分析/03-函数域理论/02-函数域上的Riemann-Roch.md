@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Function
+  wikidata_id: Q11348
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -26,6 +27,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Function
     author: Function
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q11348
+    consulted_at: '2026-06-16'
 ---
 # 函数域上的Riemann-Roch定理
 

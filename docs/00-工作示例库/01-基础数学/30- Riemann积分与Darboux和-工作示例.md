@@ -16,6 +16,14 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Integral
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  wikidata_id: Q80091
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q80091
+    consulted_at: '2026-06-16'
 ---
 # Riemann 积分与 Darboux 和 - 工作示例
 

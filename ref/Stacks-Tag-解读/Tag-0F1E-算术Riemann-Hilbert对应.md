@@ -9,6 +9,7 @@ external_ids:
   stacks_tag:
     tag: 0F1E
     url: https://stacks.math.columbia.edu/tag/0F1E
+  wikidata_id: Q42299
 references:
   databases:
   - id: stacks_project
@@ -18,6 +19,11 @@ references:
     tags:
     - 0F1E
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0F1E - 算术Riemann-Hilbert对应
 

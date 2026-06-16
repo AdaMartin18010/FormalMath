@@ -43,10 +43,16 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/function
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q11348
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
+  wikidata_id: Q11348
 ---
 # AG-ETH-006: 形式化函数定理应用 (*Anwendung des Formalen Funktionensatzes*)
 

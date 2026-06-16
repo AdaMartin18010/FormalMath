@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Lagrange%27s+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5
+  wikidata_id: Q505798
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q505798
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -103,8 +111,13 @@ theorem leftCoset_card_eq_subgroup_card {G : Type u} [Group G] [Fintype G]
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q505798)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/Lagrange%27s+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Lagrange's_theorem_(group_theory))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%8B%89%E6%A0%BC%E6%9C%97%E6%97%A5)
+- [Wikidata Id](Q505798)

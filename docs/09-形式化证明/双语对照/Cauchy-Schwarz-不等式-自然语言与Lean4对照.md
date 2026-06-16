@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
+  wikidata_id: Q1139041
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1139041
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -96,8 +104,13 @@ theorem cauchy_schwarz_rn {n : ℕ} (x y : Fin n → ℝ) :
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q1139041)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/Cauchy+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Cauchy)
+- [Wikidata Id](Q1139041)

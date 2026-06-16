@@ -15,11 +15,30 @@ processed_at: '2026-04-05'
 
 ## 目录
 
-1. [概述](#1-概述)
-2. [Wikipedia应用数学条目分析](#2-wikipedia应用数学条目分析)
-3. [概念结构映射](#3-概念结构映射)
-4. [对齐建议](#4-对齐建议)
-5. [附录：概念结构映射JSON](#5-附录概念结构映射json)
+- [Wikipedia应用数学概念结构对齐报告](#wikipedia应用数学概念结构对齐报告)
+  - [目录](#目录)
+  - [1. 概述](#1-概述)
+    - [1.1 对齐范围](#11-对齐范围)
+    - [1.2 对齐目标](#12-对齐目标)
+  - [2. Wikipedia应用数学条目分析](#2-wikipedia应用数学条目分析)
+    - [2.1 Mathematical Physics (数学物理)](#21-mathematical-physics-数学物理)
+    - [2.2 Mathematical Biology (数学生物学)](#22-mathematical-biology-数学生物学)
+    - [2.3 Mathematical Finance (数学金融)](#23-mathematical-finance-数学金融)
+    - [2.4 Numerical Analysis (数值分析)](#24-numerical-analysis-数值分析)
+    - [2.5 Operations Research (运筹学)](#25-operations-research-运筹学)
+    - [2.6 Control Theory (控制论)](#26-control-theory-控制论)
+    - [2.7 Information Theory (信息论)](#27-information-theory-信息论)
+    - [2.8 Cryptography (密码学)](#28-cryptography-密码学)
+    - [2.9 Computer Science (Theory) (计算机科学理论)](#29-computer-science-theory-计算机科学理论)
+  - [3. 概念结构映射](#3-概念结构映射)
+    - [3.1 整体结构对比](#31-整体结构对比)
+    - [3.2 交叉关系映射](#32-交叉关系映射)
+    - [3.3 对齐度评估](#33-对齐度评估)
+  - [4. 对齐建议](#4-对齐建议)
+    - [4.1 高优先级建议](#41-高优先级建议)
+    - [4.2 中优先级建议](#42-中优先级建议)
+    - [4.3 术语标准化建议](#43-术语标准化建议)
+  - [5. 附录：概念结构映射JSON](#5-附录概念结构映射json)
 
 ---
 

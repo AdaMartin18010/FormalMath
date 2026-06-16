@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 04E3
     url: https://stacks.math.columbia.edu/tag/04E3
+  wikidata_id: Q161172
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 04E3
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q161172
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 04E3 - 上同调环结构
 

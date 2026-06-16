@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
+  wikidata_id: Q3503315
 references:
   databases:
   - id: zbmath
@@ -19,6 +20,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Spectral%20sequence
     author: Spectral sequence
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 ---
 # 谱序列与Leray谱序列：上同调的计算工具
 

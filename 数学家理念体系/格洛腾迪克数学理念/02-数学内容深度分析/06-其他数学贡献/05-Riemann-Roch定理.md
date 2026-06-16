@@ -8,6 +8,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
   zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -22,6 +23,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Bernhard%20Riemann
     author: Bernhard Riemann
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: Riemann-Roch定理：格洛腾迪克的推广

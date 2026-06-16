@@ -4,10 +4,19 @@ msc_secondary:
 - 00A99
 title: Harvard 232br L4 定理对齐表
 external_ids:
-  stacks_tag:
+  stacks_tag: &id001
     tag: 0B5R
     url: https://stacks.math.columbia.edu/tag/0B5R
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 0B9C
+    url: https://stacks.math.columbia.edu/tag/0B9C
+  - tag: 0BX2
+    url: https://stacks.math.columbia.edu/tag/0BX2
+  - tag: 0F11
+    url: https://stacks.math.columbia.edu/tag/0F11
+  - tag: 0FEG
+    url: https://stacks.math.columbia.edu/tag/0FEG
 references:
   databases:
   - id: stacks_project

@@ -51,6 +51,11 @@ references:
     tags:
     - 00VH
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/topos
@@ -59,6 +64,7 @@ external_ids:
   stacks_tag:
     tag: 00VH
     url: https://stacks.math.columbia.edu/tag/00VH
+  wikidata_id: Q2143621
 ---
 # Topos 理论与 SGA 4
 

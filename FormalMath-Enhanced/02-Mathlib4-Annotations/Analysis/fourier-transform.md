@@ -115,7 +115,7 @@ $$\frac{\partial \hat{u}}{\partial t} = -4\pi^2 \xi^2 \hat{u}$$
 
 ### 在线资源
 
-- [Mathlib4 文档 - FourierTransform](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html)[需更新]
+- [Mathlib4 文档 - FourierTransform][https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Fourier/FourierTransform.html](需更新)
 
 ---
 

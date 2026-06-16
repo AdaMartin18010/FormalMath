@@ -9,6 +9,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
   zbmath_url: https://zbmath.org/?q=au:Function
+  wikidata_id: Q11348
 references:
   databases:
   - id: zbmath
@@ -17,6 +18,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Function
     author: Function
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q11348
+    consulted_at: '2026-06-16'
 ---
 # Fuchsian函数理论：庞加莱与克莱因的数学竞赛
 

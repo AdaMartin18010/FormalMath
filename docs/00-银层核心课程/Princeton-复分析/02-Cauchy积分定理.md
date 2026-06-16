@@ -35,6 +35,12 @@ references:
     course_code: MAT 335
     lecture: Lecture 4-6
     url: https://web.math.princeton.edu/
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1139041
+    consulted_at: '2026-06-16'
 keywords:
 - 围道积分
 - Cauchy积分定理
@@ -49,6 +55,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
+  wikidata_id: Q1139041
 ---
 # Cauchy积分定理（Cauchy's Integral Theorem）
 
@@ -426,8 +433,13 @@ example (c : ℂ) (R : ℝ) (f g : ℂ → ℂ) :
 - John B. Conway, *Functions of One Complex Variable I*, 2nd ed., Springer, 1995 (Chapters: Ch. 4; Pages: 77-96; ISBN: 9780387944609; MR: MR1344449)
 - Elias M. Stein, Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003 (ISBN: 9780691113852)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q1139041)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/Cauchy+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Cauchy)
+- [Wikidata Id](Q1139041)

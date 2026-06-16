@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A5Q
     url: https://stacks.math.columbia.edu/tag/0A5Q
+  wikidata_id: Q719395
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0A5Q
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q719395
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0A5Q - 高阶导出范畴
 

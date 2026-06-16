@@ -51,6 +51,7 @@ Noether正规化引理由德国数学家Emmy Noether于1926年证明，是交换
 **定理（Noether正规化引理）**：设 $k$ 是域，$A$ 是有限生成的交换 $k$-代数。则存在代数无关的元素 $y_1, \ldots, y_n \in A$（$n \geq 0$），使得 $A$ 在子代数 $k[y_1, \ldots, y_n]$ 上是整的。
 
 形式化地，存在 $n \in \mathbb{N}$ 和 $y_1, \ldots, y_n \in A$，满足：
+
 1. $y_1, \ldots, y_n$ 在 $k$ 上代数无关（即 $k[y_1, \ldots, y_n] \cong k[x_1, \ldots, x_n]$ 是 $n$ 元多项式环）；
 2. 包含映射 $k[y_1, \ldots, y_n] \hookrightarrow A$ 是整扩张。
 
@@ -102,6 +103,7 @@ Noether正规化引理在代数几何中有极为直观的几何解释。
 $$\pi: X \to \mathbb{A}^n$$
 
 使得 $\pi$ 是**有限态射**（finite morphism）。这意味着：
+
 - $\pi$ 是满射；
 - $\pi$ 的纤维是有限集；
 - 坐标环的对应同态 $k[y_1, \ldots, y_n] \hookrightarrow A$ 使 $A$ 成为有限生成模。

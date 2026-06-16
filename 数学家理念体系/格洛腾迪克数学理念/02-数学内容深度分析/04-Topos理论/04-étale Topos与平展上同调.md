@@ -13,6 +13,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Topos
+  wikidata_id: Q2143621
 references:
   databases:
   - id: zbmath
@@ -21,6 +22,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Topos
     author: Topos
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 ---
 # étale Topos与平展上同调：Grothendieck的几何逻辑
 

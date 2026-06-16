@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A9A
     url: https://stacks.math.columbia.edu/tag/0A9A
+  wikidata_id: Q268493
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0A9A
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q268493
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0A9A - 椭圆曲线的模空间
 

@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/isomorphism
   wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
+  wikidata_id: Q189112
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q189112
+    consulted_at: '2026-06-16'
 ---
 # 同构定理 (Isomorphism Theorems)
 
@@ -97,6 +105,7 @@ $HN$ 是子群：$(h_1 n_1)(h_2 n_2) = h_1 h_2 (h_2^{-1} n_1 h_2) n_2 \in HN$（
 $H \cap N \trianglelefteq H$：若 $x \in H \cap N$，$h \in H$，则 $hxh^{-1} \in H$（因为 $H$ 是子群）且 $hxh^{-1} \in N$（因为 $N$ 正规），故 $hxh^{-1} \in H \cap N$。
 
 构造同态 $f: H \to HN/N$，$f(h) = hN$。
+
 - $f$ 是满射：$hnN = hN = f(h)$。
 - $\ker(f) = \{h \in H : hN = N\} = \{h \in H : h \in N\} = H \cap N$。
 
@@ -113,6 +122,7 @@ $$(G/N)/(M/N) \cong G/M$$
 $M/N \trianglelefteq G/N$：对 $gN \in G/N$，$mN \in M/N$，$(gN)(mN)(gN)^{-1} = gmg^{-1}N \in M/N$（因为 $M$ 正规）。
 
 构造同态 $f: G/N \to G/M$，$f(gN) = gM$。
+
 - **良定义性**：若 $g_1 N = g_2 N$，则 $g_1^{-1}g_2 \in N \leq M$，$g_1 M = g_2 M$。
 - **同态性**：$f((g_1 N)(g_2 N)) = f(g_1 g_2 N) = g_1 g_2 M = (g_1 M)(g_2 M) = f(g_1 N)f(g_2 N)$。
 - **满射**：显然。
@@ -125,6 +135,7 @@ $M/N \trianglelefteq G/N$：对 $gN \in G/N$，$mN \in M/N$，$(gN)(mN)(gN)^{-1}
 ### 例子1：整数到循环群的投影
 
 设 $f: \mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$，$f(k) = k \bmod n$。则：
+
 - $\ker(f) = n\mathbb{Z}$
 - $\text{im}(f) = \mathbb{Z}/n\mathbb{Z}$
 
@@ -133,6 +144,7 @@ $M/N \trianglelefteq G/N$：对 $gN \in G/N$，$mN \in M/N$，$(gN)(mN)(gN)^{-1}
 ### 例子2： sign 同态
 
 设 $f: S_n \to \{\pm 1\}$ 是符号同态。则：
+
 - $\ker(f) = A_n$（交错群）
 - $\text{im}(f) = \{\pm 1\}$
 
@@ -175,6 +187,7 @@ $(G/N)/(M/N) = (\mathbb{Z}/12\mathbb{Z})/(\{\bar{0}, \bar{6}\}) \cong \mathbb{Z}
 ### 4. 环论与模论中的类比
 
 同构定理在环论和模论中有直接类比：
+
 - **环**：$R/I$ 的理想对应于 $R$ 中包含 $I$ 的理想；$(R/I)/(J/I) \cong R/J$。
 - **模**：对 $R$-模同态 $f: M \to N$，$M/\ker(f) \cong \text{im}(f)$。
 

@@ -58,6 +58,11 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/group
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -72,6 +77,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  wikidata_id: Q83478
 ---
 ## 1. 引言
 
@@ -202,9 +208,8 @@ $$|Z(G)| = |G| - \sum [G : C(g_i)] \equiv 0 \pmod p。$$
 
 ### 数据库与网络资源
 
-
-
-
+- [nLab](https://ncatlab.org/nlab/show/group)
+- [Wikidata](https://www.wikidata.org/entity/Q83478)
 
 ### 课程与外部链接
 
@@ -213,3 +218,4 @@ $$|Z(G)| = |G| - \sum [G : C(g_i)] \equiv 0 \pmod p。$$
 - [Nlab Url](https://ncatlab.org/nlab/show/group)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)
+- [Wikidata Id](Q83478)

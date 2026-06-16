@@ -37,6 +37,12 @@ references:
   assignments:
   - name: Problem Set 1
     url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/assignments/MIT18_100A_f20_pset1.pdf
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q17502105
+    consulted_at: '2026-06-16'
 keywords:
 - 确界原理
 - 上确界
@@ -58,6 +64,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/supremum
   wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
+  wikidata_id: Q17502105
 ---
 # 确界原理与 Archimedean 性质
 
@@ -485,6 +492,10 @@ rac{1}{n} < x$。$\square$
 - Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 1976 (Chapters: Ch. 1; Pages: 3–11; ISBN: 9780070542358; MR: MR0385023)
 - Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (Chapters: Ch. 1; Pages: 10-18; ISBN: 9781493927111)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q17502105)
+
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
@@ -495,3 +506,4 @@ rac{1}{n} < x$。$\square$
 - [Nlab Url](https://ncatlab.org/nlab/show/supremum)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Infimum_and_supremum)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C)
+- [Wikidata Id](Q17502105)

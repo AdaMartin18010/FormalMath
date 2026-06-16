@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 00EC
     url: https://stacks.math.columbia.edu/tag/00EC
+  wikidata_id: Q18848
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 00EC
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q18848
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 00EC - 模的局部化（Localization of modules）
 

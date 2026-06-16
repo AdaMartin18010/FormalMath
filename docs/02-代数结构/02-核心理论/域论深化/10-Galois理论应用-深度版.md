@@ -54,11 +54,17 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/Galois+theory
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q92552
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Galois+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Galois_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Galois%E7%90%86%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
+  wikidata_id: Q92552
 ---
 # Galois理论应用 - 深度版
 

@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/supremum
   wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
+  wikidata_id: Q17502105
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q17502105
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -98,8 +106,13 @@ end SupremumPrinciple
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q17502105)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/supremum)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Infimum_and_supremum)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C)
+- [Wikidata Id](Q17502105)

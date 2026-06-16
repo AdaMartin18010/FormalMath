@@ -4,6 +4,14 @@ msc_primary: '01'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  wikidata_id: Q77141
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q77141
+    consulted_at: '2026-06-16'
 ---
 # Alexander Grothendieck 传记
 

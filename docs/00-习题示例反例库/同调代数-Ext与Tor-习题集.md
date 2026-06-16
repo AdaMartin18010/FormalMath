@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/homological+algebra
   wikipedia_url: https://en.wikipedia.org/wiki/Homological_algebra
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E8%B0%83%E4%BB%A3%E6%95%B0
+  wikidata_id: Q579978
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q579978
+    consulted_at: '2026-06-16'
 ---
 # 同调代数·Ext 与 Tor 习题集
 

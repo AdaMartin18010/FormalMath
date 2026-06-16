@@ -53,10 +53,17 @@ references:
     - 0B91
     - 0BD4
 external_ids:
-  stacks_tag:
+  stacks_tag: &id001
     tag: 02N6
     url: https://stacks.math.columbia.edu/tag/02N6
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 0B8U
+    url: https://stacks.math.columbia.edu/tag/0B8U
+  - tag: 0B91
+    url: https://stacks.math.columbia.edu/tag/0B91
+  - tag: 0BD4
+    url: https://stacks.math.columbia.edu/tag/0BD4
 ---
 # 平坦基变换定理 (Flat Base Change)
 

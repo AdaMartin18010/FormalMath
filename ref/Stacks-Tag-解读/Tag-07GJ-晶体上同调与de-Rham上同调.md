@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 07GJ
     url: https://stacks.math.columbia.edu/tag/07GJ
+  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 07GJ
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 07GJ - 晶体上同调与de Rham上同调
 

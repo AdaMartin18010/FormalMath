@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/matrix
   wikipedia_url: https://en.wikipedia.org/wiki/Matrix_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
+  wikidata_id: Q44337
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q44337
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -99,8 +107,13 @@ end PositiveDefiniteMatrix
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q44337)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/matrix)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Matrix_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5)
+- [Wikidata Id](Q44337)

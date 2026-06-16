@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 00GH
     url: https://stacks.math.columbia.edu/tag/00GH
+  wikidata_id: Q161172
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     name: Stacks Project
     entry_url: https://stacks.math.columbia.edu/tag/00GH
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q161172
+    consulted_at: '2026-06-16'
 ---
 # 整闭包与Dedekind整环
 

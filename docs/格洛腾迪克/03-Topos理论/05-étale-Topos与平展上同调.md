@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 03PP
     url: https://stacks.math.columbia.edu/tag/03PP
+  wikidata_id: Q2143621
 references:
   databases:
   - id: stacks_project
@@ -21,6 +22,11 @@ references:
     tags:
     - 03PP
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 ---
 # Étale Topos 与平展上同调
 

@@ -19,6 +19,14 @@ created: 2026-04-09
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  wikidata_id: Q42299
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 # ANA-008: Riemann可积性判定
 

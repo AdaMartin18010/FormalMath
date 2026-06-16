@@ -11,6 +11,7 @@ external_ids:
     tag: 02UK
     url: https://stacks.math.columbia.edu/tag/02UK
   zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -32,6 +33,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Bernhard%20Riemann
     author: Bernhard Riemann
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "Grothendieck-Riemann-Roch 定理：从 K-理论到陈类的形式化"

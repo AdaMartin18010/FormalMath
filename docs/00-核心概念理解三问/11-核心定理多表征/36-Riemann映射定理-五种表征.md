@@ -9,6 +9,14 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%98%A0%E5%B0%84
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  wikidata_id: Q11348
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q11348
+    consulted_at: '2026-06-16'
 ---
 # Riemann映射定理 - 五种表征
 

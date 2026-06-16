@@ -50,6 +50,11 @@ references:
     consulted_at: 2026-04-17
     tags:
     - 01LC
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
@@ -57,6 +62,7 @@ external_ids:
   stacks_tag:
     tag: 01LC
     url: https://stacks.math.columbia.edu/tag/01LC
+  wikidata_id: Q1155772
 ---
 # AG-ETH-001: 概形的局部性质 (*Lokale Eigenschaften von Schemata*)
 

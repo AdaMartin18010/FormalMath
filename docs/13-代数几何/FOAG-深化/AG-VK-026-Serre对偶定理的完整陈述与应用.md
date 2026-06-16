@@ -51,6 +51,12 @@ references:
     journal: Annals of Mathematics
     year: 1955
     doi: 10.2307/1970375
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q212063
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -60,6 +66,7 @@ tags:
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  wikidata_id: Q212063
 ---
 # AG-VK-026: Serre 对偶定理的完整陈述与应用
 

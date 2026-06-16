@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Michael_Atiyah
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
   zbmath_url: https://zbmath.org/?q=au:Michael%20Atiyah
+  wikidata_id: Q208356
 references:
   papers:
   - title: The Index of Elliptic Operators on Compact Manifolds
@@ -25,6 +26,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Michael%20Atiyah
     author: Michael Atiyah
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q208356
+    consulted_at: '2026-06-16'
 ---
 # Atiyah-Singer指标定理：几何、拓扑与分析的统一
 

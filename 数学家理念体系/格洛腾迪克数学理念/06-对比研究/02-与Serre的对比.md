@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Algebraic%20geometry
+  wikidata_id: Q180969
 references:
   databases:
   - id: zbmath
@@ -20,6 +21,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Algebraic%20geometry
     author: Algebraic geometry
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q180969
+    consulted_at: '2026-06-16'
 ---
 # 与Serre的对比：代数几何的双重贡献
 

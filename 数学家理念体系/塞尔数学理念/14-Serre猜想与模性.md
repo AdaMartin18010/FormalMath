@@ -24,6 +24,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Number%20theory
     author: Number theory
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q12479
+    consulted_at: '2026-06-16'
 status: completed
 created_at: 2026-04-18
 external_ids:
@@ -32,6 +37,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Number%20theory
+  wikidata_id: Q12479
 ---
 # Serre模性猜想：从数论到表示论的桥梁
 

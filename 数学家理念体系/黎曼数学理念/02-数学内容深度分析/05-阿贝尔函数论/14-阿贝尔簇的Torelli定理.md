@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%9F%A9%E9%98%B5
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Abel/
   zbmath_url: https://zbmath.org/?q=au:Matrix
+  wikidata_id: Q44337
 references:
   databases:
   - id: zbmath
@@ -20,6 +21,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Matrix
     author: Matrix
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q44337
+    consulted_at: '2026-06-16'
 ---
 # 阿贝尔簇的Torelli定理：周期矩阵的分类
 

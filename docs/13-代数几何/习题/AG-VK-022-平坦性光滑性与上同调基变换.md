@@ -52,6 +52,11 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/cohomology
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -61,7 +66,8 @@ tags:
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
-  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=cohomology
+  wikidata_id: Q1198376
 ---
 # AG-VK-022: 平坦性、光滑性与上同调基变换
 

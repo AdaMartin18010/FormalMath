@@ -19,6 +19,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  wikidata_id: Q161172
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q161172
+    consulted_at: '2026-06-16'
 ---
 # CEX-ALG-003: 非唯一分解整环（经典例子）
 

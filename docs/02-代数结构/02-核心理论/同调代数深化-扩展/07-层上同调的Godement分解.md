@@ -58,14 +58,25 @@ references:
     - 01D9
     - 01DF
     - 01E1
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
-  stacks_tag:
+  stacks_tag: &id001
     tag: 01D9
     url: https://stacks.math.columbia.edu/tag/01D9
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 01DF
+    url: https://stacks.math.columbia.edu/tag/01DF
+  - tag: 01E1
+    url: https://stacks.math.columbia.edu/tag/01E1
+  wikidata_id: Q595298
 ---
 # 15.7 层上同调的Godement分解 / Godement Resolution in Sheaf Cohomology
 

@@ -8,6 +8,14 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/David_Hilbert
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Hilbert/
+  wikidata_id: Q41585
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q41585
+    consulted_at: '2026-06-16'
 ---
 # 克莱因、希尔伯特与格洛腾迪克数学理念的系统化分析
 

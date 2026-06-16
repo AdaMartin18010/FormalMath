@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Manifold
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   zbmath_url: https://zbmath.org/?q=au:Manifold
+  wikidata_id: Q203920
 references:
   databases:
   - id: zbmath
@@ -19,6 +20,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Manifold
     author: Manifold
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q203920
+    consulted_at: '2026-06-16'
 ---
 # 几何分析与PDE：流形的分析方法
 

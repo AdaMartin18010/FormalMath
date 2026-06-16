@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 00E0
     url: https://stacks.math.columbia.edu/tag/00E0
+  wikidata_id: Q161172
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 00E0
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q161172
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 00E0 解读：环的谱的性质
 

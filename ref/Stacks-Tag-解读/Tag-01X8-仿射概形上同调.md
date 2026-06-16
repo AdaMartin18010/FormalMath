@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01X8
     url: https://stacks.math.columbia.edu/tag/01X8
+  wikidata_id: Q1155772
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01X8
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 01X8 解读：仿射概形上同调
 

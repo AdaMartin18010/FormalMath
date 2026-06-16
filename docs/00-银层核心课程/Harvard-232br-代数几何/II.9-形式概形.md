@@ -33,6 +33,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
+  wikidata_id: Q1155772
 references:
   textbooks:
   - title: Algebraic Geometry
@@ -44,6 +45,12 @@ references:
     chapters: II.9
     pages: 190-198
     mr_number: MR0463157
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # Harvard 232br - Hartshorne Chapter II §9 习题解答
 

@@ -35,6 +35,12 @@ references:
     course_code: MAT 335
     lecture: Lecture 7-8
     url: https://web.math.princeton.edu/
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q170198
+    consulted_at: '2026-06-16'
 keywords:
 - Laurent级数
 - 孤立奇点
@@ -50,6 +56,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/series
   wikipedia_url: https://en.wikipedia.org/wiki/Series_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0
+  wikidata_id: Q170198
 ---
 # Laurent级数（Laurent Series）
 
@@ -422,8 +429,13 @@ example {f : ℂ → ℂ} {z₀ : ℂ} (hf : ∀ᶠ z in nhdsWithin z₀ {z₀}�
 - John B. Conway, *Functions of One Complex Variable I*, 2nd ed., Springer, 1995 (Chapters: Ch. 5; Pages: 97-115; ISBN: 9780387944609; MR: MR1344449)
 - Elias M. Stein, Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003 (ISBN: 9780691113852)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q170198)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/series)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Series_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BA%A7%E6%95%B0)
+- [Wikidata Id](Q170198)

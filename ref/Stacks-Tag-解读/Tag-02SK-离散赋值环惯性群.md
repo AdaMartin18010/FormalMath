@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 02SK
     url: https://stacks.math.columbia.edu/tag/02SK
+  wikidata_id: Q83478
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 02SK
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 02SK 解读：离散赋值环惯性群
 

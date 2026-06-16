@@ -357,10 +357,6 @@ example : True := by trivial
 - Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 (Chapters: ['Part VI: Ch 23–29']) [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
 - Ravi Vakil, *The Rising Sea: Foundations of Algebraic Geometry*, draft ed., Stanford University, 2024 (Chapters: Part VI)
 
-### 数据库与网络资源
-
-
-
 ### 课程与外部链接
 
 - [Ocw Url](https://math.stanford.edu/~vakil/216blog/)

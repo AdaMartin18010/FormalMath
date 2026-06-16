@@ -12,6 +12,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Galois/
   zbmath_url: https://zbmath.org/?q=au:Scheme
+  wikidata_id: Q1155772
 references:
   databases:
   - id: zbmath
@@ -20,6 +21,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Scheme
     author: Scheme
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # 概形的Galois理论：代数与几何的统一
 

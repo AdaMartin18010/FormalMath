@@ -9,6 +9,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/number+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
+  wikidata_id: Q12479
 references:
   papers:
   - title: A method for obtaining digital signatures and public-key cryptosystems
@@ -16,6 +17,12 @@ references:
     journal: Communications of the ACM
     year: 1978
     doi: 10.1145/359340.359342
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q12479
+    consulted_at: '2026-06-16'
 ---
 # RSA加密系统的数论基础
 

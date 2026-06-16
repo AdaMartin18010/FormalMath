@@ -7,6 +7,7 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -14,6 +15,12 @@ references:
     journal: Bulletin de la Société Mathématique de France
     year: 1958
     doi: 10.24033/bsmf.1500
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 # Riemann-Roch定理 - 五种表征
 

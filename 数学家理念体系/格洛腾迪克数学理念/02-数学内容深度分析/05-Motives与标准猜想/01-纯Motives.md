@@ -44,6 +44,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Category
     author: Category
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q719395
+    consulted_at: '2026-06-16'
 review_status: draft
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
@@ -54,6 +59,7 @@ external_ids:
     tag: 0FG6
     url: https://stacks.math.columbia.edu/tag/0FG6
   zbmath_url: https://zbmath.org/?q=au:Category
+  wikidata_id: Q719395
 ---
 # 纯 Motives：代数对应的范畴化与 Grothendieck 的终极愿景
 

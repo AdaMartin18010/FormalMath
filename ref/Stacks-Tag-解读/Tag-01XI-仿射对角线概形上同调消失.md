@@ -7,10 +7,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
-  stacks_tag:
+  stacks_tag: &id001
     tag: 01XB
     url: https://stacks.math.columbia.edu/tag/01XB
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 01XI
+    url: https://stacks.math.columbia.edu/tag/01XI
+  wikidata_id: Q1155772
 references:
   databases:
   - id: stacks_project
@@ -21,6 +25,11 @@ references:
     - 01XB
     - 01XI
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 01XI - 仿射对角线概形上同调消失
 

@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A7B
     url: https://stacks.math.columbia.edu/tag/0A7B
+  wikidata_id: Q212063
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -25,6 +26,11 @@ references:
     tags:
     - 0A7B
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q212063
+    consulted_at: '2026-06-16'
 ---
 # Serre对偶定理
 

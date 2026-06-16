@@ -30,10 +30,16 @@ references:
     type: database
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/connection
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q31924
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/connection
   wikipedia_url: https://en.wikipedia.org/wiki/Connection_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%81%94%E7%BB%9C
+  wikidata_id: Q31924
 ---
 # Levi-Civita联络
 

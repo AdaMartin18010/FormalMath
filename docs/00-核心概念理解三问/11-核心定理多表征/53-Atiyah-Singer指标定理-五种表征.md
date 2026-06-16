@@ -7,6 +7,7 @@ processed_at: '2026-04-05'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Michael_Atiyah
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Atiyah/
+  wikidata_id: Q208356
 references:
   papers:
   - title: The Index of Elliptic Operators on Compact Manifolds
@@ -14,6 +15,12 @@ references:
     journal: Annals of Mathematics
     year: 1963
     doi: 10.2307/1970715
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q208356
+    consulted_at: '2026-06-16'
 ---
 # Atiyah-Singer指标定理 - 五种表征
 

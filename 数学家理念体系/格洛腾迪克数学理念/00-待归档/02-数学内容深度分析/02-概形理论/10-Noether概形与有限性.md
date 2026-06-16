@@ -10,11 +10,17 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/scheme
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
-  stacks_tag:
+  stacks_tag: &id001
     tag: 01OV
     url: https://stacks.math.columbia.edu/tag/01OV
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 01T6
+    url: https://stacks.math.columbia.edu/tag/01T6
+  - tag: 02O2
+    url: https://stacks.math.columbia.edu/tag/02O2
   zbmath_url: https://zbmath.org/?q=au:Scheme
+  wikidata_id: Q1155772
 references:
   databases:
   - id: stacks_project
@@ -32,6 +38,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Scheme
     author: Scheme
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # Noether概形与有限性：代数几何的基础
 

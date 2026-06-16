@@ -8,11 +8,15 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/topos
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
-  stacks_tag:
+  stacks_tag: &id001
     tag: 03FN
     url: https://stacks.math.columbia.edu/tag/03FN
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 03PU
+    url: https://stacks.math.columbia.edu/tag/03PU
   zbmath_url: https://zbmath.org/?q=au:Topos
+  wikidata_id: Q2143621
 references:
   databases:
   - id: stacks_project
@@ -29,6 +33,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Topos
     author: Topos
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "Étale Topos 与几何：从 Site 到概形上同调"

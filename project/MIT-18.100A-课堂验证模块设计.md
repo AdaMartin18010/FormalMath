@@ -8,7 +8,8 @@ external_ids:
   ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
-  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=module
+  wikidata_id: Q18848
 references:
   textbooks:
   - title: Understanding Analysis
@@ -17,6 +18,12 @@ references:
     publisher: Springer
     year: 2015
     isbn: '9781493927111'
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q18848
+    consulted_at: '2026-06-16'
 ---
 # MIT 18.100A 课堂验证模块设计
 
@@ -81,10 +88,15 @@ references:
 
 - Stephen Abbott, *Understanding Analysis*, 2nd ed., Springer, 2015 (ISBN: 9781493927111)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q18848)
+
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/)
 - [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-100a-real-analysis-fall-2020/pages/assignments/)
 - [Nlab Url](https://ncatlab.org/nlab/show/module)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Module_(mathematics))
-- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%A8%A1)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=module)
+- [Wikidata Id](Q18848)

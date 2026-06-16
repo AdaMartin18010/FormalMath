@@ -13,6 +13,7 @@ external_ids:
     tag: 015J
     url: https://stacks.math.columbia.edu/tag/015J
   zbmath_url: https://zbmath.org/?q=au:Spectral%20sequence
+  wikidata_id: Q3503315
 references:
   databases:
   - id: stacks_project
@@ -28,6 +29,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Spectral%20sequence
     author: Spectral sequence
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "Grothendieck 谱序列：Tôhoku 论文与复合函子的上同调"

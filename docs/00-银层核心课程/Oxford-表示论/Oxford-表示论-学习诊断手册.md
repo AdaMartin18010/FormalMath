@@ -14,11 +14,18 @@ references:
     year: 1991
     isbn: '9780387974958'
     mr_number: MR1153249
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q13220368
+    consulted_at: '2026-06-16'
 title: Oxford 表示论 学习诊断手册
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/representation+theory
   wikipedia_url: https://en.wikipedia.org/wiki/Representation_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA
+  wikidata_id: Q13220368
 ---
 # Oxford 表示论学习诊断手册
 
@@ -61,8 +68,13 @@ external_ids:
 
 - William Fulton, Joe Harris, *Representation Theory: A First Course*, 1st ed., Springer, 1991 (ISBN: 9780387974958; MR: MR1153249)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q13220368)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/representation+theory)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Representation_theory)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E8%A1%A8%E7%A4%BA%E8%AE%BA)
+- [Wikidata Id](Q13220368)

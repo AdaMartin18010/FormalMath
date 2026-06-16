@@ -48,12 +48,18 @@ references:
     consulted_at: 2026-04-17
     tags:
     - 0B5R
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q212063
+    consulted_at: '2026-06-16'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Jean-Pierre_Serre
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   stacks_tag:
     tag: 0B5R
     url: https://stacks.math.columbia.edu/tag/0B5R
+  wikidata_id: Q212063
 ---
 # Serre消失定理 (Serre Vanishing Theorem)
 

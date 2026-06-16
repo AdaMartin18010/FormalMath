@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 03Q3
     url: https://stacks.math.columbia.edu/tag/03Q3
+  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -21,6 +22,11 @@ references:
     tags:
     - 03Q3
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 # Étale 上同调
 

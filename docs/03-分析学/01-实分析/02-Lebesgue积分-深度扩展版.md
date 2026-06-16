@@ -27,10 +27,16 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/integral
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q80091
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/integral
   wikipedia_url: https://en.wikipedia.org/wiki/Integral
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
+  wikidata_id: Q80091
 ---
 # Lebesgue积分 - 深度扩展版
 

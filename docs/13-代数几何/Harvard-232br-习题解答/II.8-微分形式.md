@@ -48,10 +48,16 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/differential+form
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1047080
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/differential+form
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_form
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F
+  wikidata_id: Q1047080
 ---
 # Harvard 232br - Hartshorne Chapter II §8 习题解答
 

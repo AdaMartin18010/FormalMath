@@ -53,10 +53,13 @@ references:
     - 00LY
     - 00O0
 external_ids:
-  stacks_tag:
+  stacks_tag: &id001
     tag: 00LY
     url: https://stacks.math.columbia.edu/tag/00LY
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 00O0
+    url: https://stacks.math.columbia.edu/tag/00O0
 ---
 # 15.3 Tor与Ext的计算实例 / Computational Examples of Tor and Ext
 

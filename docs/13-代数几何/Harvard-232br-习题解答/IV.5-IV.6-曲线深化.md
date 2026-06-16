@@ -860,10 +860,6 @@ theorem genus5_g13_empty (hg5 : g = 5) (hgen : IsGenericCurve X) :
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['IV.5', 'IV.6']; ISBN: 978-0387902449; MR: MR0463157)
 - Enrico Arbarello, Maurizio Cornalba, Phillip Griffiths, Joe Harris, *Geometry of Algebraic Curves, Vol. I*, 1st ed., Springer, 1985 (Chapters: ['I', 'III']; ISBN: 978-0387909974; MR: MR0770932)
 
-### 数据库与网络资源
-
-
-
 ### 课程与外部链接
 
 - [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)

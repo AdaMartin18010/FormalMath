@@ -53,6 +53,11 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/supremum
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q17502105
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -64,6 +69,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/supremum
   wikipedia_url: https://en.wikipedia.org/wiki/Infimum_and_supremum
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A1%AE%E7%95%8C
+  wikidata_id: Q17502105
 ---
 # 确界原理与 Archimedean 性质
 

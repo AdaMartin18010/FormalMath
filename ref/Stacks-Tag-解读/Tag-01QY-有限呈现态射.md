@@ -7,6 +7,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/morphism
   wikipedia_url: https://en.wikipedia.org/wiki/Morphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
+  wikidata_id: Q1948412
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1948412
+    consulted_at: '2026-06-16'
 ---
 # Stacks Tag 01QY - 有限呈现态射
 

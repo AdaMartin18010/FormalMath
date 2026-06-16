@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01FP
     url: https://stacks.math.columbia.edu/tag/01FP
+  wikidata_id: Q3503315
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01FP
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 ---
 # Stacks Tag 01FP - Leray谱序列
 

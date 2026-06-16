@@ -13,6 +13,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Sheaf
+  wikidata_id: Q595298
 references:
   databases:
   - id: zbmath
@@ -21,6 +22,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Sheaf
     author: Sheaf
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 ---
 # 层的范畴与Grothendieck拓扑：广义拓扑
 

@@ -949,10 +949,6 @@ theorem uniformization (Λ : Submodule ℤ ℂ) (h : IsLattice Λ) :
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['IV.1', 'IV.2', 'IV.3', 'IV.4']; ISBN: 978-0387902449; MR: MR0463157)
 - Ravi Vakil, *Foundations of Algebraic Geometry*, draft ed., self-published, 2024 [https://math.stanford.edu/~vakil/216blog/](https://math.stanford.edu/~vakil/216blog/)
 
-### 数据库与网络资源
-
-
-
 ### 课程与外部链接
 
 - [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)

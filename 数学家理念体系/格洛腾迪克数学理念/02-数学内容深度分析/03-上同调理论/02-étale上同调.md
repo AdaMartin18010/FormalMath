@@ -12,6 +12,7 @@ external_ids:
     tag: 03Q3
     url: https://stacks.math.columbia.edu/tag/03Q3
   zbmath_url: https://zbmath.org/?q=au:Cohomology
+  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -27,6 +28,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Cohomology
     author: Cohomology
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "étale 上同调：SGA 4 与 Weil 猜想的基础"

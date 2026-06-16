@@ -11,6 +11,7 @@ external_ids:
     tag: 02P8
     url: https://stacks.math.columbia.edu/tag/02P8
   zbmath_url: https://zbmath.org/?q=au:Bernhard%20Riemann
+  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -32,6 +33,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Bernhard%20Riemann
     author: Bernhard Riemann
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "Riemann-Roch 定理（Grothendieck 推广版）：从 Hirzebruch 到 Weil 猜想"

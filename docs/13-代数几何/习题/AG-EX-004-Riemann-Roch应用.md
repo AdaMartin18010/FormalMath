@@ -41,9 +41,16 @@ references:
     journal: Bulletin de la Société Mathématique de France
     year: 1958
     doi: 10.24033/bsmf.1500
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  wikidata_id: Q42299
 ---
 # AG-EX-004: Riemann-Roch应用
 

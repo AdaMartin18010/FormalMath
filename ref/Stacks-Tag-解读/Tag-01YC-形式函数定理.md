@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01YC
     url: https://stacks.math.columbia.edu/tag/01YC
+  wikidata_id: Q11348
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01YC
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q11348
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 01YC - 形式函数定理（Theorem on formal functions）
 

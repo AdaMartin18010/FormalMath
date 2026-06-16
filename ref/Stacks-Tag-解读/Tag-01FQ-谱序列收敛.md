@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01FQ
     url: https://stacks.math.columbia.edu/tag/01FQ
+  wikidata_id: Q3503315
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01FQ
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 ---
 # Stacks Tag 01FQ - 谱序列收敛
 

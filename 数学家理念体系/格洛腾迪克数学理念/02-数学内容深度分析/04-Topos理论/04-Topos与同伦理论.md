@@ -26,12 +26,18 @@ references:
     entry_url: https://zbmath.org/?q=au:Topos
     author: Topos
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 status: completed
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/topos
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   zbmath_url: https://zbmath.org/?q=au:Topos
+  wikidata_id: Q2143621
 ---
 ## 1. 引言：几何、逻辑与同伦的三重交汇
 

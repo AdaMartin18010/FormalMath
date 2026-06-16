@@ -27,12 +27,18 @@ references:
     entry_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
     author: Alexander Grothendieck
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q77141
+    consulted_at: '2026-06-16'
 status: completed
 created_at: 2026-04-18
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Alexander%20Grothendieck
+  wikidata_id: Q77141
 ---
 # Weil猜想的高维证明：从Grothendieck到Deligne
 

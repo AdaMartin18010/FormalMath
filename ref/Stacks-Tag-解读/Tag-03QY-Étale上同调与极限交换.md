@@ -7,10 +7,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/limit
   wikipedia_url: https://en.wikipedia.org/wiki/Limit_(category_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%9E%81%E9%99%90
-  stacks_tag:
+  stacks_tag: &id001
     tag: 03QY
     url: https://stacks.math.columbia.edu/tag/03QY
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 0A07
+    url: https://stacks.math.columbia.edu/tag/0A07
+  wikidata_id: Q1322614
 references:
   databases:
   - id: stacks_project
@@ -21,6 +25,11 @@ references:
     - 03QY
     - 0A07
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1322614
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 03QY - Étale上同调与极限交换
 

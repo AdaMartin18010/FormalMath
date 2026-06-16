@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
+  wikidata_id: Q1137206
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1137206
+    consulted_at: '2026-06-16'
 ---
 # Taylor 近似 - 工作示例
 

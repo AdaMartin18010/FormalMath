@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 08H4
     url: https://stacks.math.columbia.edu/tag/08H4
+  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 08H4
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 08H4 - 导出函子RHom
 

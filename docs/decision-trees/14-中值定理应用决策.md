@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/mean+value+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Mean_value_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%AD%E5%80%BC%E5%AE%9A%E7%90%86
+  wikidata_id: Q189136
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q189136
+    consulted_at: '2026-06-16'
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

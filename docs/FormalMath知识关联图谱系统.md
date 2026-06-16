@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/spectrum
   wikipedia_url: https://en.wikipedia.org/wiki/Spectrum_(topology)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1
+  wikidata_id: Q7575269
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q7575269
+    consulted_at: '2026-06-16'
 ---
 msc_primary: "00A99"
 msc_secondary: ['22E47', '16-00']
@@ -18,13 +26,13 @@ msc_secondary: ['22E47', '16-00']
 ## 目录 / Table of Contents
 
 - [FormalMath知识关联图谱系统](#formalmath知识关联图谱系统)
-  - 目录 / Table of Contents
+  - [目录 / Table of Contents](#目录--table-of-contents)
   - [概述](#概述)
-  - 1. 知识图谱架构
+  - [一、知识图谱架构](#一知识图谱架构)
     - [1.1 核心概念节点](#11-核心概念节点)
     - [1.2 关系类型定义](#12-关系类型定义)
     - [1.3 图谱结构设计](#13-图谱结构设计)
-  - 2. 数学分支关联图谱
+  - [二、数学分支关联图谱](#二数学分支关联图谱)
     - [2.1 基础数学关联](#21-基础数学关联)
     - [2.2 代数结构关联](#22-代数结构关联)
     - [2.3 分析学关联](#23-分析学关联)

@@ -5,6 +5,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/algebraic+geometry
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
+  wikidata_id: Q180969
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q180969
+    consulted_at: '2026-06-16'
 ---
 # PDE与代数几何高级反例
 

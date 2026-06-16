@@ -68,6 +68,12 @@ references:
     journal: Annals of Mathematics
     year: 1955
     doi: 10.2307/1970375
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q77141
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -80,6 +86,7 @@ external_ids:
   foag_pdf_url: https://math.stanford.edu/~vakil/216blog/
   wikipedia_url: https://en.wikipedia.org/wiki/Alexander_Grothendieck
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
+  wikidata_id: Q77141
 ---
 # Ch 26–27: 对偶理论——Grothendieck 对偶与 Serre 对偶
 
@@ -597,7 +604,7 @@ $$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omeg
 
 ### 数据库与网络资源
 
-
+- [Wikidata](https://www.wikidata.org/entity/Q77141)
 
 ### 课程与外部链接
 
@@ -606,3 +613,4 @@ $$\chi(\mathcal{E}) = \sum_{j=0}^n (-1)^{n-j} h^j(\mathcal{E}^\vee \otimes \omeg
 - [Foag Pdf Url](https://math.stanford.edu/~vakil/216blog/)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Alexander_Grothendieck)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/)
+- [Wikidata Id](Q77141)

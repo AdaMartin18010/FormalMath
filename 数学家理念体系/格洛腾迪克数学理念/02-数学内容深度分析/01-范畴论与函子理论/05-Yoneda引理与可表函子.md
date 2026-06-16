@@ -12,6 +12,7 @@ external_ids:
     tag: 001P
     url: https://stacks.math.columbia.edu/tag/001P
   zbmath_url: https://zbmath.org/?q=au:Functor
+  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project
@@ -27,6 +28,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Functor
     author: Functor
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "Yoneda 引理与可表函子：范畴论的基石"

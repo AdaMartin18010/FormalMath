@@ -24,6 +24,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Number%20theory
     author: Number theory
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q12479
+    consulted_at: '2026-06-16'
 status: completed
 created_at: 2026-04-18
 external_ids:
@@ -31,6 +36,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Number_theory
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%95%B0%E8%AE%BA
   zbmath_url: https://zbmath.org/?q=au:Number%20theory
+  wikidata_id: Q12479
 ---
 # Weil表示与辛几何：从量子力学到数论
 

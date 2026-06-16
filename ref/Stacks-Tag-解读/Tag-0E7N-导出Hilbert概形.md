@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0E7N
     url: https://stacks.math.columbia.edu/tag/0E7N
+  wikidata_id: Q1155772
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0E7N
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0E7N - 导出Hilbert概形
 

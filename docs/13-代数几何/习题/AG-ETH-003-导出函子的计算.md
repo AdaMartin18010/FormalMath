@@ -43,10 +43,16 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/functor
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
+  wikidata_id: Q864475
 ---
 # AG-ETH-003: 导出函子的计算 (*Berechnung derivierter Funktoren*)
 

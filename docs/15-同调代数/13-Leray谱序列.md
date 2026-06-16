@@ -35,6 +35,11 @@ references:
     name: Stacks Project
     entry_url: https://stacks.math.columbia.edu/tag/013M
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/spectral+sequence
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
@@ -42,6 +47,7 @@ external_ids:
   stacks_tag:
     tag: 013M
     url: https://stacks.math.columbia.edu/tag/013M
+  wikidata_id: Q3503315
 ---
 # Leray谱序列
 

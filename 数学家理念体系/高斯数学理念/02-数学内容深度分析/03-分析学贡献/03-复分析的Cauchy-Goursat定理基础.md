@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
   zbmath_url: https://zbmath.org/?q=au:Cauchy%27s%20theorem
+  wikidata_id: Q1139041
 references:
   databases:
   - id: zbmath
@@ -19,6 +20,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Cauchy%27s%20theorem
     author: Cauchy's theorem
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1139041
+    consulted_at: '2026-06-16'
 ---
 # 复分析的Cauchy-Goursat定理基础：复分析的奠基
 

@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/integral
   wikipedia_url: https://en.wikipedia.org/wiki/Integral
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86
+  wikidata_id: Q80091
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q80091
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -102,8 +110,13 @@ end FundamentalTheoremOfCalculus
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q80091)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/integral)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Integral)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%A7%AF%E5%88%86)
+- [Wikidata Id](Q80091)

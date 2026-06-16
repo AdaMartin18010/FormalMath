@@ -46,6 +46,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Cohomology
     author: Cohomology
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 review_status: published
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
@@ -53,6 +58,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Cohomology
+  wikidata_id: Q1198376
 ---
 # 上同调与 Serre 对偶：从射影簇到相对对偶
 

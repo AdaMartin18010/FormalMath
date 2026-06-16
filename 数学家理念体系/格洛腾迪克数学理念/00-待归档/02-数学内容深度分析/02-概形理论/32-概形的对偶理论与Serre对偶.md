@@ -11,11 +11,15 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Scheme_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A6%82%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
-  stacks_tag:
+  stacks_tag: &id001
     tag: 0A7E
     url: https://stacks.math.columbia.edu/tag/0A7E
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 0B54
+    url: https://stacks.math.columbia.edu/tag/0B54
   zbmath_url: https://zbmath.org/?q=au:Scheme
+  wikidata_id: Q1155772
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -38,6 +42,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Scheme
     author: Scheme
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # 概形的对偶理论与Serre对偶：几何对偶的高级形式
 

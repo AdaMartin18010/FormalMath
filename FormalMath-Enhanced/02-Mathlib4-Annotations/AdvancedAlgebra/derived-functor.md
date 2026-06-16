@@ -11,6 +11,7 @@ external_ids:
   stacks_tag:
     tag: 010N
     url: https://stacks.math.columbia.edu/tag/010N
+  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project
@@ -20,6 +21,11 @@ references:
     tags:
     - 010N
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 ---
 # 导出函子
 

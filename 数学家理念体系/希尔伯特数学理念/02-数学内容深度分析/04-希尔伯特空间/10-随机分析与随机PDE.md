@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Hilbert_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Hilbert%E7%A9%BA%E9%97%B4
   zbmath_url: https://zbmath.org/?q=au:Hilbert%20space
+  wikidata_id: Q190056
 references:
   databases:
   - id: zbmath
@@ -19,6 +20,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Hilbert%20space
     author: Hilbert space
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q190056
+    consulted_at: '2026-06-16'
 ---
 # 随机分析与随机PDE：Hilbert空间的概率扩展
 

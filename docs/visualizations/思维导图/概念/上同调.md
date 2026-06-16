@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  wikidata_id: Q1198376
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

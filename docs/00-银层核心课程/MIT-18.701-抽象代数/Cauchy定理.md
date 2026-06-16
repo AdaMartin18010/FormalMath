@@ -32,6 +32,12 @@ references:
   assignments:
   - name: Problem Set 3
     url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset3.pdf
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 keywords:
 - Cauchy's Theorem
 - element order
@@ -52,6 +58,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  wikidata_id: Q83478
 ---
 # Cauchy 定理（群论版 / Cauchy's Theorem for Groups）
 
@@ -445,6 +452,10 @@ $\langle gag^{-1} \rangle = g\langle a \rangle g^{-1}$，两者同构（共轭�
 - Michael Artin, *Algebra*, 2nd ed., Pearson, 2010 (Chapters: Chapter 6, Section 1; Pages: 195-197; ISBN: 9780132413770)
 - David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (Chapters: Chapter 3, Section 2; Pages: 93-95; ISBN: 9780471433347; MR: MR2286236)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q83478)
+
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
@@ -454,3 +465,4 @@ $\langle gag^{-1} \rangle = g\langle a \rangle g^{-1}$，两者同构（共轭�
 - [Nlab Url](https://ncatlab.org/nlab/show/group)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)
+- [Wikidata Id](Q83478)

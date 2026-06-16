@@ -16,6 +16,12 @@ references:
     publisher: Wellesley-Cambridge Press
     year: 2016
     isbn: '9780980232776'
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q125977
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -28,6 +34,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/vector+space
   wikipedia_url: https://en.wikipedia.org/wiki/Vector_space
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4
+  wikidata_id: Q125977
 ---
 # 复向量空间与 Hermitian 矩阵
 
@@ -415,6 +422,10 @@ $\square$
 
 - Gilbert Strang, *Introduction to Linear Algebra*, 4th ed., Wellesley-Cambridge Press, 2016 (Chapters: Ch.10; Pages: 485-510; ISBN: 9780980232776)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q125977)
+
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
@@ -422,3 +433,4 @@ $\square$
 - [Nlab Url](https://ncatlab.org/nlab/show/vector+space)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Vector_space)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%90%91%E9%87%8F%E7%A9%BA%E9%97%B4)
+- [Wikidata Id](Q125977)

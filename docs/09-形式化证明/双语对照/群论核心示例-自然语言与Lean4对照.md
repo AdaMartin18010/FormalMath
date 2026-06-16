@@ -13,6 +13,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  wikidata_id: Q83478
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 ---
 本文档为 MIT 18.701 抽象代数 I 的群论核心定理提供自然语言与 Lean4 的双语对照，覆盖拉格朗日定理、第一同构定理、Cauchy 定理、轨道-稳定子定理与 Sylow 第一定理。
 
@@ -343,8 +351,13 @@ end SylowFirstTheorem
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q83478)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/group)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Group_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E7%BE%A4)
+- [Wikidata Id](Q83478)

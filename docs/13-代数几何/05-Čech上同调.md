@@ -30,6 +30,11 @@ references:
     type: database
     name: Stacks Project
     entry_url: https://stacks.math.columbia.edu/tag/01ER
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
@@ -37,6 +42,7 @@ external_ids:
   stacks_tag:
     tag: 01ER
     url: https://stacks.math.columbia.edu/tag/01ER
+  wikidata_id: Q1198376
 ---
 # Čech上同调
 

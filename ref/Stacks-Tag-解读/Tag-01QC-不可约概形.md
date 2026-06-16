@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01QC
     url: https://stacks.math.columbia.edu/tag/01QC
+  wikidata_id: Q1155772
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01QC
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1155772
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 01QC - 不可约概形（Irreducible Schemes）
 

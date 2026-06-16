@@ -12,6 +12,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
   zbmath_url: https://zbmath.org/?q=au:Group
+  wikidata_id: Q83478
 references:
   databases:
   - id: zbmath
@@ -20,6 +21,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Group
     author: Group
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 ---
 # Abel与Abel群：交换代数的起源
 

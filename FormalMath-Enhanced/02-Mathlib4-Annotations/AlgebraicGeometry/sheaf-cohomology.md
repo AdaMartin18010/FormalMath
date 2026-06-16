@@ -11,6 +11,7 @@ external_ids:
   stacks_tag:
     tag: 01E2
     url: https://stacks.math.columbia.edu/tag/01E2
+  wikidata_id: Q595298
 references:
   databases:
   - id: stacks_project
@@ -20,6 +21,11 @@ references:
     tags:
     - 01E2
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 ---
 # 层上同调
 

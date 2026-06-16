@@ -7,6 +7,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/elliptic+curve
   wikipedia_url: https://en.wikipedia.org/wiki/Elliptic_curve
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A4%AD%E5%9C%86%E6%9B%B2%E7%BA%BF
+  wikidata_id: Q268493
 references:
   papers:
   - title: A method for obtaining digital signatures and public-key cryptosystems
@@ -14,6 +15,12 @@ references:
     journal: Communications of the ACM
     year: 1978
     doi: 10.1145/359340.359342
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q268493
+    consulted_at: '2026-06-16'
 ---
 # RSA与椭圆曲线密码学完整实现
 

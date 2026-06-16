@@ -13,6 +13,7 @@ external_ids:
   stacks_tag:
     tag: 00VH
     url: https://stacks.math.columbia.edu/tag/00VH
+  wikidata_id: Q595298
 references:
   databases:
   - id: stacks_project
@@ -22,6 +23,11 @@ references:
     tags:
     - 00VH
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 ---
 # 层的范畴与 Grothendieck 拓扑
 

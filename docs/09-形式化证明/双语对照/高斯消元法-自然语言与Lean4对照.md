@@ -11,6 +11,14 @@ reviewer: AI Mathematical Reviewer
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+  wikidata_id: Q6722
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q6722
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -98,7 +106,12 @@ end GaussianElimination
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q6722)
+
 ### 课程与外部链接
 
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/)
+- [Wikidata Id](Q6722)

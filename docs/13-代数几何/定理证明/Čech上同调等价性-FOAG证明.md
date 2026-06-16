@@ -57,14 +57,23 @@ references:
     tags:
     - 01ED
     - 01EO
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
-  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
-  stacks_tag:
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=cohomology
+  stacks_tag: &id001
     tag: 01ED
     url: https://stacks.math.columbia.edu/tag/01ED
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 01EO
+    url: https://stacks.math.columbia.edu/tag/01EO
+  wikidata_id: Q1198376
 ---
 # Čech上同调与导出上同调等价性
 

@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A5R
     url: https://stacks.math.columbia.edu/tag/0A5R
+  wikidata_id: Q719395
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0A5R
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q719395
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0A5R - 稳定∞-范畴的应用
 

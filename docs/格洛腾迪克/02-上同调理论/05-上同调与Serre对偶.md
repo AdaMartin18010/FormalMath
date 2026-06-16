@@ -13,6 +13,7 @@ external_ids:
   stacks_tag:
     tag: 0A6A
     url: https://stacks.math.columbia.edu/tag/0A6A
+  wikidata_id: Q1198376
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -28,6 +29,11 @@ references:
     tags:
     - 0A6A
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 # 上同调与 Serre 对偶
 

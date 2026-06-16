@@ -1016,10 +1016,6 @@ theorem enriques_criterion_kodaira :
 - Robin Hartshorne, *Algebraic Geometry*, 1st ed., Springer, 1977 (Chapters: ['V.1', 'V.2', 'V.3']; ISBN: 978-0387902449; MR: MR0463157)
 - Arnaud Beauville, *Complex Algebraic Surfaces*, 2nd ed., Cambridge University Press, 1996 (Chapters: ['II', 'III']; ISBN: 978-0521498425; MR: MR1406314)
 
-### 数据库与网络资源
-
-
-
 ### 课程与外部链接
 
 - [Ocw Url](https://www.math.harvard.edu/course/mathematics-232br/)

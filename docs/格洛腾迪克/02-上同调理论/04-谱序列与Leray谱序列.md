@@ -12,6 +12,7 @@ external_ids:
   stacks_tag:
     tag: 015J
     url: https://stacks.math.columbia.edu/tag/015J
+  wikidata_id: Q3503315
 references:
   databases:
   - id: stacks_project
@@ -21,6 +22,11 @@ references:
     tags:
     - 015J
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 ---
 # 谱序列与 Leray 谱序列
 

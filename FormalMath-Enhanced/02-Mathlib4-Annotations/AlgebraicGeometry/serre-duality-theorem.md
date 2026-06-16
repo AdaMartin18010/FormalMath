@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A6A
     url: https://stacks.math.columbia.edu/tag/0A6A
+  wikidata_id: Q212063
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0A6A
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q212063
+    consulted_at: '2026-06-16'
 ---
 # Serre 对偶定理 (Serre Duality Theorem)
 

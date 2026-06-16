@@ -32,6 +32,12 @@ references:
   assignments:
   - name: Problem Set 4
     url: https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/assignments/MIT18_701F10_pset4.pdf
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1057919
+    consulted_at: '2026-06-16'
 keywords:
 - Sylow's First Theorem
 - p-group
@@ -52,6 +58,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
+  wikidata_id: Q1057919
 ---
 # Sylow 第一定理（Sylow's First Theorem）
 
@@ -455,6 +462,10 @@ $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
 - Michael Artin, *Algebra*, 2nd ed., Pearson, 2010 (Chapters: Chapter 6, Section 4; Pages: 205-208; ISBN: 9780132413770)
 - David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (Chapters: Chapter 4, Section 5; Pages: 139-143; ISBN: 9780471433347; MR: MR2286236)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q1057919)
+
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)
@@ -464,3 +475,4 @@ $$\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_n = G
 - [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)
+- [Wikidata Id](Q1057919)

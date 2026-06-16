@@ -50,6 +50,12 @@ references:
     year: 2024
     isbn: ''
     chapters: Ch 23–25
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1948412
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -63,6 +69,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/morphism
   wikipedia_url: https://en.wikipedia.org/wiki/Morphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84
+  wikidata_id: Q1948412
 ---
 # Ch 23–25: Smooth / Étale / Flat 态射深入证明
 
@@ -597,7 +604,7 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 
 ### 数据库与网络资源
 
-
+- [Wikidata](https://www.wikidata.org/entity/Q1948412)
 
 ### 课程与外部链接
 
@@ -607,3 +614,4 @@ $$\chi(X_y, \mathcal{O}) = \sum_{i=0}^{\dim(X_y)} (-1)^i h^i(X_y, \mathcal{O})$$
 - [Nlab Url](https://ncatlab.org/nlab/show/morphism)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Morphism)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%80%81%E5%B0%84)
+- [Wikidata Id](Q1948412)

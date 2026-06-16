@@ -50,6 +50,11 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/sheaf
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 target_courses:
 - FormalMath银层核心课程
 - 代数几何
@@ -68,7 +73,8 @@ external_ids:
   harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
-  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=sheaf
+  wikidata_id: Q595298
 ---
 # Harvard 232br - Hartshorne Chapter II §1 习题解答
 

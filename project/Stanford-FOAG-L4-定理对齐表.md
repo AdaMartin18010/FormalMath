@@ -12,10 +12,19 @@ alignment_level: L4 (定理级)
 version: v1.0
 date_created: '2026-04-10'
 external_ids:
-  stacks_tag:
+  stacks_tag: &id001
     tag: 01ED
     url: https://stacks.math.columbia.edu/tag/01ED
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 01XB
+    url: https://stacks.math.columbia.edu/tag/01XB
+  - tag: 0B5R
+    url: https://stacks.math.columbia.edu/tag/0B5R
+  - tag: 0B5S
+    url: https://stacks.math.columbia.edu/tag/0B5S
+  - tag: 0B5T
+    url: https://stacks.math.columbia.edu/tag/0B5T
 references:
   databases:
   - id: stacks_project

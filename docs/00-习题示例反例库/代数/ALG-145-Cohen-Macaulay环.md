@@ -10,6 +10,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/ring
   wikipedia_url: https://en.wikipedia.org/wiki/Ring_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%8E%AF
+  wikidata_id: Q161172
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q161172
+    consulted_at: '2026-06-16'
 ---
 # Cohen-Macaulay环
 
@@ -41,6 +49,7 @@ $$\text{depth}(M) \leq \dim(M) = \dim(R/\text{Ann}(M))$$
 **详细展开**：
 
 **定义回顾**：
+
 - **正则序列**：$x_1, ..., x_n \in \mathfrak{m}$ 是 $M$-正则序列，如果：
   1. $x_1$ 在 $M$ 上不是零因子（即 $x_1 m = 0 \Rightarrow m = 0$）
   2. $x_2$ 在 $M/x_1 M$ 上不是零因子
@@ -58,6 +67,7 @@ $$\text{depth}(M) \leq \dim(M) = \dim(R/\text{Ann}(M))$$
 **引理**：若 $x$ 是 $M$-正则元，则 $\dim(M/xM) = \dim(M) - 1$。
 
 **引理证明**：
+
 - 由 Krull 主理想定理，$\dim(M/xM) \geq \dim(M) - 1$
 - 另一方面，若 $x$ 正则，则 $x$ 不属于任何属于 $\text{Ann}(M)$ 的极小素理想（否则 $x$ 在该素理想的局部化中为零因子）
 - 因此 $x$ "切断"了一条最长的素理想链，$\dim(M/xM) \leq \dim(M) - 1$
@@ -97,6 +107,7 @@ $$\dim_{R/\mathfrak{m}}(\mathfrak{m}/\mathfrak{m}^2) = \dim(R)$$
 **断言**：$x_1, ..., x_d$ 是 $R$-正则序列。
 
 **证明断言**：
+
 1. $x_1$ 在 $R$ 上不是零因子：若 $x_1 a = 0$，则 $a$ 的支集在 $\text{Ass}(R)$ 中。但正则局部环是整环（正则 $\Rightarrow$ 正规 $\Rightarrow$ 整闭 $\Rightarrow$ 整环），故 $a = 0$。
 2. 归纳地，$R/(x_1, ..., x_{k-1})$ 仍是正则局部环（维数 $d - k + 1$），因此 $x_k$ 在其上不是零因子。
 
@@ -104,7 +115,7 @@ $$\dim_{R/\mathfrak{m}}(\mathfrak{m}/\mathfrak{m}^2) = \dim(R)$$
 
 结合(a)的不等式，$\text{depth}(R) = \dim(R)$，即 $R$ 是CM。$\square$
 
-**正则 $	o$ CM 的意义**：
+**正则 $  o$ CM 的意义**：
 
 正则局部环是最"光滑"的局部环。CM条件是比正则性弱得多的条件，但已经足以保证许多好的性质（如对偶性、无嵌入素理想等）。
 
@@ -129,6 +140,7 @@ $R_{\mathfrak{p}}$ 的维数 = $\text{ht}(\mathfrak{p})$，深度 $\geq$ $R$ 中
 **维数**：$\dim(R_{\mathfrak{p}}) = \text{ht}(\mathfrak{p})$。
 
 **深度分析**：
+
 - 若 $x_i \in \mathfrak{p}$，则 $x_i$ 在 $R_{\mathfrak{p}}$ 中仍是正则元（局部化保持正则性）
 - 设 $x_1, ..., x_k \in \mathfrak{p}$，$x_{k+1}, ..., x_d \notin \mathfrak{p}$
 

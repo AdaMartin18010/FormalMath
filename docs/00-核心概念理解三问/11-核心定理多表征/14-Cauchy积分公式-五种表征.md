@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Cauchy+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Cauchy's_theorem_(group_theory)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Cauchy
+  wikidata_id: Q1139041
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1139041
+    consulted_at: '2026-06-16'
 ---
 # Cauchy积分公式 - 五种表征
 

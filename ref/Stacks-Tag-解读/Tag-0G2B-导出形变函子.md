@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0G2B
     url: https://stacks.math.columbia.edu/tag/0G2B
+  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0G2B
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0G2B - 导出形变函子
 

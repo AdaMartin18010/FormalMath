@@ -58,6 +58,11 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/Sylow+theorem
     consulted_at: 2026-04-17
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1057919
+    consulted_at: '2026-06-16'
 review_status: mathematical_reviewed
 review_rounds: 1
 reviewed_at: '2026-04-20'
@@ -72,6 +77,7 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Sylow+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Sylow_theorems
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Sylow
+  wikidata_id: Q1057919
 ---
 ## 1. 引言
 
@@ -246,9 +252,8 @@ $|S_4| = 24 = 2^3 \cdot 3$。Sylow $3$-子群的阶为 $3$。设个数为 $n_3$�
 
 ### 数据库与网络资源
 
-
-
-
+- [nLab](https://ncatlab.org/nlab/show/Sylow+theorem)
+- [Wikidata](https://www.wikidata.org/entity/Q1057919)
 
 ### 课程与外部链接
 
@@ -257,3 +262,4 @@ $|S_4| = 24 = 2^3 \cdot 3$。Sylow $3$-子群的阶为 $3$。设个数为 $n_3$�
 - [Nlab Url](https://ncatlab.org/nlab/show/Sylow+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Sylow_theorems)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Sylow)
+- [Wikidata Id](Q1057919)

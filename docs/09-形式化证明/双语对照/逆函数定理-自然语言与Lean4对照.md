@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/function
   wikipedia_url: https://en.wikipedia.org/wiki/Function_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0
+  wikidata_id: Q11348
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q11348
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -103,8 +111,13 @@ theorem inverse_function_rn {n : ℕ} {f : (Fin n → ℝ) → (Fin n → ℝ)} 
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q11348)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/function)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Function_(mathematics))
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%87%BD%E6%95%B0)
+- [Wikidata Id](Q11348)

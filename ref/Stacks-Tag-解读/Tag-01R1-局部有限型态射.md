@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01R1
     url: https://stacks.math.columbia.edu/tag/01R1
+  wikidata_id: Q1948412
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01R1
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1948412
+    consulted_at: '2026-06-16'
 ---
 # Stacks Tag 01R1 - 局部有限型态射
 

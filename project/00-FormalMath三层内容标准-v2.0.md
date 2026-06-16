@@ -3,6 +3,19 @@ msc_primary: 00A99
 msc_secondary:
 - 97A99
 title: 00 FormalMath三层内容标准 v2.0
+external_ids:
+  stacks_tag:
+    tag: XXXX
+    url: https://stacks.math.columbia.edu/tag/XXXX
+references:
+  databases:
+  - id: stacks_project
+    type: database
+    name: Stacks Project
+    entry_url: https://stacks.math.columbia.edu/tag/XXXX
+    tags:
+    - XXXX
+    consulted_at: '2026-04-17'
 ---
 # FormalMath 三层内容标准 v2.0
 

@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
+  wikidata_id: Q595298
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 ---
 msc_primary: "00A99"
 msc_secondary: ['00-00']

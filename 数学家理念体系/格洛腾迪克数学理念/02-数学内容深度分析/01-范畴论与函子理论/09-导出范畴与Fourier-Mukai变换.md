@@ -26,6 +26,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Category
     author: Category
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q719395
+    consulted_at: '2026-06-16'
 status: completed
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/category
@@ -33,6 +38,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%8C%83%E7%95%B4
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
   zbmath_url: https://zbmath.org/?q=au:Category
+  wikidata_id: Q719395
 ---
 ## 1. 引言：从Grothendieck到Mukai的桥梁
 

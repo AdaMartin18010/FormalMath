@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A5S
     url: https://stacks.math.columbia.edu/tag/0A5S
+  wikidata_id: Q180969
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0A5S
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q180969
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0A5S - 同伦代数几何
 

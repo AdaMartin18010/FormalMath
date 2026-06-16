@@ -8,7 +8,8 @@ external_ids:
   ocw_ps_url: https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/
   nlab_url: https://ncatlab.org/nlab/show/module
   wikipedia_url: https://en.wikipedia.org/wiki/Module_(mathematics)
-  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=module
+  wikidata_id: Q18848
 references:
   textbooks:
   - title: Introduction to Linear Algebra
@@ -17,6 +18,12 @@ references:
     publisher: Wellesley-Cambridge Press
     year: 2016
     isbn: '9780980232776'
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q18848
+    consulted_at: '2026-06-16'
 ---
 # MIT 18.06 课堂验证模块设计
 
@@ -80,10 +87,15 @@ $$A = \begin{pmatrix} 1 & 1 \\ 1 & 2 \\ 1 & 3 \end{pmatrix}, \quad b = \begin{pm
 
 - Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 9780980232776)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q18848)
+
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/)
 - [Ocw Ps Url](https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/assignments/)
 - [Nlab Url](https://ncatlab.org/nlab/show/module)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Module_(mathematics))
-- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E6%A8%A1)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=module)
+- [Wikidata Id](Q18848)

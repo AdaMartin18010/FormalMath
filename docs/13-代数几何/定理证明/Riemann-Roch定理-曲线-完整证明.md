@@ -48,6 +48,11 @@ references:
     consulted_at: 2026-04-17
     tags:
     - 0B9C
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
   papers:
   - title: Le théorème de Riemann-Roch
     author: Armand Borel, Jean-Pierre Serre
@@ -60,6 +65,7 @@ external_ids:
   stacks_tag:
     tag: 0B9C
     url: https://stacks.math.columbia.edu/tag/0B9C
+  wikidata_id: Q42299
 ---
 # Riemann-Roch定理 (曲线情形)
 

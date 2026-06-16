@@ -9,6 +9,14 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Spectral_sequence
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E8%B0%B1%E5%BA%8F%E5%88%97
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  wikidata_id: Q3503315
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q3503315
+    consulted_at: '2026-06-16'
 ---
 # Leray-Serre谱序列
 

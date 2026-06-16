@@ -13,6 +13,7 @@ external_ids:
   stacks_tag:
     tag: 00E0
     url: https://stacks.math.columbia.edu/tag/00E0
+  wikidata_id: Q7575269
 references:
   databases:
   - id: stacks_project
@@ -20,6 +21,11 @@ references:
     name: Stacks Project
     entry_url: https://stacks.math.columbia.edu/tag/00E0
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q7575269
+    consulted_at: '2026-06-16'
 ---
 # 素谱与Zariski拓扑
 

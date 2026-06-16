@@ -9,6 +9,14 @@ title: ALG 212 Borel Weil Bott定理
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Raoul_Bott
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Bott/
+  wikidata_id: Q441185
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q441185
+    consulted_at: '2026-06-16'
 ---
 # Borel-Weil-Bott 定理
 

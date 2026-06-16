@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0A99
     url: https://stacks.math.columbia.edu/tag/0A99
+  wikidata_id: Q870797
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0A99
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q870797
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0A99 - 模叠与模形式
 

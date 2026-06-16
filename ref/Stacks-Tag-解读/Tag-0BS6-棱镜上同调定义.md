@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0BS6
     url: https://stacks.math.columbia.edu/tag/0BS6
+  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0BS6
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0BS6 - 棱镜上同调定义
 

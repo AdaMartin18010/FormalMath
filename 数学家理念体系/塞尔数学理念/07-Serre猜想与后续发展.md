@@ -24,6 +24,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Modular%20form
     author: Modular form
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q870797
+    consulted_at: '2026-06-16'
 status: completed
 created_at: 2026-04-18
 external_ids:
@@ -32,6 +37,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%A8%A1%E5%BD%A2%E5%BC%8F
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Modular%20form
+  wikidata_id: Q870797
 ---
 # Serre猜想与后续发展：从模形式到Langlands纲领
 

@@ -47,17 +47,26 @@ references:
     entry_url: https://zbmath.org/?q=au:Functor
     author: Functor
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 review_status: published
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/functor
   wikipedia_url: https://en.wikipedia.org/wiki/Functor
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%87%BD%E5%AD%90
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
-  stacks_tag:
+  stacks_tag: &id001
     tag: 0A9E
     url: https://stacks.math.columbia.edu/tag/0A9E
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 0AU3
+    url: https://stacks.math.columbia.edu/tag/0AU3
   zbmath_url: https://zbmath.org/?q=au:Functor
+  wikidata_id: Q864475
 ---
 # 上同调与 Grothendieck 对偶：例外拉回与六函子形式体系
 

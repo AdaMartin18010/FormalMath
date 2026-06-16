@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/differential+geometry
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95
+  wikidata_id: Q188444
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q188444
+    consulted_at: '2026-06-16'
 ---
 # 数学×物理学：广义相对论的微分几何
 

@@ -11,6 +11,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Differential_form
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%BE%AE%E5%88%86%E5%BD%A2%E5%BC%8F
   zbmath_url: https://zbmath.org/?q=au:Differential%20form
+  wikidata_id: Q1047080
 references:
   databases:
   - id: zbmath
@@ -19,6 +20,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Differential%20form
     author: Differential form
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1047080
+    consulted_at: '2026-06-16'
 ---
 # de Rham上同调：微分形式的上同调
 

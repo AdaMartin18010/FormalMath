@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0F1C
     url: https://stacks.math.columbia.edu/tag/0F1C
+  wikidata_id: Q18848
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 0F1C
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q18848
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 0F1C - 算术D-模
 

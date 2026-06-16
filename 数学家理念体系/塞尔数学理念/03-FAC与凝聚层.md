@@ -27,6 +27,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Sheaf
     author: Sheaf
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 status: completed
 created_at: 2026-04-18
 external_ids:
@@ -35,6 +40,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Sheaf
+  wikidata_id: Q595298
 ---
 # FAC与凝聚层：Serre的代数几何奠基之作
 

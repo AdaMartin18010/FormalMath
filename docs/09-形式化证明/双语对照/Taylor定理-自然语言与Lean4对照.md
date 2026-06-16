@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/Taylor's+theorem
   wikipedia_url: https://en.wikipedia.org/wiki/Taylor's_theorem
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Taylor
+  wikidata_id: Q1137206
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1137206
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -107,8 +115,13 @@ end TaylorTheorem
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q1137206)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/Taylor's+theorem)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Taylor's_theorem)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=Taylor)
+- [Wikidata Id](Q1137206)

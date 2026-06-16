@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 0BS8
     url: https://stacks.math.columbia.edu/tag/0BS8
+  wikidata_id: Q42299
 references:
   papers:
   - title: Le théorème de Riemann-Roch
@@ -25,6 +26,11 @@ references:
     tags:
     - 0BS8
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 ---
 # Riemann-Roch 定理 (Riemann-Roch Theorem)
 

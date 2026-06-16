@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01EK
     url: https://stacks.math.columbia.edu/tag/01EK
+  wikidata_id: Q595298
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01EK
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 01EK - 层上同调的长正合列
 

@@ -35,6 +35,12 @@ references:
     course_code: MAT 335
     lecture: Lecture 16-18
     url: https://web.math.princeton.edu/
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q42299
+    consulted_at: '2026-06-16'
 keywords:
 - Riemann面
 - 复流形
@@ -49,6 +55,7 @@ chapter: '07'
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Bernhard_Riemann
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/
+  wikidata_id: Q42299
 ---
 # Riemann面（Riemann Surfaces）
 
@@ -395,7 +402,12 @@ def genus {X : Type*} [TopologicalSpace X] [CompactSpace X]
 - John B. Conway, *Functions of One Complex Variable I*, 2nd ed., Springer, 1995 (Chapters: Ch. 6; Pages: 120-138; ISBN: 9780387944609; MR: MR1344449)
 - Elias M. Stein, Rami Shakarchi, *Complex Analysis*, 1st ed., Princeton University Press, 2003 (ISBN: 9780691113852)
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q42299)
+
 ### 课程与外部链接
 
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Bernhard_Riemann)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Riemann/)
+- [Wikidata Id](Q42299)

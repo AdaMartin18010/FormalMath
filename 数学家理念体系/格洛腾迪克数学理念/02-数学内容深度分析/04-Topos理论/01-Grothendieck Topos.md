@@ -9,11 +9,15 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Topos
   stacks_search_url: https://stacks.math.columbia.edu/search?query=Topos
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Grothendieck/
-  stacks_tag:
+  stacks_tag: &id001
     tag: 00VG
     url: https://stacks.math.columbia.edu/tag/00VG
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 00ZC
+    url: https://stacks.math.columbia.edu/tag/00ZC
   zbmath_url: https://zbmath.org/?q=au:Topos
+  wikidata_id: Q2143621
 references:
   databases:
   - id: stacks_project
@@ -30,6 +34,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Topos
     author: Topos
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q2143621
+    consulted_at: '2026-06-16'
 ---
 ﻿---
 title: "Grothendieck Topos：位象、层化与基本性质"

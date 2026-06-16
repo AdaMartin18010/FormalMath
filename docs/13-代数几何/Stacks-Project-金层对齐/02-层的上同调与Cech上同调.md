@@ -113,19 +113,25 @@ references:
     consulted_at: '2026-04-17'
     tags:
     - 01DX
-    - 01FA
-    - 01FE
-    - 01FF
     - 09ZQ
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q595298
+    consulted_at: '2026-06-16'
 review_status: draft
 external_ids:
   nlab_url: https://ncatlab.org/nlab/show/sheaf
   wikipedia_url: https://en.wikipedia.org/wiki/Sheaf_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%B1%82
-  stacks_tag:
+  stacks_tag: &id001
     tag: 01DX
     url: https://stacks.math.columbia.edu/tag/01DX
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 09ZQ
+    url: https://stacks.math.columbia.edu/tag/09ZQ
+  wikidata_id: Q595298
 ---
 # 层的上同调与 Čech 上同调
 

@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/isomorphism
   wikipedia_url: https://en.wikipedia.org/wiki/Isomorphism
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84
+  wikidata_id: Q189112
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q189112
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -124,8 +132,13 @@ theorem firstIsomorphism_bijective {G H : Type*} [Group G] [Group H]
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q189112)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/isomorphism)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Isomorphism)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E5%90%8C%E6%9E%84)
+- [Wikidata Id](Q189112)

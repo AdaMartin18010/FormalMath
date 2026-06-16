@@ -224,12 +224,6 @@ $S_4$ 通过共轭作用于自身。所有对换构成一个轨道。取 $\sigma
 - Gilbert Strang, *Introduction to Linear Algebra*, 5th ed., Wellesley-Cambridge Press, 2016 (ISBN: 978-0980232776)
 - David S. Dummit and Richard M. Foote, *Abstract Algebra*, 3rd ed., Wiley, 2003 (ISBN: 978-0471433347; MR: MR2286236)
 
-### 数据库与网络资源
-
-
-
-
-
 ### 课程与外部链接
 
 - [Ocw Url](https://ocw.mit.edu/courses/mathematics/18-701-algebra-i-fall-2010/)

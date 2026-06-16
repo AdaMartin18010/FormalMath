@@ -25,6 +25,11 @@ references:
     entry_url: https://zbmath.org/?q=au:Manifold
     author: Manifold
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q203920
+    consulted_at: '2026-06-16'
 status: completed
 created_at: 2026-04-18
 external_ids:
@@ -33,6 +38,7 @@ external_ids:
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E6%B5%81%E5%BD%A2
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
   zbmath_url: https://zbmath.org/?q=au:Manifold
+  wikidata_id: Q203920
 ---
 # 复几何与Stein流形：Serre从代数到分析的桥梁
 

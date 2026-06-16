@@ -58,6 +58,11 @@ references:
     name: nLab
     entry_url: https://ncatlab.org/nlab/show/cohomology
     consulted_at: 2026-04-18
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 created_at: 2026-04-18
 chapter: '3'
 external_ids:
@@ -66,7 +71,8 @@ external_ids:
   harvard_notes_url: https://people.math.harvard.edu/~landesman/notes.html
   nlab_url: https://ncatlab.org/nlab/show/cohomology
   wikipedia_url: https://en.wikipedia.org/wiki/Cohomology
-  stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83
+  stacks_search_url: https://stacks.math.columbia.edu/search?query=cohomology
+  wikidata_id: Q1198376
 ---
 # Harvard 232br - Hartshorne Chapter III §3 习题解答
 
@@ -673,9 +679,8 @@ theorem serreVanishing {k : Type*} [Field k]
 
 ### 数据库与网络资源
 
-
-
-
+- [nLab](https://ncatlab.org/nlab/show/cohomology)
+- [Wikidata](https://www.wikidata.org/entity/Q1198376)
 
 ### 课程与外部链接
 
@@ -684,4 +689,5 @@ theorem serreVanishing {k : Type*} [Field k]
 - [Harvard Notes Url](https://people.math.harvard.edu/~landesman/notes.html)
 - [Nlab Url](https://ncatlab.org/nlab/show/cohomology)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Cohomology)
-- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E4%B8%8A%E5%90%8C%E8%B0%83)
+- [Stacks Search Url](https://stacks.math.columbia.edu/search?query=cohomology)
+- [Wikidata Id](Q1198376)

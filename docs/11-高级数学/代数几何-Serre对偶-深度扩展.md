@@ -9,6 +9,7 @@ external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Algebraic_geometry
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%BB%A3%E6%95%B0%E5%87%A0%E4%BD%95
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Serre/
+  wikidata_id: Q180969
 references:
   papers:
   - title: Faisceaux algébriques cohérents
@@ -16,6 +17,12 @@ references:
     journal: Annals of Mathematics
     year: 1955
     doi: 10.2307/1970375
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q180969
+    consulted_at: '2026-06-16'
 ---
 msc_primary: "@"
 msc_secondary: ['20-00', '22E47']

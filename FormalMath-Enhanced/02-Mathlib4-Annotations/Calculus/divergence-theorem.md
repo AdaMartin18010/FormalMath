@@ -7,6 +7,14 @@ title: 高斯散度定理 (Gauss's Divergence Theorem)
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Gauss/
+  wikidata_id: Q6722
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q6722
+    consulted_at: '2026-06-16'
 ---
 # 高斯散度定理 (Gauss's Divergence Theorem)
 

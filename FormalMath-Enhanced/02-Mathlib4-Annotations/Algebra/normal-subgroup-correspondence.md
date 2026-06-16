@@ -8,6 +8,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/group
   wikipedia_url: https://en.wikipedia.org/wiki/Group_(mathematics)
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E7%BE%A4
+  wikidata_id: Q83478
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q83478
+    consulted_at: '2026-06-16'
 ---
 # 正规子群对应定理 (Normal Subgroup Correspondence)
 
@@ -60,6 +68,7 @@ $$G/N = \{gN : g \in G\}$$
 ### 子群在投影下的像与原像
 
 对同态 $\varphi: G \to H$，有标准操作：
+
 - **像**（image）：对 $S \leq G$，$\varphi(S) = \{\varphi(s) : s \in S\} \leq H$；
 - **原像**（preimage）：对 $T \leq H$，$\varphi^{-1}(T) = \{g \in G : \varphi(g) \in T\} \leq G$。
 
@@ -74,6 +83,7 @@ $$\Phi(H) = \pi(H) = H/N$$
 是双射，其逆为 $\Phi^{-1}(K) = \pi^{-1}(K)$。
 
 更精确地，这个对应满足：
+
 1. $\Phi$ 和 $\Phi^{-1}$ 互逆；
 2. $H_1 \leq H_2 \iff \Phi(H_1) \leq \Phi(H_2)$（保持包含）；
 3. $\Phi(H_1 \cap H_2) = \Phi(H_1) \cap \Phi(H_2)$（保持交）；
@@ -133,6 +143,7 @@ $$(\Phi \circ \Psi)(K) = \pi(\pi^{-1}(K))$$
 $\mathbb{Z}/6\mathbb{Z}$ 的子群：$\{0\}$，$\{0, 3\}$，$\{0, 2, 4\}$，$\mathbb{Z}/6\mathbb{Z}$。
 
 对应关系：
+
 - $6\mathbb{Z} \leftrightarrow \{0\}$
 - $3\mathbb{Z} \leftrightarrow \{0, 3\} = \langle 3 \rangle$
 - $2\mathbb{Z} \leftrightarrow \{0, 2, 4\} = \langle 2 \rangle$
@@ -147,6 +158,7 @@ $\mathbb{Z}/6\mathbb{Z}$ 的子群：$\{0\}$，$\{0, 3\}$，$\{0, 2, 4\}$，$\ma
 $S_3$ 的正规子群：$\{e\}$，$A_3 = \langle (123) \rangle$，$S_3$。
 
 对应到 $S_4$ 中包含 $V_4$ 的正规子群：
+
 - $\{e\} \leftrightarrow V_4$
 - $A_3 \leftrightarrow A_4$（交错群）
 - $S_3 \leftrightarrow S_4$
@@ -160,6 +172,7 @@ $S_3$ 的正规子群：$\{e\}$，$A_3 = \langle (123) \rangle$，$S_3$。
 $G/N$ 的正规子群（所有子群都正规，因为是Abel群）：$\{(0,0)\}$，三个2阶子群 $\langle (1,0) \rangle$，$\langle (0,1) \rangle$，$\langle (1,1) \rangle$，以及 $G/N$ 本身。
 
 对应到 $G$ 中包含 $N$ 的子群：
+
 - $\{(0,0)\} \leftrightarrow 2\mathbb{Z} \times 2\mathbb{Z}$
 - $\langle (1,0) \rangle \leftrightarrow \mathbb{Z} \times 2\mathbb{Z}$
 - $\langle (0,1) \rangle \leftrightarrow 2\mathbb{Z} \times \mathbb{Z}$

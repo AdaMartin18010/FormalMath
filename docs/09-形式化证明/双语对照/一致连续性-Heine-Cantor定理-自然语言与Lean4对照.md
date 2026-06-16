@@ -12,6 +12,14 @@ external_ids:
   nlab_url: https://ncatlab.org/nlab/show/uniform+continuity
   wikipedia_url: https://en.wikipedia.org/wiki/Uniform_continuity
   stacks_search_url: https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD
+  wikidata_id: Q741865
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q741865
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -93,8 +101,13 @@ end HeineCantorTheorem
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q741865)
+
 ### 课程与外部链接
 
 - [Nlab Url](https://ncatlab.org/nlab/show/uniform+continuity)
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Uniform_continuity)
 - [Stacks Search Url](https://stacks.math.columbia.edu/search?query=%E4%B8%80%E8%87%B4%E8%BF%9E%E7%BB%AD)
+- [Wikidata Id](Q741865)

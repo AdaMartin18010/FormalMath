@@ -11,6 +11,14 @@ reviewer: AI Mathematical Reviewer
 external_ids:
   wikipedia_url: https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy
   mactutor_url: https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/
+  wikidata_id: Q8814
+references:
+  databases:
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q8814
+    consulted_at: '2026-06-16'
 ---
 ## 定理陈述
 
@@ -134,7 +142,12 @@ f(t) = \left(\sum a_i^2\right) t^2 + 2\left(\sum a_i b_i\right) t + \sum b_i^2
 
 ## 参考与延伸阅读
 
+### 数据库与网络资源
+
+- [Wikidata](https://www.wikidata.org/entity/Q8814)
+
 ### 课程与外部链接
 
 - [Wikipedia Url](https://en.wikipedia.org/wiki/Augustin-Louis_Cauchy)
 - [Mactutor Url](https://mathshistory.st-andrews.ac.uk/Biographies/Cauchy/)
+- [Wikidata Id](Q8814)

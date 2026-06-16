@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 01V5
     url: https://stacks.math.columbia.edu/tag/01V5
+  wikidata_id: Q1948412
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 01V5
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1948412
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 01V5 - 光滑态射（Smooth Morphisms）
 

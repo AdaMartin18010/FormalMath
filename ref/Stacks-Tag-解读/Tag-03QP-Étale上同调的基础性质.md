@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 03QP
     url: https://stacks.math.columbia.edu/tag/03QP
+  wikidata_id: Q1198376
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 03QP
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q1198376
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 03QP - Étale上同调的基础性质
 

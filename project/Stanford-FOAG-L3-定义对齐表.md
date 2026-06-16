@@ -11,10 +11,31 @@ textbook: 'Ravi Vakil, The Rising Sea: Foundations of Algebraic Geometry'
 alignment_level: L3 (定义级)
 version: v1.1
 external_ids:
-  stacks_tag:
+  stacks_tag: &id001
     tag: '0017'
     url: https://stacks.math.columbia.edu/tag/0017
-  stacks_tags: []
+  stacks_tags:
+  - *id001
+  - tag: 006A
+    url: https://stacks.math.columbia.edu/tag/006A
+  - tag: 0090
+    url: https://stacks.math.columbia.edu/tag/0090
+  - tag: 01E8
+    url: https://stacks.math.columbia.edu/tag/01E8
+  - tag: 01HV
+    url: https://stacks.math.columbia.edu/tag/01HV
+  - tag: 01KU
+    url: https://stacks.math.columbia.edu/tag/01KU
+  - tag: 01LC
+    url: https://stacks.math.columbia.edu/tag/01LC
+  - tag: 01M0
+    url: https://stacks.math.columbia.edu/tag/01M0
+  - tag: 01NT
+    url: https://stacks.math.columbia.edu/tag/01NT
+  - tag: 01Q9
+    url: https://stacks.math.columbia.edu/tag/01Q9
+  - tag: 01W7
+    url: https://stacks.math.columbia.edu/tag/01W7
 references:
   databases:
   - id: stacks_project

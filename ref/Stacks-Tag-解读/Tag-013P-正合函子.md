@@ -10,6 +10,7 @@ external_ids:
   stacks_tag:
     tag: 013P
     url: https://stacks.math.columbia.edu/tag/013P
+  wikidata_id: Q864475
 references:
   databases:
   - id: stacks_project
@@ -19,6 +20,11 @@ references:
     tags:
     - 013P
     consulted_at: '2026-04-17'
+  - id: wikidata
+    type: database
+    name: Wikidata
+    entry_url: https://www.wikidata.org/entity/Q864475
+    consulted_at: '2026-06-16'
 ---
 # Stacks Project Tag 013P - 正合函子（Exact Functors）
 
